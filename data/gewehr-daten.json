@@ -1,0 +1,1414 @@
+{
+  "schemaVersion": 1,
+  "treeId": "RIFLES",
+  "nameKey": "TreeRifleName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "RIFLES-P1",
+      "nameKey": "SkillRifleP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-P1",
+        "nameKey": "SkillRifleP1Name",
+        "effectKey": "SkillRifleP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleP1Desc"
+    },
+    {
+      "id": "RIFLES-P2",
+      "nameKey": "SkillRifleP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-P2",
+        "nameKey": "SkillRifleP2Name",
+        "effectKey": "SkillRifleP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricReloadSpeed",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleP2Desc"
+    },
+    {
+      "id": "RIFLES-P3",
+      "nameKey": "SkillRifleP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-P3",
+        "nameKey": "SkillRifleP3Name",
+        "effectKey": "SkillRifleP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleP3Desc"
+    },
+    {
+      "id": "RIFLES-P4",
+      "nameKey": "SkillRifleP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-P4",
+        "nameKey": "SkillRifleP4Name",
+        "effectKey": "SkillRifleP4Desc",
+        "secondsWithoutAttack": 3,
+        "metrics": [
+          {
+            "metricKey": "MetricFirstShotDamage",
+            "unit": "%",
+            "values": [
+              10,
+              20,
+              30,
+              40,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleP4Desc"
+    },
+    {
+      "id": "RIFLES-T1",
+      "nameKey": "SkillRifleT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-T1",
+        "nameKey": "SkillRifleT1Name",
+        "effectKey": "SkillRifleT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 8,
+        "baseDamageBonusPercent": 25,
+        "accuracyBonusPercent": 50,
+        "recoilReductionPercent": 50,
+        "requiresActiveWeaponKey": "LabelTreeRifleName"
+      },
+      "descriptionKey": "SkillRifleT1Desc"
+    },
+    {
+      "id": "RIFLES-T1-CD",
+      "nameKey": "SkillRifleT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T1",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T1-CD",
+        "nameKey": "SkillRifleT1CooldownName",
+        "effectKey": "SkillRifleT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT1CooldownDesc"
+    },
+    {
+      "id": "RIFLES-T1-STA",
+      "nameKey": "SkillRifleT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T1",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T1-STA",
+        "nameKey": "SkillRifleT1StaminaName",
+        "effectKey": "SkillRifleT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT1StaminaDesc"
+    },
+    {
+      "id": "RIFLES-T1-IMP",
+      "nameKey": "SkillRifleT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T1",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T1-IMP",
+        "nameKey": "SkillRifleT1ImpactName",
+        "effectKey": "SkillRifleT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              28,
+              31,
+              34,
+              37,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT1ImpactDesc"
+    },
+    {
+      "id": "RIFLES-T1-WAY-1",
+      "nameKey": "SkillRifleT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "RIFLES-T1",
+      "order": 1,
+      "details": {
+        "id": "RIFLES-T1-WAY-1",
+        "nameKey": "SkillRifleT1Way1Name",
+        "effectKey": "SkillRifleT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRifleT1Way1Desc"
+    },
+    {
+      "id": "RIFLES-T1-WAY-2",
+      "nameKey": "SkillRifleT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "RIFLES-T1",
+      "order": 2,
+      "details": {
+        "id": "RIFLES-T1-WAY-2",
+        "nameKey": "SkillRifleT1Way2Name",
+        "effectKey": "SkillRifleT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRifleT1Way2Desc"
+    },
+    {
+      "id": "RIFLES-T2",
+      "nameKey": "SkillRifleT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-T2",
+        "nameKey": "SkillRifleT2Name",
+        "effectKey": "SkillRifleT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "buffDurationSeconds": 5,
+        "baseDamageBonusPercent": 60,
+        "accuracyBonusPercent": 50,
+        "recoilReductionPercent": 50,
+        "requiresActiveWeaponKey": "LabelTreeRifleName"
+      },
+      "descriptionKey": "SkillRifleT2Desc"
+    },
+    {
+      "id": "RIFLES-T2-CD",
+      "nameKey": "SkillRifleT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T2",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T2-CD",
+        "nameKey": "SkillRifleT2CooldownName",
+        "effectKey": "SkillRifleT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT2CooldownDesc"
+    },
+    {
+      "id": "RIFLES-T2-STA",
+      "nameKey": "SkillRifleT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T2",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T2-STA",
+        "nameKey": "SkillRifleT2StaminaName",
+        "effectKey": "SkillRifleT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT2StaminaDesc"
+    },
+    {
+      "id": "RIFLES-T2-IMP",
+      "nameKey": "SkillRifleT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T2",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T2-IMP",
+        "nameKey": "SkillRifleT2ImpactName",
+        "effectKey": "SkillRifleT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              68,
+              76,
+              84,
+              92,
+              100
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT2ImpactDesc"
+    },
+    {
+      "id": "RIFLES-T2-WAY-1",
+      "nameKey": "SkillRifleT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "RIFLES-T2",
+      "order": 1,
+      "details": {
+        "id": "RIFLES-T2-WAY-1",
+        "nameKey": "SkillRifleT2Way1Name",
+        "effectKey": "SkillRifleT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRifleT2Way1Desc"
+    },
+    {
+      "id": "RIFLES-T2-WAY-2",
+      "nameKey": "SkillRifleT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "RIFLES-T2",
+      "order": 2,
+      "details": {
+        "id": "RIFLES-T2-WAY-2",
+        "nameKey": "SkillRifleT2Way2Name",
+        "effectKey": "SkillRifleT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRifleT2Way2Desc"
+    },
+    {
+      "id": "RIFLES-T3",
+      "nameKey": "SkillRifleT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-T3",
+        "nameKey": "SkillRifleT3Name",
+        "effectKey": "SkillRifleT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseActiveWeaponDpsPercent": 150,
+        "requiresActiveWeaponKey": "LabelTreeRifleName",
+        "bleedDurationSeconds": 20
+      },
+      "descriptionKey": "SkillRifleT3Desc"
+    },
+    {
+      "id": "RIFLES-T3-CD",
+      "nameKey": "SkillRifleT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T3",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T3-CD",
+        "nameKey": "SkillRifleT3CooldownName",
+        "effectKey": "SkillRifleT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT3CooldownDesc"
+    },
+    {
+      "id": "RIFLES-T3-STA",
+      "nameKey": "SkillRifleT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T3",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T3-STA",
+        "nameKey": "SkillRifleT3StaminaName",
+        "effectKey": "SkillRifleT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT3StaminaDesc"
+    },
+    {
+      "id": "RIFLES-T3-IMP",
+      "nameKey": "SkillRifleT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "RIFLES-T3",
+      "order": null,
+      "details": {
+        "id": "RIFLES-T3-IMP",
+        "nameKey": "SkillRifleT3ImpactName",
+        "effectKey": "SkillRifleT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              170,
+              190,
+              210,
+              230,
+              250
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleT3ImpactDesc"
+    },
+    {
+      "id": "RIFLES-T3-WAY-1",
+      "nameKey": "SkillRifleT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "RIFLES-T3",
+      "order": 1,
+      "details": {
+        "id": "RIFLES-T3-WAY-1",
+        "nameKey": "SkillRifleT3Way1Name",
+        "effectKey": "SkillRifleT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRifleT3Way1Desc"
+    },
+    {
+      "id": "RIFLES-T3-WAY-2",
+      "nameKey": "SkillRifleT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "RIFLES-T3",
+      "order": 2,
+      "details": {
+        "id": "RIFLES-T3-WAY-2",
+        "nameKey": "SkillRifleT3Way2Name",
+        "effectKey": "SkillRifleT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRifleT3Way2Desc"
+    },
+    {
+      "id": "RIFLES-ULT",
+      "nameKey": "SkillRifleUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "RIFLES-ULT",
+        "nameKey": "SkillRifleUltName",
+        "effectKey": "SkillRifleUltDesc",
+        "fireRateBonusPercent": 100,
+        "requiresActiveWeaponKey": "LabelTreeRifleName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "EffectDuration",
+            "unit": "s",
+            "values": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRifleUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P2",
+      "rank": 1,
+      "metricKey": "MetricReloadSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P2",
+      "rank": 2,
+      "metricKey": "MetricReloadSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P2",
+      "rank": 3,
+      "metricKey": "MetricReloadSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P2",
+      "rank": 4,
+      "metricKey": "MetricReloadSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P2",
+      "rank": 5,
+      "metricKey": "MetricReloadSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P4",
+      "rank": 1,
+      "metricKey": "MetricFirstShotDamage",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P4",
+      "rank": 2,
+      "metricKey": "MetricFirstShotDamage",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P4",
+      "rank": 3,
+      "metricKey": "MetricFirstShotDamage",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P4",
+      "rank": 4,
+      "metricKey": "MetricFirstShotDamage",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-P4",
+      "rank": 5,
+      "metricKey": "MetricFirstShotDamage",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 28,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 31,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 34,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 68,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 76,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 84,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 92,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 170,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 210,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 230,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "RIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 100,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "RIFLES-P1": {
+      "locked": "assets/skills/RiflesP1SkilledMarksman.png"
+    },
+    "RIFLES-P2": {
+      "locked": "assets/skills/RiflesP2MuscleMemory.png"
+    },
+    "RIFLES-P3": {
+      "locked": "assets/skills/RiflesP3ProperTechnique.png"
+    },
+    "RIFLES-P4": {
+      "locked": "assets/skills/RiflesP4PrimusInterPares.png"
+    },
+    "RIFLES-T1": {
+      "locked": "assets/skills/RiflesT1PinpointPrecision.png"
+    },
+    "RIFLES-T1-CD": {
+      "locked": "assets/skills/RiflesT1PinpointPrecision.png"
+    },
+    "RIFLES-T1-STA": {
+      "locked": "assets/skills/RiflesT1PinpointPrecision.png"
+    },
+    "RIFLES-T1-IMP": {
+      "locked": "assets/skills/RiflesT1PinpointPrecision.png"
+    },
+    "RIFLES-T1-WAY-1": {
+      "locked": "assets/skills/RiflesT1PinpointPrecision.png"
+    },
+    "RIFLES-T1-WAY-2": {
+      "locked": "assets/skills/RiflesT1PinpointPrecision.png"
+    },
+    "RIFLES-T2": {
+      "locked": "assets/skills/RiflesT2MobilityKill.png"
+    },
+    "RIFLES-T2-CD": {
+      "locked": "assets/skills/RiflesT2MobilityKill.png"
+    },
+    "RIFLES-T2-STA": {
+      "locked": "assets/skills/RiflesT2MobilityKill.png"
+    },
+    "RIFLES-T2-IMP": {
+      "locked": "assets/skills/RiflesT2MobilityKill.png"
+    },
+    "RIFLES-T2-WAY-1": {
+      "locked": "assets/skills/RiflesT2MobilityKill.png"
+    },
+    "RIFLES-T2-WAY-2": {
+      "locked": "assets/skills/RiflesT2MobilityKill.png"
+    },
+    "RIFLES-T3": {
+      "locked": "assets/skills/RiflesT3RedMist.png"
+    },
+    "RIFLES-T3-CD": {
+      "locked": "assets/skills/RiflesT3RedMist.png"
+    },
+    "RIFLES-T3-STA": {
+      "locked": "assets/skills/RiflesT3RedMist.png"
+    },
+    "RIFLES-T3-IMP": {
+      "locked": "assets/skills/RiflesT3RedMist.png"
+    },
+    "RIFLES-T3-WAY-1": {
+      "locked": "assets/skills/RiflesT3RedMist.png"
+    },
+    "RIFLES-T3-WAY-2": {
+      "locked": "assets/skills/RiflesT3RedMist.png"
+    },
+    "RIFLES-ULT": {
+      "locked": "assets/skills/RiflesULTPewPew.png"
+    }
+  }
+}

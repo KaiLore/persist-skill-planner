@@ -1,0 +1,1412 @@
+{
+  "schemaVersion": 1,
+  "treeId": "SHOTGUNS",
+  "nameKey": "TreeShotgunName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "SHOTGUNS-P1",
+      "nameKey": "SkillShotgunP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-P1",
+        "nameKey": "SkillShotgunP1Name",
+        "effectKey": "SkillShotgunP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunP1Desc"
+    },
+    {
+      "id": "SHOTGUNS-P2",
+      "nameKey": "SkillShotgunP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-P2",
+        "nameKey": "SkillShotgunP2Name",
+        "effectKey": "SkillShotgunP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricReloadSpeed",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunP2Desc"
+    },
+    {
+      "id": "SHOTGUNS-P3",
+      "nameKey": "SkillShotgunP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-P3",
+        "nameKey": "SkillShotgunP3Name",
+        "effectKey": "SkillShotgunP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunP3Desc"
+    },
+    {
+      "id": "SHOTGUNS-P4",
+      "nameKey": "SkillShotgunP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-P4",
+        "nameKey": "SkillShotgunP4Name",
+        "effectKey": "SkillShotgunP4Desc",
+        "buffDurationSeconds": 6,
+        "criticalDamageBonusPerStackPercent": 20,
+        "maxStacks": 5,
+        "procIntervalSeconds": 1,
+        "metrics": [
+          {
+            "metricKey": "MetricProcChance",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunP4Desc"
+    },
+    {
+      "id": "SHOTGUNS-T1",
+      "nameKey": "SkillShotgunT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T1",
+        "nameKey": "SkillShotgunT1Name",
+        "effectKey": "SkillShotgunT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 6,
+        "baseCritChancePercent": 30,
+        "requiresActiveWeaponKey": "LabelTreeShotgunName"
+      },
+      "descriptionKey": "SkillShotgunT1Desc"
+    },
+    {
+      "id": "SHOTGUNS-T1-CD",
+      "nameKey": "SkillShotgunT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T1",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T1-CD",
+        "nameKey": "SkillShotgunT1CooldownName",
+        "effectKey": "SkillShotgunT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT1CooldownDesc"
+    },
+    {
+      "id": "SHOTGUNS-T1-STA",
+      "nameKey": "SkillShotgunT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T1",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T1-STA",
+        "nameKey": "SkillShotgunT1StaminaName",
+        "effectKey": "SkillShotgunT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT1StaminaDesc"
+    },
+    {
+      "id": "SHOTGUNS-T1-IMP",
+      "nameKey": "SkillShotgunT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T1",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T1-IMP",
+        "nameKey": "SkillShotgunT1ImpactName",
+        "effectKey": "SkillShotgunT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCriticalHitChance",
+            "unit": "%",
+            "values": [
+              34,
+              38,
+              42,
+              46,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT1ImpactDesc"
+    },
+    {
+      "id": "SHOTGUNS-T1-WAY-1",
+      "nameKey": "SkillShotgunT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "SHOTGUNS-T1",
+      "order": 1,
+      "details": {
+        "id": "SHOTGUNS-T1-WAY-1",
+        "nameKey": "SkillShotgunT1Way1Name",
+        "effectKey": "SkillShotgunT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillShotgunT1Way1Desc"
+    },
+    {
+      "id": "SHOTGUNS-T1-WAY-2",
+      "nameKey": "SkillShotgunT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "SHOTGUNS-T1",
+      "order": 2,
+      "details": {
+        "id": "SHOTGUNS-T1-WAY-2",
+        "nameKey": "SkillShotgunT1Way2Name",
+        "effectKey": "SkillShotgunT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillShotgunT1Way2Desc"
+    },
+    {
+      "id": "SHOTGUNS-T2",
+      "nameKey": "SkillShotgunT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T2",
+        "nameKey": "SkillShotgunT2Name",
+        "effectKey": "SkillShotgunT2Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 100,
+        "baseActiveWeaponDpsPercent": 150,
+        "disarmedDurationSeconds": 4,
+        "requiresActiveWeaponKey": "LabelTreeShotgunName"
+      },
+      "descriptionKey": "SkillShotgunT2Desc"
+    },
+    {
+      "id": "SHOTGUNS-T2-CD",
+      "nameKey": "SkillShotgunT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T2",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T2-CD",
+        "nameKey": "SkillShotgunT2CooldownName",
+        "effectKey": "SkillShotgunT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT2CooldownDesc"
+    },
+    {
+      "id": "SHOTGUNS-T2-STA",
+      "nameKey": "SkillShotgunT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T2",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T2-STA",
+        "nameKey": "SkillShotgunT2StaminaName",
+        "effectKey": "SkillShotgunT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT2StaminaDesc"
+    },
+    {
+      "id": "SHOTGUNS-T2-IMP",
+      "nameKey": "SkillShotgunT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T2",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T2-IMP",
+        "nameKey": "SkillShotgunT2ImpactName",
+        "effectKey": "SkillShotgunT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              180,
+              200,
+              220,
+              240,
+              260
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT2ImpactDesc"
+    },
+    {
+      "id": "SHOTGUNS-T2-WAY-1",
+      "nameKey": "SkillShotgunT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "SHOTGUNS-T2",
+      "order": 1,
+      "details": {
+        "id": "SHOTGUNS-T2-WAY-1",
+        "nameKey": "SkillShotgunT2Way1Name",
+        "effectKey": "SkillShotgunT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillShotgunT2Way1Desc"
+    },
+    {
+      "id": "SHOTGUNS-T2-WAY-2",
+      "nameKey": "SkillShotgunT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "SHOTGUNS-T2",
+      "order": 2,
+      "details": {
+        "id": "SHOTGUNS-T2-WAY-2",
+        "nameKey": "SkillShotgunT2Way2Name",
+        "effectKey": "SkillShotgunT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillShotgunT2Way2Desc"
+    },
+    {
+      "id": "SHOTGUNS-T3",
+      "nameKey": "SkillShotgunT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T3",
+        "nameKey": "SkillShotgunT3Name",
+        "effectKey": "SkillShotgunT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseDamageBonusPerProjectilePercent": 25,
+        "requiresActiveWeaponKey": "LabelTreeShotgunName"
+      },
+      "descriptionKey": "SkillShotgunT3Desc"
+    },
+    {
+      "id": "SHOTGUNS-T3-CD",
+      "nameKey": "SkillShotgunT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T3",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T3-CD",
+        "nameKey": "SkillShotgunT3CooldownName",
+        "effectKey": "SkillShotgunT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT3CooldownDesc"
+    },
+    {
+      "id": "SHOTGUNS-T3-STA",
+      "nameKey": "SkillShotgunT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T3",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T3-STA",
+        "nameKey": "SkillShotgunT3StaminaName",
+        "effectKey": "SkillShotgunT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT3StaminaDesc"
+    },
+    {
+      "id": "SHOTGUNS-T3-IMP",
+      "nameKey": "SkillShotgunT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "SHOTGUNS-T3",
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-T3-IMP",
+        "nameKey": "SkillShotgunT3ImpactName",
+        "effectKey": "SkillShotgunT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricProjectileDamage",
+            "unit": "%",
+            "values": [
+              28,
+              31,
+              34,
+              37,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunT3ImpactDesc"
+    },
+    {
+      "id": "SHOTGUNS-T3-WAY-1",
+      "nameKey": "SkillShotgunT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "SHOTGUNS-T3",
+      "order": 1,
+      "details": {
+        "id": "SHOTGUNS-T3-WAY-1",
+        "nameKey": "SkillShotgunT3Way1Name",
+        "effectKey": "SkillShotgunT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillShotgunT3Way1Desc"
+    },
+    {
+      "id": "SHOTGUNS-T3-WAY-2",
+      "nameKey": "SkillShotgunT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "SHOTGUNS-T3",
+      "order": 2,
+      "details": {
+        "id": "SHOTGUNS-T3-WAY-2",
+        "nameKey": "SkillShotgunT3Way2Name",
+        "effectKey": "SkillShotgunT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillShotgunT3Way2Desc"
+    },
+    {
+      "id": "SHOTGUNS-ULT",
+      "nameKey": "SkillShotgunUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SHOTGUNS-ULT",
+        "nameKey": "SkillShotgunUltName",
+        "effectKey": "SkillShotgunUltDesc",
+        "critChanceBonusPercent": 25,
+        "requiresActiveWeaponKey": "LabelTreeShotgunName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "EffectDuration",
+            "unit": "s",
+            "values": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          },
+          {
+            "metricKey": "MetricCritDamage",
+            "unit": "%",
+            "values": [
+              140,
+              180,
+              220,
+              260,
+              300
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillShotgunUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P2",
+      "rank": 1,
+      "metricKey": "MetricReloadSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P2",
+      "rank": 2,
+      "metricKey": "MetricReloadSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P2",
+      "rank": 3,
+      "metricKey": "MetricReloadSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P2",
+      "rank": 4,
+      "metricKey": "MetricReloadSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P2",
+      "rank": 5,
+      "metricKey": "MetricReloadSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P4",
+      "rank": 1,
+      "metricKey": "MetricProcChance",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P4",
+      "rank": 2,
+      "metricKey": "MetricProcChance",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P4",
+      "rank": 3,
+      "metricKey": "MetricProcChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P4",
+      "rank": 4,
+      "metricKey": "MetricProcChance",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-P4",
+      "rank": 5,
+      "metricKey": "MetricProcChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricCriticalHitChance",
+      "value": 34,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricCriticalHitChance",
+      "value": 38,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricCriticalHitChance",
+      "value": 42,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricCriticalHitChance",
+      "value": 46,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricCriticalHitChance",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 200,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 220,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 240,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 260,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricProjectileDamage",
+      "value": 28,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricProjectileDamage",
+      "value": 31,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricProjectileDamage",
+      "value": 34,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricProjectileDamage",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricProjectileDamage",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 11,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCritDamage",
+      "value": 140,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCritDamage",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCritDamage",
+      "value": 220,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCritDamage",
+      "value": 260,
+      "unit": "%"
+    },
+    {
+      "skillId": "SHOTGUNS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCritDamage",
+      "value": 300,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "SHOTGUNS-P1": {
+      "unlocked": "assets/skills/ShotgunsP1SkilledShotgunner.png"
+    },
+    "SHOTGUNS-P2": {
+      "unlocked": "assets/skills/ShotgunsP2QuickFingers.png"
+    },
+    "SHOTGUNS-P3": {
+      "unlocked": "assets/skills/ShotgunsP3BarrelCleaning.png"
+    },
+    "SHOTGUNS-P4": {
+      "locked": "assets/skills/ShotgunsP4CritFestival.png"
+    },
+    "SHOTGUNS-T1": {
+      "unlocked": "assets/skills/ShotgunsT1TriggerControl.png"
+    },
+    "SHOTGUNS-T1-CD": {
+      "locked": "assets/skills/ShotgunsT1TriggerControl.png"
+    },
+    "SHOTGUNS-T1-STA": {
+      "locked": "assets/skills/ShotgunsT1TriggerControl.png"
+    },
+    "SHOTGUNS-T1-IMP": {
+      "locked": "assets/skills/ShotgunsT1TriggerControl.png"
+    },
+    "SHOTGUNS-T1-WAY-1": {
+      "locked": "assets/skills/ShotgunsT1TriggerControl.png"
+    },
+    "SHOTGUNS-T1-WAY-2": {
+      "locked": "assets/skills/ShotgunsT1TriggerControl.png"
+    },
+    "SHOTGUNS-T2": {
+      "unlocked": "assets/skills/ShotgunsT2Peacekeeper.png"
+    },
+    "SHOTGUNS-T2-CD": {
+      "unlocked": "assets/skills/ShotgunsT2Peacekeeper.png"
+    },
+    "SHOTGUNS-T2-STA": {
+      "unlocked": "assets/skills/ShotgunsT2Peacekeeper.png"
+    },
+    "SHOTGUNS-T2-IMP": {
+      "unlocked": "assets/skills/ShotgunsT2Peacekeeper.png"
+    },
+    "SHOTGUNS-T2-WAY-1": {
+      "locked": "assets/skills/ShotgunsT2Peacekeeper.png"
+    },
+    "SHOTGUNS-T2-WAY-2": {
+      "locked": "assets/skills/ShotgunsT2Peacekeeper.png"
+    },
+    "SHOTGUNS-T3": {
+      "locked": "assets/skills/ShotgunsT3PointBlankSlug.png"
+    },
+    "SHOTGUNS-T3-CD": {
+      "locked": "assets/skills/ShotgunsT3PointBlankSlug.png"
+    },
+    "SHOTGUNS-T3-STA": {
+      "locked": "assets/skills/ShotgunsT3PointBlankSlug.png"
+    },
+    "SHOTGUNS-T3-IMP": {
+      "locked": "assets/skills/ShotgunsT3PointBlankSlug.png"
+    },
+    "SHOTGUNS-T3-WAY-1": {
+      "locked": "assets/skills/ShotgunsT3PointBlankSlug.png"
+    },
+    "SHOTGUNS-T3-WAY-2": {
+      "locked": "assets/skills/ShotgunsT3PointBlankSlug.png"
+    },
+    "SHOTGUNS-ULT": {
+      "locked": "assets/skills/ShotgunsULTWorldOfHurt.png"
+    }
+  }
+}

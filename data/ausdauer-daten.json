@@ -1,0 +1,1308 @@
+{
+  "schemaVersion": 1,
+  "treeId": "ENDURANCE",
+  "nameKey": "TreeEnduranceName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "ENDURANCE-P1",
+      "nameKey": "SkillEnduranceP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "effectKey": "SkillEnduranceP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraStamina",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30,
+            33,
+            36,
+            39,
+            42,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-P2",
+      "nameKey": "SkillEnduranceP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillEnduranceP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaRegen",
+          "unit": "%",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-P3",
+      "nameKey": "SkillEnduranceP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillEnduranceP3Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricSafeFallHeight",
+          "unit": "%",
+          "values": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-P4",
+      "nameKey": "SkillEnduranceP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillEnduranceP4Desc",
+      "unlockDisplayed": 31,
+      "metrics": [
+        {
+          "metricKey": "MetricSprintJumpCostReduction",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T1",
+      "nameKey": "SkillEnduranceT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillEnduranceT1Desc",
+      "baseStaminaCost": 20,
+      "baseCooldownSeconds": 35,
+      "baseDurationSeconds": 8,
+      "observedDurationSeconds": 10,
+      "observedCooldownSeconds": 22,
+      "observedEnhancerRanks": {
+        "cooldown": 2,
+        "stamina": 0,
+        "impact": 2
+      },
+      "descriptionKey": "SkillEnduranceT1Desc"
+    },
+    {
+      "id": "ENDURANCE-T1-CD",
+      "nameKey": "SkillEnduranceT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillEnduranceT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            28,
+            22,
+            17,
+            13,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T1-STA",
+      "nameKey": "SkillEnduranceT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillEnduranceT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            14,
+            9,
+            5,
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T1-IMP",
+      "nameKey": "SkillEnduranceT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillEnduranceT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T1-WAY-1",
+      "nameKey": "SkillEnduranceT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillEnduranceT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ENDURANCE-T1-WAY-2",
+      "nameKey": "SkillEnduranceT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillEnduranceT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ENDURANCE-T2",
+      "nameKey": "SkillEnduranceT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillEnduranceT2Desc",
+      "baseStaminaCost": 50,
+      "baseCooldownSeconds": 390,
+      "radiusMeters": 20,
+      "buffDurationSeconds": 5,
+      "unlockDisplayed": 16
+    },
+    {
+      "id": "ENDURANCE-T2-CD",
+      "nameKey": "SkillEnduranceT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillEnduranceT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            306,
+            234,
+            174,
+            126,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T2-STA",
+      "nameKey": "SkillEnduranceT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillEnduranceT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T2-IMP",
+      "nameKey": "SkillEnduranceT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillEnduranceT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricHasteDuration",
+          "unit": "s",
+          "values": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T2-WAY-1",
+      "nameKey": "SkillEnduranceT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillEnduranceT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ENDURANCE-T2-WAY-2",
+      "nameKey": "SkillEnduranceT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillEnduranceT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ENDURANCE-T3",
+      "nameKey": "SkillEnduranceT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillEnduranceT3Desc",
+      "baseStaminaCost": 25,
+      "baseCooldownSeconds": 900,
+      "buffDurationSeconds": 5,
+      "maxStaminaBonus": 50,
+      "staminaGranted": 50,
+      "unlockDisplayed": 31
+    },
+    {
+      "id": "ENDURANCE-T3-CD",
+      "nameKey": "SkillEnduranceT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillEnduranceT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            732,
+            588,
+            468,
+            372,
+            300
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T3-STA",
+      "nameKey": "SkillEnduranceT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillEnduranceT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            18,
+            12,
+            7,
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T3-IMP",
+      "nameKey": "SkillEnduranceT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillEnduranceT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraMaxStamina",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            60,
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "metricKey": "MetricInstantStamina",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            60,
+            70,
+            80,
+            90,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENDURANCE-T3-WAY-1",
+      "nameKey": "SkillEnduranceT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillEnduranceT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ENDURANCE-T3-WAY-2",
+      "nameKey": "SkillEnduranceT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillEnduranceT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ENDURANCE-ULT",
+      "nameKey": "SkillEnduranceUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillEnduranceUltDesc",
+      "cannotBeNeutralized": true,
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            3,
+            3,
+            4,
+            4,
+            5
+          ]
+        },
+        {
+          "metricKey": "MetricRegeneration",
+          "unit": "%",
+          "values": [
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraStamina",
+      "value": 3,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraStamina",
+      "value": 6,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraStamina",
+      "value": 9,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraStamina",
+      "value": 12,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraStamina",
+      "value": 15,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraStamina",
+      "value": 18,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraStamina",
+      "value": 21,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraStamina",
+      "value": 24,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraStamina",
+      "value": 27,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraStamina",
+      "value": 30,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 11,
+      "metricKey": "MetricExtraStamina",
+      "value": 33,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 12,
+      "metricKey": "MetricExtraStamina",
+      "value": 36,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 13,
+      "metricKey": "MetricExtraStamina",
+      "value": 39,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 14,
+      "metricKey": "MetricExtraStamina",
+      "value": 42,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P1",
+      "rank": 15,
+      "metricKey": "MetricExtraStamina",
+      "value": 45,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-P2",
+      "rank": 1,
+      "metricKey": "MetricStaminaRegen",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P2",
+      "rank": 2,
+      "metricKey": "MetricStaminaRegen",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P2",
+      "rank": 3,
+      "metricKey": "MetricStaminaRegen",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P2",
+      "rank": 4,
+      "metricKey": "MetricStaminaRegen",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P2",
+      "rank": 5,
+      "metricKey": "MetricStaminaRegen",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P3",
+      "rank": 1,
+      "metricKey": "MetricSafeFallHeight",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P3",
+      "rank": 2,
+      "metricKey": "MetricSafeFallHeight",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P3",
+      "rank": 3,
+      "metricKey": "MetricSafeFallHeight",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P3",
+      "rank": 4,
+      "metricKey": "MetricSafeFallHeight",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P3",
+      "rank": 5,
+      "metricKey": "MetricSafeFallHeight",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P4",
+      "rank": 1,
+      "metricKey": "MetricSprintJumpCostReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P4",
+      "rank": 2,
+      "metricKey": "MetricSprintJumpCostReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P4",
+      "rank": 3,
+      "metricKey": "MetricSprintJumpCostReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P4",
+      "rank": 4,
+      "metricKey": "MetricSprintJumpCostReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-P4",
+      "rank": 5,
+      "metricKey": "MetricSprintJumpCostReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 22,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 17,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 13,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 14,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 9,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 5,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 2,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 0,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T1-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 11,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T1-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 13,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 306,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 234,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 174,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 126,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 90,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 37,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 32,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 28,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 25,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricHasteDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricHasteDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricHasteDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricHasteDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricHasteDuration",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 732,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 588,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 468,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 372,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 300,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 18,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 12,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 7,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 3,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 0,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraMaxStamina",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraMaxStamina",
+      "value": 70,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraMaxStamina",
+      "value": 80,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraMaxStamina",
+      "value": 90,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraMaxStamina",
+      "value": 100,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricInstantStamina",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricInstantStamina",
+      "value": 70,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricInstantStamina",
+      "value": 80,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricInstantStamina",
+      "value": 90,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricInstantStamina",
+      "value": 100,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 1,
+      "metricKey": "MetricRegeneration",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 2,
+      "metricKey": "MetricRegeneration",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 3,
+      "metricKey": "MetricRegeneration",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 4,
+      "metricKey": "MetricRegeneration",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "ENDURANCE-ULT",
+      "rank": 5,
+      "metricKey": "MetricRegeneration",
+      "value": 50,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "ENDURANCE-P1": {
+      "unlocked": "assets/skills/EnduranceP1SkilledAthlete.png"
+    },
+    "ENDURANCE-P2": {
+      "unlocked": "assets/skills/EnduranceP2MeditativeTraining.png"
+    },
+    "ENDURANCE-P3": {
+      "locked": "assets/skills/EnduranceP3SituationalAwareness.png"
+    },
+    "ENDURANCE-P4": {
+      "locked": "assets/skills/EnduranceP4Plyometrics.png"
+    },
+    "ENDURANCE-T1": {
+      "unlocked": "assets/skills/EnduranceT1MarathonLungs.png"
+    },
+    "ENDURANCE-T1-CD": {
+      "unlocked": "assets/skills/EnduranceT1MarathonLungs.png"
+    },
+    "ENDURANCE-T1-STA": {
+      "locked": "assets/skills/EnduranceT1MarathonLungs.png"
+    },
+    "ENDURANCE-T1-IMP": {
+      "unlocked": "assets/skills/EnduranceT1MarathonLungs.png"
+    },
+    "ENDURANCE-T1-WAY-1": {
+      "locked": "assets/skills/EnduranceT1MarathonLungs.png"
+    },
+    "ENDURANCE-T1-WAY-2": {
+      "locked": "assets/skills/EnduranceT1MarathonLungs.png"
+    },
+    "ENDURANCE-T2": {
+      "locked": "assets/skills/EnduranceT2DoubleTime.png"
+    },
+    "ENDURANCE-T2-CD": {
+      "locked": "assets/skills/EnduranceT2DoubleTime.png"
+    },
+    "ENDURANCE-T2-STA": {
+      "locked": "assets/skills/EnduranceT2DoubleTime.png"
+    },
+    "ENDURANCE-T2-IMP": {
+      "locked": "assets/skills/EnduranceT2DoubleTime.png"
+    },
+    "ENDURANCE-T2-WAY-1": {
+      "locked": "assets/skills/EnduranceT2DoubleTime.png"
+    },
+    "ENDURANCE-T2-WAY-2": {
+      "locked": "assets/skills/EnduranceT2DoubleTime.png"
+    },
+    "ENDURANCE-T3": {
+      "locked": "assets/skills/EnduranceT3SecondWind.png"
+    },
+    "ENDURANCE-T3-CD": {
+      "locked": "assets/skills/EnduranceT3SecondWind.png"
+    },
+    "ENDURANCE-T3-STA": {
+      "locked": "assets/skills/EnduranceT3SecondWind.png"
+    },
+    "ENDURANCE-T3-IMP": {
+      "locked": "assets/skills/EnduranceT3SecondWind.png"
+    },
+    "ENDURANCE-T3-WAY-1": {
+      "locked": "assets/skills/EnduranceT3SecondWind.png"
+    },
+    "ENDURANCE-T3-WAY-2": {
+      "locked": "assets/skills/EnduranceT3SecondWind.png"
+    },
+    "ENDURANCE-ULT": {
+      "locked": "assets/skills/EnduranceULTLastStand.png"
+    }
+  }
+}

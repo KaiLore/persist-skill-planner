@@ -1,0 +1,1491 @@
+{
+  "schemaVersion": 1,
+  "version": "0.2",
+  "date": "2026-10-20",
+  "professionKey": "LabelTreeFishingName",
+  "professionId": "FISH",
+  "skills": [
+    {
+      "id": "FISH-P1",
+      "nameKey": "SkillFishingP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "requiredTreePoints": 0,
+      "descriptionKey": "SkillFishingP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-P2",
+      "nameKey": "SkillFishingP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "requiredTreePoints": 0,
+      "descriptionKey": "SkillFishingP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-P3",
+      "nameKey": "SkillFishingP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingP3Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLoss",
+          "unit": "%",
+          "values": [
+            -5,
+            -10,
+            -15,
+            -20,
+            -25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-P4",
+      "nameKey": "SkillFishingP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingP4Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricSwimSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "metricKey": "MetricDiveDuration",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-P5",
+      "nameKey": "SkillFishingP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingP5Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaRegen",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T1",
+      "nameKey": "SkillFishingT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "requiredTreePoints": 7,
+      "descriptionKey": "SkillFishingT1Desc",
+      "effectiveEffects": [
+        {
+          "slot": "effect0",
+          "metricKey": "MetricTraumatizedDuration",
+          "unit": "s",
+          "base": 1
+        },
+        {
+          "slot": "effect1",
+          "metricKey": "MetricDazed",
+          "unit": "s",
+          "base": 1
+        }
+      ],
+      "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc"
+    },
+    {
+      "id": "FISH-T2",
+      "nameKey": "SkillFishingT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingT2Desc",
+      "effectiveEffects": [
+        {
+          "slot": "effect0",
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "base": 10
+        }
+      ],
+      "effectiveDescriptionKey": "SkillFishingT2EffectiveDesc"
+    },
+    {
+      "id": "FISH-T3",
+      "nameKey": "SkillFishingT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingT3Desc"
+    },
+    {
+      "id": "FISH-ULT",
+      "nameKey": "SkillFishingUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "requiredTreePoints": 46,
+      "descriptionKey": "SkillFishingUltDesc"
+    },
+    {
+      "id": "FISH-T1-CD",
+      "nameKey": "SkillFishingT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "requiredTreePoints": 7,
+      "descriptionKey": "SkillFishingT1CooldownDesc",
+      "parent": "FISH-T1",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T1-STA",
+      "nameKey": "SkillFishingT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "requiredTreePoints": 7,
+      "descriptionKey": "SkillFishingT1StaminaDesc",
+      "parent": "FISH-T1",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T1-IMP",
+      "nameKey": "SkillFishingT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "requiredTreePoints": 7,
+      "descriptionKey": "SkillFishingT1ImpactDesc",
+      "parent": "FISH-T1",
+      "metrics": [
+        {
+          "metricKey": "MetricTraumatizedDuration",
+          "unit": "s",
+          "values": [
+            2,
+            2,
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "metricKey": "MetricDazed",
+          "unit": "s",
+          "values": [
+            1,
+            2,
+            2,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T2-CD",
+      "nameKey": "SkillFishingT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingT2CooldownDesc",
+      "parent": "FISH-T2",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T2-STA",
+      "nameKey": "SkillFishingT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingT2StaminaDesc",
+      "parent": "FISH-T2",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T2-IMP",
+      "nameKey": "SkillFishingT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingT2ImpactDesc",
+      "parent": "FISH-T2",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISH-T3-CD",
+      "nameKey": "SkillFishingT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingT3CooldownDesc",
+      "parent": "FISH-T3"
+    },
+    {
+      "id": "FISH-T3-STA",
+      "nameKey": "SkillFishingT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingT3StaminaDesc",
+      "parent": "FISH-T3"
+    },
+    {
+      "id": "FISH-T3-IMP",
+      "nameKey": "SkillFishingT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingT3ImpactDesc",
+      "parent": "FISH-T3"
+    },
+    {
+      "id": "FISH-T1-WAY-REAPER",
+      "nameKey": "SkillFishingT1WayREAPERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "requiredTreePoints": 7,
+      "descriptionKey": "SkillFishingT1WayREAPERDesc",
+      "parent": "FISH-T1",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FISH-T1-WAY-ABHORRENT",
+      "nameKey": "SkillFishingT1WayABHORRENTName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "requiredTreePoints": 7,
+      "descriptionKey": "SkillFishingT1WayABHORRENTDesc",
+      "parent": "FISH-T1",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FISH-T2-WAY-FUGITIVE",
+      "nameKey": "SkillFishingT2WayFUGITIVEName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingT2WayFUGITIVEDesc",
+      "parent": "FISH-T2",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FISH-T2-WAY-BASTION",
+      "nameKey": "SkillFishingT2WayBASTIONName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "requiredTreePoints": 16,
+      "descriptionKey": "SkillFishingT2WayBASTIONDesc",
+      "parent": "FISH-T2",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FISH-T3-WAY-TRAPPER",
+      "nameKey": "SkillFishingT3WayTRAPPERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingT3WayTRAPPERDesc",
+      "parent": "FISH-T3",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FISH-T3-WAY-RAVAGER",
+      "nameKey": "SkillFishingT3WayRAVAGERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "requiredTreePoints": 31,
+      "descriptionKey": "SkillFishingT3WayRAVAGERDesc",
+      "parent": "FISH-T3",
+      "requiredSkillPoints": 11
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "FISH-T3-CD",
+      "rank": 0,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T3-STA",
+      "rank": 0,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T3-IMP",
+      "rank": 0,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 110,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 120,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 130,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 140,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 150,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 1,
+      "metricKey": "MetricConfused",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 1,
+      "metricKey": "MetricDisgusted",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 1,
+      "metricKey": "MetricCrippled",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 1,
+      "metricKey": "MetricPoisoned",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 2,
+      "metricKey": "MetricConfused",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 2,
+      "metricKey": "MetricDisgusted",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 2,
+      "metricKey": "MetricCrippled",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 2,
+      "metricKey": "MetricPoisoned",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 3,
+      "metricKey": "MetricConfused",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 3,
+      "metricKey": "MetricDisgusted",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 3,
+      "metricKey": "MetricCrippled",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 3,
+      "metricKey": "MetricPoisoned",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 4,
+      "metricKey": "MetricConfused",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 4,
+      "metricKey": "MetricDisgusted",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 4,
+      "metricKey": "MetricCrippled",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 4,
+      "metricKey": "MetricPoisoned",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 5,
+      "metricKey": "MetricConfused",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 5,
+      "metricKey": "MetricDisgusted",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 5,
+      "metricKey": "MetricCrippled",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-ULT",
+      "rank": 5,
+      "metricKey": "MetricPoisoned",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraLootChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraLootChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraLootChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraLootChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraLootChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraLootChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraLootChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraLootChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraLootChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraLootChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P2",
+      "rank": 1,
+      "metricKey": "MetricGatherSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P2",
+      "rank": 2,
+      "metricKey": "MetricGatherSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P2",
+      "rank": 3,
+      "metricKey": "MetricGatherSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P2",
+      "rank": 4,
+      "metricKey": "MetricGatherSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P2",
+      "rank": 5,
+      "metricKey": "MetricGatherSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -5,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -25,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 1,
+      "metricKey": "MetricSwimSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 2,
+      "metricKey": "MetricSwimSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 3,
+      "metricKey": "MetricSwimSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 4,
+      "metricKey": "MetricSwimSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 5,
+      "metricKey": "MetricSwimSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 1,
+      "metricKey": "MetricDiveDuration",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 2,
+      "metricKey": "MetricDiveDuration",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 3,
+      "metricKey": "MetricDiveDuration",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 4,
+      "metricKey": "MetricDiveDuration",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P4",
+      "rank": 5,
+      "metricKey": "MetricDiveDuration",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P5",
+      "rank": 1,
+      "metricKey": "MetricStaminaRegen",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P5",
+      "rank": 2,
+      "metricKey": "MetricStaminaRegen",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P5",
+      "rank": 3,
+      "metricKey": "MetricStaminaRegen",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P5",
+      "rank": 4,
+      "metricKey": "MetricStaminaRegen",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-P5",
+      "rank": 5,
+      "metricKey": "MetricStaminaRegen",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "FISH-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricTraumatizedDuration",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricTraumatizedDuration",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricTraumatizedDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricTraumatizedDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricTraumatizedDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDazed",
+      "value": 1,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDazed",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDazed",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDazed",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDazed",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 14,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 16,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 18,
+      "unit": "s"
+    },
+    {
+      "skillId": "FISH-T2-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 20,
+      "unit": "s"
+    }
+  ],
+  "debuffs": [
+    {
+      "id": "neutralized",
+      "nameKey": "TreeNeutralizedName",
+      "effectKey": "TreeNeutralizedDesc"
+    },
+    {
+      "id": "slowed",
+      "nameKey": "TreeSlowedName",
+      "effectKey": "TreeSlowedDesc"
+    },
+    {
+      "id": "vulnerable",
+      "nameKey": "TreeVulnerableName",
+      "effectKey": "TreeVulnerableDesc"
+    },
+    {
+      "id": "confused",
+      "nameKey": "TreeConfusedName",
+      "effectKey": "TreeConfusedDesc"
+    },
+    {
+      "id": "disgusted",
+      "nameKey": "TreeDisgustedName",
+      "effectKey": "TreeDisgustedDesc"
+    },
+    {
+      "id": "crippled",
+      "nameKey": "TreeCrippledName",
+      "effectKey": "TreeCrippledDesc"
+    },
+    {
+      "id": "poisoned",
+      "nameKey": "TreePoisonedName",
+      "effectKey": "TreePoisonedDesc"
+    },
+    {
+      "id": "dazed",
+      "nameKey": "TreeDazedName",
+      "effectKey": "TreeDazedDesc"
+    },
+    {
+      "id": "traumatized",
+      "nameKey": "TreeTraumatizedName",
+      "effectKey": "TreeTraumatizedDesc"
+    }
+  ],
+  "icons": {
+    "FISH-P1": "assets/skills/FishingP1EfficientAngler.png",
+    "FISH-P2": "assets/skills/FishingP2FasterFishing.png",
+    "FISH-T1": "assets/skills/FishingT1RottenFishSlap.png"
+  },
+  "references": [
+    {
+      "nameKey": "TreeFishingName"
+    },
+    {
+      "nameKey": "TreeFishingName2"
+    }
+  ],
+  "rules": {
+    "wayPrerequisitePoints": 11,
+    "wayCost": 1,
+    "maxBudget": 50,
+    "unlockInterpretationKey": "RuleTierUnlockCounting"
+  },
+  "poisonTranscription": {
+    "durationSeconds": 10,
+    "ticks": [
+      {
+        "second": 2,
+        "percentMaxHp": 10
+      },
+      {
+        "second": 4,
+        "percentMaxHp": 7
+      },
+      {
+        "second": 6,
+        "percentMaxHp": 4
+      },
+      {
+        "second": 8,
+        "percentMaxHp": 3
+      },
+      {
+        "second": 10,
+        "percentMaxHp": 2
+      },
+      {
+        "second": 12,
+        "percentMaxHp": 1
+      }
+    ]
+  },
+  "onNextHit": {
+    "windowSeconds": 3,
+    "descriptionKey": "TreeFishingDesc"
+  },
+  "iconVariants": {
+    "FISH-P1": {
+      "locked": "assets/skills/FishingP1EfficientAngler.png",
+      "unlocked": "assets/skills/FishingP1EfficientAngler.png"
+    },
+    "FISH-P2": {
+      "locked": "assets/skills/FishingP2FasterFishing.png",
+      "unlocked": "assets/skills/FishingP2FasterFishing.png"
+    },
+    "FISH-P3": {
+      "locked": "assets/skills/FishingP3FisherSMaintenance.png"
+    },
+    "FISH-P4": {
+      "locked": "assets/skills/FishingP4SkillfulSwimming.png"
+    },
+    "FISH-P5": {
+      "locked": "assets/skills/FishingP5Rainproof.png"
+    },
+    "FISH-T1": {
+      "locked": "assets/skills/FishingT1RottenFishSlap.png",
+      "unlocked": "assets/skills/FishingT1RottenFishSlap.png"
+    },
+    "FISH-T1-CD": {
+      "locked": "assets/skills/FishingT1RottenFishSlap.png"
+    },
+    "FISH-T1-STA": {
+      "locked": "assets/skills/FishingT1RottenFishSlap.png"
+    },
+    "FISH-T1-IMP": {
+      "locked": "assets/skills/FishingT1RottenFishSlap.png"
+    },
+    "FISH-T1-WAY-REAPER": {
+      "locked": "assets/skills/FishingT1RottenFishSlap.png"
+    },
+    "FISH-T1-WAY-ABHORRENT": {
+      "locked": "assets/skills/FishingT1RottenFishSlap.png"
+    },
+    "FISH-T2": {
+      "locked": "assets/skills/FishingT2Steadfast.png"
+    },
+    "FISH-T2-CD": {
+      "locked": "assets/skills/FishingT2Steadfast.png"
+    },
+    "FISH-T2-STA": {
+      "locked": "assets/skills/FishingT2Steadfast.png"
+    },
+    "FISH-T2-IMP": {
+      "locked": "assets/skills/FishingT2Steadfast.png"
+    },
+    "FISH-T2-WAY-FUGITIVE": {
+      "locked": "assets/skills/FishingT2Steadfast.png"
+    },
+    "FISH-T2-WAY-BASTION": {
+      "locked": "assets/skills/FishingT2Steadfast.png"
+    },
+    "FISH-T3": {
+      "locked": "assets/skills/FishingT3CleanCatch.png"
+    },
+    "FISH-T3-CD": {
+      "locked": "assets/skills/FishingT3CleanCatch.png"
+    },
+    "FISH-T3-STA": {
+      "locked": "assets/skills/FishingT3CleanCatch.png"
+    },
+    "FISH-T3-IMP": {
+      "locked": "assets/skills/FishingT3CleanCatch.png"
+    },
+    "FISH-T3-WAY-TRAPPER": {
+      "locked": "assets/skills/FishingT3CleanCatch.png"
+    },
+    "FISH-T3-WAY-RAVAGER": {
+      "locked": "assets/skills/FishingT3CleanCatch.png"
+    },
+    "FISH-ULT": {
+      "locked": "assets/skills/FishingULTCurareCurse.png"
+    }
+  }
+}

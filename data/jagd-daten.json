@@ -1,0 +1,1299 @@
+{
+  "schemaVersion": 1,
+  "professionId": "HUNTING",
+  "professionKey": "LabelTreeHuntingName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "HUNTING-P1",
+      "nameKey": "SkillHuntingP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "effectKey": "SkillHuntingP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-P2",
+      "nameKey": "SkillHuntingP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillHuntingP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-P3",
+      "nameKey": "SkillHuntingP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillHuntingP3Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLossReduction",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-P4",
+      "nameKey": "SkillHuntingP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillHuntingP4Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricNpcCritDamage",
+          "unit": "%",
+          "values": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-P5",
+      "nameKey": "SkillHuntingP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillHuntingP5Desc",
+      "requirementKey": "ConditionRangedUnseen",
+      "unlockDisplayed": 31,
+      "metrics": [
+        {
+          "metricKey": "MetricCritChance",
+          "unit": "%",
+          "values": [
+            10,
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "metricKey": "MetricCritDamage",
+          "unit": "%",
+          "values": [
+            10,
+            15,
+            20,
+            25,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T1",
+      "nameKey": "SkillHuntingT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillHuntingT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "buffDurationSeconds": 4,
+      "damageBonusPercent": 30,
+      "requirementKey": "ConditionMentalDebuff"
+    },
+    {
+      "id": "HUNTING-T1-CD",
+      "nameKey": "SkillHuntingT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillHuntingT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T1-STA",
+      "nameKey": "SkillHuntingT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillHuntingT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T1-IMP",
+      "nameKey": "SkillHuntingT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillHuntingT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricDamageBonus",
+          "unit": "%",
+          "values": [
+            34,
+            38,
+            42,
+            46,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T1-WAY-1",
+      "nameKey": "SkillHuntingT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillHuntingT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "HUNTING-T1-WAY-2",
+      "nameKey": "SkillHuntingT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillHuntingT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "HUNTING-T2",
+      "nameKey": "SkillHuntingT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillHuntingT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "buffDurationSeconds": 6,
+      "criticalChanceBonusPercent": 25,
+      "requirementKey": "ConditionRangedWeapon",
+      "unlockDisplayed": 16
+    },
+    {
+      "id": "HUNTING-T2-CD",
+      "nameKey": "SkillHuntingT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillHuntingT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T2-STA",
+      "nameKey": "SkillHuntingT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillHuntingT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T2-IMP",
+      "nameKey": "SkillHuntingT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillHuntingT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCritChance",
+          "unit": "%",
+          "values": [
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T2-WAY-1",
+      "nameKey": "SkillHuntingT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillHuntingT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "HUNTING-T2-WAY-2",
+      "nameKey": "SkillHuntingT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillHuntingT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "HUNTING-T3",
+      "nameKey": "SkillHuntingT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillHuntingT3Desc",
+      "baseStaminaCost": 50,
+      "baseCooldownSeconds": 600,
+      "radiusMeters": 5,
+      "debuffKey": "EffectStunned",
+      "debuffDurationSeconds": 3,
+      "unlockDisplayed": 31
+    },
+    {
+      "id": "HUNTING-T3-CD",
+      "nameKey": "SkillHuntingT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillHuntingT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            474,
+            366,
+            276,
+            204,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T3-STA",
+      "nameKey": "SkillHuntingT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillHuntingT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            36,
+            24,
+            14,
+            6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T3-IMP",
+      "nameKey": "SkillHuntingT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillHuntingT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricRange",
+          "unit": "m",
+          "values": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HUNTING-T3-WAY-1",
+      "nameKey": "SkillHuntingT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillHuntingT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "HUNTING-T3-WAY-2",
+      "nameKey": "SkillHuntingT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillHuntingT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "HUNTING-ULT",
+      "nameKey": "SkillHuntingUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillHuntingUltDesc",
+      "debuffKey": "EffectStunned",
+      "debuffDurationSeconds": 3,
+      "maxActiveMines": 1,
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            720,
+            630,
+            540,
+            450,
+            360
+          ]
+        },
+        {
+          "metricKey": "TargetHpDamage",
+          "unit": "%",
+          "values": [
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "metricKey": "MetricLifetime",
+          "unit": "s",
+          "values": [
+            120,
+            240,
+            360,
+            480,
+            600
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraLootChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraLootChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraLootChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraLootChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraLootChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraLootChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraLootChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraLootChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraLootChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraLootChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P2",
+      "rank": 1,
+      "metricKey": "MetricGatherSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P2",
+      "rank": 2,
+      "metricKey": "MetricGatherSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P2",
+      "rank": 3,
+      "metricKey": "MetricGatherSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P2",
+      "rank": 4,
+      "metricKey": "MetricGatherSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P2",
+      "rank": 5,
+      "metricKey": "MetricGatherSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P4",
+      "rank": 1,
+      "metricKey": "MetricNpcCritDamage",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P4",
+      "rank": 2,
+      "metricKey": "MetricNpcCritDamage",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P4",
+      "rank": 3,
+      "metricKey": "MetricNpcCritDamage",
+      "value": 18,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P4",
+      "rank": 4,
+      "metricKey": "MetricNpcCritDamage",
+      "value": 24,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P4",
+      "rank": 5,
+      "metricKey": "MetricNpcCritDamage",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 1,
+      "metricKey": "MetricCritChance",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 2,
+      "metricKey": "MetricCritChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 3,
+      "metricKey": "MetricCritChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 4,
+      "metricKey": "MetricCritChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 5,
+      "metricKey": "MetricCritChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 1,
+      "metricKey": "MetricCritDamage",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 2,
+      "metricKey": "MetricCritDamage",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 3,
+      "metricKey": "MetricCritDamage",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 4,
+      "metricKey": "MetricCritDamage",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-P5",
+      "rank": 5,
+      "metricKey": "MetricCritDamage",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 34,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 38,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 42,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 46,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricCritChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricCritChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricCritChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricCritChance",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricCritChance",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 474,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 366,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 276,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 204,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 36,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 24,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 14,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 6,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 0,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricRange",
+      "value": 6,
+      "unit": "m"
+    },
+    {
+      "skillId": "HUNTING-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricRange",
+      "value": 7,
+      "unit": "m"
+    },
+    {
+      "skillId": "HUNTING-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricRange",
+      "value": 8,
+      "unit": "m"
+    },
+    {
+      "skillId": "HUNTING-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricRange",
+      "value": 9,
+      "unit": "m"
+    },
+    {
+      "skillId": "HUNTING-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricRange",
+      "value": 10,
+      "unit": "m"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 720,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 630,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 540,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 450,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 360,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 1,
+      "metricKey": "TargetHpDamage",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 2,
+      "metricKey": "TargetHpDamage",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 3,
+      "metricKey": "TargetHpDamage",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 4,
+      "metricKey": "TargetHpDamage",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 5,
+      "metricKey": "TargetHpDamage",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 1,
+      "metricKey": "MetricLifetime",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 2,
+      "metricKey": "MetricLifetime",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 3,
+      "metricKey": "MetricLifetime",
+      "value": 360,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 4,
+      "metricKey": "MetricLifetime",
+      "value": 480,
+      "unit": "s"
+    },
+    {
+      "skillId": "HUNTING-ULT",
+      "rank": 5,
+      "metricKey": "MetricLifetime",
+      "value": 600,
+      "unit": "s"
+    }
+  ],
+  "iconVariants": {
+    "HUNTING-P1": {
+      "locked": "assets/skills/HuntingP1EfficientHuntsman.png"
+    },
+    "HUNTING-P2": {
+      "locked": "assets/skills/HuntingP2FasterSkinning.png"
+    },
+    "HUNTING-P3": {
+      "locked": "assets/skills/HuntingP3RangerSMaintenance.png"
+    },
+    "HUNTING-P4": {
+      "locked": "assets/skills/HuntingP4AnimalAnatomy.png"
+    },
+    "HUNTING-P5": {
+      "locked": "assets/skills/HuntingP5StalkingYourPrey.png"
+    },
+    "HUNTING-T1": {
+      "unlocked": "assets/skills/HuntingT1InstinctOverride.png"
+    },
+    "HUNTING-T1-CD": {
+      "unlocked": "assets/skills/HuntingT1InstinctOverride.png"
+    },
+    "HUNTING-T1-STA": {
+      "unlocked": "assets/skills/HuntingT1InstinctOverride.png"
+    },
+    "HUNTING-T1-IMP": {
+      "locked": "assets/skills/HuntingT1InstinctOverride.png"
+    },
+    "HUNTING-T1-WAY-1": {
+      "locked": "assets/skills/HuntingT1InstinctOverride.png"
+    },
+    "HUNTING-T1-WAY-2": {
+      "locked": "assets/skills/HuntingT1InstinctOverride.png"
+    },
+    "HUNTING-T2": {
+      "locked": "assets/skills/HuntingT2HeartShots.png"
+    },
+    "HUNTING-T2-CD": {
+      "locked": "assets/skills/HuntingT2HeartShots.png"
+    },
+    "HUNTING-T2-STA": {
+      "locked": "assets/skills/HuntingT2HeartShots.png"
+    },
+    "HUNTING-T2-IMP": {
+      "locked": "assets/skills/HuntingT2HeartShots.png"
+    },
+    "HUNTING-T2-WAY-1": {
+      "locked": "assets/skills/HuntingT2HeartShots.png"
+    },
+    "HUNTING-T2-WAY-2": {
+      "locked": "assets/skills/HuntingT2HeartShots.png"
+    },
+    "HUNTING-T3": {
+      "locked": "assets/skills/HuntingT3HunterSHowl.png"
+    },
+    "HUNTING-T3-CD": {
+      "locked": "assets/skills/HuntingT3HunterSHowl.png"
+    },
+    "HUNTING-T3-STA": {
+      "locked": "assets/skills/HuntingT3HunterSHowl.png"
+    },
+    "HUNTING-T3-IMP": {
+      "locked": "assets/skills/HuntingT3HunterSHowl.png"
+    },
+    "HUNTING-T3-WAY-1": {
+      "locked": "assets/skills/HuntingT3HunterSHowl.png"
+    },
+    "HUNTING-T3-WAY-2": {
+      "locked": "assets/skills/HuntingT3HunterSHowl.png"
+    },
+    "HUNTING-ULT": {
+      "locked": "assets/skills/HuntingULTStasisMine.png"
+    }
+  }
+}

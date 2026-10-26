@@ -1,0 +1,1459 @@
+{
+  "schemaVersion": 1,
+  "treeId": "MACHINEGUNS",
+  "nameKey": "TreeMachineGunName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "MACHINEGUNS-P1",
+      "nameKey": "SkillMachineGunP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-P1",
+        "nameKey": "SkillMachineGunP1Name",
+        "effectKey": "SkillMachineGunP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunP1Desc"
+    },
+    {
+      "id": "MACHINEGUNS-P2",
+      "nameKey": "SkillMachineGunP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-P2",
+        "nameKey": "SkillMachineGunP2Name",
+        "effectKey": "SkillMachineGunP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricReloadSpeed",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunP2Desc"
+    },
+    {
+      "id": "MACHINEGUNS-P3",
+      "nameKey": "SkillMachineGunP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-P3",
+        "nameKey": "SkillMachineGunP3Name",
+        "effectKey": "SkillMachineGunP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunP3Desc"
+    },
+    {
+      "id": "MACHINEGUNS-P4",
+      "nameKey": "SkillMachineGunP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-P4",
+        "nameKey": "SkillMachineGunP4Name",
+        "effectKey": "SkillMachineGunP4Desc",
+        "requiresPiercingDamage": true,
+        "metrics": [
+          {
+            "metricKey": "MetricVulnerableChance",
+            "unit": "%",
+            "values": [
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          },
+          {
+            "metricKey": "MetricVulnerableDuration",
+            "unit": "s",
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunP4Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T1",
+      "nameKey": "SkillMachineGunT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T1",
+        "nameKey": "SkillMachineGunT1Name",
+        "effectKey": "SkillMachineGunT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 8,
+        "baseDamageBonusPercent": 25,
+        "piercingDamageBonusPercent": 25,
+        "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+      },
+      "descriptionKey": "SkillMachineGunT1Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T1-CD",
+      "nameKey": "SkillMachineGunT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T1",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T1-CD",
+        "nameKey": "SkillMachineGunT1CooldownName",
+        "effectKey": "SkillMachineGunT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT1CooldownDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T1-STA",
+      "nameKey": "SkillMachineGunT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T1",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T1-STA",
+        "nameKey": "SkillMachineGunT1StaminaName",
+        "effectKey": "SkillMachineGunT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT1StaminaDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T1-IMP",
+      "nameKey": "SkillMachineGunT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T1",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T1-IMP",
+        "nameKey": "SkillMachineGunT1ImpactName",
+        "effectKey": "SkillMachineGunT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              29,
+              33,
+              37,
+              41,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT1ImpactDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T1-WAY-1",
+      "nameKey": "SkillMachineGunT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "MACHINEGUNS-T1",
+      "order": 1,
+      "details": {
+        "id": "MACHINEGUNS-T1-WAY-1",
+        "nameKey": "SkillMachineGunT1Way1Name",
+        "effectKey": "SkillMachineGunT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillMachineGunT1Way1Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T1-WAY-2",
+      "nameKey": "SkillMachineGunT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "MACHINEGUNS-T1",
+      "order": 2,
+      "details": {
+        "id": "MACHINEGUNS-T1-WAY-2",
+        "nameKey": "SkillMachineGunT1Way2Name",
+        "effectKey": "SkillMachineGunT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillMachineGunT1Way2Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T2",
+      "nameKey": "SkillMachineGunT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T2",
+        "nameKey": "SkillMachineGunT2Name",
+        "effectKey": "SkillMachineGunT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "buffDurationSeconds": 12,
+        "baseDamageBonusPercent": 20,
+        "accuracyBonusPercent": 50,
+        "recoilReductionPercent": 50,
+        "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+      },
+      "descriptionKey": "SkillMachineGunT2Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T2-CD",
+      "nameKey": "SkillMachineGunT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T2",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T2-CD",
+        "nameKey": "SkillMachineGunT2CooldownName",
+        "effectKey": "SkillMachineGunT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT2CooldownDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T2-STA",
+      "nameKey": "SkillMachineGunT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T2",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T2-STA",
+        "nameKey": "SkillMachineGunT2StaminaName",
+        "effectKey": "SkillMachineGunT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT2StaminaDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T2-IMP",
+      "nameKey": "SkillMachineGunT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T2",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T2-IMP",
+        "nameKey": "SkillMachineGunT2ImpactName",
+        "effectKey": "SkillMachineGunT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              25,
+              30,
+              35,
+              40,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT2ImpactDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T2-WAY-1",
+      "nameKey": "SkillMachineGunT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "MACHINEGUNS-T2",
+      "order": 1,
+      "details": {
+        "id": "MACHINEGUNS-T2-WAY-1",
+        "nameKey": "SkillMachineGunT2Way1Name",
+        "effectKey": "SkillMachineGunT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillMachineGunT2Way1Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T2-WAY-2",
+      "nameKey": "SkillMachineGunT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "MACHINEGUNS-T2",
+      "order": 2,
+      "details": {
+        "id": "MACHINEGUNS-T2-WAY-2",
+        "nameKey": "SkillMachineGunT2Way2Name",
+        "effectKey": "SkillMachineGunT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillMachineGunT2Way2Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T3",
+      "nameKey": "SkillMachineGunT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T3",
+        "nameKey": "SkillMachineGunT3Name",
+        "effectKey": "SkillMachineGunT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "buffDurationSeconds": 8,
+        "baseDamageBonusPercent": 30,
+        "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+      },
+      "descriptionKey": "SkillMachineGunT3Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T3-CD",
+      "nameKey": "SkillMachineGunT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T3",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T3-CD",
+        "nameKey": "SkillMachineGunT3CooldownName",
+        "effectKey": "SkillMachineGunT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT3CooldownDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T3-STA",
+      "nameKey": "SkillMachineGunT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T3",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T3-STA",
+        "nameKey": "SkillMachineGunT3StaminaName",
+        "effectKey": "SkillMachineGunT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT3StaminaDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T3-IMP",
+      "nameKey": "SkillMachineGunT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "MACHINEGUNS-T3",
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-T3-IMP",
+        "nameKey": "SkillMachineGunT3ImpactName",
+        "effectKey": "SkillMachineGunT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              34,
+              38,
+              42,
+              46,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunT3ImpactDesc"
+    },
+    {
+      "id": "MACHINEGUNS-T3-WAY-1",
+      "nameKey": "SkillMachineGunT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "MACHINEGUNS-T3",
+      "order": 1,
+      "details": {
+        "id": "MACHINEGUNS-T3-WAY-1",
+        "nameKey": "SkillMachineGunT3Way1Name",
+        "effectKey": "SkillMachineGunT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillMachineGunT3Way1Desc"
+    },
+    {
+      "id": "MACHINEGUNS-T3-WAY-2",
+      "nameKey": "SkillMachineGunT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "MACHINEGUNS-T3",
+      "order": 2,
+      "details": {
+        "id": "MACHINEGUNS-T3-WAY-2",
+        "nameKey": "SkillMachineGunT3Way2Name",
+        "effectKey": "SkillMachineGunT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillMachineGunT3Way2Desc"
+    },
+    {
+      "id": "MACHINEGUNS-ULT",
+      "nameKey": "SkillMachineGunUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "MACHINEGUNS-ULT",
+        "nameKey": "SkillMachineGunUltName",
+        "effectKey": "SkillMachineGunUltDesc",
+        "stacksPerHit": true,
+        "requiresActiveWeaponKey": "LabelTreeMachineGunName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "EffectDuration",
+            "unit": "s",
+            "values": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "metricKey": "MetricDamagePerHit",
+            "unit": "%",
+            "values": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillMachineGunUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P2",
+      "rank": 1,
+      "metricKey": "MetricReloadSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P2",
+      "rank": 2,
+      "metricKey": "MetricReloadSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P2",
+      "rank": 3,
+      "metricKey": "MetricReloadSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P2",
+      "rank": 4,
+      "metricKey": "MetricReloadSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P2",
+      "rank": 5,
+      "metricKey": "MetricReloadSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 1,
+      "metricKey": "MetricVulnerableChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 2,
+      "metricKey": "MetricVulnerableChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 3,
+      "metricKey": "MetricVulnerableChance",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 4,
+      "metricKey": "MetricVulnerableChance",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 5,
+      "metricKey": "MetricVulnerableChance",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 1,
+      "metricKey": "MetricVulnerableDuration",
+      "value": 1,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 2,
+      "metricKey": "MetricVulnerableDuration",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 3,
+      "metricKey": "MetricVulnerableDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 4,
+      "metricKey": "MetricVulnerableDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-P4",
+      "rank": 5,
+      "metricKey": "MetricVulnerableDuration",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 33,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 34,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 38,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 42,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 46,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 1,
+      "metricKey": "MetricDamagePerHit",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 2,
+      "metricKey": "MetricDamagePerHit",
+      "value": 7,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 3,
+      "metricKey": "MetricDamagePerHit",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 4,
+      "metricKey": "MetricDamagePerHit",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "MACHINEGUNS-ULT",
+      "rank": 5,
+      "metricKey": "MetricDamagePerHit",
+      "value": 10,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "MACHINEGUNS-P1": {
+      "locked": "assets/skills/MachineGunsP1SkilledMachineGunner.png"
+    },
+    "MACHINEGUNS-P2": {
+      "locked": "assets/skills/MachineGunsP2StrategicHandPositioning.png"
+    },
+    "MACHINEGUNS-P3": {
+      "locked": "assets/skills/MachineGunsP3PartReplacement.png"
+    },
+    "MACHINEGUNS-P4": {
+      "locked": "assets/skills/MachineGunsP4RipTear.png"
+    },
+    "MACHINEGUNS-T1": {
+      "locked": "assets/skills/MachineGunsT1MowEmDown.png"
+    },
+    "MACHINEGUNS-T1-CD": {
+      "locked": "assets/skills/MachineGunsT1MowEmDown.png"
+    },
+    "MACHINEGUNS-T1-STA": {
+      "locked": "assets/skills/MachineGunsT1MowEmDown.png"
+    },
+    "MACHINEGUNS-T1-IMP": {
+      "locked": "assets/skills/MachineGunsT1MowEmDown.png"
+    },
+    "MACHINEGUNS-T1-WAY-1": {
+      "locked": "assets/skills/MachineGunsT1MowEmDown.png"
+    },
+    "MACHINEGUNS-T1-WAY-2": {
+      "locked": "assets/skills/MachineGunsT1MowEmDown.png"
+    },
+    "MACHINEGUNS-T2": {
+      "locked": "assets/skills/MachineGunsT2ZeroedIn.png"
+    },
+    "MACHINEGUNS-T2-CD": {
+      "locked": "assets/skills/MachineGunsT2ZeroedIn.png"
+    },
+    "MACHINEGUNS-T2-STA": {
+      "locked": "assets/skills/MachineGunsT2ZeroedIn.png"
+    },
+    "MACHINEGUNS-T2-IMP": {
+      "locked": "assets/skills/MachineGunsT2ZeroedIn.png"
+    },
+    "MACHINEGUNS-T2-WAY-1": {
+      "locked": "assets/skills/MachineGunsT2ZeroedIn.png"
+    },
+    "MACHINEGUNS-T2-WAY-2": {
+      "locked": "assets/skills/MachineGunsT2ZeroedIn.png"
+    },
+    "MACHINEGUNS-T3": {
+      "locked": "assets/skills/MachineGunsT3SuppressiveFire.png"
+    },
+    "MACHINEGUNS-T3-CD": {
+      "locked": "assets/skills/MachineGunsT3SuppressiveFire.png"
+    },
+    "MACHINEGUNS-T3-STA": {
+      "locked": "assets/skills/MachineGunsT3SuppressiveFire.png"
+    },
+    "MACHINEGUNS-T3-IMP": {
+      "locked": "assets/skills/MachineGunsT3SuppressiveFire.png"
+    },
+    "MACHINEGUNS-T3-WAY-1": {
+      "locked": "assets/skills/MachineGunsT3SuppressiveFire.png"
+    },
+    "MACHINEGUNS-T3-WAY-2": {
+      "locked": "assets/skills/MachineGunsT3SuppressiveFire.png"
+    },
+    "MACHINEGUNS-ULT": {
+      "locked": "assets/skills/MachineGunsULTOverkill.png"
+    }
+  }
+}

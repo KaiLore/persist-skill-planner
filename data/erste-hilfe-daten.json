@@ -1,0 +1,1405 @@
+{
+  "schemaVersion": 1,
+  "treeId": "FIRSTAID",
+  "nameKey": "TreeFirstAidName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "FIRSTAID-P1",
+      "nameKey": "SkillFirstAidP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-P1",
+        "nameKey": "SkillFirstAidP1Name",
+        "effectKey": "SkillFirstAidP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraHealing",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidP1Desc"
+    },
+    {
+      "id": "FIRSTAID-P2",
+      "nameKey": "SkillFirstAidP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-P2",
+        "nameKey": "SkillFirstAidP2Name",
+        "effectKey": "SkillFirstAidP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricUseSpeed",
+            "unit": "%",
+            "values": [
+              10,
+              20,
+              30,
+              40,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidP2Desc"
+    },
+    {
+      "id": "FIRSTAID-P3",
+      "nameKey": "SkillFirstAidP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-P3",
+        "nameKey": "SkillFirstAidP3Name",
+        "effectKey": "SkillFirstAidP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricMaxHp",
+            "unit": "%",
+            "values": [
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18,
+              20
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidP3Desc"
+    },
+    {
+      "id": "FIRSTAID-P4",
+      "nameKey": "SkillFirstAidP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-P4",
+        "nameKey": "SkillFirstAidP4Name",
+        "effectKey": "SkillFirstAidP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDoubleEffectChance",
+            "unit": "%",
+            "values": [
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidP4Desc"
+    },
+    {
+      "id": "FIRSTAID-T1",
+      "nameKey": "SkillFirstAidT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T1",
+        "nameKey": "SkillFirstAidT1Name",
+        "effectKey": "SkillFirstAidT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 105,
+        "buffDurationSeconds": 30,
+        "baseDebuffBlockChancePercent": 5
+      },
+      "descriptionKey": "SkillFirstAidT1Desc"
+    },
+    {
+      "id": "FIRSTAID-T1-CD",
+      "nameKey": "SkillFirstAidT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T1",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T1-CD",
+        "nameKey": "SkillFirstAidT1CooldownName",
+        "effectKey": "SkillFirstAidT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              84,
+              66,
+              51,
+              39,
+              30
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT1CooldownDesc"
+    },
+    {
+      "id": "FIRSTAID-T1-STA",
+      "nameKey": "SkillFirstAidT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T1",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T1-STA",
+        "nameKey": "SkillFirstAidT1StaminaName",
+        "effectKey": "SkillFirstAidT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT1StaminaDesc"
+    },
+    {
+      "id": "FIRSTAID-T1-IMP",
+      "nameKey": "SkillFirstAidT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T1",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T1-IMP",
+        "nameKey": "SkillFirstAidT1ImpactName",
+        "effectKey": "SkillFirstAidT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDebuffBlockChance",
+            "unit": "%",
+            "values": [
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT1ImpactDesc"
+    },
+    {
+      "id": "FIRSTAID-T1-WAY-1",
+      "nameKey": "SkillFirstAidT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "FIRSTAID-T1",
+      "order": 1,
+      "details": {
+        "id": "FIRSTAID-T1-WAY-1",
+        "nameKey": "SkillFirstAidT1Way1Name",
+        "effectKey": "SkillFirstAidT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillFirstAidT1Way1Desc"
+    },
+    {
+      "id": "FIRSTAID-T1-WAY-2",
+      "nameKey": "SkillFirstAidT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "FIRSTAID-T1",
+      "order": 2,
+      "details": {
+        "id": "FIRSTAID-T1-WAY-2",
+        "nameKey": "SkillFirstAidT1Way2Name",
+        "effectKey": "SkillFirstAidT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillFirstAidT1Way2Desc"
+    },
+    {
+      "id": "FIRSTAID-T2",
+      "nameKey": "SkillFirstAidT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T2",
+        "nameKey": "SkillFirstAidT2Name",
+        "effectKey": "SkillFirstAidT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "buffDurationSeconds": 20,
+        "baseDamageBonusPercent": 5
+      },
+      "descriptionKey": "SkillFirstAidT2Desc"
+    },
+    {
+      "id": "FIRSTAID-T2-CD",
+      "nameKey": "SkillFirstAidT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T2",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T2-CD",
+        "nameKey": "SkillFirstAidT2CooldownName",
+        "effectKey": "SkillFirstAidT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT2CooldownDesc"
+    },
+    {
+      "id": "FIRSTAID-T2-STA",
+      "nameKey": "SkillFirstAidT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T2",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T2-STA",
+        "nameKey": "SkillFirstAidT2StaminaName",
+        "effectKey": "SkillFirstAidT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT2StaminaDesc"
+    },
+    {
+      "id": "FIRSTAID-T2-IMP",
+      "nameKey": "SkillFirstAidT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T2",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T2-IMP",
+        "nameKey": "SkillFirstAidT2ImpactName",
+        "effectKey": "SkillFirstAidT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT2ImpactDesc"
+    },
+    {
+      "id": "FIRSTAID-T2-WAY-1",
+      "nameKey": "SkillFirstAidT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "FIRSTAID-T2",
+      "order": 1,
+      "details": {
+        "id": "FIRSTAID-T2-WAY-1",
+        "nameKey": "SkillFirstAidT2Way1Name",
+        "effectKey": "SkillFirstAidT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillFirstAidT2Way1Desc"
+    },
+    {
+      "id": "FIRSTAID-T2-WAY-2",
+      "nameKey": "SkillFirstAidT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "FIRSTAID-T2",
+      "order": 2,
+      "details": {
+        "id": "FIRSTAID-T2-WAY-2",
+        "nameKey": "SkillFirstAidT2Way2Name",
+        "effectKey": "SkillFirstAidT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillFirstAidT2Way2Desc"
+    },
+    {
+      "id": "FIRSTAID-T3",
+      "nameKey": "SkillFirstAidT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T3",
+        "nameKey": "SkillFirstAidT3Name",
+        "effectKey": "SkillFirstAidT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseHealingPercent": 20,
+        "buffDurationSeconds": 10
+      },
+      "descriptionKey": "SkillFirstAidT3Desc"
+    },
+    {
+      "id": "FIRSTAID-T3-CD",
+      "nameKey": "SkillFirstAidT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T3",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T3-CD",
+        "nameKey": "SkillFirstAidT3CooldownName",
+        "effectKey": "SkillFirstAidT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT3CooldownDesc"
+    },
+    {
+      "id": "FIRSTAID-T3-STA",
+      "nameKey": "SkillFirstAidT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T3",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T3-STA",
+        "nameKey": "SkillFirstAidT3StaminaName",
+        "effectKey": "SkillFirstAidT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT3StaminaDesc"
+    },
+    {
+      "id": "FIRSTAID-T3-IMP",
+      "nameKey": "SkillFirstAidT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "FIRSTAID-T3",
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-T3-IMP",
+        "nameKey": "SkillFirstAidT3ImpactName",
+        "effectKey": "SkillFirstAidT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricMaxHpHealing",
+            "unit": "%",
+            "values": [
+              26,
+              32,
+              38,
+              44,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidT3ImpactDesc"
+    },
+    {
+      "id": "FIRSTAID-T3-WAY-1",
+      "nameKey": "SkillFirstAidT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "FIRSTAID-T3",
+      "order": 1,
+      "details": {
+        "id": "FIRSTAID-T3-WAY-1",
+        "nameKey": "SkillFirstAidT3Way1Name",
+        "effectKey": "SkillFirstAidT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillFirstAidT3Way1Desc"
+    },
+    {
+      "id": "FIRSTAID-T3-WAY-2",
+      "nameKey": "SkillFirstAidT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "FIRSTAID-T3",
+      "order": 2,
+      "details": {
+        "id": "FIRSTAID-T3-WAY-2",
+        "nameKey": "SkillFirstAidT3Way2Name",
+        "effectKey": "SkillFirstAidT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillFirstAidT3Way2Desc"
+    },
+    {
+      "id": "FIRSTAID-ULT",
+      "nameKey": "SkillFirstAidUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "FIRSTAID-ULT",
+        "nameKey": "SkillFirstAidUltName",
+        "effectKey": "SkillFirstAidUltDesc",
+        "revivedStatusDurationSeconds": 300,
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "TargetHpHealing",
+            "unit": "%",
+            "values": [
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          },
+          {
+            "metricKey": "TargetStaminaRecovery",
+            "unit": "%",
+            "values": [
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillFirstAidUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraHealing",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraHealing",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraHealing",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraHealing",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraHealing",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraHealing",
+      "value": 24,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraHealing",
+      "value": 28,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraHealing",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraHealing",
+      "value": 36,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraHealing",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P2",
+      "rank": 1,
+      "metricKey": "MetricUseSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P2",
+      "rank": 2,
+      "metricKey": "MetricUseSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P2",
+      "rank": 3,
+      "metricKey": "MetricUseSpeed",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P2",
+      "rank": 4,
+      "metricKey": "MetricUseSpeed",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P2",
+      "rank": 5,
+      "metricKey": "MetricUseSpeed",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 1,
+      "metricKey": "MetricMaxHp",
+      "value": 2,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 2,
+      "metricKey": "MetricMaxHp",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 3,
+      "metricKey": "MetricMaxHp",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 4,
+      "metricKey": "MetricMaxHp",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 5,
+      "metricKey": "MetricMaxHp",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 6,
+      "metricKey": "MetricMaxHp",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 7,
+      "metricKey": "MetricMaxHp",
+      "value": 14,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 8,
+      "metricKey": "MetricMaxHp",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 9,
+      "metricKey": "MetricMaxHp",
+      "value": 18,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P3",
+      "rank": 10,
+      "metricKey": "MetricMaxHp",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P4",
+      "rank": 1,
+      "metricKey": "MetricDoubleEffectChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P4",
+      "rank": 2,
+      "metricKey": "MetricDoubleEffectChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P4",
+      "rank": 3,
+      "metricKey": "MetricDoubleEffectChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P4",
+      "rank": 4,
+      "metricKey": "MetricDoubleEffectChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-P4",
+      "rank": 5,
+      "metricKey": "MetricDoubleEffectChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 7,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricMaxHpHealing",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricMaxHpHealing",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricMaxHpHealing",
+      "value": 38,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricMaxHpHealing",
+      "value": 44,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricMaxHpHealing",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 1,
+      "metricKey": "TargetHpHealing",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 2,
+      "metricKey": "TargetHpHealing",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 3,
+      "metricKey": "TargetHpHealing",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 4,
+      "metricKey": "TargetHpHealing",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 5,
+      "metricKey": "TargetHpHealing",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 1,
+      "metricKey": "TargetStaminaRecovery",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 2,
+      "metricKey": "TargetStaminaRecovery",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 3,
+      "metricKey": "TargetStaminaRecovery",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 4,
+      "metricKey": "TargetStaminaRecovery",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-ULT",
+      "rank": 5,
+      "metricKey": "TargetStaminaRecovery",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 66,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 51,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 39,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 30,
+      "unit": "s"
+    },
+    {
+      "skillId": "FIRSTAID-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FIRSTAID-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDebuffBlockChance",
+      "value": 7,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDebuffBlockChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDebuffBlockChance",
+      "value": 11,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDebuffBlockChance",
+      "value": 13,
+      "unit": "%"
+    },
+    {
+      "skillId": "FIRSTAID-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDebuffBlockChance",
+      "value": 15,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "FIRSTAID-P1": {
+      "unlocked": "assets/skills/FirstAidP1Sterilization.png"
+    },
+    "FIRSTAID-P2": {
+      "unlocked": "assets/skills/FirstAidP2FirstResponder.png"
+    },
+    "FIRSTAID-P3": {
+      "locked": "assets/skills/FirstAidP3TrainedBody.png"
+    },
+    "FIRSTAID-P4": {
+      "locked": "assets/skills/FirstAidP4FieldRoutine.png"
+    },
+    "FIRSTAID-T1": {
+      "unlocked": "assets/skills/FirstAidT1FocusSerum.png"
+    },
+    "FIRSTAID-T1-CD": {
+      "locked": "assets/skills/FirstAidT1FocusSerum.png"
+    },
+    "FIRSTAID-T1-STA": {
+      "locked": "assets/skills/FirstAidT1FocusSerum.png"
+    },
+    "FIRSTAID-T1-IMP": {
+      "locked": "assets/skills/FirstAidT1FocusSerum.png"
+    },
+    "FIRSTAID-T1-WAY-1": {
+      "locked": "assets/skills/FirstAidT1FocusSerum.png"
+    },
+    "FIRSTAID-T1-WAY-2": {
+      "locked": "assets/skills/FirstAidT1FocusSerum.png"
+    },
+    "FIRSTAID-T2": {
+      "locked": "assets/skills/FirstAidT2GiveEmHell.png"
+    },
+    "FIRSTAID-T2-CD": {
+      "locked": "assets/skills/FirstAidT2GiveEmHell.png"
+    },
+    "FIRSTAID-T2-STA": {
+      "locked": "assets/skills/FirstAidT2GiveEmHell.png"
+    },
+    "FIRSTAID-T2-IMP": {
+      "locked": "assets/skills/FirstAidT2GiveEmHell.png"
+    },
+    "FIRSTAID-T2-WAY-1": {
+      "locked": "assets/skills/FirstAidT2GiveEmHell.png"
+    },
+    "FIRSTAID-T2-WAY-2": {
+      "locked": "assets/skills/FirstAidT2GiveEmHell.png"
+    },
+    "FIRSTAID-T3": {
+      "locked": "assets/skills/FirstAidT3NoOneLeftBehind.png"
+    },
+    "FIRSTAID-T3-CD": {
+      "locked": "assets/skills/FirstAidT3NoOneLeftBehind.png"
+    },
+    "FIRSTAID-T3-STA": {
+      "locked": "assets/skills/FirstAidT3NoOneLeftBehind.png"
+    },
+    "FIRSTAID-T3-IMP": {
+      "locked": "assets/skills/FirstAidT3NoOneLeftBehind.png"
+    },
+    "FIRSTAID-T3-WAY-1": {
+      "locked": "assets/skills/FirstAidT3NoOneLeftBehind.png"
+    },
+    "FIRSTAID-T3-WAY-2": {
+      "locked": "assets/skills/FirstAidT3NoOneLeftBehind.png"
+    },
+    "FIRSTAID-ULT": {
+      "locked": "assets/skills/FirstAidULTResurrection.png"
+    }
+  }
+}

@@ -1,0 +1,1363 @@
+{
+  "schemaVersion": 1,
+  "treeId": "KNIVES",
+  "nameKey": "TreeKnifeName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "KNIVES-P1",
+      "nameKey": "SkillKnifeP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-P1",
+        "nameKey": "SkillKnifeP1Name",
+        "effectKey": "SkillKnifeP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeP1Desc"
+    },
+    {
+      "id": "KNIVES-P2",
+      "nameKey": "SkillKnifeP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-P2",
+        "nameKey": "SkillKnifeP2Name",
+        "effectKey": "SkillKnifeP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricAttackSpeed",
+            "unit": "%",
+            "values": [
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeP2Desc"
+    },
+    {
+      "id": "KNIVES-P3",
+      "nameKey": "SkillKnifeP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-P3",
+        "nameKey": "SkillKnifeP3Name",
+        "effectKey": "SkillKnifeP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeP3Desc"
+    },
+    {
+      "id": "KNIVES-P4",
+      "nameKey": "SkillKnifeP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-P4",
+        "nameKey": "SkillKnifeP4Name",
+        "effectKey": "SkillKnifeP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricUnseenCritDamage",
+            "unit": "%",
+            "values": [
+              90,
+              105,
+              120,
+              135,
+              150
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeP4Desc"
+    },
+    {
+      "id": "KNIVES-T1",
+      "nameKey": "SkillKnifeT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-T1",
+        "nameKey": "SkillKnifeT1Name",
+        "effectKey": "SkillKnifeT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 4,
+        "baseDamageBonusPercent": 40,
+        "requiresActiveWeaponKey": "LabelTreeKnifeName"
+      },
+      "descriptionKey": "SkillKnifeT1Desc"
+    },
+    {
+      "id": "KNIVES-T1-CD",
+      "nameKey": "SkillKnifeT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T1",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T1-CD",
+        "nameKey": "SkillKnifeT1CooldownName",
+        "effectKey": "SkillKnifeT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT1CooldownDesc"
+    },
+    {
+      "id": "KNIVES-T1-STA",
+      "nameKey": "SkillKnifeT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T1",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T1-STA",
+        "nameKey": "SkillKnifeT1StaminaName",
+        "effectKey": "SkillKnifeT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT1StaminaDesc"
+    },
+    {
+      "id": "KNIVES-T1-IMP",
+      "nameKey": "SkillKnifeT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T1",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T1-IMP",
+        "nameKey": "SkillKnifeT1ImpactName",
+        "effectKey": "SkillKnifeT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              44,
+              48,
+              52,
+              56,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT1ImpactDesc"
+    },
+    {
+      "id": "KNIVES-T1-WAY-1",
+      "nameKey": "SkillKnifeT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "KNIVES-T1",
+      "order": 1,
+      "details": {
+        "id": "KNIVES-T1-WAY-1",
+        "nameKey": "SkillKnifeT1Way1Name",
+        "effectKey": "SkillKnifeT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillKnifeT1Way1Desc"
+    },
+    {
+      "id": "KNIVES-T1-WAY-2",
+      "nameKey": "SkillKnifeT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "KNIVES-T1",
+      "order": 2,
+      "details": {
+        "id": "KNIVES-T1-WAY-2",
+        "nameKey": "SkillKnifeT1Way2Name",
+        "effectKey": "SkillKnifeT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillKnifeT1Way2Desc"
+    },
+    {
+      "id": "KNIVES-T2",
+      "nameKey": "SkillKnifeT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-T2",
+        "nameKey": "SkillKnifeT2Name",
+        "effectKey": "SkillKnifeT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "baseActiveWeaponDpsPercent": 150,
+        "bleedDurationSeconds": 10,
+        "requiresActiveWeaponKey": "LabelTreeKnifeName"
+      },
+      "descriptionKey": "SkillKnifeT2Desc"
+    },
+    {
+      "id": "KNIVES-T2-CD",
+      "nameKey": "SkillKnifeT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T2",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T2-CD",
+        "nameKey": "SkillKnifeT2CooldownName",
+        "effectKey": "SkillKnifeT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT2CooldownDesc"
+    },
+    {
+      "id": "KNIVES-T2-STA",
+      "nameKey": "SkillKnifeT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T2",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T2-STA",
+        "nameKey": "SkillKnifeT2StaminaName",
+        "effectKey": "SkillKnifeT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT2StaminaDesc"
+    },
+    {
+      "id": "KNIVES-T2-IMP",
+      "nameKey": "SkillKnifeT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T2",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T2-IMP",
+        "nameKey": "SkillKnifeT2ImpactName",
+        "effectKey": "SkillKnifeT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              170,
+              190,
+              210,
+              230,
+              250
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT2ImpactDesc"
+    },
+    {
+      "id": "KNIVES-T2-WAY-1",
+      "nameKey": "SkillKnifeT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "KNIVES-T2",
+      "order": 1,
+      "details": {
+        "id": "KNIVES-T2-WAY-1",
+        "nameKey": "SkillKnifeT2Way1Name",
+        "effectKey": "SkillKnifeT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillKnifeT2Way1Desc"
+    },
+    {
+      "id": "KNIVES-T2-WAY-2",
+      "nameKey": "SkillKnifeT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "KNIVES-T2",
+      "order": 2,
+      "details": {
+        "id": "KNIVES-T2-WAY-2",
+        "nameKey": "SkillKnifeT2Way2Name",
+        "effectKey": "SkillKnifeT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillKnifeT2Way2Desc"
+    },
+    {
+      "id": "KNIVES-T3",
+      "nameKey": "SkillKnifeT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-T3",
+        "nameKey": "SkillKnifeT3Name",
+        "effectKey": "SkillKnifeT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseActiveWeaponDpsPercent": 225,
+        "poisonDurationSeconds": 10,
+        "requiresActiveWeaponKey": "LabelTreeKnifeName"
+      },
+      "descriptionKey": "SkillKnifeT3Desc"
+    },
+    {
+      "id": "KNIVES-T3-CD",
+      "nameKey": "SkillKnifeT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T3",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T3-CD",
+        "nameKey": "SkillKnifeT3CooldownName",
+        "effectKey": "SkillKnifeT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT3CooldownDesc"
+    },
+    {
+      "id": "KNIVES-T3-STA",
+      "nameKey": "SkillKnifeT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T3",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T3-STA",
+        "nameKey": "SkillKnifeT3StaminaName",
+        "effectKey": "SkillKnifeT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT3StaminaDesc"
+    },
+    {
+      "id": "KNIVES-T3-IMP",
+      "nameKey": "SkillKnifeT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "KNIVES-T3",
+      "order": null,
+      "details": {
+        "id": "KNIVES-T3-IMP",
+        "nameKey": "SkillKnifeT3ImpactName",
+        "effectKey": "SkillKnifeT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              250,
+              275,
+              300,
+              325,
+              350
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeT3ImpactDesc"
+    },
+    {
+      "id": "KNIVES-T3-WAY-1",
+      "nameKey": "SkillKnifeT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "KNIVES-T3",
+      "order": 1,
+      "details": {
+        "id": "KNIVES-T3-WAY-1",
+        "nameKey": "SkillKnifeT3Way1Name",
+        "effectKey": "SkillKnifeT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillKnifeT3Way1Desc"
+    },
+    {
+      "id": "KNIVES-T3-WAY-2",
+      "nameKey": "SkillKnifeT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "KNIVES-T3",
+      "order": 2,
+      "details": {
+        "id": "KNIVES-T3-WAY-2",
+        "nameKey": "SkillKnifeT3Way2Name",
+        "effectKey": "SkillKnifeT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillKnifeT3Way2Desc"
+    },
+    {
+      "id": "KNIVES-ULT",
+      "nameKey": "SkillKnifeUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "KNIVES-ULT",
+        "nameKey": "SkillKnifeUltName",
+        "effectKey": "SkillKnifeUltDesc",
+        "buffDurationSeconds": 4,
+        "requiresActiveWeaponKey": "LabelTreeKnifeName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "MetricAttackSpeed",
+            "unit": "%",
+            "values": [
+              260,
+              290,
+              320,
+              350,
+              380
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillKnifeUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P2",
+      "rank": 1,
+      "metricKey": "MetricAttackSpeed",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P2",
+      "rank": 2,
+      "metricKey": "MetricAttackSpeed",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P2",
+      "rank": 3,
+      "metricKey": "MetricAttackSpeed",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P2",
+      "rank": 4,
+      "metricKey": "MetricAttackSpeed",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P2",
+      "rank": 5,
+      "metricKey": "MetricAttackSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P4",
+      "rank": 1,
+      "metricKey": "MetricUnseenCritDamage",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P4",
+      "rank": 2,
+      "metricKey": "MetricUnseenCritDamage",
+      "value": 105,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P4",
+      "rank": 3,
+      "metricKey": "MetricUnseenCritDamage",
+      "value": 120,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P4",
+      "rank": 4,
+      "metricKey": "MetricUnseenCritDamage",
+      "value": 135,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-P4",
+      "rank": 5,
+      "metricKey": "MetricUnseenCritDamage",
+      "value": 150,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 44,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 48,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 52,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 56,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 170,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 210,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 230,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 275,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 300,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 325,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 1,
+      "metricKey": "MetricAttackSpeed",
+      "value": 260,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 2,
+      "metricKey": "MetricAttackSpeed",
+      "value": 290,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 3,
+      "metricKey": "MetricAttackSpeed",
+      "value": 320,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 4,
+      "metricKey": "MetricAttackSpeed",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "KNIVES-ULT",
+      "rank": 5,
+      "metricKey": "MetricAttackSpeed",
+      "value": 380,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "KNIVES-P1": {
+      "locked": "assets/skills/KnivesP1SkilledBladedancer.png"
+    },
+    "KNIVES-P2": {
+      "locked": "assets/skills/KnivesP2BiomechanicalAnalysis.png"
+    },
+    "KNIVES-P3": {
+      "locked": "assets/skills/KnivesP3OilTreatment.png"
+    },
+    "KNIVES-P4": {
+      "locked": "assets/skills/KnivesP4Cutthroat.png"
+    },
+    "KNIVES-T1": {
+      "locked": "assets/skills/KnivesT1TendonRupture.png"
+    },
+    "KNIVES-T1-CD": {
+      "locked": "assets/skills/KnivesT1TendonRupture.png"
+    },
+    "KNIVES-T1-STA": {
+      "locked": "assets/skills/KnivesT1TendonRupture.png"
+    },
+    "KNIVES-T1-IMP": {
+      "locked": "assets/skills/KnivesT1TendonRupture.png"
+    },
+    "KNIVES-T1-WAY-1": {
+      "locked": "assets/skills/KnivesT1TendonRupture.png"
+    },
+    "KNIVES-T1-WAY-2": {
+      "locked": "assets/skills/KnivesT1TendonRupture.png"
+    },
+    "KNIVES-T2": {
+      "locked": "assets/skills/KnivesT2HemorrhagicWound.png"
+    },
+    "KNIVES-T2-CD": {
+      "locked": "assets/skills/KnivesT2HemorrhagicWound.png"
+    },
+    "KNIVES-T2-STA": {
+      "locked": "assets/skills/KnivesT2HemorrhagicWound.png"
+    },
+    "KNIVES-T2-IMP": {
+      "locked": "assets/skills/KnivesT2HemorrhagicWound.png"
+    },
+    "KNIVES-T2-WAY-1": {
+      "locked": "assets/skills/KnivesT2HemorrhagicWound.png"
+    },
+    "KNIVES-T2-WAY-2": {
+      "locked": "assets/skills/KnivesT2HemorrhagicWound.png"
+    },
+    "KNIVES-T3": {
+      "locked": "assets/skills/KnivesT3Moribund.png"
+    },
+    "KNIVES-T3-CD": {
+      "locked": "assets/skills/KnivesT3Moribund.png"
+    },
+    "KNIVES-T3-STA": {
+      "locked": "assets/skills/KnivesT3Moribund.png"
+    },
+    "KNIVES-T3-IMP": {
+      "locked": "assets/skills/KnivesT3Moribund.png"
+    },
+    "KNIVES-T3-WAY-1": {
+      "locked": "assets/skills/KnivesT3Moribund.png"
+    },
+    "KNIVES-T3-WAY-2": {
+      "locked": "assets/skills/KnivesT3Moribund.png"
+    },
+    "KNIVES-ULT": {
+      "locked": "assets/skills/KnivesULTButcherSFury.png"
+    }
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "professionId": "CONSTR",
+  "professionKey": "LabelTreeConstructionName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "CONSTR-P1",
+      "nameKey": "SkillConstructionP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "unlockDisplayed": null,
+      "requirementKey": "ConditionShovel",
+      "metricKey": "MetricExtraLootIncrease",
+      "unit": "%",
+      "values": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40
+      ]
+    },
+    {
+      "id": "CONSTR-P2",
+      "nameKey": "SkillConstructionP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": null,
+      "requirementKey": "ConditionShovel",
+      "metricKey": "MetricGatherSpeedIncrease",
+      "unit": "%",
+      "values": [
+        5,
+        10,
+        15,
+        20,
+        25
+      ]
+    },
+    {
+      "id": "CONSTR-P3",
+      "nameKey": "SkillConstructionP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 16,
+      "requirementKey": "ConditionShovel",
+      "metricKey": "MetricDurabilityLossReduction",
+      "unit": "%",
+      "values": [
+        -5,
+        -10,
+        -15,
+        -20,
+        -25
+      ]
+    },
+    {
+      "id": "CONSTR-P4",
+      "nameKey": "SkillConstructionP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 16,
+      "requirementKey": "ConditionDoubleTap",
+      "descriptionKey": "SkillConstructionP4Desc",
+      "staminaCosts": [
+        30,
+        25,
+        20,
+        15,
+        10
+      ],
+      "cooldownSeconds": [
+        17,
+        14,
+        11,
+        8,
+        5
+      ]
+    },
+    {
+      "id": "CONSTR-P5",
+      "nameKey": "SkillConstructionP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 31,
+      "requirementKey": "ConditionStandingStill",
+      "metricKey": "MetricDamageReductionRating",
+      "unit": "%",
+      "values": [
+        4,
+        8,
+        12,
+        16,
+        20
+      ]
+    },
+    {
+      "id": "CONSTR-T1",
+      "nameKey": "SkillConstructionT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "requirementKey": "ConditionPhysicalDebuff",
+      "effectKey": "SkillConstructionT1Desc",
+      "damageBonusPercent": 30,
+      "buffDurationSeconds": 4,
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "observedStaminaCost": 40,
+      "observedCooldownSeconds": 28,
+      "observedEnhancerRanks": {
+        "cooldown": 4,
+        "stamina": 5,
+        "impact": 0
+      }
+    },
+    {
+      "id": "CONSTR-T1-CD",
+      "parent": "CONSTR-T1",
+      "nameKey": "SkillConstructionT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "metricKey": "MetricCooldown",
+      "unit": "s",
+      "values": [
+        43,
+        37,
+        32,
+        28,
+        25
+      ]
+    },
+    {
+      "id": "CONSTR-T1-STA",
+      "parent": "CONSTR-T1",
+      "nameKey": "SkillConstructionT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "metricKey": "MetricStaminaCost",
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina",
+      "values": [
+        58,
+        52,
+        47,
+        43,
+        40
+      ]
+    },
+    {
+      "id": "CONSTR-T1-IMP",
+      "parent": "CONSTR-T1",
+      "nameKey": "SkillConstructionT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "metricKey": "EffectDamageBonus",
+      "unit": "%",
+      "values": [
+        34,
+        38,
+        42,
+        46,
+        50
+      ]
+    },
+    {
+      "id": "CONSTR-T1-WAY-BASTION",
+      "parent": "CONSTR-T1",
+      "nameKey": "SkillConstructionT1WayBASTIONName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillConstructionT1WayBASTIONDesc",
+      "damageReductionPercent": 20
+    },
+    {
+      "id": "CONSTR-T1-WAY-UNFADING",
+      "parent": "CONSTR-T1",
+      "nameKey": "SkillConstructionT1WayUNFADINGName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillConstructionT1WayUNFADINGDesc",
+      "buffDurationBonusSeconds": 2
+    },
+    {
+      "id": "CONSTR-T2",
+      "nameKey": "SkillConstructionT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "unlockDisplayed": 16,
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "buffDurationSeconds": 15,
+      "damageReductionPercent": 10,
+      "effectKey": "SkillConstructionT2Desc",
+      "requirement": null
+    },
+    {
+      "id": "CONSTR-T2-CD",
+      "parent": "CONSTR-T2",
+      "nameKey": "SkillConstructionT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "metricKey": "MetricCooldown",
+      "unit": "s",
+      "values": [
+        86,
+        74,
+        64,
+        56,
+        50
+      ]
+    },
+    {
+      "id": "CONSTR-T2-STA",
+      "parent": "CONSTR-T2",
+      "nameKey": "SkillConstructionT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "metricKey": "MetricStaminaCost",
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina",
+      "values": [
+        68,
+        62,
+        57,
+        53,
+        50
+      ]
+    },
+    {
+      "id": "CONSTR-T2-IMP",
+      "parent": "CONSTR-T2",
+      "nameKey": "SkillConstructionT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "metricKey": "EffectDamageReduction",
+      "unit": "%",
+      "values": [
+        14,
+        18,
+        22,
+        26,
+        30
+      ]
+    },
+    {
+      "id": "CONSTR-T2-WAY-UNBOUND",
+      "parent": "CONSTR-T2",
+      "nameKey": "SkillConstructionT2WayUNBOUNDName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillConstructionT2WayUNBOUNDDesc",
+      "speedReducingDebuffsNamedKeys": [
+        "EffectCrippled",
+        "EffectParalyzed",
+        "EffectSuppressed"
+      ]
+    },
+    {
+      "id": "CONSTR-T2-WAY-UNFADING",
+      "parent": "CONSTR-T2",
+      "nameKey": "SkillConstructionT2WayUNFADINGName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillConstructionT2WayUNFADINGDesc",
+      "buffDurationBonusSeconds": 10
+    },
+    {
+      "id": "CONSTR-T3",
+      "nameKey": "SkillConstructionT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "unlockDisplayed": 31,
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "objectDurationSeconds": 60,
+      "charges": 20,
+      "debuffKey": "EffectRooted",
+      "debuffDurationSeconds": 3,
+      "movementSpeedReductionPercent": 60,
+      "targetTypesKeys": [
+        "TargetPlayer",
+        "TargetNonPlayer"
+      ],
+      "effectKey": "SkillConstructionT3Desc",
+      "despawnConditionsKeys": [
+        "ConditionExpired",
+        "ConditionChargesExhausted",
+        "ConditionLogout",
+        "ConditionEnterBunker"
+      ]
+    },
+    {
+      "id": "CONSTR-T3-CD",
+      "parent": "CONSTR-T3",
+      "nameKey": "SkillConstructionT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "metricKey": "MetricCooldown",
+      "unit": "s",
+      "values": [
+        129,
+        111,
+        96,
+        84,
+        75
+      ]
+    },
+    {
+      "id": "CONSTR-T3-STA",
+      "parent": "CONSTR-T3",
+      "nameKey": "SkillConstructionT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "metricKey": "MetricStaminaCost",
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina",
+      "values": [
+        78,
+        72,
+        67,
+        63,
+        60
+      ]
+    },
+    {
+      "id": "CONSTR-T3-IMP",
+      "parent": "CONSTR-T3",
+      "nameKey": "SkillConstructionT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "metricKey": "MetricPuddleDuration",
+      "unit": "s",
+      "values": [
+        120,
+        180,
+        240,
+        300,
+        360
+      ]
+    },
+    {
+      "id": "CONSTR-T3-WAY-REAPER",
+      "parent": "CONSTR-T3",
+      "nameKey": "SkillConstructionT3WayREAPERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillConstructionT3WayREAPERDesc",
+      "puddleSizeBonusPercent": 50
+    },
+    {
+      "id": "CONSTR-T3-WAY-SURVIVALIST",
+      "parent": "CONSTR-T3",
+      "nameKey": "SkillConstructionT3WaySURVIVALISTName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillConstructionT3WaySURVIVALISTDesc",
+      "chargesMultiplier": 2
+    },
+    {
+      "id": "CONSTR-ULT",
+      "nameKey": "SkillConstructionUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "unlockDisplayed": 46,
+      "staminaCosts": [
+        115,
+        105,
+        95,
+        85,
+        75
+      ],
+      "cooldownSeconds": [
+        720,
+        630,
+        540,
+        450,
+        360
+      ],
+      "barricadeHpPercentOfOwnerMaxHp": [
+        100,
+        200,
+        300,
+        400,
+        500
+      ],
+      "weaponDpsPercent": [
+        50,
+        100,
+        150,
+        200,
+        250
+      ],
+      "weaponDpsReferenceKey": "RuleBestWeaponDps",
+      "debuffKey": "EffectRooted",
+      "debuffDurationSeconds": [
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "movementSpeedReductionPercent": 60,
+      "objectDurationSeconds": 720,
+      "barricadeVulnerableToKey": "ConditionMeleeDamage",
+      "targetTypesKeys": [
+        "TargetPlayer",
+        "TargetNonPlayer"
+      ],
+      "effectKey": "SkillConstructionUltDesc",
+      "despawnConditionsKeys": [
+        "ConditionLifetimeExpired",
+        "ConditionLogout",
+        "ConditionEnterSafehouse"
+      ]
+    }
+  ],
+  "activeNamesFromOdsOnly": [],
+  "observedBuild": {
+    "display": "10/10",
+    "firstActiveBase": 1,
+    "firstActiveEnhancers": [
+      4,
+      5,
+      0
+    ],
+    "passiveRanks": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "sharedBaseRule": {
+    "scopeKey": "SourceSharedBaseValues",
+    "baseStaminaCost": 65,
+    "baseCooldownSeconds": 50
+  },
+  "definitions": {
+    "StatuseffektKey": "RuleTriggeredEffects",
+    "SchadensreduzierungKey": "EffectIncomingDamageReduction",
+    "Geschwindigkeitsreduzierende DebuffsKey": "NoteUnboundDebuffList",
+    "Debuff-Immunität nach AblaufKey": "RuleDebuffImmunity",
+    "Beste Waffen-DPSKey": "RuleBestWeaponDpsDetail",
+    "GelähmtKey": "EffectMovePenalty",
+    "Nicht-SpielerKey": "TargetNpc"
+  }
+}

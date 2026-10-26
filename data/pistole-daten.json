@@ -1,0 +1,1409 @@
+{
+  "schemaVersion": 1,
+  "treeId": "PISTOLS",
+  "nameKey": "TreePistolName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "PISTOLS-P1",
+      "nameKey": "SkillPistolP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-P1",
+        "nameKey": "SkillPistolP1Name",
+        "effectKey": "SkillPistolP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolP1Desc"
+    },
+    {
+      "id": "PISTOLS-P2",
+      "nameKey": "SkillPistolP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-P2",
+        "nameKey": "SkillPistolP2Name",
+        "effectKey": "SkillPistolP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricReloadSpeed",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolP2Desc"
+    },
+    {
+      "id": "PISTOLS-P3",
+      "nameKey": "SkillPistolP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-P3",
+        "nameKey": "SkillPistolP3Name",
+        "effectKey": "SkillPistolP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolP3Desc"
+    },
+    {
+      "id": "PISTOLS-P4",
+      "nameKey": "SkillPistolP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-P4",
+        "nameKey": "SkillPistolP4Name",
+        "effectKey": "SkillPistolP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricBleedingTargetCritDamage",
+            "unit": "%",
+            "values": [
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolP4Desc"
+    },
+    {
+      "id": "PISTOLS-T1",
+      "nameKey": "SkillPistolT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T1",
+        "nameKey": "SkillPistolT1Name",
+        "effectKey": "SkillPistolT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 6,
+        "baseDamageBonusPercent": 25,
+        "requiresActiveWeaponKey": "LabelTreePistolName"
+      },
+      "descriptionKey": "SkillPistolT1Desc"
+    },
+    {
+      "id": "PISTOLS-T1-CD",
+      "nameKey": "SkillPistolT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T1",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T1-CD",
+        "nameKey": "SkillPistolT1CooldownName",
+        "effectKey": "SkillPistolT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT1CooldownDesc"
+    },
+    {
+      "id": "PISTOLS-T1-STA",
+      "nameKey": "SkillPistolT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T1",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T1-STA",
+        "nameKey": "SkillPistolT1StaminaName",
+        "effectKey": "SkillPistolT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT1StaminaDesc"
+    },
+    {
+      "id": "PISTOLS-T1-IMP",
+      "nameKey": "SkillPistolT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T1",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T1-IMP",
+        "nameKey": "SkillPistolT1ImpactName",
+        "effectKey": "SkillPistolT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              30,
+              35,
+              40,
+              45,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT1ImpactDesc"
+    },
+    {
+      "id": "PISTOLS-T1-WAY-1",
+      "nameKey": "SkillPistolT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "PISTOLS-T1",
+      "order": 1,
+      "details": {
+        "id": "PISTOLS-T1-WAY-1",
+        "nameKey": "SkillPistolT1Way1Name",
+        "effectKey": "SkillPistolT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillPistolT1Way1Desc"
+    },
+    {
+      "id": "PISTOLS-T1-WAY-2",
+      "nameKey": "SkillPistolT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "PISTOLS-T1",
+      "order": 2,
+      "details": {
+        "id": "PISTOLS-T1-WAY-2",
+        "nameKey": "SkillPistolT1Way2Name",
+        "effectKey": "SkillPistolT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillPistolT1Way2Desc"
+    },
+    {
+      "id": "PISTOLS-T2",
+      "nameKey": "SkillPistolT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T2",
+        "nameKey": "SkillPistolT2Name",
+        "effectKey": "SkillPistolT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "baseActiveWeaponDpsPercent": 150,
+        "bleedDurationSeconds": 10,
+        "requiresActiveWeaponKey": "LabelTreePistolName"
+      },
+      "descriptionKey": "SkillPistolT2Desc"
+    },
+    {
+      "id": "PISTOLS-T2-CD",
+      "nameKey": "SkillPistolT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T2",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T2-CD",
+        "nameKey": "SkillPistolT2CooldownName",
+        "effectKey": "SkillPistolT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT2CooldownDesc"
+    },
+    {
+      "id": "PISTOLS-T2-STA",
+      "nameKey": "SkillPistolT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T2",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T2-STA",
+        "nameKey": "SkillPistolT2StaminaName",
+        "effectKey": "SkillPistolT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT2StaminaDesc"
+    },
+    {
+      "id": "PISTOLS-T2-IMP",
+      "nameKey": "SkillPistolT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T2",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T2-IMP",
+        "nameKey": "SkillPistolT2ImpactName",
+        "effectKey": "SkillPistolT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              170,
+              190,
+              210,
+              230,
+              250
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT2ImpactDesc"
+    },
+    {
+      "id": "PISTOLS-T2-WAY-1",
+      "nameKey": "SkillPistolT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "PISTOLS-T2",
+      "order": 1,
+      "details": {
+        "id": "PISTOLS-T2-WAY-1",
+        "nameKey": "SkillPistolT2Way1Name",
+        "effectKey": "SkillPistolT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillPistolT2Way1Desc"
+    },
+    {
+      "id": "PISTOLS-T2-WAY-2",
+      "nameKey": "SkillPistolT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "PISTOLS-T2",
+      "order": 2,
+      "details": {
+        "id": "PISTOLS-T2-WAY-2",
+        "nameKey": "SkillPistolT2Way2Name",
+        "effectKey": "SkillPistolT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillPistolT2Way2Desc"
+    },
+    {
+      "id": "PISTOLS-T3",
+      "nameKey": "SkillPistolT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T3",
+        "nameKey": "SkillPistolT3Name",
+        "effectKey": "SkillPistolT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "buffDurationSeconds": 8,
+        "baseHeadshotDamageBonusPercent": 60,
+        "requiresActiveWeaponKey": "LabelTreePistolName"
+      },
+      "descriptionKey": "SkillPistolT3Desc"
+    },
+    {
+      "id": "PISTOLS-T3-CD",
+      "nameKey": "SkillPistolT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T3",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T3-CD",
+        "nameKey": "SkillPistolT3CooldownName",
+        "effectKey": "SkillPistolT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT3CooldownDesc"
+    },
+    {
+      "id": "PISTOLS-T3-STA",
+      "nameKey": "SkillPistolT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T3",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T3-STA",
+        "nameKey": "SkillPistolT3StaminaName",
+        "effectKey": "SkillPistolT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT3StaminaDesc"
+    },
+    {
+      "id": "PISTOLS-T3-IMP",
+      "nameKey": "SkillPistolT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "PISTOLS-T3",
+      "order": null,
+      "details": {
+        "id": "PISTOLS-T3-IMP",
+        "nameKey": "SkillPistolT3ImpactName",
+        "effectKey": "SkillPistolT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricHeadshotDamage",
+            "unit": "%",
+            "values": [
+              68,
+              76,
+              84,
+              92,
+              100
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolT3ImpactDesc"
+    },
+    {
+      "id": "PISTOLS-T3-WAY-1",
+      "nameKey": "SkillPistolT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "PISTOLS-T3",
+      "order": 1,
+      "details": {
+        "id": "PISTOLS-T3-WAY-1",
+        "nameKey": "SkillPistolT3Way1Name",
+        "effectKey": "SkillPistolT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillPistolT3Way1Desc"
+    },
+    {
+      "id": "PISTOLS-T3-WAY-2",
+      "nameKey": "SkillPistolT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "PISTOLS-T3",
+      "order": 2,
+      "details": {
+        "id": "PISTOLS-T3-WAY-2",
+        "nameKey": "SkillPistolT3Way2Name",
+        "effectKey": "SkillPistolT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillPistolT3Way2Desc"
+    },
+    {
+      "id": "PISTOLS-ULT",
+      "nameKey": "SkillPistolUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "PISTOLS-ULT",
+        "nameKey": "SkillPistolUltName",
+        "effectKey": "SkillPistolUltDesc",
+        "stacksPerHit": true,
+        "requiresActiveWeaponKey": "LabelTreePistolName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "EffectDuration",
+            "unit": "s",
+            "values": [
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "metricKey": "MetricDamagePerHit",
+            "unit": "%",
+            "values": [
+              20,
+              23,
+              26,
+              29,
+              32
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillPistolUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P2",
+      "rank": 1,
+      "metricKey": "MetricReloadSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P2",
+      "rank": 2,
+      "metricKey": "MetricReloadSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P2",
+      "rank": 3,
+      "metricKey": "MetricReloadSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P2",
+      "rank": 4,
+      "metricKey": "MetricReloadSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P2",
+      "rank": 5,
+      "metricKey": "MetricReloadSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P4",
+      "rank": 1,
+      "metricKey": "MetricBleedingTargetCritDamage",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P4",
+      "rank": 2,
+      "metricKey": "MetricBleedingTargetCritDamage",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P4",
+      "rank": 3,
+      "metricKey": "MetricBleedingTargetCritDamage",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P4",
+      "rank": 4,
+      "metricKey": "MetricBleedingTargetCritDamage",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-P4",
+      "rank": 5,
+      "metricKey": "MetricBleedingTargetCritDamage",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 170,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 210,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 230,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 68,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 76,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 84,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 92,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 11,
+      "unit": "s"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 1,
+      "metricKey": "MetricDamagePerHit",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 2,
+      "metricKey": "MetricDamagePerHit",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 3,
+      "metricKey": "MetricDamagePerHit",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 4,
+      "metricKey": "MetricDamagePerHit",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "PISTOLS-ULT",
+      "rank": 5,
+      "metricKey": "MetricDamagePerHit",
+      "value": 32,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "PISTOLS-P1": {
+      "locked": "assets/skills/PistolsP1SkilledPistoleer.png"
+    },
+    "PISTOLS-P2": {
+      "locked": "assets/skills/PistolsP2RapidMagSwap.png"
+    },
+    "PISTOLS-P3": {
+      "locked": "assets/skills/PistolsP3ThoroughInspection.png"
+    },
+    "PISTOLS-P4": {
+      "locked": "assets/skills/PistolsP4InsultToInjury.png"
+    },
+    "PISTOLS-T1": {
+      "locked": "assets/skills/PistolsT1RightOnTarget.png"
+    },
+    "PISTOLS-T1-CD": {
+      "locked": "assets/skills/PistolsT1RightOnTarget.png"
+    },
+    "PISTOLS-T1-STA": {
+      "locked": "assets/skills/PistolsT1RightOnTarget.png"
+    },
+    "PISTOLS-T1-IMP": {
+      "locked": "assets/skills/PistolsT1RightOnTarget.png"
+    },
+    "PISTOLS-T1-WAY-1": {
+      "locked": "assets/skills/PistolsT1RightOnTarget.png"
+    },
+    "PISTOLS-T1-WAY-2": {
+      "locked": "assets/skills/PistolsT1RightOnTarget.png"
+    },
+    "PISTOLS-T2": {
+      "locked": "assets/skills/PistolsT2ArteryShot.png"
+    },
+    "PISTOLS-T2-CD": {
+      "locked": "assets/skills/PistolsT2ArteryShot.png"
+    },
+    "PISTOLS-T2-STA": {
+      "locked": "assets/skills/PistolsT2ArteryShot.png"
+    },
+    "PISTOLS-T2-IMP": {
+      "locked": "assets/skills/PistolsT2ArteryShot.png"
+    },
+    "PISTOLS-T2-WAY-1": {
+      "locked": "assets/skills/PistolsT2ArteryShot.png"
+    },
+    "PISTOLS-T2-WAY-2": {
+      "locked": "assets/skills/PistolsT2ArteryShot.png"
+    },
+    "PISTOLS-T3": {
+      "locked": "assets/skills/PistolsT3CrackingSkulls.png"
+    },
+    "PISTOLS-T3-CD": {
+      "locked": "assets/skills/PistolsT3CrackingSkulls.png"
+    },
+    "PISTOLS-T3-STA": {
+      "locked": "assets/skills/PistolsT3CrackingSkulls.png"
+    },
+    "PISTOLS-T3-IMP": {
+      "locked": "assets/skills/PistolsT3CrackingSkulls.png"
+    },
+    "PISTOLS-T3-WAY-1": {
+      "locked": "assets/skills/PistolsT3CrackingSkulls.png"
+    },
+    "PISTOLS-T3-WAY-2": {
+      "locked": "assets/skills/PistolsT3CrackingSkulls.png"
+    },
+    "PISTOLS-ULT": {
+      "locked": "assets/skills/PistolsULTBulletHell.png"
+    }
+  }
+}

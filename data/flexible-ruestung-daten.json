@@ -1,0 +1,2934 @@
+{
+  "schemaVersion": 1,
+  "professionId": "FLEXIBLEARMOR",
+  "professionKey": "LabelTreeFlexibleArmorName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "FLEXIBLEARMOR-P1",
+      "nameKey": "SkillFlexibleArmorP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorP1Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricDurabilityLoss",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              -0.5,
+              -1,
+              -2,
+              -3.5,
+              -5.5,
+              -8
+            ],
+            [
+              null,
+              -1,
+              -2,
+              -4,
+              -7,
+              -11,
+              -16
+            ],
+            [
+              null,
+              -1.5,
+              -3,
+              -6,
+              -10.5,
+              -16.5,
+              -24
+            ],
+            [
+              null,
+              -2,
+              -4,
+              -8,
+              -14,
+              -22,
+              -32
+            ],
+            [
+              null,
+              -2.5,
+              -5,
+              -10,
+              -17.5,
+              -27.5,
+              -40
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-P2",
+      "nameKey": "SkillFlexibleArmorP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorP2Desc",
+      "buffDurationSeconds": 4,
+      "maxStacks": 10,
+      "armorTables": [
+        {
+          "metricKey": "MetricEvasionPerStack",
+          "unit": "Wertung",
+          "unitKey": "UnitRating",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              2,
+              4,
+              8,
+              16,
+              28,
+              44,
+              64
+            ],
+            [
+              4,
+              8,
+              16,
+              32,
+              56,
+              88,
+              128
+            ],
+            [
+              6,
+              12,
+              24,
+              48,
+              84,
+              132,
+              192
+            ],
+            [
+              8,
+              16,
+              32,
+              64,
+              112,
+              176,
+              256
+            ],
+            [
+              10,
+              20,
+              40,
+              80,
+              140,
+              220,
+              320
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-P3",
+      "nameKey": "SkillFlexibleArmorP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorP3Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricEvasionIncrease",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              0.2,
+              0.4,
+              0.8,
+              1.4,
+              2.2,
+              3.2
+            ],
+            [
+              null,
+              0.4,
+              0.8,
+              1.6,
+              2.8,
+              4.4,
+              6.4
+            ],
+            [
+              null,
+              0.6,
+              1.2,
+              2.4,
+              4.2,
+              6.6,
+              9.6
+            ],
+            [
+              null,
+              0.8,
+              1.6,
+              3.2,
+              5.6,
+              8.8,
+              12.8
+            ],
+            [
+              null,
+              1,
+              2,
+              4,
+              7,
+              11,
+              16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-P4",
+      "nameKey": "SkillFlexibleArmorP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorP4Desc",
+      "requirementKey": "ConditionFlexibleArmorMinimum",
+      "buffDurationSeconds": 5,
+      "triggerCooldownSeconds": 60,
+      "staminaGranted": 50,
+      "runningCooldownReductionSeconds": 10,
+      "armorTables": [
+        {
+          "metricKey": "MetricEvasionDuringBuff",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              null,
+              null,
+              1,
+              2,
+              4,
+              8
+            ],
+            [
+              null,
+              null,
+              null,
+              2,
+              4,
+              8,
+              16
+            ],
+            [
+              null,
+              null,
+              null,
+              3,
+              6,
+              12,
+              24
+            ],
+            [
+              null,
+              null,
+              null,
+              4,
+              8,
+              16,
+              32
+            ],
+            [
+              null,
+              null,
+              null,
+              5,
+              10,
+              20,
+              40
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-P5",
+      "nameKey": "SkillFlexibleArmorP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorP5Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricDamageReductionRating",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              0.2,
+              0.4,
+              0.8,
+              1.4,
+              2.2,
+              3.2
+            ],
+            [
+              null,
+              0.4,
+              0.8,
+              1.6,
+              2.8,
+              4.4,
+              6.4
+            ],
+            [
+              null,
+              0.6,
+              1.2,
+              2.4,
+              4.2,
+              6.6,
+              9.6
+            ],
+            [
+              null,
+              0.8,
+              1.6,
+              3.2,
+              5.6,
+              8.8,
+              12.8
+            ],
+            [
+              null,
+              1,
+              2,
+              4,
+              7,
+              11,
+              16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-P6",
+      "nameKey": "SkillFlexibleArmorP6Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorP6Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricMentalDebuffBlockChance",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              null,
+              null,
+              null,
+              0.5,
+              1,
+              2
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              1,
+              2,
+              4
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              1.5,
+              3,
+              6
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              2,
+              4,
+              8
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              2.5,
+              5,
+              10
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T1",
+      "nameKey": "SkillFlexibleArmorT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 60,
+      "buffDurationSeconds": 5,
+      "followupDurationSeconds": 5,
+      "armorTables": [
+        {
+          "metricKey": "MetricShieldHpRatio",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              0.5,
+              1,
+              2,
+              4,
+              8,
+              13
+            ]
+          ]
+        },
+        {
+          "metricKey": "MetricShieldBreakDamage",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              4,
+              7,
+              11,
+              16,
+              22
+            ]
+          ]
+        }
+      ],
+      "descriptionKey": "SkillFlexibleArmorT1Desc"
+    },
+    {
+      "id": "FLEXIBLEARMOR-T1-CD",
+      "nameKey": "SkillFlexibleArmorT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T1-STA",
+      "nameKey": "SkillFlexibleArmorT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T1-IMP",
+      "nameKey": "SkillFlexibleArmorT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T1-WAY-1",
+      "nameKey": "SkillFlexibleArmorT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FLEXIBLEARMOR-T1-WAY-2",
+      "nameKey": "SkillFlexibleArmorT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FLEXIBLEARMOR-T2",
+      "nameKey": "SkillFlexibleArmorT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "armorTables": [
+        {
+          "metricKey": "MetricBarrierBaseDuration",
+          "unit": "s",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              4,
+              7,
+              11,
+              16,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T2-CD",
+      "nameKey": "SkillFlexibleArmorT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T2-STA",
+      "nameKey": "SkillFlexibleArmorT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T2-IMP",
+      "nameKey": "SkillFlexibleArmorT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraEffectDuration",
+          "unit": "s",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T2-WAY-1",
+      "nameKey": "SkillFlexibleArmorT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FLEXIBLEARMOR-T2-WAY-2",
+      "nameKey": "SkillFlexibleArmorT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FLEXIBLEARMOR-T3",
+      "nameKey": "SkillFlexibleArmorT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT3Desc",
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "evasionBonusPercent": 10,
+      "damageBonusPercent": 30,
+      "observedFollowupDurationSeconds": 13,
+      "followupEvasionPenaltyPercent": 20,
+      "armorTables": [
+        {
+          "metricKey": "EffectBaseDuration",
+          "unit": "s",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              1,
+              2,
+              4,
+              6,
+              9,
+              13
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T3-CD",
+      "nameKey": "SkillFlexibleArmorT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T3-STA",
+      "nameKey": "SkillFlexibleArmorT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T3-IMP",
+      "nameKey": "SkillFlexibleArmorT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricEvasion",
+          "unit": "%",
+          "values": [
+            14,
+            18,
+            22,
+            26,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEXIBLEARMOR-T3-WAY-1",
+      "nameKey": "SkillFlexibleArmorT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FLEXIBLEARMOR-T3-WAY-2",
+      "nameKey": "SkillFlexibleArmorT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillFlexibleArmorT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "FLEXIBLEARMOR-ULT",
+      "nameKey": "SkillFlexibleArmorUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillFlexibleArmorUltDesc",
+      "requirementKey": "ConditionFullFlexibleArmor",
+      "minimumArmorPieces": 7,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -0.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -1,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -3.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -5.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -1.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -3,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -10.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -16.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -24,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -14,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -22,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -32,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -5,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -10,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -17.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -27.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -40,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 2,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 4,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 8,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 16,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 28,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 44,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 64,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 4,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 8,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 16,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 32,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 56,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 88,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 128,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 6,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 12,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 24,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 48,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 84,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 132,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 192,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 8,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 16,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 32,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 64,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 112,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 176,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 256,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 10,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 20,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 40,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 80,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 140,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 220,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricEvasionPerStack",
+      "value": 320,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.4,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2.2,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2.8,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 4.4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 6.4,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.6,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2.4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 4.2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 6.6,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 9.6,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 5.6,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 8.8,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 12.8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 3,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 6,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 12,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 24,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 32,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 5,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 10,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 20,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricEvasionDuringBuff",
+      "value": 40,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.4,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2.2,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2.8,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 4.4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 6.4,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.6,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2.4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 4.2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 6.6,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 9.6,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 5.6,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 8.8,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 12.8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 1,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 0.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 1,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 1,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 2,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 2,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 2,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 3,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 1.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 3,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 3,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 3,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 6,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 4,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 4,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 4,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 5,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 2.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 5,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-P6",
+      "rank": 5,
+      "metricKey": "MetricMentalDebuffBlockChance",
+      "value": 10,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 0.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 13,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldBreakDamage",
+      "value": 22,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 1,
+      "unit": "s",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 2,
+      "unit": "s",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 4,
+      "unit": "s",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 7,
+      "unit": "s",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 11,
+      "unit": "s",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 16,
+      "unit": "s",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2",
+      "rank": 1,
+      "metricKey": "MetricBarrierBaseDuration",
+      "value": 22,
+      "unit": "s",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 1,
+      "unit": "s",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 2,
+      "unit": "s",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 4,
+      "unit": "s",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 6,
+      "unit": "s",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 9,
+      "unit": "s",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 13,
+      "unit": "s",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T1-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraEffectDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraEffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraEffectDuration",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraEffectDuration",
+      "value": 16,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraEffectDuration",
+      "value": 20,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricEvasion",
+      "value": 14,
+      "unit": "%"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricEvasion",
+      "value": 18,
+      "unit": "%"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricEvasion",
+      "value": 22,
+      "unit": "%"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricEvasion",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricEvasion",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "FLEXIBLEARMOR-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 10,
+      "unit": "s"
+    }
+  ],
+  "iconVariants": {
+    "FLEXIBLEARMOR-P1": {
+      "unlocked": "assets/skills/FlexibleArmorP1MaterialProofing.png"
+    },
+    "FLEXIBLEARMOR-P2": {
+      "unlocked": "assets/skills/FlexibleArmorP2ReactiveMindset.png"
+    },
+    "FLEXIBLEARMOR-P3": {
+      "unlocked": "assets/skills/FlexibleArmorP3LitheMovement.png"
+    },
+    "FLEXIBLEARMOR-P4": {
+      "unlocked": "assets/skills/FlexibleArmorP4RenewedFortitude.png"
+    },
+    "FLEXIBLEARMOR-P5": {
+      "locked": "assets/skills/FlexibleArmorP5ResourcefulLayering.png"
+    },
+    "FLEXIBLEARMOR-P6": {
+      "locked": "assets/skills/FlexibleArmorP6GarbedConfidence.png"
+    },
+    "FLEXIBLEARMOR-T1": {
+      "unlocked": "assets/skills/FlexibleArmorT1VengefulGuardian.png"
+    },
+    "FLEXIBLEARMOR-T1-CD": {
+      "unlocked": "assets/skills/FlexibleArmorT1VengefulGuardian.png"
+    },
+    "FLEXIBLEARMOR-T1-STA": {
+      "unlocked": "assets/skills/FlexibleArmorT1VengefulGuardian.png"
+    },
+    "FLEXIBLEARMOR-T1-IMP": {
+      "locked": "assets/skills/FlexibleArmorT1VengefulGuardian.png"
+    },
+    "FLEXIBLEARMOR-T1-WAY-1": {
+      "unlocked": "assets/skills/FlexibleArmorT1VengefulGuardian.png"
+    },
+    "FLEXIBLEARMOR-T1-WAY-2": {
+      "locked": "assets/skills/FlexibleArmorT1VengefulGuardian.png"
+    },
+    "FLEXIBLEARMOR-T2": {
+      "unlocked": "assets/skills/FlexibleArmorT2NegatingWard.png"
+    },
+    "FLEXIBLEARMOR-T2-CD": {
+      "locked": "assets/skills/FlexibleArmorT2NegatingWard.png"
+    },
+    "FLEXIBLEARMOR-T2-STA": {
+      "locked": "assets/skills/FlexibleArmorT2NegatingWard.png"
+    },
+    "FLEXIBLEARMOR-T2-IMP": {
+      "locked": "assets/skills/FlexibleArmorT2NegatingWard.png"
+    },
+    "FLEXIBLEARMOR-T2-WAY-1": {
+      "locked": "assets/skills/FlexibleArmorT2NegatingWard.png"
+    },
+    "FLEXIBLEARMOR-T2-WAY-2": {
+      "locked": "assets/skills/FlexibleArmorT2NegatingWard.png"
+    },
+    "FLEXIBLEARMOR-T3": {
+      "locked": "assets/skills/FlexibleArmorT3Outfall.png"
+    },
+    "FLEXIBLEARMOR-T3-CD": {
+      "locked": "assets/skills/FlexibleArmorT3Outfall.png"
+    },
+    "FLEXIBLEARMOR-T3-STA": {
+      "locked": "assets/skills/FlexibleArmorT3Outfall.png"
+    },
+    "FLEXIBLEARMOR-T3-IMP": {
+      "locked": "assets/skills/FlexibleArmorT3Outfall.png"
+    },
+    "FLEXIBLEARMOR-T3-WAY-1": {
+      "locked": "assets/skills/FlexibleArmorT3Outfall.png"
+    },
+    "FLEXIBLEARMOR-T3-WAY-2": {
+      "locked": "assets/skills/FlexibleArmorT3Outfall.png"
+    },
+    "FLEXIBLEARMOR-ULT": {
+      "locked": "assets/skills/FlexibleArmorULTUntouchable.png"
+    }
+  }
+}

@@ -1,0 +1,1254 @@
+{
+  "schemaVersion": 1,
+  "professionId": "MECHANICS",
+  "professionKey": "LabelTreeMechanicsName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "MECHANICS-P1",
+      "nameKey": "SkillMechanicsP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "effectKey": "SkillMechanicsP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-P2",
+      "nameKey": "SkillMechanicsP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillMechanicsP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-P3",
+      "nameKey": "SkillMechanicsP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillMechanicsP3Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLossReduction",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-P4",
+      "nameKey": "SkillMechanicsP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillMechanicsP4Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricResistance",
+          "unit": "%",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-P5",
+      "nameKey": "SkillMechanicsP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillMechanicsP5Desc",
+      "durationReductionPercent": 20,
+      "unlockDisplayed": 31,
+      "metrics": [
+        {
+          "metricKey": "MetricDebuffReductionChance",
+          "unit": "%",
+          "values": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T1",
+      "nameKey": "SkillMechanicsT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillMechanicsT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "buffDurationSeconds": 4,
+      "baseProcChancePercent": 25,
+      "debuffKey": "EffectRooted",
+      "debuffDurationSeconds": 2
+    },
+    {
+      "id": "MECHANICS-T1-CD",
+      "nameKey": "SkillMechanicsT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillMechanicsT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T1-STA",
+      "nameKey": "SkillMechanicsT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillMechanicsT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T1-IMP",
+      "nameKey": "SkillMechanicsT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillMechanicsT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricRootChance",
+          "unit": "%",
+          "values": [
+            36,
+            52,
+            68,
+            84,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T1-WAY-1",
+      "nameKey": "SkillMechanicsT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillMechanicsT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "MECHANICS-T1-WAY-2",
+      "nameKey": "SkillMechanicsT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillMechanicsT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "MECHANICS-T2",
+      "nameKey": "SkillMechanicsT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillMechanicsT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "objectDurationSeconds": 5,
+      "unlockDisplayed": 16
+    },
+    {
+      "id": "MECHANICS-T2-CD",
+      "nameKey": "SkillMechanicsT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillMechanicsT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T2-STA",
+      "nameKey": "SkillMechanicsT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillMechanicsT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T2-IMP",
+      "nameKey": "SkillMechanicsT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillMechanicsT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricDespawnDelay",
+          "unit": "s",
+          "values": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T2-WAY-1",
+      "nameKey": "SkillMechanicsT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillMechanicsT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "MECHANICS-T2-WAY-2",
+      "nameKey": "SkillMechanicsT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillMechanicsT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "MECHANICS-T3",
+      "nameKey": "SkillMechanicsT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillMechanicsT3Desc",
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "confusedDurationSeconds": 3,
+      "dazedDurationSeconds": 3,
+      "blindedDurationSeconds": 2,
+      "unlockDisplayed": 31
+    },
+    {
+      "id": "MECHANICS-T3-CD",
+      "nameKey": "SkillMechanicsT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillMechanicsT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T3-STA",
+      "nameKey": "SkillMechanicsT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillMechanicsT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T3-IMP",
+      "nameKey": "SkillMechanicsT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillMechanicsT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricBlinded",
+          "unit": "s",
+          "values": [
+            3,
+            3,
+            4,
+            4,
+            5
+          ]
+        },
+        {
+          "metricKey": "MetricDazed",
+          "unit": "s",
+          "values": [
+            3,
+            4,
+            4,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MECHANICS-T3-WAY-1",
+      "nameKey": "SkillMechanicsT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillMechanicsT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "MECHANICS-T3-WAY-2",
+      "nameKey": "SkillMechanicsT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillMechanicsT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "MECHANICS-ULT",
+      "nameKey": "SkillMechanicsUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillMechanicsUltDesc",
+      "objectDurationSeconds": 900,
+      "ammo": 120,
+      "objectHpPercentOwnerMaxHp": 30,
+      "maxActiveTurrets": 1,
+      "weaponDpsReferenceKey": "RuleBestWeaponDps",
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            720,
+            630,
+            540,
+            450,
+            360
+          ]
+        },
+        {
+          "metricKey": "MetricTurretDps",
+          "unit": "%",
+          "values": [
+            180,
+            210,
+            240,
+            270,
+            300
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraLootChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraLootChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraLootChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraLootChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraLootChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraLootChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraLootChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraLootChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraLootChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraLootChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P2",
+      "rank": 1,
+      "metricKey": "MetricGatherSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P2",
+      "rank": 2,
+      "metricKey": "MetricGatherSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P2",
+      "rank": 3,
+      "metricKey": "MetricGatherSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P2",
+      "rank": 4,
+      "metricKey": "MetricGatherSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P2",
+      "rank": 5,
+      "metricKey": "MetricGatherSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P4",
+      "rank": 1,
+      "metricKey": "MetricResistance",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P4",
+      "rank": 2,
+      "metricKey": "MetricResistance",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P4",
+      "rank": 3,
+      "metricKey": "MetricResistance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P4",
+      "rank": 4,
+      "metricKey": "MetricResistance",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P4",
+      "rank": 5,
+      "metricKey": "MetricResistance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P5",
+      "rank": 1,
+      "metricKey": "MetricDebuffReductionChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P5",
+      "rank": 2,
+      "metricKey": "MetricDebuffReductionChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P5",
+      "rank": 3,
+      "metricKey": "MetricDebuffReductionChance",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P5",
+      "rank": 4,
+      "metricKey": "MetricDebuffReductionChance",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-P5",
+      "rank": 5,
+      "metricKey": "MetricDebuffReductionChance",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricRootChance",
+      "value": 36,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricRootChance",
+      "value": 52,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricRootChance",
+      "value": 68,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricRootChance",
+      "value": 84,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricRootChance",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricDespawnDelay",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricDespawnDelay",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricDespawnDelay",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricDespawnDelay",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricDespawnDelay",
+      "value": 10,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricBlinded",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricBlinded",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricBlinded",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricBlinded",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricBlinded",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricDazed",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricDazed",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricDazed",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricDazed",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricDazed",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 720,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 630,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 540,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 450,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 360,
+      "unit": "s"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricTurretDps",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricTurretDps",
+      "value": 210,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricTurretDps",
+      "value": 240,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricTurretDps",
+      "value": 270,
+      "unit": "%"
+    },
+    {
+      "skillId": "MECHANICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricTurretDps",
+      "value": 300,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "MECHANICS-P1": {
+      "locked": "assets/skills/MechanicsP1EfficientHandyman.png"
+    },
+    "MECHANICS-P2": {
+      "locked": "assets/skills/MechanicsP2FasterDisassembly.png"
+    },
+    "MECHANICS-P3": {
+      "locked": "assets/skills/MechanicsP3MechanicSMaintenance.png"
+    },
+    "MECHANICS-P4": {
+      "locked": "assets/skills/MechanicsP4ResoluteResilience.png"
+    },
+    "MECHANICS-P5": {
+      "locked": "assets/skills/MechanicsP5Workaholic.png"
+    },
+    "MECHANICS-T1": {
+      "unlocked": "assets/skills/MechanicsT1Deadlock.png"
+    },
+    "MECHANICS-T1-CD": {
+      "locked": "assets/skills/MechanicsT1Deadlock.png"
+    },
+    "MECHANICS-T1-STA": {
+      "unlocked": "assets/skills/MechanicsT1Deadlock.png"
+    },
+    "MECHANICS-T1-IMP": {
+      "unlocked": "assets/skills/MechanicsT1Deadlock.png"
+    },
+    "MECHANICS-T1-WAY-1": {
+      "locked": "assets/skills/MechanicsT1Deadlock.png"
+    },
+    "MECHANICS-T1-WAY-2": {
+      "locked": "assets/skills/MechanicsT1Deadlock.png"
+    },
+    "MECHANICS-T2": {
+      "locked": "assets/skills/MechanicsT2DistractingRobot.png"
+    },
+    "MECHANICS-T2-CD": {
+      "locked": "assets/skills/MechanicsT2DistractingRobot.png"
+    },
+    "MECHANICS-T2-STA": {
+      "locked": "assets/skills/MechanicsT2DistractingRobot.png"
+    },
+    "MECHANICS-T2-IMP": {
+      "locked": "assets/skills/MechanicsT2DistractingRobot.png"
+    },
+    "MECHANICS-T2-WAY-1": {
+      "locked": "assets/skills/MechanicsT2DistractingRobot.png"
+    },
+    "MECHANICS-T2-WAY-2": {
+      "locked": "assets/skills/MechanicsT2DistractingRobot.png"
+    },
+    "MECHANICS-T3": {
+      "locked": "assets/skills/MechanicsT3Blackout.png"
+    },
+    "MECHANICS-T3-CD": {
+      "locked": "assets/skills/MechanicsT3Blackout.png"
+    },
+    "MECHANICS-T3-STA": {
+      "locked": "assets/skills/MechanicsT3Blackout.png"
+    },
+    "MECHANICS-T3-IMP": {
+      "locked": "assets/skills/MechanicsT3Blackout.png"
+    },
+    "MECHANICS-T3-WAY-1": {
+      "locked": "assets/skills/MechanicsT3Blackout.png"
+    },
+    "MECHANICS-T3-WAY-2": {
+      "locked": "assets/skills/MechanicsT3Blackout.png"
+    },
+    "MECHANICS-ULT": {
+      "locked": "assets/skills/MechanicsULTTitanTurret.png"
+    }
+  }
+}

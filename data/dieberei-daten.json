@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": 1,
+  "professionId": "THIEVERY",
+  "professionKey": "LabelTreeThieveryName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "THIEVERY-P1",
+      "nameKey": "SkillThieveryP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "effectKey": "SkillThieveryP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-P2",
+      "nameKey": "SkillThieveryP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillThieveryP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-P3",
+      "nameKey": "SkillThieveryP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillThieveryP3Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLossReduction",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-P4",
+      "nameKey": "SkillThieveryP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillThieveryP4Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricClimbSpeed",
+          "unit": "%",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "metricKey": "MetricJumpHeight",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-P5",
+      "nameKey": "SkillThieveryP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillThieveryP5Desc",
+      "requirementKey": "ConditionRangedWeapon",
+      "unlockDisplayed": 31,
+      "metrics": [
+        {
+          "metricKey": "MetricShootingAccuracy",
+          "unit": "%",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T1",
+      "nameKey": "SkillThieveryT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillThieveryT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "baseDurationSeconds": 10,
+      "observedDurationSeconds": 30,
+      "observedStaminaCost": 43,
+      "observedEnhancerRanks": {
+        "stamina": 4,
+        "impact": 5
+      },
+      "descriptionKey": "SkillThieveryT1Desc"
+    },
+    {
+      "id": "THIEVERY-T1-CD",
+      "nameKey": "SkillThieveryT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillThieveryT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T1-STA",
+      "nameKey": "SkillThieveryT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillThieveryT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T1-IMP",
+      "nameKey": "SkillThieveryT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillThieveryT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            14,
+            18,
+            22,
+            26,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T1-WAY-1",
+      "nameKey": "SkillThieveryT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillThieveryT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "THIEVERY-T1-WAY-2",
+      "nameKey": "SkillThieveryT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillThieveryT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "THIEVERY-T2",
+      "nameKey": "SkillThieveryT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillThieveryT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 220,
+      "buffDurationSeconds": 10,
+      "movementSpeedBonusPercent": 25,
+      "unlockDisplayed": 16
+    },
+    {
+      "id": "THIEVERY-T2-CD",
+      "nameKey": "SkillThieveryT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillThieveryT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            192,
+            168,
+            148,
+            132,
+            120
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T2-STA",
+      "nameKey": "SkillThieveryT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillThieveryT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T2-IMP",
+      "nameKey": "SkillThieveryT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillThieveryT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricMoveSpeed",
+          "unit": "%",
+          "values": [
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T2-WAY-1",
+      "nameKey": "SkillThieveryT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillThieveryT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "THIEVERY-T2-WAY-2",
+      "nameKey": "SkillThieveryT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillThieveryT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "THIEVERY-T3",
+      "nameKey": "SkillThieveryT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillThieveryT3Desc",
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "debuffKey": "EffectStunned",
+      "debuffDurationSeconds": 5,
+      "buffDurationSeconds": 2,
+      "unlockDisplayed": 31
+    },
+    {
+      "id": "THIEVERY-T3-CD",
+      "nameKey": "SkillThieveryT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillThieveryT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T3-STA",
+      "nameKey": "SkillThieveryT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillThieveryT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T3-IMP",
+      "nameKey": "SkillThieveryT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillThieveryT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricHasteBuffDuration",
+          "unit": "s",
+          "values": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "THIEVERY-T3-WAY-1",
+      "nameKey": "SkillThieveryT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillThieveryT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "THIEVERY-T3-WAY-2",
+      "nameKey": "SkillThieveryT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillThieveryT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "THIEVERY-ULT",
+      "nameKey": "SkillThieveryUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillThieveryUltDesc",
+      "radiusMeters": 5,
+      "objectDurationSeconds": 1200,
+      "maxActiveSentries": 1,
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "MetricExitVisibility",
+          "unit": "s",
+          "values": [
+            12,
+            24,
+            36,
+            48,
+            60
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraLootChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraLootChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraLootChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraLootChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraLootChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraLootChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraLootChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraLootChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraLootChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraLootChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P2",
+      "rank": 1,
+      "metricKey": "MetricGatherSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P2",
+      "rank": 2,
+      "metricKey": "MetricGatherSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P2",
+      "rank": 3,
+      "metricKey": "MetricGatherSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P2",
+      "rank": 4,
+      "metricKey": "MetricGatherSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P2",
+      "rank": 5,
+      "metricKey": "MetricGatherSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 1,
+      "metricKey": "MetricClimbSpeed",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 2,
+      "metricKey": "MetricClimbSpeed",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 3,
+      "metricKey": "MetricClimbSpeed",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 4,
+      "metricKey": "MetricClimbSpeed",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 5,
+      "metricKey": "MetricClimbSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 1,
+      "metricKey": "MetricJumpHeight",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 2,
+      "metricKey": "MetricJumpHeight",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 3,
+      "metricKey": "MetricJumpHeight",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 4,
+      "metricKey": "MetricJumpHeight",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P4",
+      "rank": 5,
+      "metricKey": "MetricJumpHeight",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P5",
+      "rank": 1,
+      "metricKey": "MetricShootingAccuracy",
+      "value": 2,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P5",
+      "rank": 2,
+      "metricKey": "MetricShootingAccuracy",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P5",
+      "rank": 3,
+      "metricKey": "MetricShootingAccuracy",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P5",
+      "rank": 4,
+      "metricKey": "MetricShootingAccuracy",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-P5",
+      "rank": 5,
+      "metricKey": "MetricShootingAccuracy",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T1-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 14,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 18,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 22,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 26,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T1-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 30,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 192,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 168,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 148,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 132,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricMoveSpeed",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricMoveSpeed",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricMoveSpeed",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricMoveSpeed",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricMoveSpeed",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "THIEVERY-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricHasteBuffDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricHasteBuffDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricHasteBuffDuration",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricHasteBuffDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricHasteBuffDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 1,
+      "metricKey": "MetricExitVisibility",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 2,
+      "metricKey": "MetricExitVisibility",
+      "value": 24,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 3,
+      "metricKey": "MetricExitVisibility",
+      "value": 36,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 4,
+      "metricKey": "MetricExitVisibility",
+      "value": 48,
+      "unit": "s"
+    },
+    {
+      "skillId": "THIEVERY-ULT",
+      "rank": 5,
+      "metricKey": "MetricExitVisibility",
+      "value": 60,
+      "unit": "s"
+    }
+  ],
+  "iconVariants": {
+    "THIEVERY-P1": {
+      "locked": "assets/skills/ThieveryP1EfficientLarcenist.png"
+    },
+    "THIEVERY-P2": {
+      "locked": "assets/skills/ThieveryP2FasterPilfering.png"
+    },
+    "THIEVERY-P3": {
+      "locked": "assets/skills/ThieveryP3ThiefSMaintenance.png"
+    },
+    "THIEVERY-P4": {
+      "locked": "assets/skills/ThieveryP4CatLikeAgility.png"
+    },
+    "THIEVERY-P5": {
+      "locked": "assets/skills/ThieveryP5SteadyHands.png"
+    },
+    "THIEVERY-T1": {
+      "unlocked": "assets/skills/ThieveryT1SixthSense.png"
+    },
+    "THIEVERY-T1-CD": {
+      "locked": "assets/skills/ThieveryT1SixthSense.png"
+    },
+    "THIEVERY-T1-STA": {
+      "unlocked": "assets/skills/ThieveryT1SixthSense.png"
+    },
+    "THIEVERY-T1-IMP": {
+      "unlocked": "assets/skills/ThieveryT1SixthSense.png"
+    },
+    "THIEVERY-T1-WAY-1": {
+      "locked": "assets/skills/ThieveryT1SixthSense.png"
+    },
+    "THIEVERY-T1-WAY-2": {
+      "locked": "assets/skills/ThieveryT1SixthSense.png"
+    },
+    "THIEVERY-T2": {
+      "locked": "assets/skills/ThieveryT2CutAndRun.png"
+    },
+    "THIEVERY-T2-CD": {
+      "locked": "assets/skills/ThieveryT2CutAndRun.png"
+    },
+    "THIEVERY-T2-STA": {
+      "locked": "assets/skills/ThieveryT2CutAndRun.png"
+    },
+    "THIEVERY-T2-IMP": {
+      "locked": "assets/skills/ThieveryT2CutAndRun.png"
+    },
+    "THIEVERY-T2-WAY-1": {
+      "locked": "assets/skills/ThieveryT2CutAndRun.png"
+    },
+    "THIEVERY-T2-WAY-2": {
+      "locked": "assets/skills/ThieveryT2CutAndRun.png"
+    },
+    "THIEVERY-T3": {
+      "locked": "assets/skills/ThieveryT3Chloroform.png"
+    },
+    "THIEVERY-T3-CD": {
+      "locked": "assets/skills/ThieveryT3Chloroform.png"
+    },
+    "THIEVERY-T3-STA": {
+      "locked": "assets/skills/ThieveryT3Chloroform.png"
+    },
+    "THIEVERY-T3-IMP": {
+      "locked": "assets/skills/ThieveryT3Chloroform.png"
+    },
+    "THIEVERY-T3-WAY-1": {
+      "locked": "assets/skills/ThieveryT3Chloroform.png"
+    },
+    "THIEVERY-T3-WAY-2": {
+      "locked": "assets/skills/ThieveryT3Chloroform.png"
+    },
+    "THIEVERY-ULT": {
+      "locked": "assets/skills/ThieveryULTSurveillanceSentry.png"
+    }
+  }
+}

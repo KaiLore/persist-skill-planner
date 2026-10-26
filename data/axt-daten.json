@@ -1,0 +1,1504 @@
+{
+  "schemaVersion": 1,
+  "treeId": "AXES",
+  "nameKey": "TreeAxeName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "AXES-P1",
+      "nameKey": "SkillAxeP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-P1",
+        "nameKey": "SkillAxeP1Name",
+        "effectKey": "SkillAxeP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeP1Desc"
+    },
+    {
+      "id": "AXES-P2",
+      "nameKey": "SkillAxeP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-P2",
+        "nameKey": "SkillAxeP2Name",
+        "effectKey": "SkillAxeP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricAttackSpeed",
+            "unit": "%",
+            "values": [
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeP2Desc"
+    },
+    {
+      "id": "AXES-P3",
+      "nameKey": "SkillAxeP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-P3",
+        "nameKey": "SkillAxeP3Name",
+        "effectKey": "SkillAxeP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeP3Desc"
+    },
+    {
+      "id": "AXES-P4",
+      "nameKey": "SkillAxeP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-P4",
+        "nameKey": "SkillAxeP4Name",
+        "effectKey": "SkillAxeP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricExecuteHpThreshold",
+            "unit": "%",
+            "values": [
+              22,
+              24,
+              26,
+              28,
+              30
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeP4Desc"
+    },
+    {
+      "id": "AXES-T1",
+      "nameKey": "SkillAxeT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-T1",
+        "nameKey": "SkillAxeT1Name",
+        "effectKey": "SkillAxeT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "baseActiveWeaponDpsPercent": 200,
+        "requiresActiveWeaponKey": "LabelTreeAxeName"
+      },
+      "descriptionKey": "SkillAxeT1Desc"
+    },
+    {
+      "id": "AXES-T1-CD",
+      "nameKey": "SkillAxeT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T1",
+      "order": null,
+      "details": {
+        "id": "AXES-T1-CD",
+        "nameKey": "SkillAxeT1CooldownName",
+        "effectKey": "SkillAxeT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT1CooldownDesc"
+    },
+    {
+      "id": "AXES-T1-STA",
+      "nameKey": "SkillAxeT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T1",
+      "order": null,
+      "details": {
+        "id": "AXES-T1-STA",
+        "nameKey": "SkillAxeT1StaminaName",
+        "effectKey": "SkillAxeT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT1StaminaDesc"
+    },
+    {
+      "id": "AXES-T1-IMP",
+      "nameKey": "SkillAxeT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T1",
+      "order": null,
+      "details": {
+        "id": "AXES-T1-IMP",
+        "nameKey": "SkillAxeT1ImpactName",
+        "effectKey": "SkillAxeT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              220,
+              240,
+              260,
+              280,
+              300
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT1ImpactDesc"
+    },
+    {
+      "id": "AXES-T1-WAY-1",
+      "nameKey": "SkillAxeT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "AXES-T1",
+      "order": 1,
+      "details": {
+        "id": "AXES-T1-WAY-1",
+        "nameKey": "SkillAxeT1Way1Name",
+        "effectKey": "SkillAxeT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAxeT1Way1Desc"
+    },
+    {
+      "id": "AXES-T1-WAY-2",
+      "nameKey": "SkillAxeT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "AXES-T1",
+      "order": 2,
+      "details": {
+        "id": "AXES-T1-WAY-2",
+        "nameKey": "SkillAxeT1Way2Name",
+        "effectKey": "SkillAxeT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAxeT1Way2Desc"
+    },
+    {
+      "id": "AXES-T2",
+      "nameKey": "SkillAxeT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-T2",
+        "nameKey": "SkillAxeT2Name",
+        "effectKey": "SkillAxeT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "baseActiveWeaponDpsPercent": 250,
+        "crippledDurationSeconds": 4,
+        "buffDurationSeconds": 5,
+        "baseCritDamageBonusPercent": 25,
+        "requiresActiveWeaponKey": "LabelTreeAxeName"
+      },
+      "descriptionKey": "SkillAxeT2Desc"
+    },
+    {
+      "id": "AXES-T2-CD",
+      "nameKey": "SkillAxeT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T2",
+      "order": null,
+      "details": {
+        "id": "AXES-T2-CD",
+        "nameKey": "SkillAxeT2CooldownName",
+        "effectKey": "SkillAxeT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT2CooldownDesc"
+    },
+    {
+      "id": "AXES-T2-STA",
+      "nameKey": "SkillAxeT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T2",
+      "order": null,
+      "details": {
+        "id": "AXES-T2-STA",
+        "nameKey": "SkillAxeT2StaminaName",
+        "effectKey": "SkillAxeT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT2StaminaDesc"
+    },
+    {
+      "id": "AXES-T2-IMP",
+      "nameKey": "SkillAxeT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T2",
+      "order": null,
+      "details": {
+        "id": "AXES-T2-IMP",
+        "nameKey": "SkillAxeT2ImpactName",
+        "effectKey": "SkillAxeT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              250,
+              350,
+              350,
+              350,
+              450
+            ]
+          },
+          {
+            "metricKey": "MetricCrippleDuration",
+            "unit": "s",
+            "values": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "metricKey": "EffectDuration",
+            "unit": "s",
+            "values": [
+              5,
+              5,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "metricKey": "MetricBuffCritDamage",
+            "unit": "%",
+            "values": [
+              25,
+              25,
+              25,
+              50,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT2ImpactDesc"
+    },
+    {
+      "id": "AXES-T2-WAY-1",
+      "nameKey": "SkillAxeT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "AXES-T2",
+      "order": 1,
+      "details": {
+        "id": "AXES-T2-WAY-1",
+        "nameKey": "SkillAxeT2Way1Name",
+        "effectKey": "SkillAxeT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAxeT2Way1Desc"
+    },
+    {
+      "id": "AXES-T2-WAY-2",
+      "nameKey": "SkillAxeT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "AXES-T2",
+      "order": 2,
+      "details": {
+        "id": "AXES-T2-WAY-2",
+        "nameKey": "SkillAxeT2Way2Name",
+        "effectKey": "SkillAxeT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAxeT2Way2Desc"
+    },
+    {
+      "id": "AXES-T3",
+      "nameKey": "SkillAxeT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-T3",
+        "nameKey": "SkillAxeT3Name",
+        "effectKey": "SkillAxeT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "buffDurationSeconds": 10,
+        "baseDamageBonusPercent": 65,
+        "requiresActiveWeaponKey": "LabelTreeAxeName"
+      },
+      "descriptionKey": "SkillAxeT3Desc"
+    },
+    {
+      "id": "AXES-T3-CD",
+      "nameKey": "SkillAxeT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T3",
+      "order": null,
+      "details": {
+        "id": "AXES-T3-CD",
+        "nameKey": "SkillAxeT3CooldownName",
+        "effectKey": "SkillAxeT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT3CooldownDesc"
+    },
+    {
+      "id": "AXES-T3-STA",
+      "nameKey": "SkillAxeT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T3",
+      "order": null,
+      "details": {
+        "id": "AXES-T3-STA",
+        "nameKey": "SkillAxeT3StaminaName",
+        "effectKey": "SkillAxeT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT3StaminaDesc"
+    },
+    {
+      "id": "AXES-T3-IMP",
+      "nameKey": "SkillAxeT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "AXES-T3",
+      "order": null,
+      "details": {
+        "id": "AXES-T3-IMP",
+        "nameKey": "SkillAxeT3ImpactName",
+        "effectKey": "SkillAxeT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              70,
+              75,
+              80,
+              85,
+              90
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeT3ImpactDesc"
+    },
+    {
+      "id": "AXES-T3-WAY-1",
+      "nameKey": "SkillAxeT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "AXES-T3",
+      "order": 1,
+      "details": {
+        "id": "AXES-T3-WAY-1",
+        "nameKey": "SkillAxeT3Way1Name",
+        "effectKey": "SkillAxeT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAxeT3Way1Desc"
+    },
+    {
+      "id": "AXES-T3-WAY-2",
+      "nameKey": "SkillAxeT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "AXES-T3",
+      "order": 2,
+      "details": {
+        "id": "AXES-T3-WAY-2",
+        "nameKey": "SkillAxeT3Way2Name",
+        "effectKey": "SkillAxeT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAxeT3Way2Desc"
+    },
+    {
+      "id": "AXES-ULT",
+      "nameKey": "SkillAxeUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "AXES-ULT",
+        "nameKey": "SkillAxeUltName",
+        "effectKey": "SkillAxeUltDesc",
+        "hits": 5,
+        "bleedDurationSeconds": 20,
+        "suppressedDurationSeconds": 6,
+        "requiresActiveWeaponKey": "LabelTreeAxeName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              120,
+              140,
+              160,
+              180,
+              200
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAxeUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "AXES-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P2",
+      "rank": 1,
+      "metricKey": "MetricAttackSpeed",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P2",
+      "rank": 2,
+      "metricKey": "MetricAttackSpeed",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P2",
+      "rank": 3,
+      "metricKey": "MetricAttackSpeed",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P2",
+      "rank": 4,
+      "metricKey": "MetricAttackSpeed",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P2",
+      "rank": 5,
+      "metricKey": "MetricAttackSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P4",
+      "rank": 1,
+      "metricKey": "MetricExecuteHpThreshold",
+      "value": 22,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P4",
+      "rank": 2,
+      "metricKey": "MetricExecuteHpThreshold",
+      "value": 24,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P4",
+      "rank": 3,
+      "metricKey": "MetricExecuteHpThreshold",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P4",
+      "rank": 4,
+      "metricKey": "MetricExecuteHpThreshold",
+      "value": 28,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-P4",
+      "rank": 5,
+      "metricKey": "MetricExecuteHpThreshold",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 220,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 240,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 260,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 280,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 300,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 450,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricCrippleDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricCrippleDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricCrippleDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricCrippleDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricCrippleDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 7,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricBuffCritDamage",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricBuffCritDamage",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricBuffCritDamage",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricBuffCritDamage",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricBuffCritDamage",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 70,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 75,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 85,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 120,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 140,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 160,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "AXES-ULT",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 200,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "AXES-P1": {
+      "locked": "assets/skills/AxesP1SkilledAxeman.png"
+    },
+    "AXES-P2": {
+      "locked": "assets/skills/AxesP2FollowThrough.png"
+    },
+    "AXES-P3": {
+      "locked": "assets/skills/AxesP3RustPrevention.png"
+    },
+    "AXES-P4": {
+      "locked": "assets/skills/AxesP4HeadmanSEdge.png"
+    },
+    "AXES-T1": {
+      "locked": "assets/skills/AxesT1Timber.png"
+    },
+    "AXES-T1-CD": {
+      "locked": "assets/skills/AxesT1Timber.png"
+    },
+    "AXES-T1-STA": {
+      "locked": "assets/skills/AxesT1Timber.png"
+    },
+    "AXES-T1-IMP": {
+      "locked": "assets/skills/AxesT1Timber.png"
+    },
+    "AXES-T1-WAY-1": {
+      "locked": "assets/skills/AxesT1Timber.png"
+    },
+    "AXES-T1-WAY-2": {
+      "locked": "assets/skills/AxesT1Timber.png"
+    },
+    "AXES-T2": {
+      "locked": "assets/skills/AxesT2ExhaustingAttack.png"
+    },
+    "AXES-T2-CD": {
+      "locked": "assets/skills/AxesT2ExhaustingAttack.png"
+    },
+    "AXES-T2-STA": {
+      "locked": "assets/skills/AxesT2ExhaustingAttack.png"
+    },
+    "AXES-T2-IMP": {
+      "locked": "assets/skills/AxesT2ExhaustingAttack.png"
+    },
+    "AXES-T2-WAY-1": {
+      "locked": "assets/skills/AxesT2ExhaustingAttack.png"
+    },
+    "AXES-T2-WAY-2": {
+      "locked": "assets/skills/AxesT2ExhaustingAttack.png"
+    },
+    "AXES-T3": {
+      "locked": "assets/skills/AxesT3AgonyHits.png"
+    },
+    "AXES-T3-CD": {
+      "locked": "assets/skills/AxesT3AgonyHits.png"
+    },
+    "AXES-T3-STA": {
+      "locked": "assets/skills/AxesT3AgonyHits.png"
+    },
+    "AXES-T3-IMP": {
+      "locked": "assets/skills/AxesT3AgonyHits.png"
+    },
+    "AXES-T3-WAY-1": {
+      "locked": "assets/skills/AxesT3AgonyHits.png"
+    },
+    "AXES-T3-WAY-2": {
+      "locked": "assets/skills/AxesT3AgonyHits.png"
+    },
+    "AXES-ULT": {
+      "locked": "assets/skills/AxesULTBerserkerSpirit.png"
+    }
+  }
+}

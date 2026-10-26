@@ -1,0 +1,1410 @@
+{
+  "schemaVersion": 1,
+  "treeId": "ASSAULTRIFLES",
+  "nameKey": "TreeAssaultRifleName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "ASSAULTRIFLES-P1",
+      "nameKey": "SkillAssaultRifleP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-P1",
+        "nameKey": "SkillAssaultRifleP1Name",
+        "effectKey": "SkillAssaultRifleP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleP1Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-P2",
+      "nameKey": "SkillAssaultRifleP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-P2",
+        "nameKey": "SkillAssaultRifleP2Name",
+        "effectKey": "SkillAssaultRifleP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricReloadSpeed",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleP2Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-P3",
+      "nameKey": "SkillAssaultRifleP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-P3",
+        "nameKey": "SkillAssaultRifleP3Name",
+        "effectKey": "SkillAssaultRifleP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleP3Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-P4",
+      "nameKey": "SkillAssaultRifleP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-P4",
+        "nameKey": "SkillAssaultRifleP4Name",
+        "effectKey": "SkillAssaultRifleP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricHeadshotDamage",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleP4Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T1",
+      "nameKey": "SkillAssaultRifleT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T1",
+        "nameKey": "SkillAssaultRifleT1Name",
+        "effectKey": "SkillAssaultRifleT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 6,
+        "baseDamageBonusPercent": 40,
+        "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
+      },
+      "descriptionKey": "SkillAssaultRifleT1Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T1-CD",
+      "nameKey": "SkillAssaultRifleT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T1",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T1-CD",
+        "nameKey": "SkillAssaultRifleT1CooldownName",
+        "effectKey": "SkillAssaultRifleT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT1CooldownDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T1-STA",
+      "nameKey": "SkillAssaultRifleT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T1",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T1-STA",
+        "nameKey": "SkillAssaultRifleT1StaminaName",
+        "effectKey": "SkillAssaultRifleT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT1StaminaDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T1-IMP",
+      "nameKey": "SkillAssaultRifleT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T1",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T1-IMP",
+        "nameKey": "SkillAssaultRifleT1ImpactName",
+        "effectKey": "SkillAssaultRifleT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              44,
+              48,
+              52,
+              56,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT1ImpactDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T1-WAY-1",
+      "nameKey": "SkillAssaultRifleT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "ASSAULTRIFLES-T1",
+      "order": 1,
+      "details": {
+        "id": "ASSAULTRIFLES-T1-WAY-1",
+        "nameKey": "SkillAssaultRifleT1Way1Name",
+        "effectKey": "SkillAssaultRifleT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAssaultRifleT1Way1Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T1-WAY-2",
+      "nameKey": "SkillAssaultRifleT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "ASSAULTRIFLES-T1",
+      "order": 2,
+      "details": {
+        "id": "ASSAULTRIFLES-T1-WAY-2",
+        "nameKey": "SkillAssaultRifleT1Way2Name",
+        "effectKey": "SkillAssaultRifleT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAssaultRifleT1Way2Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T2",
+      "nameKey": "SkillAssaultRifleT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T2",
+        "nameKey": "SkillAssaultRifleT2Name",
+        "effectKey": "SkillAssaultRifleT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "baseActiveWeaponDpsPercent": 200,
+        "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
+      },
+      "descriptionKey": "SkillAssaultRifleT2Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T2-CD",
+      "nameKey": "SkillAssaultRifleT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T2",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T2-CD",
+        "nameKey": "SkillAssaultRifleT2CooldownName",
+        "effectKey": "SkillAssaultRifleT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT2CooldownDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T2-STA",
+      "nameKey": "SkillAssaultRifleT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T2",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T2-STA",
+        "nameKey": "SkillAssaultRifleT2StaminaName",
+        "effectKey": "SkillAssaultRifleT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT2StaminaDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T2-IMP",
+      "nameKey": "SkillAssaultRifleT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T2",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T2-IMP",
+        "nameKey": "SkillAssaultRifleT2ImpactName",
+        "effectKey": "SkillAssaultRifleT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              230,
+              260,
+              290,
+              320,
+              350
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT2ImpactDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T2-WAY-1",
+      "nameKey": "SkillAssaultRifleT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "ASSAULTRIFLES-T2",
+      "order": 1,
+      "details": {
+        "id": "ASSAULTRIFLES-T2-WAY-1",
+        "nameKey": "SkillAssaultRifleT2Way1Name",
+        "effectKey": "SkillAssaultRifleT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAssaultRifleT2Way1Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T2-WAY-2",
+      "nameKey": "SkillAssaultRifleT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "ASSAULTRIFLES-T2",
+      "order": 2,
+      "details": {
+        "id": "ASSAULTRIFLES-T2-WAY-2",
+        "nameKey": "SkillAssaultRifleT2Way2Name",
+        "effectKey": "SkillAssaultRifleT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAssaultRifleT2Way2Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T3",
+      "nameKey": "SkillAssaultRifleT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T3",
+        "nameKey": "SkillAssaultRifleT3Name",
+        "effectKey": "SkillAssaultRifleT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "buffDurationSeconds": 8,
+        "baseDamageBonusPercent": 80,
+        "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
+      },
+      "descriptionKey": "SkillAssaultRifleT3Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T3-CD",
+      "nameKey": "SkillAssaultRifleT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T3",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T3-CD",
+        "nameKey": "SkillAssaultRifleT3CooldownName",
+        "effectKey": "SkillAssaultRifleT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT3CooldownDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T3-STA",
+      "nameKey": "SkillAssaultRifleT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T3",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T3-STA",
+        "nameKey": "SkillAssaultRifleT3StaminaName",
+        "effectKey": "SkillAssaultRifleT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT3StaminaDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T3-IMP",
+      "nameKey": "SkillAssaultRifleT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "ASSAULTRIFLES-T3",
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-T3-IMP",
+        "nameKey": "SkillAssaultRifleT3ImpactName",
+        "effectKey": "SkillAssaultRifleT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              88,
+              96,
+              104,
+              112,
+              120
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillAssaultRifleT3ImpactDesc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T3-WAY-1",
+      "nameKey": "SkillAssaultRifleT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "ASSAULTRIFLES-T3",
+      "order": 1,
+      "details": {
+        "id": "ASSAULTRIFLES-T3-WAY-1",
+        "nameKey": "SkillAssaultRifleT3Way1Name",
+        "effectKey": "SkillAssaultRifleT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAssaultRifleT3Way1Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-T3-WAY-2",
+      "nameKey": "SkillAssaultRifleT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "ASSAULTRIFLES-T3",
+      "order": 2,
+      "details": {
+        "id": "ASSAULTRIFLES-T3-WAY-2",
+        "nameKey": "SkillAssaultRifleT3Way2Name",
+        "effectKey": "SkillAssaultRifleT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillAssaultRifleT3Way2Desc"
+    },
+    {
+      "id": "ASSAULTRIFLES-ULT",
+      "nameKey": "SkillAssaultRifleUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "ASSAULTRIFLES-ULT",
+        "nameKey": "SkillAssaultRifleUltName",
+        "effectKey": "SkillAssaultRifleUltDesc",
+        "buffDurationSeconds": 8,
+        "requiresActiveWeaponKey": "LabelTreeAssaultRifleName",
+        "recoilReductionPercent": 50,
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              60,
+              70,
+              80,
+              90,
+              100
+            ]
+          },
+          {
+            "metricKey": "MetricFireRate",
+            "unit": "%",
+            "values": [
+              60,
+              70,
+              80,
+              90,
+              100
+            ]
+          }
+        ],
+        "accuracyBonusPercent": 50
+      },
+      "descriptionKey": "SkillAssaultRifleUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P2",
+      "rank": 1,
+      "metricKey": "MetricReloadSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P2",
+      "rank": 2,
+      "metricKey": "MetricReloadSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P2",
+      "rank": 3,
+      "metricKey": "MetricReloadSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P2",
+      "rank": 4,
+      "metricKey": "MetricReloadSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P2",
+      "rank": 5,
+      "metricKey": "MetricReloadSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P4",
+      "rank": 1,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P4",
+      "rank": 2,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P4",
+      "rank": 3,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P4",
+      "rank": 4,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-P4",
+      "rank": 5,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 44,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 48,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 52,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 56,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 230,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 260,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 290,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 320,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 88,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 96,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 104,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 112,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 120,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 70,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 1,
+      "metricKey": "MetricFireRate",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 2,
+      "metricKey": "MetricFireRate",
+      "value": 70,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 3,
+      "metricKey": "MetricFireRate",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 4,
+      "metricKey": "MetricFireRate",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "ASSAULTRIFLES-ULT",
+      "rank": 5,
+      "metricKey": "MetricFireRate",
+      "value": 100,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "ASSAULTRIFLES-P1": {
+      "locked": "assets/skills/AssaultRiflesP1SkilledRifleman.png"
+    },
+    "ASSAULTRIFLES-P2": {
+      "locked": "assets/skills/AssaultRiflesP2EmergencyReload.png"
+    },
+    "ASSAULTRIFLES-P3": {
+      "locked": "assets/skills/AssaultRiflesP3RegularFunctionChecks.png"
+    },
+    "ASSAULTRIFLES-P4": {
+      "locked": "assets/skills/AssaultRiflesP4Headache.png"
+    },
+    "ASSAULTRIFLES-T1": {
+      "locked": "assets/skills/AssaultRiflesT1Kneecapper.png"
+    },
+    "ASSAULTRIFLES-T1-CD": {
+      "locked": "assets/skills/AssaultRiflesT1Kneecapper.png"
+    },
+    "ASSAULTRIFLES-T1-STA": {
+      "locked": "assets/skills/AssaultRiflesT1Kneecapper.png"
+    },
+    "ASSAULTRIFLES-T1-IMP": {
+      "locked": "assets/skills/AssaultRiflesT1Kneecapper.png"
+    },
+    "ASSAULTRIFLES-T1-WAY-1": {
+      "locked": "assets/skills/AssaultRiflesT1Kneecapper.png"
+    },
+    "ASSAULTRIFLES-T1-WAY-2": {
+      "locked": "assets/skills/AssaultRiflesT1Kneecapper.png"
+    },
+    "ASSAULTRIFLES-T2": {
+      "locked": "assets/skills/AssaultRiflesT2Killshot.png"
+    },
+    "ASSAULTRIFLES-T2-CD": {
+      "locked": "assets/skills/AssaultRiflesT2Killshot.png"
+    },
+    "ASSAULTRIFLES-T2-STA": {
+      "locked": "assets/skills/AssaultRiflesT2Killshot.png"
+    },
+    "ASSAULTRIFLES-T2-IMP": {
+      "locked": "assets/skills/AssaultRiflesT2Killshot.png"
+    },
+    "ASSAULTRIFLES-T2-WAY-1": {
+      "locked": "assets/skills/AssaultRiflesT2Killshot.png"
+    },
+    "ASSAULTRIFLES-T2-WAY-2": {
+      "locked": "assets/skills/AssaultRiflesT2Killshot.png"
+    },
+    "ASSAULTRIFLES-T3": {
+      "locked": "assets/skills/AssaultRiflesT3CClampGrip.png"
+    },
+    "ASSAULTRIFLES-T3-CD": {
+      "locked": "assets/skills/AssaultRiflesT3CClampGrip.png"
+    },
+    "ASSAULTRIFLES-T3-STA": {
+      "locked": "assets/skills/AssaultRiflesT3CClampGrip.png"
+    },
+    "ASSAULTRIFLES-T3-IMP": {
+      "locked": "assets/skills/AssaultRiflesT3CClampGrip.png"
+    },
+    "ASSAULTRIFLES-T3-WAY-1": {
+      "locked": "assets/skills/AssaultRiflesT3CClampGrip.png"
+    },
+    "ASSAULTRIFLES-T3-WAY-2": {
+      "locked": "assets/skills/AssaultRiflesT3CClampGrip.png"
+    },
+    "ASSAULTRIFLES-ULT": {
+      "locked": "assets/skills/AssaultRiflesULTStormOfSteel.png"
+    }
+  }
+}

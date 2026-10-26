@@ -1,0 +1,1366 @@
+{
+  "schemaVersion": 1,
+  "treeId": "REVOLVERS",
+  "nameKey": "TreeRevolverName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "REVOLVERS-P1",
+      "nameKey": "SkillRevolverP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-P1",
+        "nameKey": "SkillRevolverP1Name",
+        "effectKey": "SkillRevolverP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverP1Desc"
+    },
+    {
+      "id": "REVOLVERS-P2",
+      "nameKey": "SkillRevolverP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-P2",
+        "nameKey": "SkillRevolverP2Name",
+        "effectKey": "SkillRevolverP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricReloadSpeed",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverP2Desc"
+    },
+    {
+      "id": "REVOLVERS-P3",
+      "nameKey": "SkillRevolverP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-P3",
+        "nameKey": "SkillRevolverP3Name",
+        "effectKey": "SkillRevolverP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverP3Desc"
+    },
+    {
+      "id": "REVOLVERS-P4",
+      "nameKey": "SkillRevolverP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-P4",
+        "nameKey": "SkillRevolverP4Name",
+        "effectKey": "SkillRevolverP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricHeadshotChance",
+            "unit": "%",
+            "values": [
+              2,
+              4,
+              6,
+              8,
+              10
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverP4Desc"
+    },
+    {
+      "id": "REVOLVERS-T1",
+      "nameKey": "SkillRevolverT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T1",
+        "nameKey": "SkillRevolverT1Name",
+        "effectKey": "SkillRevolverT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "buffDurationSeconds": 6,
+        "baseHeadshotDamageBonusPercent": 30,
+        "accuracyBonusPercent": 50,
+        "recoilReductionPercent": 50,
+        "requiresActiveWeaponKey": "LabelTreeRevolverName"
+      },
+      "descriptionKey": "SkillRevolverT1Desc"
+    },
+    {
+      "id": "REVOLVERS-T1-CD",
+      "nameKey": "SkillRevolverT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T1",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T1-CD",
+        "nameKey": "SkillRevolverT1CooldownName",
+        "effectKey": "SkillRevolverT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT1CooldownDesc"
+    },
+    {
+      "id": "REVOLVERS-T1-STA",
+      "nameKey": "SkillRevolverT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T1",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T1-STA",
+        "nameKey": "SkillRevolverT1StaminaName",
+        "effectKey": "SkillRevolverT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT1StaminaDesc"
+    },
+    {
+      "id": "REVOLVERS-T1-IMP",
+      "nameKey": "SkillRevolverT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T1",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T1-IMP",
+        "nameKey": "SkillRevolverT1ImpactName",
+        "effectKey": "SkillRevolverT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricHeadshotDamage",
+            "unit": "%",
+            "values": [
+              34,
+              38,
+              42,
+              46,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT1ImpactDesc"
+    },
+    {
+      "id": "REVOLVERS-T1-WAY-1",
+      "nameKey": "SkillRevolverT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "REVOLVERS-T1",
+      "order": 1,
+      "details": {
+        "id": "REVOLVERS-T1-WAY-1",
+        "nameKey": "SkillRevolverT1Way1Name",
+        "effectKey": "SkillRevolverT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRevolverT1Way1Desc"
+    },
+    {
+      "id": "REVOLVERS-T1-WAY-2",
+      "nameKey": "SkillRevolverT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "REVOLVERS-T1",
+      "order": 2,
+      "details": {
+        "id": "REVOLVERS-T1-WAY-2",
+        "nameKey": "SkillRevolverT1Way2Name",
+        "effectKey": "SkillRevolverT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRevolverT1Way2Desc"
+    },
+    {
+      "id": "REVOLVERS-T2",
+      "nameKey": "SkillRevolverT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T2",
+        "nameKey": "SkillRevolverT2Name",
+        "effectKey": "SkillRevolverT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "baseActiveWeaponDpsPercent": 150,
+        "countsAsHeadshot": true,
+        "requiresActiveWeaponKey": "LabelTreeRevolverName"
+      },
+      "descriptionKey": "SkillRevolverT2Desc"
+    },
+    {
+      "id": "REVOLVERS-T2-CD",
+      "nameKey": "SkillRevolverT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T2",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T2-CD",
+        "nameKey": "SkillRevolverT2CooldownName",
+        "effectKey": "SkillRevolverT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT2CooldownDesc"
+    },
+    {
+      "id": "REVOLVERS-T2-STA",
+      "nameKey": "SkillRevolverT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T2",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T2-STA",
+        "nameKey": "SkillRevolverT2StaminaName",
+        "effectKey": "SkillRevolverT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT2StaminaDesc"
+    },
+    {
+      "id": "REVOLVERS-T2-IMP",
+      "nameKey": "SkillRevolverT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T2",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T2-IMP",
+        "nameKey": "SkillRevolverT2ImpactName",
+        "effectKey": "SkillRevolverT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              160,
+              170,
+              180,
+              190,
+              200
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT2ImpactDesc"
+    },
+    {
+      "id": "REVOLVERS-T2-WAY-1",
+      "nameKey": "SkillRevolverT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "REVOLVERS-T2",
+      "order": 1,
+      "details": {
+        "id": "REVOLVERS-T2-WAY-1",
+        "nameKey": "SkillRevolverT2Way1Name",
+        "effectKey": "SkillRevolverT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRevolverT2Way1Desc"
+    },
+    {
+      "id": "REVOLVERS-T2-WAY-2",
+      "nameKey": "SkillRevolverT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "REVOLVERS-T2",
+      "order": 2,
+      "details": {
+        "id": "REVOLVERS-T2-WAY-2",
+        "nameKey": "SkillRevolverT2Way2Name",
+        "effectKey": "SkillRevolverT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRevolverT2Way2Desc"
+    },
+    {
+      "id": "REVOLVERS-T3",
+      "nameKey": "SkillRevolverT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T3",
+        "nameKey": "SkillRevolverT3Name",
+        "effectKey": "SkillRevolverT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseActiveWeaponDpsPercent": 175,
+        "requiresActiveWeaponKey": "LabelTreeRevolverName"
+      },
+      "descriptionKey": "SkillRevolverT3Desc"
+    },
+    {
+      "id": "REVOLVERS-T3-CD",
+      "nameKey": "SkillRevolverT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T3",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T3-CD",
+        "nameKey": "SkillRevolverT3CooldownName",
+        "effectKey": "SkillRevolverT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT3CooldownDesc"
+    },
+    {
+      "id": "REVOLVERS-T3-STA",
+      "nameKey": "SkillRevolverT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T3",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T3-STA",
+        "nameKey": "SkillRevolverT3StaminaName",
+        "effectKey": "SkillRevolverT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT3StaminaDesc"
+    },
+    {
+      "id": "REVOLVERS-T3-IMP",
+      "nameKey": "SkillRevolverT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "REVOLVERS-T3",
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-T3-IMP",
+        "nameKey": "SkillRevolverT3ImpactName",
+        "effectKey": "SkillRevolverT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricExtraActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              190,
+              205,
+              220,
+              235,
+              250
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverT3ImpactDesc"
+    },
+    {
+      "id": "REVOLVERS-T3-WAY-1",
+      "nameKey": "SkillRevolverT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "REVOLVERS-T3",
+      "order": 1,
+      "details": {
+        "id": "REVOLVERS-T3-WAY-1",
+        "nameKey": "SkillRevolverT3Way1Name",
+        "effectKey": "SkillRevolverT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRevolverT3Way1Desc"
+    },
+    {
+      "id": "REVOLVERS-T3-WAY-2",
+      "nameKey": "SkillRevolverT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "REVOLVERS-T3",
+      "order": 2,
+      "details": {
+        "id": "REVOLVERS-T3-WAY-2",
+        "nameKey": "SkillRevolverT3Way2Name",
+        "effectKey": "SkillRevolverT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillRevolverT3Way2Desc"
+    },
+    {
+      "id": "REVOLVERS-ULT",
+      "nameKey": "SkillRevolverUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "REVOLVERS-ULT",
+        "nameKey": "SkillRevolverUltName",
+        "effectKey": "SkillRevolverUltDesc",
+        "shotIntervalSeconds": 0.1,
+        "recoilReductionPercent": 80,
+        "paralyzedDurationSeconds": 4,
+        "requiresActiveWeaponKey": "LabelTreeRevolverName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              50,
+              70,
+              90,
+              110,
+              130
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillRevolverUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P2",
+      "rank": 1,
+      "metricKey": "MetricReloadSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P2",
+      "rank": 2,
+      "metricKey": "MetricReloadSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P2",
+      "rank": 3,
+      "metricKey": "MetricReloadSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P2",
+      "rank": 4,
+      "metricKey": "MetricReloadSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P2",
+      "rank": 5,
+      "metricKey": "MetricReloadSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P4",
+      "rank": 1,
+      "metricKey": "MetricHeadshotChance",
+      "value": 2,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P4",
+      "rank": 2,
+      "metricKey": "MetricHeadshotChance",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P4",
+      "rank": 3,
+      "metricKey": "MetricHeadshotChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P4",
+      "rank": 4,
+      "metricKey": "MetricHeadshotChance",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-P4",
+      "rank": 5,
+      "metricKey": "MetricHeadshotChance",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 34,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 38,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 42,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 46,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 160,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 170,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 200,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 205,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 220,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 235,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricExtraActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 70,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 110,
+      "unit": "%"
+    },
+    {
+      "skillId": "REVOLVERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 130,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "REVOLVERS-P1": {
+      "locked": "assets/skills/RevolversP1SkilledGunslinger.png"
+    },
+    "REVOLVERS-P2": {
+      "locked": "assets/skills/RevolversP2NimbleTouch.png"
+    },
+    "REVOLVERS-P3": {
+      "locked": "assets/skills/RevolversP3FieldRepair.png"
+    },
+    "REVOLVERS-P4": {
+      "locked": "assets/skills/RevolversP4GunslingerSGift.png"
+    },
+    "REVOLVERS-T1": {
+      "locked": "assets/skills/RevolversT1BreathControl.png"
+    },
+    "REVOLVERS-T1-CD": {
+      "locked": "assets/skills/RevolversT1BreathControl.png"
+    },
+    "REVOLVERS-T1-STA": {
+      "locked": "assets/skills/RevolversT1BreathControl.png"
+    },
+    "REVOLVERS-T1-IMP": {
+      "locked": "assets/skills/RevolversT1BreathControl.png"
+    },
+    "REVOLVERS-T1-WAY-1": {
+      "locked": "assets/skills/RevolversT1BreathControl.png"
+    },
+    "REVOLVERS-T1-WAY-2": {
+      "locked": "assets/skills/RevolversT1BreathControl.png"
+    },
+    "REVOLVERS-T2": {
+      "locked": "assets/skills/RevolversT2ExploitWeakness.png"
+    },
+    "REVOLVERS-T2-CD": {
+      "locked": "assets/skills/RevolversT2ExploitWeakness.png"
+    },
+    "REVOLVERS-T2-STA": {
+      "locked": "assets/skills/RevolversT2ExploitWeakness.png"
+    },
+    "REVOLVERS-T2-IMP": {
+      "locked": "assets/skills/RevolversT2ExploitWeakness.png"
+    },
+    "REVOLVERS-T2-WAY-1": {
+      "locked": "assets/skills/RevolversT2ExploitWeakness.png"
+    },
+    "REVOLVERS-T2-WAY-2": {
+      "locked": "assets/skills/RevolversT2ExploitWeakness.png"
+    },
+    "REVOLVERS-T3": {
+      "locked": "assets/skills/RevolversT3NeutralizingShot.png"
+    },
+    "REVOLVERS-T3-CD": {
+      "locked": "assets/skills/RevolversT3NeutralizingShot.png"
+    },
+    "REVOLVERS-T3-STA": {
+      "locked": "assets/skills/RevolversT3NeutralizingShot.png"
+    },
+    "REVOLVERS-T3-IMP": {
+      "locked": "assets/skills/RevolversT3NeutralizingShot.png"
+    },
+    "REVOLVERS-T3-WAY-1": {
+      "locked": "assets/skills/RevolversT3NeutralizingShot.png"
+    },
+    "REVOLVERS-T3-WAY-2": {
+      "locked": "assets/skills/RevolversT3NeutralizingShot.png"
+    },
+    "REVOLVERS-ULT": {
+      "locked": "assets/skills/RevolversULTFuriousFanning.png"
+    }
+  }
+}

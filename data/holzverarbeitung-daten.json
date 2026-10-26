@@ -1,0 +1,1208 @@
+{
+  "schemaVersion": 1,
+  "professionId": "WOODWORKING",
+  "professionKey": "LabelTreeWoodworkingName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "WOODWORKING-P1",
+      "nameKey": "SkillWoodworkingP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "effectKey": "SkillWoodworkingP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-P2",
+      "nameKey": "SkillWoodworkingP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillWoodworkingP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-P3",
+      "nameKey": "SkillWoodworkingP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillWoodworkingP3Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLossReduction",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-P4",
+      "nameKey": "SkillWoodworkingP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillWoodworkingP4Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaRegen",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-P5",
+      "nameKey": "SkillWoodworkingP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillWoodworkingP5Desc",
+      "unlockDisplayed": 31,
+      "metrics": [
+        {
+          "metricKey": "MetricEvasionBonus",
+          "unit": "%",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T1",
+      "nameKey": "SkillWoodworkingT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "baseActiveWeaponDpsPercent": 100,
+      "observedActiveWeaponDpsPercent": 180,
+      "observedEnhancerRanks": {
+        "cooldown": 5,
+        "stamina": 5,
+        "impact": 5
+      },
+      "requirementKey": "ConditionMeleeWeapon",
+      "bleedingDurationSeconds": 10,
+      "descriptionKey": "SkillWoodworkingT1Desc"
+    },
+    {
+      "id": "WOODWORKING-T1-CD",
+      "nameKey": "SkillWoodworkingT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T1-STA",
+      "nameKey": "SkillWoodworkingT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T1-IMP",
+      "nameKey": "SkillWoodworkingT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricActiveWeaponDamage",
+          "unit": "%",
+          "values": [
+            116,
+            132,
+            148,
+            164,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T1-WAY-1",
+      "nameKey": "SkillWoodworkingT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "WOODWORKING-T1-WAY-2",
+      "nameKey": "SkillWoodworkingT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "WOODWORKING-T2",
+      "nameKey": "SkillWoodworkingT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "buffDurationSeconds": 5,
+      "blockedMentalDebuffs": 1,
+      "unlockDisplayed": 16
+    },
+    {
+      "id": "WOODWORKING-T2-CD",
+      "nameKey": "SkillWoodworkingT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T2-STA",
+      "nameKey": "SkillWoodworkingT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T2-IMP",
+      "nameKey": "SkillWoodworkingT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            8,
+            11,
+            14,
+            17,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T2-WAY-1",
+      "nameKey": "SkillWoodworkingT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "WOODWORKING-T2-WAY-2",
+      "nameKey": "SkillWoodworkingT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "WOODWORKING-T3",
+      "nameKey": "SkillWoodworkingT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT3Desc",
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "buffDurationSeconds": 6,
+      "damageBonusPercent": 50,
+      "unlockDisplayed": 31
+    },
+    {
+      "id": "WOODWORKING-T3-CD",
+      "nameKey": "SkillWoodworkingT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T3-STA",
+      "nameKey": "SkillWoodworkingT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T3-IMP",
+      "nameKey": "SkillWoodworkingT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillWoodworkingT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricDamageBonus",
+          "unit": "%",
+          "values": [
+            60,
+            70,
+            80,
+            90,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOODWORKING-T3-WAY-1",
+      "nameKey": "SkillWoodworkingT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "WOODWORKING-T3-WAY-2",
+      "nameKey": "SkillWoodworkingT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillWoodworkingT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "WOODWORKING-ULT",
+      "nameKey": "SkillWoodworkingUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillWoodworkingUltDesc",
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "MetricSkillCooldownReduction",
+          "unit": "s",
+          "values": [
+            30,
+            42,
+            54,
+            66,
+            78
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraLootChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraLootChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraLootChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraLootChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraLootChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraLootChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraLootChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraLootChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraLootChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraLootChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P2",
+      "rank": 1,
+      "metricKey": "MetricGatherSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P2",
+      "rank": 2,
+      "metricKey": "MetricGatherSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P2",
+      "rank": 3,
+      "metricKey": "MetricGatherSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P2",
+      "rank": 4,
+      "metricKey": "MetricGatherSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P2",
+      "rank": 5,
+      "metricKey": "MetricGatherSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P4",
+      "rank": 1,
+      "metricKey": "MetricStaminaRegen",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P4",
+      "rank": 2,
+      "metricKey": "MetricStaminaRegen",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P4",
+      "rank": 3,
+      "metricKey": "MetricStaminaRegen",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P4",
+      "rank": 4,
+      "metricKey": "MetricStaminaRegen",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P4",
+      "rank": 5,
+      "metricKey": "MetricStaminaRegen",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDamage",
+      "value": 116,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDamage",
+      "value": 132,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDamage",
+      "value": 148,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDamage",
+      "value": 164,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDamage",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T2-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 11,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 14,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 17,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T2-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 20,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 70,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 1,
+      "metricKey": "MetricSkillCooldownReduction",
+      "value": 30,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 2,
+      "metricKey": "MetricSkillCooldownReduction",
+      "value": 42,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 3,
+      "metricKey": "MetricSkillCooldownReduction",
+      "value": 54,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 4,
+      "metricKey": "MetricSkillCooldownReduction",
+      "value": 66,
+      "unit": "s"
+    },
+    {
+      "skillId": "WOODWORKING-ULT",
+      "rank": 5,
+      "metricKey": "MetricSkillCooldownReduction",
+      "value": 78,
+      "unit": "s"
+    }
+  ],
+  "iconVariants": {
+    "WOODWORKING-P1": {
+      "unlocked": "assets/skills/WoodworkingP1EfficientForester.png"
+    },
+    "WOODWORKING-P2": {
+      "unlocked": "assets/skills/WoodworkingP2FasterLogging.png"
+    },
+    "WOODWORKING-P3": {
+      "unlocked": "assets/skills/WoodworkingP3LumberjackSMaintenance.png"
+    },
+    "WOODWORKING-P4": {
+      "unlocked": "assets/skills/WoodworkingP4UnderOpenSkies.png"
+    },
+    "WOODWORKING-P5": {
+      "locked": "assets/skills/WoodworkingP5Gymnastics.png"
+    },
+    "WOODWORKING-T1": {
+      "unlocked": "assets/skills/WoodworkingT1BleedingStrike.png"
+    },
+    "WOODWORKING-T1-CD": {
+      "unlocked": "assets/skills/WoodworkingT1BleedingStrike.png"
+    },
+    "WOODWORKING-T1-STA": {
+      "unlocked": "assets/skills/WoodworkingT1BleedingStrike.png"
+    },
+    "WOODWORKING-T1-IMP": {
+      "unlocked": "assets/skills/WoodworkingT1BleedingStrike.png"
+    },
+    "WOODWORKING-T1-WAY-1": {
+      "unlocked": "assets/skills/WoodworkingT1BleedingStrike.png"
+    },
+    "WOODWORKING-T1-WAY-2": {
+      "unlocked": "assets/skills/WoodworkingT1BleedingStrike.png"
+    },
+    "WOODWORKING-T2": {
+      "unlocked": "assets/skills/WoodworkingT2UntoTheBreach.png"
+    },
+    "WOODWORKING-T2-CD": {
+      "locked": "assets/skills/WoodworkingT2UntoTheBreach.png"
+    },
+    "WOODWORKING-T2-STA": {
+      "locked": "assets/skills/WoodworkingT2UntoTheBreach.png"
+    },
+    "WOODWORKING-T2-IMP": {
+      "locked": "assets/skills/WoodworkingT2UntoTheBreach.png"
+    },
+    "WOODWORKING-T2-WAY-1": {
+      "locked": "assets/skills/WoodworkingT2UntoTheBreach.png"
+    },
+    "WOODWORKING-T2-WAY-2": {
+      "locked": "assets/skills/WoodworkingT2UntoTheBreach.png"
+    },
+    "WOODWORKING-T3": {
+      "locked": "assets/skills/WoodworkingT3SapRush.png"
+    },
+    "WOODWORKING-T3-CD": {
+      "locked": "assets/skills/WoodworkingT3SapRush.png"
+    },
+    "WOODWORKING-T3-STA": {
+      "locked": "assets/skills/WoodworkingT3SapRush.png"
+    },
+    "WOODWORKING-T3-IMP": {
+      "locked": "assets/skills/WoodworkingT3SapRush.png"
+    },
+    "WOODWORKING-T3-WAY-1": {
+      "locked": "assets/skills/WoodworkingT3SapRush.png"
+    },
+    "WOODWORKING-T3-WAY-2": {
+      "locked": "assets/skills/WoodworkingT3SapRush.png"
+    },
+    "WOODWORKING-ULT": {
+      "locked": "assets/skills/WoodworkingULTOneWithNature.png"
+    }
+  }
+}

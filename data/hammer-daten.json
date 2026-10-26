@@ -1,0 +1,1454 @@
+{
+  "schemaVersion": 1,
+  "treeId": "HAMMERS",
+  "nameKey": "TreeHammerName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "HAMMERS-P1",
+      "nameKey": "SkillHammerP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-P1",
+        "nameKey": "SkillHammerP1Name",
+        "effectKey": "SkillHammerP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerP1Desc"
+    },
+    {
+      "id": "HAMMERS-P2",
+      "nameKey": "SkillHammerP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-P2",
+        "nameKey": "SkillHammerP2Name",
+        "effectKey": "SkillHammerP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricAttackSpeed",
+            "unit": "%",
+            "values": [
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerP2Desc"
+    },
+    {
+      "id": "HAMMERS-P3",
+      "nameKey": "SkillHammerP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-P3",
+        "nameKey": "SkillHammerP3Name",
+        "effectKey": "SkillHammerP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerP3Desc"
+    },
+    {
+      "id": "HAMMERS-P4",
+      "nameKey": "SkillHammerP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-P4",
+        "nameKey": "SkillHammerP4Name",
+        "effectKey": "SkillHammerP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricRageGain",
+            "unit": "%",
+            "values": [
+              10,
+              20,
+              30,
+              40,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerP4Desc"
+    },
+    {
+      "id": "HAMMERS-T1",
+      "nameKey": "SkillHammerT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T1",
+        "nameKey": "SkillHammerT1Name",
+        "effectKey": "SkillHammerT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "baseActiveWeaponDpsPercent": 60,
+        "disarmedDurationSeconds": 3,
+        "requiresActiveWeaponKey": "LabelTreeHammerName"
+      },
+      "descriptionKey": "SkillHammerT1Desc"
+    },
+    {
+      "id": "HAMMERS-T1-CD",
+      "nameKey": "SkillHammerT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T1",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T1-CD",
+        "nameKey": "SkillHammerT1CooldownName",
+        "effectKey": "SkillHammerT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT1CooldownDesc"
+    },
+    {
+      "id": "HAMMERS-T1-STA",
+      "nameKey": "SkillHammerT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T1",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T1-STA",
+        "nameKey": "SkillHammerT1StaminaName",
+        "effectKey": "SkillHammerT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT1StaminaDesc"
+    },
+    {
+      "id": "HAMMERS-T1-IMP",
+      "nameKey": "SkillHammerT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T1",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T1-IMP",
+        "nameKey": "SkillHammerT1ImpactName",
+        "effectKey": "SkillHammerT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              68,
+              76,
+              84,
+              92,
+              100
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT1ImpactDesc"
+    },
+    {
+      "id": "HAMMERS-T1-WAY-1",
+      "nameKey": "SkillHammerT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "HAMMERS-T1",
+      "order": 1,
+      "details": {
+        "id": "HAMMERS-T1-WAY-1",
+        "nameKey": "SkillHammerT1Way1Name",
+        "effectKey": "SkillHammerT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillHammerT1Way1Desc"
+    },
+    {
+      "id": "HAMMERS-T1-WAY-2",
+      "nameKey": "SkillHammerT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "HAMMERS-T1",
+      "order": 2,
+      "details": {
+        "id": "HAMMERS-T1-WAY-2",
+        "nameKey": "SkillHammerT1Way2Name",
+        "effectKey": "SkillHammerT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillHammerT1Way2Desc"
+    },
+    {
+      "id": "HAMMERS-T2",
+      "nameKey": "SkillHammerT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T2",
+        "nameKey": "SkillHammerT2Name",
+        "effectKey": "SkillHammerT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "buffDurationSeconds": 6,
+        "baseDamageBonusPercent": 50,
+        "requiresActiveWeaponKey": "LabelTreeHammerName"
+      },
+      "descriptionKey": "SkillHammerT2Desc"
+    },
+    {
+      "id": "HAMMERS-T2-CD",
+      "nameKey": "SkillHammerT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T2",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T2-CD",
+        "nameKey": "SkillHammerT2CooldownName",
+        "effectKey": "SkillHammerT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT2CooldownDesc"
+    },
+    {
+      "id": "HAMMERS-T2-STA",
+      "nameKey": "SkillHammerT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T2",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T2-STA",
+        "nameKey": "SkillHammerT2StaminaName",
+        "effectKey": "SkillHammerT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT2StaminaDesc"
+    },
+    {
+      "id": "HAMMERS-T2-IMP",
+      "nameKey": "SkillHammerT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T2",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T2-IMP",
+        "nameKey": "SkillHammerT2ImpactName",
+        "effectKey": "SkillHammerT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              58,
+              66,
+              74,
+              82,
+              90
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT2ImpactDesc"
+    },
+    {
+      "id": "HAMMERS-T2-WAY-1",
+      "nameKey": "SkillHammerT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "HAMMERS-T2",
+      "order": 1,
+      "details": {
+        "id": "HAMMERS-T2-WAY-1",
+        "nameKey": "SkillHammerT2Way1Name",
+        "effectKey": "SkillHammerT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillHammerT2Way1Desc"
+    },
+    {
+      "id": "HAMMERS-T2-WAY-2",
+      "nameKey": "SkillHammerT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "HAMMERS-T2",
+      "order": 2,
+      "details": {
+        "id": "HAMMERS-T2-WAY-2",
+        "nameKey": "SkillHammerT2Way2Name",
+        "effectKey": "SkillHammerT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillHammerT2Way2Desc"
+    },
+    {
+      "id": "HAMMERS-T3",
+      "nameKey": "SkillHammerT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T3",
+        "nameKey": "SkillHammerT3Name",
+        "effectKey": "SkillHammerT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseActiveWeaponDpsPercent": 350,
+        "buffDurationSeconds": 8,
+        "requiresActiveWeaponKey": "LabelTreeHammerName"
+      },
+      "descriptionKey": "SkillHammerT3Desc"
+    },
+    {
+      "id": "HAMMERS-T3-CD",
+      "nameKey": "SkillHammerT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T3",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T3-CD",
+        "nameKey": "SkillHammerT3CooldownName",
+        "effectKey": "SkillHammerT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT3CooldownDesc"
+    },
+    {
+      "id": "HAMMERS-T3-STA",
+      "nameKey": "SkillHammerT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T3",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T3-STA",
+        "nameKey": "SkillHammerT3StaminaName",
+        "effectKey": "SkillHammerT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT3StaminaDesc"
+    },
+    {
+      "id": "HAMMERS-T3-IMP",
+      "nameKey": "SkillHammerT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "HAMMERS-T3",
+      "order": null,
+      "details": {
+        "id": "HAMMERS-T3-IMP",
+        "nameKey": "SkillHammerT3ImpactName",
+        "effectKey": "SkillHammerT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              390,
+              430,
+              470,
+              510,
+              550
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerT3ImpactDesc"
+    },
+    {
+      "id": "HAMMERS-T3-WAY-1",
+      "nameKey": "SkillHammerT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "HAMMERS-T3",
+      "order": 1,
+      "details": {
+        "id": "HAMMERS-T3-WAY-1",
+        "nameKey": "SkillHammerT3Way1Name",
+        "effectKey": "SkillHammerT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillHammerT3Way1Desc"
+    },
+    {
+      "id": "HAMMERS-T3-WAY-2",
+      "nameKey": "SkillHammerT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "HAMMERS-T3",
+      "order": 2,
+      "details": {
+        "id": "HAMMERS-T3-WAY-2",
+        "nameKey": "SkillHammerT3Way2Name",
+        "effectKey": "SkillHammerT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillHammerT3Way2Desc"
+    },
+    {
+      "id": "HAMMERS-ULT",
+      "nameKey": "SkillHammerUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "HAMMERS-ULT",
+        "nameKey": "SkillHammerUltName",
+        "effectKey": "SkillHammerUltDesc",
+        "requiresActiveWeaponKey": "LabelTreeHammerName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              500,
+              550,
+              600,
+              650,
+              700
+            ]
+          },
+          {
+            "metricKey": "MetricStunned",
+            "unit": "s",
+            "values": [
+              2,
+              2,
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "metricKey": "MetricSuppressed",
+            "unit": "s",
+            "values": [
+              3,
+              4,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillHammerUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P2",
+      "rank": 1,
+      "metricKey": "MetricAttackSpeed",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P2",
+      "rank": 2,
+      "metricKey": "MetricAttackSpeed",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P2",
+      "rank": 3,
+      "metricKey": "MetricAttackSpeed",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P2",
+      "rank": 4,
+      "metricKey": "MetricAttackSpeed",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P2",
+      "rank": 5,
+      "metricKey": "MetricAttackSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P4",
+      "rank": 1,
+      "metricKey": "MetricRageGain",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P4",
+      "rank": 2,
+      "metricKey": "MetricRageGain",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P4",
+      "rank": 3,
+      "metricKey": "MetricRageGain",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P4",
+      "rank": 4,
+      "metricKey": "MetricRageGain",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-P4",
+      "rank": 5,
+      "metricKey": "MetricRageGain",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 58,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 66,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 74,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 82,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 90,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 390,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 430,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 470,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 510,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 550,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 500,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 550,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 600,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 650,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 700,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStunned",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStunned",
+      "value": 2,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStunned",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStunned",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStunned",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 1,
+      "metricKey": "MetricSuppressed",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 2,
+      "metricKey": "MetricSuppressed",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 3,
+      "metricKey": "MetricSuppressed",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 4,
+      "metricKey": "MetricSuppressed",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-ULT",
+      "rank": 5,
+      "metricKey": "MetricSuppressed",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "HAMMERS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "HAMMERS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 68,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 76,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 84,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 92,
+      "unit": "%"
+    },
+    {
+      "skillId": "HAMMERS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 100,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "HAMMERS-P1": {
+      "locked": "assets/skills/HammersP1SkilledHammerFighter.png"
+    },
+    "HAMMERS-P2": {
+      "locked": "assets/skills/HammersP2GripStrengthTraining.png"
+    },
+    "HAMMERS-P3": {
+      "locked": "assets/skills/HammersP3SurfaceSmoothing.png"
+    },
+    "HAMMERS-P4": {
+      "locked": "assets/skills/HammersP4WrathUnbound.png"
+    },
+    "HAMMERS-T1": {
+      "locked": "assets/skills/HammersT1Bonebreaker.png"
+    },
+    "HAMMERS-T1-CD": {
+      "locked": "assets/skills/HammersT1Bonebreaker.png"
+    },
+    "HAMMERS-T1-STA": {
+      "locked": "assets/skills/HammersT1Bonebreaker.png"
+    },
+    "HAMMERS-T1-IMP": {
+      "locked": "assets/skills/HammersT1Bonebreaker.png"
+    },
+    "HAMMERS-T1-WAY-1": {
+      "locked": "assets/skills/HammersT1Bonebreaker.png"
+    },
+    "HAMMERS-T1-WAY-2": {
+      "locked": "assets/skills/HammersT1Bonebreaker.png"
+    },
+    "HAMMERS-T2": {
+      "locked": "assets/skills/HammersT2ProvokingHits.png"
+    },
+    "HAMMERS-T2-CD": {
+      "locked": "assets/skills/HammersT2ProvokingHits.png"
+    },
+    "HAMMERS-T2-STA": {
+      "locked": "assets/skills/HammersT2ProvokingHits.png"
+    },
+    "HAMMERS-T2-IMP": {
+      "locked": "assets/skills/HammersT2ProvokingHits.png"
+    },
+    "HAMMERS-T2-WAY-1": {
+      "locked": "assets/skills/HammersT2ProvokingHits.png"
+    },
+    "HAMMERS-T2-WAY-2": {
+      "locked": "assets/skills/HammersT2ProvokingHits.png"
+    },
+    "HAMMERS-T3": {
+      "locked": "assets/skills/HammersT3AggressiveOnslaught.png"
+    },
+    "HAMMERS-T3-CD": {
+      "locked": "assets/skills/HammersT3AggressiveOnslaught.png"
+    },
+    "HAMMERS-T3-STA": {
+      "locked": "assets/skills/HammersT3AggressiveOnslaught.png"
+    },
+    "HAMMERS-T3-IMP": {
+      "locked": "assets/skills/HammersT3AggressiveOnslaught.png"
+    },
+    "HAMMERS-T3-WAY-1": {
+      "locked": "assets/skills/HammersT3AggressiveOnslaught.png"
+    },
+    "HAMMERS-T3-WAY-2": {
+      "locked": "assets/skills/HammersT3AggressiveOnslaught.png"
+    },
+    "HAMMERS-ULT": {
+      "locked": "assets/skills/HammersULTBringingThePain.png"
+    }
+  }
+}

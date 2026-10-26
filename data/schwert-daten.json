@@ -1,0 +1,1415 @@
+{
+  "schemaVersion": 1,
+  "treeId": "SWORDS",
+  "nameKey": "TreeSwordName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "SWORDS-P1",
+      "nameKey": "SkillSwordP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 15,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-P1",
+        "nameKey": "SkillSwordP1Name",
+        "effectKey": "SkillSwordP1Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDamageBonus",
+            "unit": "%",
+            "values": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              23,
+              26,
+              29,
+              32,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordP1Desc"
+    },
+    {
+      "id": "SWORDS-P2",
+      "nameKey": "SkillSwordP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-P2",
+        "nameKey": "SkillSwordP2Name",
+        "effectKey": "SkillSwordP2Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricAttackSpeed",
+            "unit": "%",
+            "values": [
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordP2Desc"
+    },
+    {
+      "id": "SWORDS-P3",
+      "nameKey": "SkillSwordP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-P3",
+        "nameKey": "SkillSwordP3Name",
+        "effectKey": "SkillSwordP3Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricDurabilityLossReduction",
+            "unit": "%",
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordP3Desc"
+    },
+    {
+      "id": "SWORDS-P4",
+      "nameKey": "SkillSwordP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-P4",
+        "nameKey": "SkillSwordP4Name",
+        "effectKey": "SkillSwordP4Desc",
+        "metrics": [
+          {
+            "metricKey": "MetricRiposteDamage",
+            "unit": "%",
+            "values": [
+              30,
+              35,
+              40,
+              45,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordP4Desc"
+    },
+    {
+      "id": "SWORDS-T1",
+      "nameKey": "SkillSwordT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-T1",
+        "nameKey": "SkillSwordT1Name",
+        "effectKey": "SkillSwordT1Desc",
+        "baseStaminaCost": 65,
+        "baseCooldownSeconds": 50,
+        "baseActiveWeaponDpsPercent": 150,
+        "staminaPerTarget": 5,
+        "missingHpHealingPercentPerTarget": 10,
+        "requiresActiveWeaponKey": "LabelTreeSwordName"
+      },
+      "descriptionKey": "SkillSwordT1Desc"
+    },
+    {
+      "id": "SWORDS-T1-CD",
+      "nameKey": "SkillSwordT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T1",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T1-CD",
+        "nameKey": "SkillSwordT1CooldownName",
+        "effectKey": "SkillSwordT1CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              43,
+              37,
+              32,
+              28,
+              25
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT1CooldownDesc"
+    },
+    {
+      "id": "SWORDS-T1-STA",
+      "nameKey": "SkillSwordT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T1",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T1-STA",
+        "nameKey": "SkillSwordT1StaminaName",
+        "effectKey": "SkillSwordT1StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              58,
+              52,
+              47,
+              43,
+              40
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT1StaminaDesc"
+    },
+    {
+      "id": "SWORDS-T1-IMP",
+      "nameKey": "SkillSwordT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T1",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T1-IMP",
+        "nameKey": "SkillSwordT1ImpactName",
+        "effectKey": "SkillSwordT1ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              170,
+              190,
+              210,
+              230,
+              250
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT1ImpactDesc"
+    },
+    {
+      "id": "SWORDS-T1-WAY-1",
+      "nameKey": "SkillSwordT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "SWORDS-T1",
+      "order": 1,
+      "details": {
+        "id": "SWORDS-T1-WAY-1",
+        "nameKey": "SkillSwordT1Way1Name",
+        "effectKey": "SkillSwordT1Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillSwordT1Way1Desc"
+    },
+    {
+      "id": "SWORDS-T1-WAY-2",
+      "nameKey": "SkillSwordT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "gate": 0,
+      "parent": "SWORDS-T1",
+      "order": 2,
+      "details": {
+        "id": "SWORDS-T1-WAY-2",
+        "nameKey": "SkillSwordT1Way2Name",
+        "effectKey": "SkillSwordT1Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillSwordT1Way2Desc"
+    },
+    {
+      "id": "SWORDS-T2",
+      "nameKey": "SkillSwordT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "gate": 16,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-T2",
+        "nameKey": "SkillSwordT2Name",
+        "effectKey": "SkillSwordT2Desc",
+        "baseStaminaCost": 75,
+        "baseCooldownSeconds": 100,
+        "buffDurationSeconds": 8,
+        "baseDodgeBonusPercent": 15,
+        "requiresActiveWeaponKey": "LabelTreeSwordName"
+      },
+      "descriptionKey": "SkillSwordT2Desc"
+    },
+    {
+      "id": "SWORDS-T2-CD",
+      "nameKey": "SkillSwordT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T2",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T2-CD",
+        "nameKey": "SkillSwordT2CooldownName",
+        "effectKey": "SkillSwordT2CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              86,
+              74,
+              64,
+              56,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT2CooldownDesc"
+    },
+    {
+      "id": "SWORDS-T2-STA",
+      "nameKey": "SkillSwordT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T2",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T2-STA",
+        "nameKey": "SkillSwordT2StaminaName",
+        "effectKey": "SkillSwordT2StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              68,
+              62,
+              57,
+              53,
+              50
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT2StaminaDesc"
+    },
+    {
+      "id": "SWORDS-T2-IMP",
+      "nameKey": "SkillSwordT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T2",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T2-IMP",
+        "nameKey": "SkillSwordT2ImpactName",
+        "effectKey": "SkillSwordT2ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricEvasion",
+            "unit": "%",
+            "values": [
+              18,
+              21,
+              24,
+              27,
+              30
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT2ImpactDesc"
+    },
+    {
+      "id": "SWORDS-T2-WAY-1",
+      "nameKey": "SkillSwordT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "SWORDS-T2",
+      "order": 1,
+      "details": {
+        "id": "SWORDS-T2-WAY-1",
+        "nameKey": "SkillSwordT2Way1Name",
+        "effectKey": "SkillSwordT2Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillSwordT2Way1Desc"
+    },
+    {
+      "id": "SWORDS-T2-WAY-2",
+      "nameKey": "SkillSwordT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "gate": 0,
+      "parent": "SWORDS-T2",
+      "order": 2,
+      "details": {
+        "id": "SWORDS-T2-WAY-2",
+        "nameKey": "SkillSwordT2Way2Name",
+        "effectKey": "SkillSwordT2Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillSwordT2Way2Desc"
+    },
+    {
+      "id": "SWORDS-T3",
+      "nameKey": "SkillSwordT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "gate": 31,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-T3",
+        "nameKey": "SkillSwordT3Name",
+        "effectKey": "SkillSwordT3Desc",
+        "baseStaminaCost": 85,
+        "baseCooldownSeconds": 150,
+        "baseActiveWeaponDpsPercent": 125,
+        "bleedDurationSeconds": 20,
+        "buffDurationSeconds": 6,
+        "baseDamageBonusPercent": 30,
+        "requiresActiveWeaponKey": "LabelTreeSwordName"
+      },
+      "descriptionKey": "SkillSwordT3Desc"
+    },
+    {
+      "id": "SWORDS-T3-CD",
+      "nameKey": "SkillSwordT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T3",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T3-CD",
+        "nameKey": "SkillSwordT3CooldownName",
+        "effectKey": "SkillSwordT3CooldownDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              129,
+              111,
+              96,
+              84,
+              75
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT3CooldownDesc"
+    },
+    {
+      "id": "SWORDS-T3-STA",
+      "nameKey": "SkillSwordT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T3",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T3-STA",
+        "nameKey": "SkillSwordT3StaminaName",
+        "effectKey": "SkillSwordT3StaminaDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              78,
+              72,
+              67,
+              63,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT3StaminaDesc"
+    },
+    {
+      "id": "SWORDS-T3-IMP",
+      "nameKey": "SkillSwordT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "gate": 1,
+      "parent": "SWORDS-T3",
+      "order": null,
+      "details": {
+        "id": "SWORDS-T3-IMP",
+        "nameKey": "SkillSwordT3ImpactName",
+        "effectKey": "SkillSwordT3ImpactDesc",
+        "metrics": [
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              125,
+              145,
+              145,
+              145,
+              175
+            ]
+          },
+          {
+            "metricKey": "MetricBuffDamageBonus",
+            "unit": "%",
+            "values": [
+              40,
+              40,
+              50,
+              60,
+              60
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordT3ImpactDesc"
+    },
+    {
+      "id": "SWORDS-T3-WAY-1",
+      "nameKey": "SkillSwordT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "SWORDS-T3",
+      "order": 1,
+      "details": {
+        "id": "SWORDS-T3-WAY-1",
+        "nameKey": "SkillSwordT3Way1Name",
+        "effectKey": "SkillSwordT3Way1Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillSwordT3Way1Desc"
+    },
+    {
+      "id": "SWORDS-T3-WAY-2",
+      "nameKey": "SkillSwordT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "gate": 0,
+      "parent": "SWORDS-T3",
+      "order": 2,
+      "details": {
+        "id": "SWORDS-T3-WAY-2",
+        "nameKey": "SkillSwordT3Way2Name",
+        "effectKey": "SkillSwordT3Way2Desc",
+        "requiredSkillPoints": 11
+      },
+      "descriptionKey": "SkillSwordT3Way2Desc"
+    },
+    {
+      "id": "SWORDS-ULT",
+      "nameKey": "SkillSwordUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "gate": 45,
+      "parent": null,
+      "order": null,
+      "details": {
+        "id": "SWORDS-ULT",
+        "nameKey": "SkillSwordUltName",
+        "effectKey": "SkillSwordUltDesc",
+        "attacks": 3,
+        "targetMultiplier": 2,
+        "dodgeBonusPercent": 100,
+        "paralyzedDurationSeconds": 4,
+        "requiresActiveWeaponKey": "LabelTreeSwordName",
+        "metrics": [
+          {
+            "metricKey": "MetricStaminaCost",
+            "unit": "Ausdauer",
+            "unitKey": "UnitStamina",
+            "values": [
+              115,
+              105,
+              95,
+              85,
+              75
+            ]
+          },
+          {
+            "metricKey": "MetricCooldown",
+            "unit": "s",
+            "values": [
+              240,
+              210,
+              180,
+              150,
+              120
+            ]
+          },
+          {
+            "metricKey": "MetricActiveWeaponDps",
+            "unit": "%",
+            "values": [
+              140,
+              180,
+              220,
+              260,
+              300
+            ]
+          }
+        ]
+      },
+      "descriptionKey": "SkillSwordUltDesc"
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 1,
+      "metricKey": "MetricDamageBonus",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 2,
+      "metricKey": "MetricDamageBonus",
+      "value": 8,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 3,
+      "metricKey": "MetricDamageBonus",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 4,
+      "metricKey": "MetricDamageBonus",
+      "value": 16,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 5,
+      "metricKey": "MetricDamageBonus",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 6,
+      "metricKey": "MetricDamageBonus",
+      "value": 23,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 7,
+      "metricKey": "MetricDamageBonus",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 8,
+      "metricKey": "MetricDamageBonus",
+      "value": 29,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 9,
+      "metricKey": "MetricDamageBonus",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 10,
+      "metricKey": "MetricDamageBonus",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 11,
+      "metricKey": "MetricDamageBonus",
+      "value": 37,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 12,
+      "metricKey": "MetricDamageBonus",
+      "value": 39,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 13,
+      "metricKey": "MetricDamageBonus",
+      "value": 41,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 14,
+      "metricKey": "MetricDamageBonus",
+      "value": 43,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P1",
+      "rank": 15,
+      "metricKey": "MetricDamageBonus",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P2",
+      "rank": 1,
+      "metricKey": "MetricAttackSpeed",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P2",
+      "rank": 2,
+      "metricKey": "MetricAttackSpeed",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P2",
+      "rank": 3,
+      "metricKey": "MetricAttackSpeed",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P2",
+      "rank": 4,
+      "metricKey": "MetricAttackSpeed",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P2",
+      "rank": 5,
+      "metricKey": "MetricAttackSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P4",
+      "rank": 1,
+      "metricKey": "MetricRiposteDamage",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P4",
+      "rank": 2,
+      "metricKey": "MetricRiposteDamage",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P4",
+      "rank": 3,
+      "metricKey": "MetricRiposteDamage",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P4",
+      "rank": 4,
+      "metricKey": "MetricRiposteDamage",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-P4",
+      "rank": 5,
+      "metricKey": "MetricRiposteDamage",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 170,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 210,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 230,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricEvasion",
+      "value": 18,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricEvasion",
+      "value": 21,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricEvasion",
+      "value": 24,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricEvasion",
+      "value": 27,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricEvasion",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 125,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 145,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 145,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 145,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 175,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageBonus",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageBonus",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageBonus",
+      "value": 50,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageBonus",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 1,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 140,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 2,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 3,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 220,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 4,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 260,
+      "unit": "%"
+    },
+    {
+      "skillId": "SWORDS-ULT",
+      "rank": 5,
+      "metricKey": "MetricActiveWeaponDps",
+      "value": 300,
+      "unit": "%"
+    }
+  ],
+  "iconVariants": {
+    "SWORDS-P1": {
+      "unlocked": "assets/skills/SwordsP1SkilledSwordsman.png"
+    },
+    "SWORDS-P2": {
+      "unlocked": "assets/skills/SwordsP2ImprovedFootwork.png"
+    },
+    "SWORDS-P3": {
+      "locked": "assets/skills/SwordsP3RegularSharpening.png"
+    },
+    "SWORDS-P4": {
+      "locked": "assets/skills/SwordsP4OpeningStrike.png"
+    },
+    "SWORDS-T1": {
+      "unlocked": "assets/skills/SwordsT1SavageSweeps.png"
+    },
+    "SWORDS-T1-CD": {
+      "unlocked": "assets/skills/SwordsT1SavageSweeps.png"
+    },
+    "SWORDS-T1-STA": {
+      "unlocked": "assets/skills/SwordsT1SavageSweeps.png"
+    },
+    "SWORDS-T1-IMP": {
+      "unlocked": "assets/skills/SwordsT1SavageSweeps.png"
+    },
+    "SWORDS-T1-WAY-1": {
+      "locked": "assets/skills/SwordsT1SavageSweeps.png"
+    },
+    "SWORDS-T1-WAY-2": {
+      "locked": "assets/skills/SwordsT1SavageSweeps.png"
+    },
+    "SWORDS-T2": {
+      "locked": "assets/skills/SwordsT2EvasiveStance.png"
+    },
+    "SWORDS-T2-CD": {
+      "locked": "assets/skills/SwordsT2EvasiveStance.png"
+    },
+    "SWORDS-T2-STA": {
+      "locked": "assets/skills/SwordsT2EvasiveStance.png"
+    },
+    "SWORDS-T2-IMP": {
+      "locked": "assets/skills/SwordsT2EvasiveStance.png"
+    },
+    "SWORDS-T2-WAY-1": {
+      "locked": "assets/skills/SwordsT2EvasiveStance.png"
+    },
+    "SWORDS-T2-WAY-2": {
+      "locked": "assets/skills/SwordsT2EvasiveStance.png"
+    },
+    "SWORDS-T3": {
+      "locked": "assets/skills/SwordsT3BloodyCleave.png"
+    },
+    "SWORDS-T3-CD": {
+      "locked": "assets/skills/SwordsT3BloodyCleave.png"
+    },
+    "SWORDS-T3-STA": {
+      "locked": "assets/skills/SwordsT3BloodyCleave.png"
+    },
+    "SWORDS-T3-IMP": {
+      "locked": "assets/skills/SwordsT3BloodyCleave.png"
+    },
+    "SWORDS-T3-WAY-1": {
+      "locked": "assets/skills/SwordsT3BloodyCleave.png"
+    },
+    "SWORDS-T3-WAY-2": {
+      "locked": "assets/skills/SwordsT3BloodyCleave.png"
+    },
+    "SWORDS-ULT": {
+      "locked": "assets/skills/SwordsULTHurricaneBlade.png"
+    }
+  }
+}

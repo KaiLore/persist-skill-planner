@@ -1,0 +1,946 @@
+[
+  {
+    "file": "assets/skills/AssaultRiflesP1SkilledRifleman.png",
+    "usage": "ASSAULTRIFLES-P1"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesP2EmergencyReload.png",
+    "usage": "ASSAULTRIFLES-P2"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesP3RegularFunctionChecks.png",
+    "usage": "ASSAULTRIFLES-P3"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesP4Headache.png",
+    "usage": "ASSAULTRIFLES-P4"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesT1Kneecapper.png",
+    "usage": "ASSAULTRIFLES-T1"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesT2Killshot.png",
+    "usage": "ASSAULTRIFLES-T2"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesT3CClampGrip.png",
+    "usage": "ASSAULTRIFLES-T3"
+  },
+  {
+    "file": "assets/skills/AssaultRiflesULTStormOfSteel.png",
+    "usage": "ASSAULTRIFLES-ULT"
+  },
+  {
+    "file": "assets/skills/MachineGunsP1SkilledMachineGunner.png",
+    "usage": "MACHINEGUNS-P1"
+  },
+  {
+    "file": "assets/skills/MachineGunsP2StrategicHandPositioning.png",
+    "usage": "MACHINEGUNS-P2"
+  },
+  {
+    "file": "assets/skills/MachineGunsP3PartReplacement.png",
+    "usage": "MACHINEGUNS-P3"
+  },
+  {
+    "file": "assets/skills/MachineGunsP4RipTear.png",
+    "usage": "MACHINEGUNS-P4"
+  },
+  {
+    "file": "assets/skills/MachineGunsT1MowEmDown.png",
+    "usage": "MACHINEGUNS-T1"
+  },
+  {
+    "file": "assets/skills/MachineGunsT2ZeroedIn.png",
+    "usage": "MACHINEGUNS-T2"
+  },
+  {
+    "file": "assets/skills/MachineGunsT3SuppressiveFire.png",
+    "usage": "MACHINEGUNS-T3"
+  },
+  {
+    "file": "assets/skills/MachineGunsULTOverkill.png",
+    "usage": "MACHINEGUNS-ULT"
+  },
+  {
+    "file": "assets/skills/PistolsP1SkilledPistoleer.png",
+    "usage": "PISTOLS-P1"
+  },
+  {
+    "file": "assets/skills/PistolsP2RapidMagSwap.png",
+    "usage": "PISTOLS-P2"
+  },
+  {
+    "file": "assets/skills/PistolsP3ThoroughInspection.png",
+    "usage": "PISTOLS-P3"
+  },
+  {
+    "file": "assets/skills/PistolsP4InsultToInjury.png",
+    "usage": "PISTOLS-P4"
+  },
+  {
+    "file": "assets/skills/PistolsT1RightOnTarget.png",
+    "usage": "PISTOLS-T1"
+  },
+  {
+    "file": "assets/skills/PistolsT2ArteryShot.png",
+    "usage": "PISTOLS-T2"
+  },
+  {
+    "file": "assets/skills/PistolsT3CrackingSkulls.png",
+    "usage": "PISTOLS-T3"
+  },
+  {
+    "file": "assets/skills/PistolsULTBulletHell.png",
+    "usage": "PISTOLS-ULT"
+  },
+  {
+    "file": "assets/skills/RevolversP1SkilledGunslinger.png",
+    "usage": "REVOLVERS-P1"
+  },
+  {
+    "file": "assets/skills/RevolversP2NimbleTouch.png",
+    "usage": "REVOLVERS-P2"
+  },
+  {
+    "file": "assets/skills/RevolversP3FieldRepair.png",
+    "usage": "REVOLVERS-P3"
+  },
+  {
+    "file": "assets/skills/RevolversP4GunslingerSGift.png",
+    "usage": "REVOLVERS-P4"
+  },
+  {
+    "file": "assets/skills/RevolversT1BreathControl.png",
+    "usage": "REVOLVERS-T1"
+  },
+  {
+    "file": "assets/skills/RevolversT2ExploitWeakness.png",
+    "usage": "REVOLVERS-T2"
+  },
+  {
+    "file": "assets/skills/RevolversT3NeutralizingShot.png",
+    "usage": "REVOLVERS-T3"
+  },
+  {
+    "file": "assets/skills/RevolversULTFuriousFanning.png",
+    "usage": "REVOLVERS-ULT"
+  },
+  {
+    "file": "assets/skills/RiflesP1SkilledMarksman.png",
+    "usage": "RIFLES-P1"
+  },
+  {
+    "file": "assets/skills/RiflesP2MuscleMemory.png",
+    "usage": "RIFLES-P2"
+  },
+  {
+    "file": "assets/skills/RiflesP3ProperTechnique.png",
+    "usage": "RIFLES-P3"
+  },
+  {
+    "file": "assets/skills/RiflesP4PrimusInterPares.png",
+    "usage": "RIFLES-P4"
+  },
+  {
+    "file": "assets/skills/RiflesT1PinpointPrecision.png",
+    "usage": "RIFLES-T1"
+  },
+  {
+    "file": "assets/skills/RiflesT2MobilityKill.png",
+    "usage": "RIFLES-T2"
+  },
+  {
+    "file": "assets/skills/RiflesT3RedMist.png",
+    "usage": "RIFLES-T3"
+  },
+  {
+    "file": "assets/skills/RiflesULTPewPew.png",
+    "usage": "RIFLES-ULT"
+  },
+  {
+    "file": "assets/skills/ShotgunsP1SkilledShotgunner.png",
+    "usage": "SHOTGUNS-P1"
+  },
+  {
+    "file": "assets/skills/ShotgunsP2QuickFingers.png",
+    "usage": "SHOTGUNS-P2"
+  },
+  {
+    "file": "assets/skills/ShotgunsP3BarrelCleaning.png",
+    "usage": "SHOTGUNS-P3"
+  },
+  {
+    "file": "assets/skills/ShotgunsP4CritFestival.png",
+    "usage": "SHOTGUNS-P4"
+  },
+  {
+    "file": "assets/skills/ShotgunsT1TriggerControl.png",
+    "usage": "SHOTGUNS-T1"
+  },
+  {
+    "file": "assets/skills/ShotgunsT2Peacekeeper.png",
+    "usage": "SHOTGUNS-T2"
+  },
+  {
+    "file": "assets/skills/ShotgunsT3PointBlankSlug.png",
+    "usage": "SHOTGUNS-T3"
+  },
+  {
+    "file": "assets/skills/ShotgunsULTWorldOfHurt.png",
+    "usage": "SHOTGUNS-ULT"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsP1SkilledSubmachineGunner.png",
+    "usage": "SUBMACHINEGUNS-P1"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsP2EconomicMovement.png",
+    "usage": "SUBMACHINEGUNS-P2"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsP3FrictionPointLubrication.png",
+    "usage": "SUBMACHINEGUNS-P3"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsP4CenterAxisRelock.png",
+    "usage": "SUBMACHINEGUNS-P4"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsT1IronGrip.png",
+    "usage": "SUBMACHINEGUNS-T1"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsT2Ricochet.png",
+    "usage": "SUBMACHINEGUNS-T2"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsT3ExtensiveBallisticTrauma.png",
+    "usage": "SUBMACHINEGUNS-T3"
+  },
+  {
+    "file": "assets/skills/SubmachineGunsULTApexGunman.png",
+    "usage": "SUBMACHINEGUNS-ULT"
+  },
+  {
+    "file": "assets/skills/AxesP1SkilledAxeman.png",
+    "usage": "AXES-P1"
+  },
+  {
+    "file": "assets/skills/AxesP2FollowThrough.png",
+    "usage": "AXES-P2"
+  },
+  {
+    "file": "assets/skills/AxesP3RustPrevention.png",
+    "usage": "AXES-P3"
+  },
+  {
+    "file": "assets/skills/AxesP4HeadmanSEdge.png",
+    "usage": "AXES-P4"
+  },
+  {
+    "file": "assets/skills/AxesT1Timber.png",
+    "usage": "AXES-T1"
+  },
+  {
+    "file": "assets/skills/AxesT2ExhaustingAttack.png",
+    "usage": "AXES-T2"
+  },
+  {
+    "file": "assets/skills/AxesT3AgonyHits.png",
+    "usage": "AXES-T3"
+  },
+  {
+    "file": "assets/skills/AxesULTBerserkerSpirit.png",
+    "usage": "AXES-ULT"
+  },
+  {
+    "file": "assets/skills/HammersP1SkilledHammerFighter.png",
+    "usage": "HAMMERS-P1"
+  },
+  {
+    "file": "assets/skills/HammersP2GripStrengthTraining.png",
+    "usage": "HAMMERS-P2"
+  },
+  {
+    "file": "assets/skills/HammersP3SurfaceSmoothing.png",
+    "usage": "HAMMERS-P3"
+  },
+  {
+    "file": "assets/skills/HammersP4WrathUnbound.png",
+    "usage": "HAMMERS-P4"
+  },
+  {
+    "file": "assets/skills/HammersT1Bonebreaker.png",
+    "usage": "HAMMERS-T1"
+  },
+  {
+    "file": "assets/skills/HammersT2ProvokingHits.png",
+    "usage": "HAMMERS-T2"
+  },
+  {
+    "file": "assets/skills/HammersT3AggressiveOnslaught.png",
+    "usage": "HAMMERS-T3"
+  },
+  {
+    "file": "assets/skills/HammersULTBringingThePain.png",
+    "usage": "HAMMERS-ULT"
+  },
+  {
+    "file": "assets/skills/KnivesP1SkilledBladedancer.png",
+    "usage": "KNIVES-P1"
+  },
+  {
+    "file": "assets/skills/KnivesP2BiomechanicalAnalysis.png",
+    "usage": "KNIVES-P2"
+  },
+  {
+    "file": "assets/skills/KnivesP3OilTreatment.png",
+    "usage": "KNIVES-P3"
+  },
+  {
+    "file": "assets/skills/KnivesP4Cutthroat.png",
+    "usage": "KNIVES-P4"
+  },
+  {
+    "file": "assets/skills/KnivesT1TendonRupture.png",
+    "usage": "KNIVES-T1"
+  },
+  {
+    "file": "assets/skills/KnivesT2HemorrhagicWound.png",
+    "usage": "KNIVES-T2"
+  },
+  {
+    "file": "assets/skills/KnivesT3Moribund.png",
+    "usage": "KNIVES-T3"
+  },
+  {
+    "file": "assets/skills/KnivesULTButcherSFury.png",
+    "usage": "KNIVES-ULT"
+  },
+  {
+    "file": "assets/skills/SwordsP1SkilledSwordsman.png",
+    "usage": "SWORDS-P1"
+  },
+  {
+    "file": "assets/skills/SwordsP2ImprovedFootwork.png",
+    "usage": "SWORDS-P2"
+  },
+  {
+    "file": "assets/skills/SwordsP3RegularSharpening.png",
+    "usage": "SWORDS-P3"
+  },
+  {
+    "file": "assets/skills/SwordsP4OpeningStrike.png",
+    "usage": "SWORDS-P4"
+  },
+  {
+    "file": "assets/skills/SwordsT1SavageSweeps.png",
+    "usage": "SWORDS-T1"
+  },
+  {
+    "file": "assets/skills/SwordsT2EvasiveStance.png",
+    "usage": "SWORDS-T2"
+  },
+  {
+    "file": "assets/skills/SwordsT3BloodyCleave.png",
+    "usage": "SWORDS-T3"
+  },
+  {
+    "file": "assets/skills/SwordsULTHurricaneBlade.png",
+    "usage": "SWORDS-ULT"
+  },
+  {
+    "file": "assets/skills/FishingP1EfficientAngler.png",
+    "usage": "FISH-P1"
+  },
+  {
+    "file": "assets/skills/FishingP2FasterFishing.png",
+    "usage": "FISH-P2"
+  },
+  {
+    "file": "assets/skills/FishingP3FisherSMaintenance.png",
+    "usage": "FISH-P3"
+  },
+  {
+    "file": "assets/skills/FishingP4SkillfulSwimming.png",
+    "usage": "FISH-P4"
+  },
+  {
+    "file": "assets/skills/FishingP5Rainproof.png",
+    "usage": "FISH-P5"
+  },
+  {
+    "file": "assets/skills/FishingT1RottenFishSlap.png",
+    "usage": "FISH-T1"
+  },
+  {
+    "file": "assets/skills/FishingT2Steadfast.png",
+    "usage": "FISH-T2"
+  },
+  {
+    "file": "assets/skills/FishingT3CleanCatch.png",
+    "usage": "FISH-T3"
+  },
+  {
+    "file": "assets/skills/FishingULTCurareCurse.png",
+    "usage": "FISH-ULT"
+  },
+  {
+    "file": "assets/skills/ConstructionP1EfficientForeman.png",
+    "usage": "CONSTR-P1"
+  },
+  {
+    "file": "assets/skills/ConstructionP2FasterConstruction.png",
+    "usage": "CONSTR-P2"
+  },
+  {
+    "file": "assets/skills/ConstructionP3BuilderSMaintenance.png",
+    "usage": "CONSTR-P3"
+  },
+  {
+    "file": "assets/skills/ConstructionP4EmergencyDash.png",
+    "usage": "CONSTR-P4"
+  },
+  {
+    "file": "assets/skills/ConstructionP5BracedForImpact.png",
+    "usage": "CONSTR-P5"
+  },
+  {
+    "file": "assets/skills/ConstructionT1Rebuild.png",
+    "usage": "CONSTR-T1"
+  },
+  {
+    "file": "assets/skills/ConstructionT2ToughAsNails.png",
+    "usage": "CONSTR-T2"
+  },
+  {
+    "file": "assets/skills/ConstructionT3PitchPuddle.png",
+    "usage": "CONSTR-T3"
+  },
+  {
+    "file": "assets/skills/ConstructionULTBattlefieldBulwark.png",
+    "usage": "CONSTR-ULT"
+  },
+  {
+    "file": "assets/skills/MiningP1EfficientMineralogist.png",
+    "usage": "MINING-P1"
+  },
+  {
+    "file": "assets/skills/MiningP2FasterMining.png",
+    "usage": "MINING-P2"
+  },
+  {
+    "file": "assets/skills/MiningP3MinerSMaintenance.png",
+    "usage": "MINING-P3"
+  },
+  {
+    "file": "assets/skills/MiningP4TunnelRat.png",
+    "usage": "MINING-P4"
+  },
+  {
+    "file": "assets/skills/MiningP5DangerEye.png",
+    "usage": "MINING-P5"
+  },
+  {
+    "file": "assets/skills/MiningT1Orebreaker.png",
+    "usage": "MINING-T1"
+  },
+  {
+    "file": "assets/skills/MiningT2GluckAuf.png",
+    "usage": "MINING-T2"
+  },
+  {
+    "file": "assets/skills/MiningT3SharpenEdge.png",
+    "usage": "MINING-T3"
+  },
+  {
+    "file": "assets/skills/MiningULTAHardDayInTheMine.png",
+    "usage": "MINING-ULT"
+  },
+  {
+    "file": "assets/skills/BotanyP1EfficientPathologist.png",
+    "usage": "BOTANY-P1"
+  },
+  {
+    "file": "assets/skills/BotanyP2FasterExtracting.png",
+    "usage": "BOTANY-P2"
+  },
+  {
+    "file": "assets/skills/BotanyP3BotanistSMaintenance.png",
+    "usage": "BOTANY-P3"
+  },
+  {
+    "file": "assets/skills/BotanyP4PainTolerance.png",
+    "usage": "BOTANY-P4"
+  },
+  {
+    "file": "assets/skills/BotanyP5GimmeTheGoodStuff.png",
+    "usage": "BOTANY-P5"
+  },
+  {
+    "file": "assets/skills/BotanyT1InnerFocus.png",
+    "usage": "BOTANY-T1"
+  },
+  {
+    "file": "assets/skills/BotanyT2BlindingPowder.png",
+    "usage": "BOTANY-T2"
+  },
+  {
+    "file": "assets/skills/BotanyT3PoisonCoating.png",
+    "usage": "BOTANY-T3"
+  },
+  {
+    "file": "assets/skills/BotanyULTFungalFallout.png",
+    "usage": "BOTANY-ULT"
+  },
+  {
+    "file": "assets/skills/ThieveryP1EfficientLarcenist.png",
+    "usage": "THIEVERY-P1"
+  },
+  {
+    "file": "assets/skills/ThieveryP2FasterPilfering.png",
+    "usage": "THIEVERY-P2"
+  },
+  {
+    "file": "assets/skills/ThieveryP3ThiefSMaintenance.png",
+    "usage": "THIEVERY-P3"
+  },
+  {
+    "file": "assets/skills/ThieveryP4CatLikeAgility.png",
+    "usage": "THIEVERY-P4"
+  },
+  {
+    "file": "assets/skills/ThieveryP5SteadyHands.png",
+    "usage": "THIEVERY-P5"
+  },
+  {
+    "file": "assets/skills/ThieveryT1SixthSense.png",
+    "usage": "THIEVERY-T1"
+  },
+  {
+    "file": "assets/skills/ThieveryT2CutAndRun.png",
+    "usage": "THIEVERY-T2"
+  },
+  {
+    "file": "assets/skills/ThieveryT3Chloroform.png",
+    "usage": "THIEVERY-T3"
+  },
+  {
+    "file": "assets/skills/ThieveryULTSurveillanceSentry.png",
+    "usage": "THIEVERY-ULT"
+  },
+  {
+    "file": "assets/skills/ElectronicsP1EfficientEngineer.png",
+    "usage": "ELECTRONICS-P1"
+  },
+  {
+    "file": "assets/skills/ElectronicsP2FasterDismantling.png",
+    "usage": "ELECTRONICS-P2"
+  },
+  {
+    "file": "assets/skills/ElectronicsP3ElectricianSMaintenance.png",
+    "usage": "ELECTRONICS-P3"
+  },
+  {
+    "file": "assets/skills/ElectronicsP4ElectricField.png",
+    "usage": "ELECTRONICS-P4"
+  },
+  {
+    "file": "assets/skills/ElectronicsP5BrainwaveTransmitter.png",
+    "usage": "ELECTRONICS-P5"
+  },
+  {
+    "file": "assets/skills/ElectronicsT1TasteTheArc.png",
+    "usage": "ELECTRONICS-T1"
+  },
+  {
+    "file": "assets/skills/ElectronicsT2MedPulseUnit.png",
+    "usage": "ELECTRONICS-T2"
+  },
+  {
+    "file": "assets/skills/ElectronicsT3ThermalImagingCamera.png",
+    "usage": "ELECTRONICS-T3"
+  },
+  {
+    "file": "assets/skills/ElectronicsULTOvercharge.png",
+    "usage": "ELECTRONICS-ULT"
+  },
+  {
+    "file": "assets/skills/WoodworkingP1EfficientForester.png",
+    "usage": "WOODWORKING-P1"
+  },
+  {
+    "file": "assets/skills/WoodworkingP2FasterLogging.png",
+    "usage": "WOODWORKING-P2"
+  },
+  {
+    "file": "assets/skills/WoodworkingP3LumberjackSMaintenance.png",
+    "usage": "WOODWORKING-P3"
+  },
+  {
+    "file": "assets/skills/WoodworkingP4UnderOpenSkies.png",
+    "usage": "WOODWORKING-P4"
+  },
+  {
+    "file": "assets/skills/WoodworkingP5Gymnastics.png",
+    "usage": "WOODWORKING-P5"
+  },
+  {
+    "file": "assets/skills/WoodworkingT1BleedingStrike.png",
+    "usage": "WOODWORKING-T1"
+  },
+  {
+    "file": "assets/skills/WoodworkingT2UntoTheBreach.png",
+    "usage": "WOODWORKING-T2"
+  },
+  {
+    "file": "assets/skills/WoodworkingT3SapRush.png",
+    "usage": "WOODWORKING-T3"
+  },
+  {
+    "file": "assets/skills/WoodworkingULTOneWithNature.png",
+    "usage": "WOODWORKING-ULT"
+  },
+  {
+    "file": "assets/skills/HuntingP1EfficientHuntsman.png",
+    "usage": "HUNTING-P1"
+  },
+  {
+    "file": "assets/skills/HuntingP2FasterSkinning.png",
+    "usage": "HUNTING-P2"
+  },
+  {
+    "file": "assets/skills/HuntingP3RangerSMaintenance.png",
+    "usage": "HUNTING-P3"
+  },
+  {
+    "file": "assets/skills/HuntingP4AnimalAnatomy.png",
+    "usage": "HUNTING-P4"
+  },
+  {
+    "file": "assets/skills/HuntingP5StalkingYourPrey.png",
+    "usage": "HUNTING-P5"
+  },
+  {
+    "file": "assets/skills/HuntingT1InstinctOverride.png",
+    "usage": "HUNTING-T1"
+  },
+  {
+    "file": "assets/skills/HuntingT2HeartShots.png",
+    "usage": "HUNTING-T2"
+  },
+  {
+    "file": "assets/skills/HuntingT3HunterSHowl.png",
+    "usage": "HUNTING-T3"
+  },
+  {
+    "file": "assets/skills/HuntingULTStasisMine.png",
+    "usage": "HUNTING-ULT"
+  },
+  {
+    "file": "assets/skills/MechanicsP1EfficientHandyman.png",
+    "usage": "MECHANICS-P1"
+  },
+  {
+    "file": "assets/skills/MechanicsP2FasterDisassembly.png",
+    "usage": "MECHANICS-P2"
+  },
+  {
+    "file": "assets/skills/MechanicsP3MechanicSMaintenance.png",
+    "usage": "MECHANICS-P3"
+  },
+  {
+    "file": "assets/skills/MechanicsP4ResoluteResilience.png",
+    "usage": "MECHANICS-P4"
+  },
+  {
+    "file": "assets/skills/MechanicsP5Workaholic.png",
+    "usage": "MECHANICS-P5"
+  },
+  {
+    "file": "assets/skills/MechanicsT1Deadlock.png",
+    "usage": "MECHANICS-T1"
+  },
+  {
+    "file": "assets/skills/MechanicsT2DistractingRobot.png",
+    "usage": "MECHANICS-T2"
+  },
+  {
+    "file": "assets/skills/MechanicsT3Blackout.png",
+    "usage": "MECHANICS-T3"
+  },
+  {
+    "file": "assets/skills/MechanicsULTTitanTurret.png",
+    "usage": "MECHANICS-ULT"
+  },
+  {
+    "file": "assets/skills/StreetSmartsP1EfficientPariah.png",
+    "usage": "STREETSMARTS-P1"
+  },
+  {
+    "file": "assets/skills/StreetSmartsP2FasterJimmying.png",
+    "usage": "STREETSMARTS-P2"
+  },
+  {
+    "file": "assets/skills/StreetSmartsP3UrbanOutcastSMaintenance.png",
+    "usage": "STREETSMARTS-P3"
+  },
+  {
+    "file": "assets/skills/StreetSmartsP4TakingShelter.png",
+    "usage": "STREETSMARTS-P4"
+  },
+  {
+    "file": "assets/skills/StreetSmartsP5InnerVandal.png",
+    "usage": "STREETSMARTS-P5"
+  },
+  {
+    "file": "assets/skills/StreetSmartsT1HoodlumSHeel.png",
+    "usage": "STREETSMARTS-T1"
+  },
+  {
+    "file": "assets/skills/StreetSmartsT2RuffianSRage.png",
+    "usage": "STREETSMARTS-T2"
+  },
+  {
+    "file": "assets/skills/StreetSmartsT3MockAndMaim.png",
+    "usage": "STREETSMARTS-T3"
+  },
+  {
+    "file": "assets/skills/StreetSmartsULTAnarchistSRevolution.png",
+    "usage": "STREETSMARTS-ULT"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorP1MaterialProofing.png",
+    "usage": "FLEXIBLEARMOR-P1"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorP2ReactiveMindset.png",
+    "usage": "FLEXIBLEARMOR-P2"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorP3LitheMovement.png",
+    "usage": "FLEXIBLEARMOR-P3"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorP4RenewedFortitude.png",
+    "usage": "FLEXIBLEARMOR-P4"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorP5ResourcefulLayering.png",
+    "usage": "FLEXIBLEARMOR-P5"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorP6GarbedConfidence.png",
+    "usage": "FLEXIBLEARMOR-P6"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorT1VengefulGuardian.png",
+    "usage": "FLEXIBLEARMOR-T1"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorT2NegatingWard.png",
+    "usage": "FLEXIBLEARMOR-T2"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorT3Outfall.png",
+    "usage": "FLEXIBLEARMOR-T3"
+  },
+  {
+    "file": "assets/skills/FlexibleArmorULTUntouchable.png",
+    "usage": "FLEXIBLEARMOR-ULT"
+  },
+  {
+    "file": "assets/skills/SturdyArmorP1DiligentUpkeep.png",
+    "usage": "STURDYARMOR-P1"
+  },
+  {
+    "file": "assets/skills/SturdyArmorP2StFTreatment.png",
+    "usage": "STURDYARMOR-P2"
+  },
+  {
+    "file": "assets/skills/SturdyArmorP3StalwartPositioning.png",
+    "usage": "STURDYARMOR-P3"
+  },
+  {
+    "file": "assets/skills/SturdyArmorP4TraumaResistance.png",
+    "usage": "STURDYARMOR-P4"
+  },
+  {
+    "file": "assets/skills/SturdyArmorP5SiegeManeuvers.png",
+    "usage": "STURDYARMOR-P5"
+  },
+  {
+    "file": "assets/skills/SturdyArmorP6AdamantWill.png",
+    "usage": "STURDYARMOR-P6"
+  },
+  {
+    "file": "assets/skills/SturdyArmorT1AllArmoredUp.png",
+    "usage": "STURDYARMOR-T1"
+  },
+  {
+    "file": "assets/skills/SturdyArmorT2SnapOutOfIt.png",
+    "usage": "STURDYARMOR-T2"
+  },
+  {
+    "file": "assets/skills/SturdyArmorT3ReverseGambit.png",
+    "usage": "STURDYARMOR-T3"
+  },
+  {
+    "file": "assets/skills/SturdyArmorULTEyeForAnEye.png",
+    "usage": "STURDYARMOR-ULT"
+  },
+  {
+    "file": "assets/skills/EnduranceP1SkilledAthlete.png",
+    "usage": "ENDURANCE-P1"
+  },
+  {
+    "file": "assets/skills/EnduranceP2MeditativeTraining.png",
+    "usage": "ENDURANCE-P2"
+  },
+  {
+    "file": "assets/skills/EnduranceP3SituationalAwareness.png",
+    "usage": "ENDURANCE-P3"
+  },
+  {
+    "file": "assets/skills/EnduranceP4Plyometrics.png",
+    "usage": "ENDURANCE-P4"
+  },
+  {
+    "file": "assets/skills/EnduranceT1MarathonLungs.png",
+    "usage": "ENDURANCE-T1"
+  },
+  {
+    "file": "assets/skills/EnduranceT2DoubleTime.png",
+    "usage": "ENDURANCE-T2"
+  },
+  {
+    "file": "assets/skills/EnduranceT3SecondWind.png",
+    "usage": "ENDURANCE-T3"
+  },
+  {
+    "file": "assets/skills/EnduranceULTLastStand.png",
+    "usage": "ENDURANCE-ULT"
+  },
+  {
+    "file": "assets/skills/FirstAidP1Sterilization.png",
+    "usage": "FIRSTAID-P1"
+  },
+  {
+    "file": "assets/skills/FirstAidP2FirstResponder.png",
+    "usage": "FIRSTAID-P2"
+  },
+  {
+    "file": "assets/skills/FirstAidP3TrainedBody.png",
+    "usage": "FIRSTAID-P3"
+  },
+  {
+    "file": "assets/skills/FirstAidP4FieldRoutine.png",
+    "usage": "FIRSTAID-P4"
+  },
+  {
+    "file": "assets/skills/FirstAidT1FocusSerum.png",
+    "usage": "FIRSTAID-T1"
+  },
+  {
+    "file": "assets/skills/FirstAidT2GiveEmHell.png",
+    "usage": "FIRSTAID-T2"
+  },
+  {
+    "file": "assets/skills/FirstAidT3NoOneLeftBehind.png",
+    "usage": "FIRSTAID-T3"
+  },
+  {
+    "file": "assets/skills/FirstAidULTResurrection.png",
+    "usage": "FIRSTAID-ULT"
+  },
+  {
+    "file": "assets/skills/Perk1CriticalHitChance.png",
+    "usage": "PERK-1"
+  },
+  {
+    "file": "assets/skills/Perk2CriticalDamage.png",
+    "usage": "PERK-2"
+  },
+  {
+    "file": "assets/skills/Perk3JumpHeight.png",
+    "usage": "PERK-3"
+  },
+  {
+    "file": "assets/skills/Perk4MaxHitPoints.png",
+    "usage": "PERK-4"
+  },
+  {
+    "file": "assets/skills/Perk5MaxStamina.png",
+    "usage": "PERK-5"
+  },
+  {
+    "file": "assets/skills/Perk6ReloadTimeReduction.png",
+    "usage": "PERK-6"
+  },
+  {
+    "file": "assets/skills/Perk7SkillCooldownReduction.png",
+    "usage": "PERK-7"
+  },
+  {
+    "file": "assets/skills/Perk8StaminaRegeneration.png",
+    "usage": "PERK-8"
+  },
+  {
+    "file": "assets/skills/Perk9ConsumableCooldownReduction.png",
+    "usage": "PERK-9"
+  },
+  {
+    "file": "assets/skills/Perk10TotalHeadshotDamage.png",
+    "usage": "PERK-10"
+  },
+  {
+    "file": "assets/skills/Perk11KarmaGain.png",
+    "usage": "PERK-11"
+  },
+  {
+    "file": "assets/skills/Perk12KarmaLossReduction.png",
+    "usage": "PERK-12"
+  },
+  {
+    "file": "assets/skills/Perk13ReputationGain.png",
+    "usage": "PERK-13"
+  },
+  {
+    "file": "assets/skills/Perk14WeaponAccuracy.png",
+    "usage": "PERK-14"
+  },
+  {
+    "file": "assets/skills/Perk15WeaponRecoilReduction.png",
+    "usage": "PERK-15"
+  },
+  {
+    "file": "assets/skills/Perk16ResistanceToElementalDebuffs.png",
+    "usage": "PERK-16"
+  },
+  {
+    "file": "assets/skills/Perk17DebuffImmunityCancellationWindow.png",
+    "usage": "PERK-17"
+  },
+  {
+    "file": "assets/skills/OverlayLocked.png",
+    "usage": "Blocked skills"
+  },
+  {
+    "file": "assets/skills/OverlayEnhancerCooldown.png",
+    "usage": "CD"
+  },
+  {
+    "file": "assets/skills/OverlayEnhancerStamina.png",
+    "usage": "STA"
+  },
+  {
+    "file": "assets/skills/OverlayEnhancerImpact.png",
+    "usage": "IMP"
+  },
+  {
+    "file": "assets/skills/WaysSpecialisationIconAtlas.png",
+    "usage": "All Way symbols (8x8)"
+  }
+]

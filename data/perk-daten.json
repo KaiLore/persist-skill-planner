@@ -1,0 +1,283 @@
+{
+  "perks": [
+    {
+      "id": "PERK-1",
+      "nameKey": "PerkCritChanceName",
+      "increments": [
+        6,
+        4,
+        2
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk1CriticalHitChance.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-2",
+      "nameKey": "PerkCritDamageName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk2CriticalDamage.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-3",
+      "nameKey": "PerkJumpHeightName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk3JumpHeight.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-4",
+      "nameKey": "PerkMaxHpName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk4MaxHitPoints.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-5",
+      "nameKey": "PerkMaxStaminaName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk5MaxStamina.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-6",
+      "nameKey": "PerkReloadReductionName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk6ReloadTimeReduction.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-7",
+      "nameKey": "PerkSkillCooldownName",
+      "increments": [
+        8,
+        4,
+        2
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk7SkillCooldownReduction.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-8",
+      "nameKey": "PerkStaminaRegenName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk8StaminaRegeneration.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-9",
+      "nameKey": "PerkConsumableCooldownName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk9ConsumableCooldownReduction.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-10",
+      "nameKey": "PerkHeadshotDamageName",
+      "increments": [
+        6,
+        4,
+        2
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk10TotalHeadshotDamage.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-11",
+      "nameKey": "PerkKarmaGainName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk11KarmaGain.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-12",
+      "nameKey": "PerkKarmaLossName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk12KarmaLossReduction.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-13",
+      "nameKey": "PerkReputationGainName",
+      "increments": [
+        15,
+        10,
+        5
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk13ReputationGain.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-14",
+      "nameKey": "PerkAccuracyName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk14WeaponAccuracy.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-15",
+      "nameKey": "PerkRecoilReductionName",
+      "increments": [
+        20,
+        15,
+        10
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk15WeaponRecoilReduction.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-16",
+      "nameKey": "PerkDebuffResistanceName",
+      "increments": [
+        10,
+        7,
+        4
+      ],
+      "unit": "%",
+      "icon": "assets/skills/Perk16ResistanceToElementalDebuffs.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    },
+    {
+      "id": "PERK-17",
+      "nameKey": "PerkImmunityWindowName",
+      "increments": [
+        2,
+        1,
+        0.5
+      ],
+      "unit": "s",
+      "icon": "assets/skills/Perk17DebuffImmunityCancellationWindow.png",
+      "rankStatusKeys": [
+        "SourceUserReadout",
+        "StatusEstimated",
+        "StatusEstimated"
+      ]
+    }
+  ],
+  "progression": {
+    "firstLevel": 10,
+    "interval": 5,
+    "pointsPerAward": 1,
+    "maxRank": 3,
+    "cumulative": true
+  }
+}

@@ -1,0 +1,2915 @@
+{
+  "schemaVersion": 1,
+  "professionId": "STURDYARMOR",
+  "professionKey": "LabelTreeSturdyArmorName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "STURDYARMOR-P1",
+      "nameKey": "SkillSturdyArmorP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorP1Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricDurabilityLoss",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              -0.5,
+              -1,
+              -2,
+              -3.5,
+              -5.5,
+              -8
+            ],
+            [
+              null,
+              -1,
+              -2,
+              -4,
+              -7,
+              -11,
+              -16
+            ],
+            [
+              null,
+              -1.5,
+              -3,
+              -6,
+              -10.5,
+              -16.5,
+              -24
+            ],
+            [
+              null,
+              -2,
+              -4,
+              -8,
+              -14,
+              -22,
+              -32
+            ],
+            [
+              null,
+              -2.5,
+              -5,
+              -10,
+              -17.5,
+              -27.5,
+              -40
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-P2",
+      "nameKey": "SkillSturdyArmorP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorP2Desc",
+      "buffDurationSeconds": 4,
+      "maxStacks": 10,
+      "armorTables": [
+        {
+          "metricKey": "MetricReductionRatingPerStack",
+          "unit": "Wertung",
+          "unitKey": "UnitRating",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              2,
+              4,
+              8,
+              16,
+              28,
+              44,
+              64
+            ],
+            [
+              4,
+              8,
+              16,
+              32,
+              56,
+              88,
+              128
+            ],
+            [
+              6,
+              12,
+              24,
+              48,
+              84,
+              132,
+              192
+            ],
+            [
+              8,
+              16,
+              32,
+              64,
+              112,
+              176,
+              256
+            ],
+            [
+              10,
+              20,
+              40,
+              80,
+              140,
+              220,
+              320
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-P3",
+      "nameKey": "SkillSturdyArmorP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorP3Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricDamageReductionRating",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              0.2,
+              0.4,
+              0.8,
+              1.4,
+              2.2,
+              3.2
+            ],
+            [
+              null,
+              0.4,
+              0.8,
+              1.6,
+              2.8,
+              4.4,
+              6.4
+            ],
+            [
+              null,
+              0.6,
+              1.2,
+              2.4,
+              4.2,
+              6.6,
+              9.6
+            ],
+            [
+              null,
+              0.8,
+              1.6,
+              3.2,
+              5.6,
+              8.8,
+              12.8
+            ],
+            [
+              null,
+              1,
+              2,
+              4,
+              7,
+              11,
+              16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-P4",
+      "nameKey": "SkillSturdyArmorP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorP4Desc",
+      "requirementKey": "ConditionSturdyArmorMinimum",
+      "buffDurationSeconds": 5,
+      "triggerCooldownSeconds": 60,
+      "armorTables": [
+        {
+          "metricKey": "MetricBuffDamageReduction",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              0.5,
+              1,
+              2,
+              3.5,
+              5.5,
+              8
+            ],
+            [
+              null,
+              1,
+              2,
+              4,
+              7,
+              11,
+              16
+            ],
+            [
+              null,
+              1.5,
+              3,
+              6,
+              10.5,
+              16.5,
+              24
+            ],
+            [
+              null,
+              2,
+              4,
+              8,
+              14,
+              22,
+              32
+            ],
+            [
+              null,
+              2.5,
+              5,
+              10,
+              17.5,
+              27.5,
+              40
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-P5",
+      "nameKey": "SkillSturdyArmorP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorP5Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricEvasionIncrease",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              0.2,
+              0.4,
+              0.8,
+              1.4,
+              2.2,
+              3.2
+            ],
+            [
+              null,
+              0.4,
+              0.8,
+              1.6,
+              2.8,
+              4.4,
+              6.4
+            ],
+            [
+              null,
+              0.6,
+              1.2,
+              2.4,
+              4.2,
+              6.6,
+              9.6
+            ],
+            [
+              null,
+              0.8,
+              1.6,
+              3.2,
+              5.6,
+              8.8,
+              12.8
+            ],
+            [
+              null,
+              1,
+              2,
+              4,
+              7,
+              11,
+              16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-P6",
+      "nameKey": "SkillSturdyArmorP6Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorP6Desc",
+      "armorTables": [
+        {
+          "metricKey": "MetricPhysicalDebuffBlockChance",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              null,
+              null,
+              null,
+              0.5,
+              1,
+              2
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              1,
+              2,
+              4
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              1.5,
+              3,
+              6
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              2,
+              4,
+              8
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              2.5,
+              5,
+              10
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T1",
+      "nameKey": "SkillSturdyArmorT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "buffDurationSeconds": 5,
+      "armorTables": [
+        {
+          "metricKey": "MetricShieldHpRatio",
+          "unit": "%",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              4,
+              7,
+              11,
+              16,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T1-CD",
+      "nameKey": "SkillSturdyArmorT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T1-STA",
+      "nameKey": "SkillSturdyArmorT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T1-IMP",
+      "nameKey": "SkillSturdyArmorT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricTooltipEffectDuration",
+          "unit": "s",
+          "values": [
+            8,
+            11,
+            14,
+            17,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T1-WAY-1",
+      "nameKey": "SkillSturdyArmorT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "STURDYARMOR-T1-WAY-2",
+      "nameKey": "SkillSturdyArmorT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "STURDYARMOR-T2",
+      "nameKey": "SkillSturdyArmorT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "debuffDurationReductionPercent": 50,
+      "armorTables": [
+        {
+          "metricKey": "EffectBaseDuration",
+          "unit": "s",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              null,
+              1,
+              2,
+              4,
+              8,
+              13
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T2-CD",
+      "nameKey": "SkillSturdyArmorT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T2-STA",
+      "nameKey": "SkillSturdyArmorT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T2-IMP",
+      "nameKey": "SkillSturdyArmorT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricTooltipEffectDuration",
+          "unit": "s",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T2-WAY-1",
+      "nameKey": "SkillSturdyArmorT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "STURDYARMOR-T2-WAY-2",
+      "nameKey": "SkillSturdyArmorT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "STURDYARMOR-T3",
+      "nameKey": "SkillSturdyArmorT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT3Desc",
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "damageReductionPercent": 10,
+      "staminaRegenerationBonusPercent": 100,
+      "observedFollowupDurationSeconds": 13,
+      "followupDamageReductionPenaltyPercent": 20,
+      "armorTables": [
+        {
+          "metricKey": "EffectBaseDuration",
+          "unit": "s",
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rows": [
+            [
+              null,
+              null,
+              1,
+              2,
+              4,
+              8,
+              13
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T3-CD",
+      "nameKey": "SkillSturdyArmorT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T3-STA",
+      "nameKey": "SkillSturdyArmorT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T3-IMP",
+      "nameKey": "SkillSturdyArmorT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricDamageReduction",
+          "unit": "%",
+          "values": [
+            14,
+            18,
+            22,
+            26,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STURDYARMOR-T3-WAY-1",
+      "nameKey": "SkillSturdyArmorT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "STURDYARMOR-T3-WAY-2",
+      "nameKey": "SkillSturdyArmorT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillSturdyArmorT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "STURDYARMOR-ULT",
+      "nameKey": "SkillSturdyArmorUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillSturdyArmorUltDesc",
+      "requirementKey": "ConditionFullSturdyArmor",
+      "minimumArmorPieces": 7,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -0.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -1,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -3.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -5.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -1.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -3,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -10.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -16.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -24,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -14,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -22,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -32,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -2.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -5,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -10,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -17.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -27.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P1",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLoss",
+      "value": -40,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 2,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 4,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 8,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 16,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 28,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 44,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 1,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 64,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 4,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 8,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 16,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 32,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 56,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 88,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 2,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 128,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 6,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 12,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 24,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 48,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 84,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 132,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 3,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 192,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 8,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 16,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 32,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 64,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 112,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 176,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 4,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 256,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 10,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 20,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 40,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 80,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 140,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 220,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P2",
+      "rank": 5,
+      "metricKey": "MetricReductionRatingPerStack",
+      "value": 320,
+      "unit": "Wertung",
+      "unitKey": "UnitRating",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.4,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2.2,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 1,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2.8,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 4.4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 2,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 6.4,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.6,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2.4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 4.2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 6.6,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 3,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 9.6,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 5.6,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 8.8,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 4,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 12.8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P3",
+      "rank": 5,
+      "metricKey": "MetricDamageReductionRating",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 0.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 3.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 5.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 1,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 2,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 1.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 3,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 10.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 16.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 3,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 24,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 14,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 22,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 4,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 32,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 2.5,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 5,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 10,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 17.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 27.5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P4",
+      "rank": 5,
+      "metricKey": "MetricBuffDamageReduction",
+      "value": 40,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.4,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2.2,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 1,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.4,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2.8,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 4.4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 2,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 6.4,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.6,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2.4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 4.2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 6.6,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 3,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 9.6,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 0.8,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1.6,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 3.2,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 5.6,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 8.8,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 4,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 12.8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P5",
+      "rank": 5,
+      "metricKey": "MetricEvasionIncrease",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 1,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 0.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 1,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 1,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 2,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 2,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 2,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 3,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 1.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 3,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 3,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 3,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 6,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 4,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 4,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 4,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 8,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 5,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 2.5,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 5,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 5,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-P6",
+      "rank": 5,
+      "metricKey": "MetricPhysicalDebuffBlockChance",
+      "value": 10,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 1,
+      "unit": "%",
+      "armorPieces": 1
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 2,
+      "unit": "%",
+      "armorPieces": 2
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 4,
+      "unit": "%",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 7,
+      "unit": "%",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 11,
+      "unit": "%",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 16,
+      "unit": "%",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-T1",
+      "rank": 1,
+      "metricKey": "MetricShieldHpRatio",
+      "value": 22,
+      "unit": "%",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-T2",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 1,
+      "unit": "s",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-T2",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 2,
+      "unit": "s",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-T2",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 4,
+      "unit": "s",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-T2",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 8,
+      "unit": "s",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-T2",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 13,
+      "unit": "s",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 1,
+      "unit": "s",
+      "armorPieces": 3
+    },
+    {
+      "skillId": "STURDYARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 2,
+      "unit": "s",
+      "armorPieces": 4
+    },
+    {
+      "skillId": "STURDYARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 4,
+      "unit": "s",
+      "armorPieces": 5
+    },
+    {
+      "skillId": "STURDYARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 8,
+      "unit": "s",
+      "armorPieces": 6
+    },
+    {
+      "skillId": "STURDYARMOR-T3",
+      "rank": 1,
+      "metricKey": "EffectBaseDuration",
+      "value": 13,
+      "unit": "s",
+      "armorPieces": 7
+    },
+    {
+      "skillId": "STURDYARMOR-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 11,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 14,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 17,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 20,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 86,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 74,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 64,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 56,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 50,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 9,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricTooltipEffectDuration",
+      "value": 15,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-IMP",
+      "rank": 1,
+      "metricKey": "MetricDamageReduction",
+      "value": 14,
+      "unit": "%"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-IMP",
+      "rank": 2,
+      "metricKey": "MetricDamageReduction",
+      "value": 18,
+      "unit": "%"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-IMP",
+      "rank": 3,
+      "metricKey": "MetricDamageReduction",
+      "value": 22,
+      "unit": "%"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-IMP",
+      "rank": 4,
+      "metricKey": "MetricDamageReduction",
+      "value": 26,
+      "unit": "%"
+    },
+    {
+      "skillId": "STURDYARMOR-T3-IMP",
+      "rank": 5,
+      "metricKey": "MetricDamageReduction",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 8,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 12,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 16,
+      "unit": "s"
+    },
+    {
+      "skillId": "STURDYARMOR-ULT",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 20,
+      "unit": "s"
+    }
+  ],
+  "iconVariants": {
+    "STURDYARMOR-P1": {
+      "locked": "assets/skills/SturdyArmorP1DiligentUpkeep.png"
+    },
+    "STURDYARMOR-P2": {
+      "unlocked": "assets/skills/SturdyArmorP2StFTreatment.png"
+    },
+    "STURDYARMOR-P3": {
+      "locked": "assets/skills/SturdyArmorP3StalwartPositioning.png"
+    },
+    "STURDYARMOR-P4": {
+      "locked": "assets/skills/SturdyArmorP4TraumaResistance.png"
+    },
+    "STURDYARMOR-P5": {
+      "locked": "assets/skills/SturdyArmorP5SiegeManeuvers.png"
+    },
+    "STURDYARMOR-P6": {
+      "locked": "assets/skills/SturdyArmorP6AdamantWill.png"
+    },
+    "STURDYARMOR-T1": {
+      "unlocked": "assets/skills/SturdyArmorT1AllArmoredUp.png"
+    },
+    "STURDYARMOR-T1-CD": {
+      "locked": "assets/skills/SturdyArmorT1AllArmoredUp.png"
+    },
+    "STURDYARMOR-T1-STA": {
+      "locked": "assets/skills/SturdyArmorT1AllArmoredUp.png"
+    },
+    "STURDYARMOR-T1-IMP": {
+      "locked": "assets/skills/SturdyArmorT1AllArmoredUp.png"
+    },
+    "STURDYARMOR-T1-WAY-1": {
+      "locked": "assets/skills/SturdyArmorT1AllArmoredUp.png"
+    },
+    "STURDYARMOR-T1-WAY-2": {
+      "locked": "assets/skills/SturdyArmorT1AllArmoredUp.png"
+    },
+    "STURDYARMOR-T2": {
+      "locked": "assets/skills/SturdyArmorT2SnapOutOfIt.png"
+    },
+    "STURDYARMOR-T2-CD": {
+      "locked": "assets/skills/SturdyArmorT2SnapOutOfIt.png"
+    },
+    "STURDYARMOR-T2-STA": {
+      "locked": "assets/skills/SturdyArmorT2SnapOutOfIt.png"
+    },
+    "STURDYARMOR-T2-IMP": {
+      "locked": "assets/skills/SturdyArmorT2SnapOutOfIt.png"
+    },
+    "STURDYARMOR-T2-WAY-1": {
+      "locked": "assets/skills/SturdyArmorT2SnapOutOfIt.png"
+    },
+    "STURDYARMOR-T2-WAY-2": {
+      "locked": "assets/skills/SturdyArmorT2SnapOutOfIt.png"
+    },
+    "STURDYARMOR-T3": {
+      "locked": "assets/skills/SturdyArmorT3ReverseGambit.png"
+    },
+    "STURDYARMOR-T3-CD": {
+      "locked": "assets/skills/SturdyArmorT3ReverseGambit.png"
+    },
+    "STURDYARMOR-T3-STA": {
+      "locked": "assets/skills/SturdyArmorT3ReverseGambit.png"
+    },
+    "STURDYARMOR-T3-IMP": {
+      "locked": "assets/skills/SturdyArmorT3ReverseGambit.png"
+    },
+    "STURDYARMOR-T3-WAY-1": {
+      "locked": "assets/skills/SturdyArmorT3ReverseGambit.png"
+    },
+    "STURDYARMOR-T3-WAY-2": {
+      "locked": "assets/skills/SturdyArmorT3ReverseGambit.png"
+    },
+    "STURDYARMOR-ULT": {
+      "locked": "assets/skills/SturdyArmorULTEyeForAnEye.png"
+    }
+  }
+}

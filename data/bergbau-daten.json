@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "professionId": "MINING",
+  "professionKey": "LabelTreeMiningName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "MINING-P1",
+      "nameKey": "SkillMiningP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "unlockDisplayed": null,
+      "requirementKey": "ConditionPickaxe",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-P2",
+      "nameKey": "SkillMiningP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": null,
+      "requirementKey": "ConditionPickaxe",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-P3",
+      "nameKey": "SkillMiningP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 16,
+      "requirementKey": "ConditionPickaxe",
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLoss",
+          "unit": "%",
+          "values": [
+            -5,
+            -10,
+            -15,
+            -20,
+            -25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-P4",
+      "nameKey": "SkillMiningP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 16,
+      "requirementKey": "ConditionCrouching",
+      "metrics": [
+        {
+          "metricKey": "MetricRecoil",
+          "unit": "%",
+          "values": [
+            -2,
+            -4,
+            -6,
+            -8,
+            -10
+          ]
+        },
+        {
+          "metricKey": "MetricAccuracy",
+          "unit": "%",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-P5",
+      "nameKey": "SkillMiningP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 31,
+      "requirementKey": "ConditionEvasionTriggered",
+      "metrics": [
+        {
+          "metricKey": "MetricSprintStaminaCost",
+          "unit": "%",
+          "values": [
+            -20,
+            -40,
+            -60,
+            -80,
+            -100
+          ]
+        }
+      ],
+      "durationSeconds": 3
+    },
+    {
+      "id": "MINING-T1",
+      "nameKey": "SkillMiningT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "requirementKey": "ConditionMeleeWeapon",
+      "effectKey": "SkillMiningT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "baseDamageWeaponDpsPercent": 150,
+      "observedStaminaCost": 43,
+      "observedCooldownSeconds": 50,
+      "observedDamageWeaponDpsPercent": 300,
+      "observedEnhancerRanks": {
+        "cooldown": 0,
+        "stamina": 4,
+        "impact": 5
+      },
+      "descriptionKey": "SkillMiningT1Desc",
+      "baseActiveWeaponDpsPercent": 150
+    },
+    {
+      "id": "MINING-T1-CD",
+      "parent": "MINING-T1",
+      "nameKey": "SkillMiningT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T1-STA",
+      "parent": "MINING-T1",
+      "nameKey": "SkillMiningT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T1-IMP",
+      "parent": "MINING-T1",
+      "nameKey": "SkillMiningT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricActiveWeaponDps",
+          "unit": "%",
+          "values": [
+            180,
+            210,
+            240,
+            270,
+            300
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T1-WAY-BERSERKER",
+      "parent": "MINING-T1",
+      "nameKey": "SkillMiningT1WayBERSERKERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "wayOrder": 1,
+      "effectKey": "SkillMiningT1WayBERSERKERDesc",
+      "additionalActiveWeaponDpsPercent": 100
+    },
+    {
+      "id": "MINING-T1-WAY-GHOST",
+      "parent": "MINING-T1",
+      "nameKey": "SkillMiningT1WayGHOSTName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "durationSeconds": 3,
+      "evasionBonusPercent": 30,
+      "effectKey": "SkillMiningT1WayGHOSTDesc",
+      "wayOrder": 2
+    },
+    {
+      "id": "MINING-T2",
+      "nameKey": "SkillMiningT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "unlockDisplayed": 16,
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "healingBasisKey": "TargetMissingHp",
+      "baseHealingPercent": 25,
+      "effectKey": "SkillMiningT2Desc"
+    },
+    {
+      "id": "MINING-T2-CD",
+      "parent": "MINING-T2",
+      "nameKey": "SkillMiningT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T2-STA",
+      "parent": "MINING-T2",
+      "nameKey": "SkillMiningT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T2-IMP",
+      "parent": "MINING-T2",
+      "nameKey": "SkillMiningT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricMissingHpHealing",
+          "unit": "%",
+          "values": [
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T2-WAY-PHYSICIAN",
+      "parent": "MINING-T2",
+      "nameKey": "SkillMiningT2WayPHYSICIANName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "wayOrder": 1,
+      "effectKey": "SkillMiningT2WayPHYSICIANDesc",
+      "radiusMeters": 20
+    },
+    {
+      "id": "MINING-T2-WAY-NURTURER",
+      "parent": "MINING-T2",
+      "nameKey": "SkillMiningT2WayNURTURERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillMiningT2WayNURTURERDesc",
+      "radiusMeters": 20,
+      "wayOrder": 2
+    },
+    {
+      "id": "MINING-T3",
+      "nameKey": "SkillMiningT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "unlockDisplayed": 31,
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "buffDurationSeconds": 7,
+      "meleeDamageBonusPercent": 50,
+      "bleedingDurationSeconds": 20,
+      "effectKey": "SkillMiningT3Desc"
+    },
+    {
+      "id": "MINING-T3-CD",
+      "parent": "MINING-T3",
+      "nameKey": "SkillMiningT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T3-STA",
+      "parent": "MINING-T3",
+      "nameKey": "SkillMiningT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T3-IMP",
+      "parent": "MINING-T3",
+      "nameKey": "SkillMiningT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MINING-T3-WAY-BERSERKER",
+      "parent": "MINING-T3",
+      "nameKey": "SkillMiningT3WayBERSERKERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "wayOrder": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillMiningT3WayBERSERKERDesc",
+      "additionalDamageBonusPercent": 20
+    },
+    {
+      "id": "MINING-T3-WAY-ASSASSIN",
+      "parent": "MINING-T3",
+      "nameKey": "SkillMiningT3WayASSASSINName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "wayOrder": 2,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillMiningT3WayASSASSINDesc",
+      "criticalDamageBonusPercent": 75
+    },
+    {
+      "id": "MINING-ULT",
+      "nameKey": "SkillMiningUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "effectKey": "SkillMiningUltDesc"
+    }
+  ],
+  "observedBuild": {
+    "display": "10/0",
+    "firstActiveBase": 1,
+    "firstActiveEnhancers": [
+      0,
+      4,
+      5
+    ],
+    "passiveRanks": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

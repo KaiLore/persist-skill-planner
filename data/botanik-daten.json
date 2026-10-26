@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "professionId": "BOTANY",
+  "professionKey": "LabelTreeBotanyName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "BOTANY-P1",
+      "nameKey": "SkillBotanyP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "requirementKey": "ConditionShears",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-P2",
+      "nameKey": "SkillBotanyP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "requirementKey": "ConditionShears",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-P3",
+      "nameKey": "SkillBotanyP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 16,
+      "requirementKey": "ConditionShears",
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLoss",
+          "unit": "%",
+          "values": [
+            -5,
+            -10,
+            -15,
+            -20,
+            -25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-P4",
+      "nameKey": "SkillBotanyP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 16,
+      "requirementKey": "ConditionDebuffExpires",
+      "durationSeconds": 8,
+      "maxStacks": 10,
+      "metrics": [
+        {
+          "metricKey": "MetricCritDamagePerStack",
+          "unit": "%",
+          "values": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ],
+      "effectKey": "SkillBotanyP4Desc"
+    },
+    {
+      "id": "BOTANY-P5",
+      "nameKey": "SkillBotanyP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "unlockDisplayed": 31,
+      "durationIncreasePercent": 20,
+      "durationRoundingKey": "RuleRoundUpSeconds",
+      "metrics": [
+        {
+          "metricKey": "MetricDurationExtensionChance",
+          "unit": "%",
+          "values": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ]
+        }
+      ],
+      "effectKey": "SkillBotanyP5Desc"
+    },
+    {
+      "id": "BOTANY-T1",
+      "nameKey": "SkillBotanyT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "baseDurationSeconds": 15,
+      "observedDurationSeconds": 40,
+      "observedStaminaCost": 43,
+      "observedCooldownSeconds": 50,
+      "observedEnhancerRanks": {
+        "cooldown": 0,
+        "stamina": 4,
+        "impact": 5
+      },
+      "blockedMentalDebuffs": 1,
+      "effectKey": "SkillBotanyT1Desc",
+      "descriptionKey": "SkillBotanyT1Desc"
+    },
+    {
+      "id": "BOTANY-T1-CD",
+      "nameKey": "SkillBotanyT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "parent": "BOTANY-T1",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T1-STA",
+      "nameKey": "SkillBotanyT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "parent": "BOTANY-T1",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T1-IMP",
+      "nameKey": "SkillBotanyT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "parent": "BOTANY-T1",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T1-WAY-UNFADING",
+      "nameKey": "SkillBotanyT1WayUNFADINGName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "parent": "BOTANY-T1",
+      "wayOrder": 1,
+      "requiredSkillPoints": 11,
+      "durationBonusSeconds": 20,
+      "effectKey": "SkillBotanyT1WayUNFADINGDesc"
+    },
+    {
+      "id": "BOTANY-T1-WAY-STOIC",
+      "nameKey": "SkillBotanyT1WaySTOICName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "parent": "BOTANY-T1",
+      "wayOrder": 2,
+      "requiredSkillPoints": 11,
+      "additionalBlockedMentalDebuffs": 1,
+      "effectKey": "SkillBotanyT1WaySTOICDesc"
+    },
+    {
+      "id": "BOTANY-T2",
+      "nameKey": "SkillBotanyT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "unlockDisplayed": 16,
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 100,
+      "radiusMeters": 5,
+      "debuffDurationSeconds": 3,
+      "effectKey": "SkillBotanyT2Desc"
+    },
+    {
+      "id": "BOTANY-T2-CD",
+      "nameKey": "SkillBotanyT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "parent": "BOTANY-T2",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            86,
+            74,
+            64,
+            56,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T2-STA",
+      "nameKey": "SkillBotanyT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "parent": "BOTANY-T2",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T2-IMP",
+      "nameKey": "SkillBotanyT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "parent": "BOTANY-T2",
+      "metrics": [
+        {
+          "metricKey": "MetricRange",
+          "unit": "m",
+          "values": [
+            9,
+            13,
+            17,
+            21,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T2-WAY-STAGGERER",
+      "nameKey": "SkillBotanyT2WaySTAGGERERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "parent": "BOTANY-T2",
+      "wayOrder": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillBotanyT2WaySTAGGERERDesc"
+    },
+    {
+      "id": "BOTANY-T2-WAY-STRATEGIST",
+      "nameKey": "SkillBotanyT2WaySTRATEGISTName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "parent": "BOTANY-T2",
+      "wayOrder": 2,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillBotanyT2WaySTRATEGISTDesc",
+      "cooldownReductionSecondsPerBlindedTarget": 5,
+      "cooldownMinimumSeconds": 0
+    },
+    {
+      "id": "BOTANY-T3",
+      "nameKey": "SkillBotanyT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "unlockDisplayed": 31,
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "effectKey": "SkillBotanyT3Desc",
+      "descriptionKey": "SkillBotanyT3Desc",
+      "requirementKey": "ConditionMeleeWeapon",
+      "baseActiveWeaponDpsPercent": 100,
+      "targetTypeKey": "TargetSingle",
+      "debuffKey": "EffectPoisoned",
+      "debuffDurationSeconds": 10,
+      "poisonTooltip": {
+        "durationSeconds": 10,
+        "damageBasisKey": "TargetMaxHp",
+        "ticks": [
+          {
+            "afterSeconds": 2,
+            "damagePercentMaxTargetHp": 10
+          },
+          {
+            "afterSeconds": 4,
+            "damagePercentMaxTargetHp": 7
+          },
+          {
+            "afterSeconds": 6,
+            "damagePercentMaxTargetHp": 4
+          },
+          {
+            "afterSeconds": 8,
+            "damagePercentMaxTargetHp": 3
+          },
+          {
+            "afterSeconds": 10,
+            "damagePercentMaxTargetHp": 2
+          },
+          {
+            "afterSeconds": 12,
+            "damagePercentMaxTargetHp": 1
+          }
+        ],
+        "minimumTickPercent": 1
+      }
+    },
+    {
+      "id": "BOTANY-T3-CD",
+      "nameKey": "SkillBotanyT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "parent": "BOTANY-T3",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T3-STA",
+      "nameKey": "SkillBotanyT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "parent": "BOTANY-T3",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T3-IMP",
+      "nameKey": "SkillBotanyT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "parent": "BOTANY-T3",
+      "metrics": [
+        {
+          "metricKey": "MetricActiveWeaponDps",
+          "unit": "%",
+          "values": [
+            120,
+            140,
+            160,
+            180,
+            200
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOTANY-T3-WAY-REAPER",
+      "nameKey": "SkillBotanyT3WayREAPERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "parent": "BOTANY-T3",
+      "wayOrder": 1,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillBotanyT3WayREAPERDesc"
+    },
+    {
+      "id": "BOTANY-T3-WAY-BUTCHER",
+      "nameKey": "SkillBotanyT3WayBUTCHERName",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "parent": "BOTANY-T3",
+      "wayOrder": 2,
+      "requiredSkillPoints": 11,
+      "effectKey": "SkillBotanyT3WayBUTCHERDesc",
+      "bleedingDurationSeconds": 20,
+      "bleedingDamagePercentMaxTargetHpPerSecond": 2
+    },
+    {
+      "id": "BOTANY-ULT",
+      "nameKey": "SkillBotanyUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "unlockDisplayed": 46,
+      "radiusMeters": 5,
+      "buffDurationSeconds": 8,
+      "tickIntervalSeconds": 1,
+      "weaponDpsReferenceKey": "RuleBestWeaponDps",
+      "effectKey": "SkillBotanyUltDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "MetricBestWeaponDpsPerTick",
+          "unit": "%",
+          "values": [
+            40,
+            55,
+            70,
+            85,
+            100
+          ]
+        },
+        {
+          "metricKey": "MetricConfusedDuration",
+          "unit": "s",
+          "values": [
+            3,
+            3,
+            4,
+            4,
+            5
+          ]
+        },
+        {
+          "metricKey": "MetricDistractedDuration",
+          "unit": "s",
+          "values": [
+            3,
+            4,
+            4,
+            5,
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "definitions": {
+    "BuffsKey": "TargetConsumableBuffs",
+    "StatuseffekteKey": "RuleTriggeredEffects",
+    "Mentale DebuffsKeys": [
+      "EffectConfused",
+      "EffectNauseated",
+      "EffectDistracted",
+      "EffectTraumatizedName",
+      "EffectStunned",
+      "EffectSuppressed",
+      "EffectVulnerable",
+      "EffectLightning",
+      "EffectRadiation"
+    ],
+    "GeblendetKey": "EffectBlinded",
+    "BenommenKey": "EffectDazedControls",
+    "TraumatisiertKey": "EffectTraumatized",
+    "BlutungKey": "EffectTargetHpDamage",
+    "VerwirrtKey": "EffectSkillsDisabled",
+    "AbgelenktKey": "EffectOutgoingDamagePenalty",
+    "Vergiftet": {
+      "durationSeconds": 10,
+      "damageBasisKey": "TargetMaxHp",
+      "ticks": [
+        {
+          "afterSeconds": 2,
+          "damagePercentMaxTargetHp": 10
+        },
+        {
+          "afterSeconds": 4,
+          "damagePercentMaxTargetHp": 7
+        },
+        {
+          "afterSeconds": 6,
+          "damagePercentMaxTargetHp": 4
+        },
+        {
+          "afterSeconds": 8,
+          "damagePercentMaxTargetHp": 3
+        },
+        {
+          "afterSeconds": 10,
+          "damagePercentMaxTargetHp": 2
+        },
+        {
+          "afterSeconds": 12,
+          "damagePercentMaxTargetHp": 1
+        }
+      ],
+      "minimumTickPercent": 1
+    }
+  }
+}

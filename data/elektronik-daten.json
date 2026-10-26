@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": 1,
+  "professionId": "ELECTRONICS",
+  "professionKey": "LabelTreeElectronicsName",
+  "date": "2026-10-20",
+  "skills": [
+    {
+      "id": "ELECTRONICS-P1",
+      "nameKey": "SkillElectronicsP1Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 10,
+      "effectKey": "SkillElectronicsP1Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricExtraLootChance",
+          "unit": "%",
+          "values": [
+            3,
+            6,
+            9,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-P2",
+      "nameKey": "SkillElectronicsP2Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillElectronicsP2Desc",
+      "metrics": [
+        {
+          "metricKey": "MetricGatherSpeed",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-P3",
+      "nameKey": "SkillElectronicsP3Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillElectronicsP3Desc",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricDurabilityLossReduction",
+          "unit": "%",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-P4",
+      "nameKey": "SkillElectronicsP4Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillElectronicsP4Desc",
+      "triggerCooldownSeconds": 5,
+      "weaponDpsReferenceKey": "RuleBestWeaponDps",
+      "unlockDisplayed": 16,
+      "metrics": [
+        {
+          "metricKey": "MetricBestWeaponDamage",
+          "unit": "%",
+          "values": [
+            15,
+            30,
+            45,
+            60,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-P5",
+      "nameKey": "SkillElectronicsP5Name",
+      "kind": "Passiv",
+      "kindKey": "KindPassive",
+      "tier": "T0",
+      "max": 5,
+      "effectKey": "SkillElectronicsP5Desc",
+      "durationIncreasePercent": 20,
+      "unlockDisplayed": 31,
+      "metrics": [
+        {
+          "metricKey": "MetricDebuffExtensionChance",
+          "unit": "%",
+          "values": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T1",
+      "nameKey": "SkillElectronicsT1Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillElectronicsT1Desc",
+      "baseStaminaCost": 65,
+      "baseCooldownSeconds": 50,
+      "baseActiveWeaponDpsPercent": 150,
+      "observedActiveWeaponDpsPercent": 200,
+      "observedEnhancerRanks": {
+        "cooldown": 3,
+        "stamina": 5,
+        "impact": 5
+      },
+      "debuffKey": "EffectDisgusted",
+      "debuffDurationSeconds": 4,
+      "requirementKey": "ConditionRangedWeapon",
+      "descriptionKey": "SkillElectronicsT1Desc"
+    },
+    {
+      "id": "ELECTRONICS-T1-CD",
+      "nameKey": "SkillElectronicsT1CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillElectronicsT1CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            43,
+            37,
+            32,
+            28,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T1-STA",
+      "nameKey": "SkillElectronicsT1StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillElectronicsT1StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            58,
+            52,
+            47,
+            43,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T1-IMP",
+      "nameKey": "SkillElectronicsT1ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T1",
+      "max": 5,
+      "effectKey": "SkillElectronicsT1ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricBonusActiveWeaponDamage",
+          "unit": "%",
+          "values": [
+            160,
+            170,
+            180,
+            190,
+            200
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T1-WAY-1",
+      "nameKey": "SkillElectronicsT1Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillElectronicsT1Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ELECTRONICS-T1-WAY-2",
+      "nameKey": "SkillElectronicsT1Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T1",
+      "max": 1,
+      "effectKey": "SkillElectronicsT1Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ELECTRONICS-T2",
+      "nameKey": "SkillElectronicsT2Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillElectronicsT2Desc",
+      "baseStaminaCost": 75,
+      "baseCooldownSeconds": 180,
+      "baseHealingPercent": 2.5,
+      "observedCooldownSeconds": 111,
+      "observedHealingPercent": 5,
+      "radiusMeters": 5,
+      "tickIntervalSeconds": 1,
+      "objectDurationSeconds": 10,
+      "objectHpPercentOwnerMaxHp": 10,
+      "healingBasisKey": "LabelMaxHp",
+      "unlockDisplayed": 16,
+      "descriptionKey": "SkillElectronicsT2Desc"
+    },
+    {
+      "id": "ELECTRONICS-T2-CD",
+      "nameKey": "SkillElectronicsT2CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillElectronicsT2CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            144,
+            126,
+            111,
+            99,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T2-STA",
+      "nameKey": "SkillElectronicsT2StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillElectronicsT2StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            68,
+            62,
+            57,
+            53,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T2-IMP",
+      "nameKey": "SkillElectronicsT2ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T2",
+      "max": 5,
+      "effectKey": "SkillElectronicsT2ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricPulseHealing",
+          "unit": "%",
+          "values": [
+            3,
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T2-WAY-1",
+      "nameKey": "SkillElectronicsT2Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillElectronicsT2Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ELECTRONICS-T2-WAY-2",
+      "nameKey": "SkillElectronicsT2Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T2",
+      "max": 1,
+      "effectKey": "SkillElectronicsT2Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ELECTRONICS-T3",
+      "nameKey": "SkillElectronicsT3Name",
+      "kind": "Aktiv",
+      "kindKey": "KindActive",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillElectronicsT3Desc",
+      "baseStaminaCost": 85,
+      "baseCooldownSeconds": 150,
+      "buffDurationSeconds": 20,
+      "unlockDisplayed": 31
+    },
+    {
+      "id": "ELECTRONICS-T3-CD",
+      "nameKey": "SkillElectronicsT3CooldownName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillElectronicsT3CooldownDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            129,
+            111,
+            96,
+            84,
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T3-STA",
+      "nameKey": "SkillElectronicsT3StaminaName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillElectronicsT3StaminaDesc",
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            78,
+            72,
+            67,
+            63,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T3-IMP",
+      "nameKey": "SkillElectronicsT3ImpactName",
+      "kind": "Enhancer",
+      "kindKey": "KindEnhancer",
+      "tier": "T3",
+      "max": 5,
+      "effectKey": "SkillElectronicsT3ImpactDesc",
+      "metrics": [
+        {
+          "metricKey": "EffectDuration",
+          "unit": "s",
+          "values": [
+            24,
+            28,
+            32,
+            36,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRONICS-T3-WAY-1",
+      "nameKey": "SkillElectronicsT3Way1Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillElectronicsT3Way1Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ELECTRONICS-T3-WAY-2",
+      "nameKey": "SkillElectronicsT3Way2Name",
+      "kind": "Way",
+      "kindKey": "KindWay",
+      "tier": "T3",
+      "max": 1,
+      "effectKey": "SkillElectronicsT3Way2Desc",
+      "requiredSkillPoints": 11
+    },
+    {
+      "id": "ELECTRONICS-ULT",
+      "nameKey": "SkillElectronicsUltName",
+      "kind": "Ultimate",
+      "kindKey": "KindUltimate",
+      "tier": "ULT",
+      "max": 5,
+      "effectKey": "SkillElectronicsUltDesc",
+      "weaponDpsReferenceKey": "RuleBestWeaponDps",
+      "unlockDisplayed": 46,
+      "metrics": [
+        {
+          "metricKey": "MetricStaminaCost",
+          "unit": "Ausdauer",
+          "unitKey": "UnitStamina",
+          "values": [
+            115,
+            105,
+            95,
+            85,
+            75
+          ]
+        },
+        {
+          "metricKey": "MetricCooldown",
+          "unit": "s",
+          "values": [
+            240,
+            210,
+            180,
+            150,
+            120
+          ]
+        },
+        {
+          "metricKey": "MetricBestWeaponDamage",
+          "unit": "%",
+          "values": [
+            250,
+            300,
+            350,
+            400,
+            450
+          ]
+        },
+        {
+          "metricKey": "MetricBlinded",
+          "unit": "s",
+          "values": [
+            3,
+            3,
+            4,
+            4,
+            5
+          ]
+        },
+        {
+          "metricKey": "MetricDisgusted",
+          "unit": "s",
+          "values": [
+            4,
+            5,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 1,
+      "metricKey": "MetricExtraLootChance",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 2,
+      "metricKey": "MetricExtraLootChance",
+      "value": 6,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 3,
+      "metricKey": "MetricExtraLootChance",
+      "value": 9,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 4,
+      "metricKey": "MetricExtraLootChance",
+      "value": 12,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 5,
+      "metricKey": "MetricExtraLootChance",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 6,
+      "metricKey": "MetricExtraLootChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 7,
+      "metricKey": "MetricExtraLootChance",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 8,
+      "metricKey": "MetricExtraLootChance",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 9,
+      "metricKey": "MetricExtraLootChance",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P1",
+      "rank": 10,
+      "metricKey": "MetricExtraLootChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P2",
+      "rank": 1,
+      "metricKey": "MetricGatherSpeed",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P2",
+      "rank": 2,
+      "metricKey": "MetricGatherSpeed",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P2",
+      "rank": 3,
+      "metricKey": "MetricGatherSpeed",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P2",
+      "rank": 4,
+      "metricKey": "MetricGatherSpeed",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P2",
+      "rank": 5,
+      "metricKey": "MetricGatherSpeed",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P3",
+      "rank": 1,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P3",
+      "rank": 2,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 10,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P3",
+      "rank": 3,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P3",
+      "rank": 4,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P3",
+      "rank": 5,
+      "metricKey": "MetricDurabilityLossReduction",
+      "value": 25,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P4",
+      "rank": 1,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 15,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P4",
+      "rank": 2,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 30,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P4",
+      "rank": 3,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 45,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P4",
+      "rank": 4,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P4",
+      "rank": 5,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 75,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P5",
+      "rank": 1,
+      "metricKey": "MetricDebuffExtensionChance",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P5",
+      "rank": 2,
+      "metricKey": "MetricDebuffExtensionChance",
+      "value": 40,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P5",
+      "rank": 3,
+      "metricKey": "MetricDebuffExtensionChance",
+      "value": 60,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P5",
+      "rank": 4,
+      "metricKey": "MetricDebuffExtensionChance",
+      "value": 80,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-P5",
+      "rank": 5,
+      "metricKey": "MetricDebuffExtensionChance",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 43,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 37,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 25,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 58,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 52,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 47,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 43,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 40,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-IMP",
+      "rank": 1,
+      "metricKey": "MetricBonusActiveWeaponDamage",
+      "value": 160,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-IMP",
+      "rank": 2,
+      "metricKey": "MetricBonusActiveWeaponDamage",
+      "value": 170,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-IMP",
+      "rank": 3,
+      "metricKey": "MetricBonusActiveWeaponDamage",
+      "value": 180,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-IMP",
+      "rank": 4,
+      "metricKey": "MetricBonusActiveWeaponDamage",
+      "value": 190,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T1-IMP",
+      "rank": 5,
+      "metricKey": "MetricBonusActiveWeaponDamage",
+      "value": 200,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 144,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 126,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 99,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 90,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 68,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 62,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 57,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 53,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 50,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-IMP",
+      "rank": 1,
+      "metricKey": "MetricPulseHealing",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-IMP",
+      "rank": 2,
+      "metricKey": "MetricPulseHealing",
+      "value": 3.5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-IMP",
+      "rank": 3,
+      "metricKey": "MetricPulseHealing",
+      "value": 4,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-IMP",
+      "rank": 4,
+      "metricKey": "MetricPulseHealing",
+      "value": 4.5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T2-IMP",
+      "rank": 5,
+      "metricKey": "MetricPulseHealing",
+      "value": 5,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-CD",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 129,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-CD",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 111,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-CD",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 96,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-CD",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 84,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-CD",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 75,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-STA",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 78,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-STA",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 72,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-STA",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 67,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-STA",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 63,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-STA",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 60,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-IMP",
+      "rank": 1,
+      "metricKey": "EffectDuration",
+      "value": 24,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-IMP",
+      "rank": 2,
+      "metricKey": "EffectDuration",
+      "value": 28,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-IMP",
+      "rank": 3,
+      "metricKey": "EffectDuration",
+      "value": 32,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-IMP",
+      "rank": 4,
+      "metricKey": "EffectDuration",
+      "value": 36,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-T3-IMP",
+      "rank": 5,
+      "metricKey": "EffectDuration",
+      "value": 40,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricStaminaCost",
+      "value": 115,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricStaminaCost",
+      "value": 105,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricStaminaCost",
+      "value": 95,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricStaminaCost",
+      "value": 85,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricStaminaCost",
+      "value": 75,
+      "unit": "Ausdauer",
+      "unitKey": "UnitStamina"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricCooldown",
+      "value": 240,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricCooldown",
+      "value": 210,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricCooldown",
+      "value": 180,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricCooldown",
+      "value": 150,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricCooldown",
+      "value": 120,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 250,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 300,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 350,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 400,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricBestWeaponDamage",
+      "value": 450,
+      "unit": "%"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricBlinded",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricBlinded",
+      "value": 3,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricBlinded",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricBlinded",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricBlinded",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 1,
+      "metricKey": "MetricDisgusted",
+      "value": 4,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 2,
+      "metricKey": "MetricDisgusted",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 3,
+      "metricKey": "MetricDisgusted",
+      "value": 5,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 4,
+      "metricKey": "MetricDisgusted",
+      "value": 6,
+      "unit": "s"
+    },
+    {
+      "skillId": "ELECTRONICS-ULT",
+      "rank": 5,
+      "metricKey": "MetricDisgusted",
+      "value": 7,
+      "unit": "s"
+    }
+  ],
+  "iconVariants": {
+    "ELECTRONICS-P1": {
+      "locked": "assets/skills/ElectronicsP1EfficientEngineer.png"
+    },
+    "ELECTRONICS-P2": {
+      "locked": "assets/skills/ElectronicsP2FasterDismantling.png"
+    },
+    "ELECTRONICS-P3": {
+      "locked": "assets/skills/ElectronicsP3ElectricianSMaintenance.png"
+    },
+    "ELECTRONICS-P4": {
+      "unlocked": "assets/skills/ElectronicsP4ElectricField.png"
+    },
+    "ELECTRONICS-P5": {
+      "locked": "assets/skills/ElectronicsP5BrainwaveTransmitter.png"
+    },
+    "ELECTRONICS-T1": {
+      "unlocked": "assets/skills/ElectronicsT1TasteTheArc.png"
+    },
+    "ELECTRONICS-T1-CD": {
+      "unlocked": "assets/skills/ElectronicsT1TasteTheArc.png"
+    },
+    "ELECTRONICS-T1-STA": {
+      "unlocked": "assets/skills/ElectronicsT1TasteTheArc.png"
+    },
+    "ELECTRONICS-T1-IMP": {
+      "unlocked": "assets/skills/ElectronicsT1TasteTheArc.png"
+    },
+    "ELECTRONICS-T1-WAY-1": {
+      "locked": "assets/skills/ElectronicsT1TasteTheArc.png"
+    },
+    "ELECTRONICS-T1-WAY-2": {
+      "unlocked": "assets/skills/ElectronicsT1TasteTheArc.png"
+    },
+    "ELECTRONICS-T2": {
+      "unlocked": "assets/skills/ElectronicsT2MedPulseUnit.png"
+    },
+    "ELECTRONICS-T2-CD": {
+      "unlocked": "assets/skills/ElectronicsT2MedPulseUnit.png"
+    },
+    "ELECTRONICS-T2-STA": {
+      "locked": "assets/skills/ElectronicsT2MedPulseUnit.png"
+    },
+    "ELECTRONICS-T2-IMP": {
+      "unlocked": "assets/skills/ElectronicsT2MedPulseUnit.png"
+    },
+    "ELECTRONICS-T2-WAY-1": {
+      "locked": "assets/skills/ElectronicsT2MedPulseUnit.png"
+    },
+    "ELECTRONICS-T2-WAY-2": {
+      "locked": "assets/skills/ElectronicsT2MedPulseUnit.png"
+    },
+    "ELECTRONICS-T3": {
+      "locked": "assets/skills/ElectronicsT3ThermalImagingCamera.png"
+    },
+    "ELECTRONICS-T3-CD": {
+      "locked": "assets/skills/ElectronicsT3ThermalImagingCamera.png"
+    },
+    "ELECTRONICS-T3-STA": {
+      "locked": "assets/skills/ElectronicsT3ThermalImagingCamera.png"
+    },
+    "ELECTRONICS-T3-IMP": {
+      "locked": "assets/skills/ElectronicsT3ThermalImagingCamera.png"
+    },
+    "ELECTRONICS-T3-WAY-1": {
+      "locked": "assets/skills/ElectronicsT3ThermalImagingCamera.png"
+    },
+    "ELECTRONICS-T3-WAY-2": {
+      "locked": "assets/skills/ElectronicsT3ThermalImagingCamera.png"
+    },
+    "ELECTRONICS-ULT": {
+      "locked": "assets/skills/ElectronicsULTOvercharge.png"
+    }
+  }
+}
