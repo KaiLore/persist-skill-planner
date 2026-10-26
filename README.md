@@ -8,6 +8,8 @@ Das gesamte Projekt herunterladen und entpacken. `Persist-Skill-Planner.html` im
 
 Skills mit einem Klick erhöhen, mit Rechtsklick oder der Minustaste reduzieren. Builds lassen sich als JSON speichern und laden. Mit der Level-Sperre wird die Planung auf die gewählte Charakterstufe begrenzt.
 
+Baumlevel und vergebene Skillpunkte sind unabhängig. Höhere Tiers werden durch das Baumlevel freigeschaltet; ein Klick plant die nötigen Badges automatisch ein. Ultimate benötigt Baumlevel 50 (sieben reguläre Badges und ein Ultimate Badge). Ways benötigen elf investierte Punkte im zugehörigen Skillzweig. Beim Zurücknehmen von Skillpunkten reduziert sich das geplante Baumlevel auf das für die übrigen Skills nötige Niveau.
+
 ## Entwicklung
 
 `data/planner-daten.json` enthält die Planungsdaten. Sprachdateien liegen in `locales/`, Grafiken in `assets/skills/`. `engine.js` enthält die Planungsregeln, `app.js` und `template.html` die Oberfläche.

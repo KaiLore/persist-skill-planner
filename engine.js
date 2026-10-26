@@ -14,11 +14,11 @@ g.createPlanner=function(D,translate=(key)=>key){
  function planLevel(s){const badge=requiredLevel(usage(s));return badge===null?null:Math.max(badge,perkRequired(s));}
  function invalidSkills(s,tree){
   const t=ts[tree],p=s.points[tree]||{};
-  const pending=t.nodes.filter(n=>p[n.id]>0),bought={};let spent=0,progress=true;
+  const pending=t.nodes.filter(n=>p[n.id]>0),bought={};let progress=true;
   while(pending.length&&progress){progress=false;for(let i=pending.length-1;i>=0;i--){const n=pending[i];
    if(n.parent){if(!bought[n.parent])continue;if(n.kind==='Way'&&t.nodes.filter(x=>x.id===n.parent||(x.parent===n.parent&&x.kind==='Enhancer')).reduce((a,x)=>a+(bought[x.id]||0),0)<11)continue;}
-   else if(spent<n.gate)continue;
-   bought[n.id]=p[n.id];spent+=p[n.id];pending.splice(i,1);progress=true;
+   else if(s.caps[tree]<(n.kind==='Ultimate'?50:n.gate))continue;
+   bought[n.id]=p[n.id];pending.splice(i,1);progress=true;
   }}
   return pending.map(n=>n.id);
  }
@@ -46,9 +46,10 @@ g.createPlanner=function(D,translate=(key)=>key){
  }
  function change(s,tree,id,delta){const next=JSON.parse(JSON.stringify(s));const t=ts[tree],n=t?.nodes.find(x=>x.id===id);if(!n)return {error:fail('ErrUnknownSkill')};const p=next.points[tree]||={};p[id]=(p[id]||0)+delta;
   if(n.kind==='Way'&&delta>0)for(const x of t.nodes)if(x.kind==='Way'&&x.parent===n.parent&&x.id!==id)p[x.id]=0;
-  const previousCap=next.caps[tree];if(delta>0&&sum(p)>previousCap&&previousCap<50)next.caps[tree]=previousCap+5;
-  if(delta<0)next.caps[tree]=Math.max(10,Math.ceil(sum(p)/5)*5);
-  let error=validate(next,true);if(!error&&delta>0){const before=invalidSkills(s,tree),after=invalidSkills(next,tree);if(after.includes(id)||after.some(x=>!before.includes(x)))error=fail('ErrSkillGate',{tree:t.name,skill:n.name});}return error?{error}:{state:next,badge:next.caps[tree]>previousCap?{kind:previousCap===45?'ultimate':'regular',from:previousCap,to:next.caps[tree]}:null};}
+  const previousCap=next.caps[tree],base=n.parent?t.nodes.find(x=>x.id===n.parent):n;
+  if(delta>0)next.caps[tree]=Math.max(previousCap,10,Math.ceil(sum(p)/5)*5,base.kind==='Ultimate'?50:Math.ceil((base.gate||0)/5)*5);
+  if(delta<0)next.caps[tree]=Math.max(10,Math.ceil(sum(p)/5)*5,...t.nodes.filter(x=>p[x.id]>0).map(x=>{const root=x.parent?t.nodes.find(y=>y.id===x.parent):x;return root.kind==='Ultimate'?50:Math.ceil((root.gate||0)/5)*5;}));
+  let error=validate(next,true);if(!error&&delta>0){const before=invalidSkills(s,tree),after=invalidSkills(next,tree);if(after.includes(id)||after.some(x=>!before.includes(x)))error=fail('ErrSkillGate',{tree:t.name,skill:n.name});}return error?{error}:{state:next,badge:next.caps[tree]>previousCap?{kind:next.caps[tree]===50?'ultimate':'regular',from:previousCap,to:next.caps[tree]}:null};}
  function effectiveSkill(s,tree,id){
   const t=ts[tree],n=t?.nodes.find(x=>x.id===id);if(!n)return null;
   const points=s.points[tree]||{},pieces=s.armorPieces||7,impact=t.nodes.find(x=>x.parent===id&&x.kind==='Enhancer'&&x.id.endsWith('-IMP')),impactRank=points[impact?.id]||0;

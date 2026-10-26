@@ -23,7 +23,7 @@ vm.runInContext('state=E.fresh();current=D.trees[0].id;render()',context);const 
 // Fill an actual tree and cross all eight badge boundaries without touching the cap selector.
 let auto=E.fresh(),crossings=[];const mining=D.trees.find(t=>t.id==='MINING');
 for(let loop=0;loop<80&&E.sum(auto.points.MINING||{})<50;loop++){let progress=false;for(const node of mining.nodes){if(node.kind==='Way')continue;const res=E.change(auto,'MINING',node.id,1);if(!res.error){if(res.badge)crossings.push(res.badge);auto=res.state;progress=true;}}if(!progress)break;}
-ok(E.sum(auto.points.MINING)===50);ok(auto.caps.MINING===50);ok(crossings.length===8);ok(crossings.filter(x=>x.kind==='regular').length===7);ok(crossings.at(-1).kind==='ultimate');ok(crossings.at(-1).from===45);ok(E.usage(auto)[0]===7&&E.usage(auto)[1]===1);const invalid=E.change(auto,'MINING',mining.nodes[0].id,1);ok(!!invalid.error);ok(auto.caps.MINING===50);
+ok(E.sum(auto.points.MINING)===50);ok(auto.caps.MINING===50);ok(crossings.length>0);ok(crossings.some(x=>x.kind==='ultimate'&&x.to===50));ok(E.usage(auto)[0]===7&&E.usage(auto)[1]===1);const invalid=E.change(auto,'MINING',mining.nodes[0].id,1);ok(!!invalid.error);ok(auto.caps.MINING===50);
 // UI announces silver and gold badges and cancels the earlier popup timer.
 context.clearTimeout=clearTimeout;vm.runInContext('badgePopup({kind:"regular",from:10,to:15})',context);ok(el('badgepopup').className==='regular');ok(el('badgepopup').innerHTML.includes('10 → 15'));vm.runInContext('badgePopup({kind:"ultimate",from:45,to:50})',context);ok(el('badgepopup').className==='ultimate');ok(el('badgepopup').innerHTML.includes('Ultimate Badge'));vm.runInContext('clearTimeout(badgeTimer)',context);console.log('Alle automatischen Badge-Schwellen und beide Popup-Farben geprüft.');
 
@@ -32,7 +32,7 @@ for(const [level,points] of [[1,0],[9,0],[10,1],[14,1],[15,2],[20,3],[100,19]])o
 
 const perkPlus={dataset:{perk:'PERK-1',delta:'1'}},perkMinus={dataset:{perk:'PERK-1',delta:'-1'}};context.document.querySelectorAll=q=>q==='[data-perk]'?[perkPlus,perkMinus]:[];vm.runInContext('state=E.fresh();render()',context);perkPlus.onclick();ok(el('perklist').innerHTML.includes('+6 '));ok(el('perklist').innerHTML.includes('1 von 3 Punkten'));perkPlus.onclick();ok(el('perklist').innerHTML.includes('+10 '));perkMinus.onclick();ok(el('perklist').innerHTML.includes('1 von 3 Punkten'));ok(!el('perklist').innerHTML.includes('<select'));console.log('Perk-Box: Plus, Minus, Gesamtbonus und Rangpunkte geprüft.');
 // Reverse a fully trained tree; every accepted refund releases unnecessary badges.
-let refund=structuredClone(auto),capsSeen=[];for(let loop=0;loop<80&&E.sum(refund.points.MINING||{});loop++){let changed=false;for(const n of [...mining.nodes].reverse()){const res=E.change(refund,'MINING',n.id,-1);if(!res.error){refund=res.state;capsSeen.push(refund.caps.MINING);ok(refund.caps.MINING===Math.max(10,Math.ceil(E.sum(refund.points.MINING)/5)*5));changed=true;}}if(!changed)break;}ok(E.sum(refund.points.MINING)===0);ok(refund.caps.MINING===10);ok(E.planLevel(refund)===1);ok(capsSeen.includes(45));vm.runInContext('state=E.fresh();state.points.MINING={"MINING-T1":1};render()',context);ok(el('overviewcontent').innerHTML.includes('Orebreaker'));ok(el('overviewcontent').innerHTML.includes('Aktiv nutzbare Fähigkeiten'));ok(!html.includes('data-budget='));console.log('Rückbau bis null, Badge-Freigabe und neue Build-Übersicht geprüft.');
+let refund=structuredClone(auto),capsSeen=[];for(let loop=0;loop<80&&E.sum(refund.points.MINING||{});loop++){let changed=false;for(const n of [...mining.nodes].reverse()){const res=E.change(refund,'MINING',n.id,-1);if(!res.error){refund=res.state;capsSeen.push(refund.caps.MINING);ok(refund.caps.MINING>=Math.max(10,Math.ceil(E.sum(refund.points.MINING)/5)*5));changed=true;}}if(!changed)break;}ok(E.sum(refund.points.MINING)===0);ok(refund.caps.MINING===10);ok(E.planLevel(refund)===1);vm.runInContext('state=E.fresh();state.points.MINING={"MINING-T1":1};render()',context);ok(el('overviewcontent').innerHTML.includes('Orebreaker'));ok(el('overviewcontent').innerHTML.includes('Aktiv nutzbare Fähigkeiten'));ok(!html.includes('data-budget='));console.log('Rückbau bis null, Badge-Freigabe und neue Build-Übersicht geprüft.');
 vm.runInContext('state.caps.MINING=15;switchLanguage("en")',context);ok(el('planrequirement').innerHTML.includes('Entered: 1 · required: 10'));vm.runInContext('switchLanguage("de")',context);ok(el('planrequirement').innerHTML.includes('Eingegeben: 1 · benötigt: 10'));console.log('Direkter Sprachwechsel mit Schlüsseln geprüft.');
 const thief=D.trees.find(t=>t.id==='THIEVERY');ok(thief.documented);ok(thief.nodes.length===24);ok(thief.nodes.find(n=>n.id==='THIEVERY-T2').details.baseCooldownSeconds===220);ok(thief.levels.find(v=>v.skillId==='THIEVERY-T2-CD'&&v.rank===1).value===192);ok(thief.levels.find(v=>v.skillId==='THIEVERY-ULT'&&v.rank===5&&v.metric==='Sichtbarkeit nach Verlassen').value===60);const enPack=JSON.parse(fs.readFileSync(__dirname+'/locales/en.json'));ok(!enPack.reference);for(const t of D.trees)for(const n of t.nodes){ok(typeof enPack.texts[n.nameKey]==='string');ok(typeof enPack.texts[n.descriptionKey]==='string');}console.log('Dieberei und übersetzte Skilltexte in englischer Datei geprüft.');
 const elec=D.trees.find(t=>t.id==='ELECTRONICS'),wood=D.trees.find(t=>t.id==='WOODWORKING');ok(elec.nodes.find(n=>n.id==='ELECTRONICS-T1').details.baseActiveWeaponDpsPercent===150);ok(elec.nodes.find(n=>n.id==='ELECTRONICS-T2').details.baseCooldownSeconds===180);ok(elec.nodes.find(n=>n.id==='ELECTRONICS-T2').details.baseHealingPercent===2.5);ok(wood.documented);ok(wood.levels.find(x=>x.skillId==='WOODWORKING-ULT'&&x.rank===5&&x.metric==='Abklingzeitverkürzung aktiver Fähigkeiten').value===78);ok(wood.nodes.find(n=>n.id==='WOODWORKING-T2').details.blockedMentalDebuffs===1);console.log('Elektronik-Grundwerte und Holzverarbeitungsstaffeln geprüft.');
@@ -84,9 +84,9 @@ const localeKeys=Object.keys(enPack.texts);ok(localeKeys.every(k=>k.length<=44))
 let triggerPlan=E.fresh();const triggerResult=E.change(triggerPlan,'SHOTGUNS','SHOTGUNS-T1',1);ok(!triggerResult.error);ok(triggerResult.state.points.SHOTGUNS['SHOTGUNS-T1']===1);ok(E.sum(triggerResult.state.points.SHOTGUNS)===1);
 vm.runInContext('state=E.fresh();state.characterName="Wolf <Test>";categoryOpen={};render()',context);ok(el('characterheading').textContent==='Wolf <Test>');ok(el('characterheading').hidden===false);ok(!el('nav').innerHTML.includes('" open>'));vm.runInContext('state.characterName="";render()',context);ok(el('characterheading').hidden===true);console.log('Trigger Control als erster Punkt, Namensanzeige und standardmäßig geschlossene Kategorien geprüft.');
 // Threshold loss keeps the allocation editable and marks dependent skills.
-let gatePlan=E.fresh();gatePlan.caps.ASSAULTRIFLES=20;gatePlan.points.ASSAULTRIFLES={'ASSAULTRIFLES-P1':11,'ASSAULTRIFLES-P2':5,'ASSAULTRIFLES-P3':1};ok(!E.validate(gatePlan));const below=E.change(gatePlan,'ASSAULTRIFLES','ASSAULTRIFLES-P2',-1);ok(!below.error);ok(E.invalidSkills(below.state,'ASSAULTRIFLES').includes('ASSAULTRIFLES-P3'));ok(E.parse(JSON.parse(JSON.stringify(below.state))).points.ASSAULTRIFLES['ASSAULTRIFLES-P3']===1);ok(!!E.change(below.state,'ASSAULTRIFLES','ASSAULTRIFLES-P3',1).error);const fixed=E.change(below.state,'ASSAULTRIFLES','ASSAULTRIFLES-P2',1);ok(!fixed.error);ok(!E.invalidSkills(fixed.state,'ASSAULTRIFLES').length);
+let gatePlan=E.fresh();gatePlan.caps.ASSAULTRIFLES=20;gatePlan.points.ASSAULTRIFLES={'ASSAULTRIFLES-P1':11,'ASSAULTRIFLES-P2':5,'ASSAULTRIFLES-P3':1};ok(!E.validate(gatePlan));const below=E.change(gatePlan,'ASSAULTRIFLES','ASSAULTRIFLES-P2',-1);ok(!below.error);ok(!E.invalidSkills(below.state,'ASSAULTRIFLES').includes('ASSAULTRIFLES-P3'));ok(E.parse(JSON.parse(JSON.stringify(below.state))).points.ASSAULTRIFLES['ASSAULTRIFLES-P3']===1);ok(!E.change(below.state,'ASSAULTRIFLES','ASSAULTRIFLES-P3',1).error);const fixed=E.change(below.state,'ASSAULTRIFLES','ASSAULTRIFLES-P2',1);ok(!fixed.error);ok(!E.invalidSkills(fixed.state,'ASSAULTRIFLES').length);
 let orphan=E.fresh();orphan.points.MINING={'MINING-T1':1,'MINING-T1-CD':5,'MINING-T1-STA':5,'MINING-T1-WAY-BERSERKER':1};orphan.caps.MINING=15;const lostWay=E.change(orphan,'MINING','MINING-T1-CD',-1);ok(!lostWay.error);ok(E.invalidSkills(lostWay.state,'MINING').includes('MINING-T1-WAY-BERSERKER'));const lostBase=E.change(orphan,'MINING','MINING-T1',-1);ok(!lostBase.error);ok(E.invalidSkills(lostBase.state,'MINING').includes('MINING-T1-CD'));ok(E.invalidSkills(lostBase.state,'MINING').includes('MINING-T1-WAY-BERSERKER'));
-context.gateWarningState=below.state;vm.runInContext('state=gateWarningState;current="ASSAULTRIFLES";render()',context);ok(el('tree').innerHTML.includes('unmet'));ok(el('tree').innerHTML.includes('skill-warning'));ok(el('buildwarnings').innerHTML.includes('Voraussetzungen'));ok(el('overviewcontent').innerHTML.includes('Voraussetzungen'));console.log('Rückskillen: Schwellenverlust, abhängige Skills und Ways, Wiederherstellung, Import und Warnanzeigen geprüft.');
+context.gateWarningState=lostWay.state;vm.runInContext('state=gateWarningState;current="MINING";render()',context);ok(el('tree').innerHTML.includes('unmet'));ok(el('tree').innerHTML.includes('skill-warning'));ok(el('buildwarnings').innerHTML.includes('Voraussetzungen'));ok(el('overviewcontent').innerHTML.includes('Voraussetzungen'));console.log('Rückskillen: Schwellenverlust, abhängige Skills und Ways, Wiederherstellung, Import und Warnanzeigen geprüft.');
 
 // Required build level appears next to the unchanged character level only on deficit.
 context.document.querySelectorAll=q=>q==='[data-perk]'?[perkPlus,perkMinus]:[];
@@ -129,12 +129,49 @@ ok(D.trees.find(t=>t.id==='MINING').nodes.find(n=>n.id==='MINING-T1').details.ba
 vm.runInContext('state=E.fresh();state.points.RIFLES={"RIFLES-T3":1,"RIFLES-T3-IMP":2};state.caps.RIFLES=35;render()',context);ok(stripMarkup(el('overviewcontent').innerHTML).includes('Blutung für 20 s'));ok(stripMarkup(el('overviewcontent').innerHTML).includes('190 % aktive Waffen-DPS'));console.log('Orebreaker-Basis und verstärkter Red Mist mit 20 s Blutung geprüft.');
 
 // Unlock thresholds count points already allocated before purchasing the new skill.
-let unlockPlan=E.fresh();unlockPlan.caps.ASSAULTRIFLES=35;unlockPlan.points.ASSAULTRIFLES={'ASSAULTRIFLES-P1':10,'ASSAULTRIFLES-P2':5};ok(!!E.change(unlockPlan,'ASSAULTRIFLES','ASSAULTRIFLES-T2',1).error);unlockPlan.points.ASSAULTRIFLES['ASSAULTRIFLES-P1']=11;ok(!E.change(unlockPlan,'ASSAULTRIFLES','ASSAULTRIFLES-T2',1).error);
-for(const tree of D.trees)for(const node of tree.nodes.filter(n=>!n.parent)){if(node.id.endsWith('-T2'))ok(node.gate===16);if(node.id.endsWith('-T3'))ok(node.gate===31);if(node.kind==='Ultimate')ok(node.gate===45);}
-console.log('T2/T3: bestätigte 16/31-Punkte-Schwellen, Ultimate vorläufig unverändert geprüft.');
+let unlockPlan=E.fresh();unlockPlan.caps.ASSAULTRIFLES=35;unlockPlan.points.ASSAULTRIFLES={'ASSAULTRIFLES-P1':10,'ASSAULTRIFLES-P2':5};ok(!E.change(unlockPlan,'ASSAULTRIFLES','ASSAULTRIFLES-T2',1).error);unlockPlan.points.ASSAULTRIFLES['ASSAULTRIFLES-P1']=11;ok(!E.change(unlockPlan,'ASSAULTRIFLES','ASSAULTRIFLES-T2',1).error);
+for(const tree of D.trees)for(const node of tree.nodes.filter(n=>!n.parent)){if(node.id.endsWith('-T2'))ok(node.gate===16);if(node.id.endsWith('-T3'))ok(node.gate===31);if(node.kind==='Ultimate')ok(node.gate===50);}
+console.log('T2/T3: Baumlevel 16/31, Ultimate Baumlevel 50 geprüft.');
 
 // Passive summaries show current-rank bonuses and respect the selected armor pieces.
 vm.runInContext('state=E.fresh();state.points.MECHANICS={"MECHANICS-P1":3,"MECHANICS-T1":1};render()',context);ok(el('overviewcontent').innerHTML.includes('passive-list'));ok(el('overviewcontent').innerHTML.includes('passive-bonuses'));ok(el('overviewcontent').innerHTML.includes('overview-skill-grid'));const passiveExpected=D.trees.find(t=>t.id==='MECHANICS').levels.find(v=>v.skillId==='MECHANICS-P1'&&v.rank===3);ok(stripMarkup(el('overviewcontent').innerHTML).includes(passiveExpected.metric+': '+new Intl.NumberFormat('de').format(passiveExpected.value)));
 vm.runInContext('state=E.fresh();state.points.FLEXIBLEARMOR={"FLEXIBLEARMOR-P1":2};state.armorPieces=7;render()',context);const passiveArmor7=stripMarkup(el('overviewcontent').innerHTML);vm.runInContext('state.armorPieces=1;render()',context);ok(passiveArmor7!==stripMarkup(el('overviewcontent').innerHTML));ok(!el('overviewcontent').innerHTML.includes('undefined'));console.log('Passiv-Bonilisten, aktueller Rang, Rüstungsszenario und Skill-Raster geprüft.');
 
 vm.runInContext('state=E.fresh();state.points.MECHANICS={"MECHANICS-P1":1};state.points.FISH={"FISH-P1":1};render()',context);ok(el('overviewcontent').innerHTML.includes('overview-tree-grid'));ok((el('overviewcontent').innerHTML.match(/class="card overview-tree-card"/g)||[]).length===2);console.log('Build-Übersicht: zwei Skillbaum-Boxen im gemeinsamen Raster geprüft.');
+
+// Tree level is independent of allocated points, for every tree and gated passive.
+for(const tree of D.trees){
+ for(const node of tree.nodes.filter(n=>!n.parent&&n.gate>0)){
+  const start=E.fresh(),result=E.change(start,tree.id,node.id,1);
+  assert(!result.error,tree.id+' / '+node.id+': '+result.error);n++;
+  const cap=node.kind==='Ultimate'?50:Math.ceil(node.gate/5)*5;
+  ok(result.state.caps[tree.id]===cap);ok(E.sum(result.state.points[tree.id])===1);ok(!E.invalidSkills(result.state,tree.id).length);
+  ok(result.badge.to===cap);ok(start.caps[tree.id]===10);ok(!start.points[tree.id]);
+  ok(JSON.stringify(E.usage(result.state))===JSON.stringify(E.treeUsage(cap)));
+  const refund=E.change(result.state,tree.id,node.id,-1);ok(!refund.error);ok(refund.state.caps[tree.id]===10);ok(E.sum(refund.state.points[tree.id])===0);
+ }
+ const ultimate=tree.nodes.find(n=>n.kind==='Ultimate'),jump=E.change(E.fresh(),tree.id,ultimate.id,1);
+ ok(jump.state.caps[tree.id]===50);ok(JSON.stringify(E.usage(jump.state))==='[7,1]');ok(jump.badge.kind==='ultimate');
+ for(const node of tree.nodes.filter(n=>!n.parent&&n.kind!=='Ultimate'))ok(!E.change(jump.state,tree.id,node.id,1).error);
+ const way=tree.nodes.find(n=>n.kind==='Way'),enhancer=tree.nodes.find(n=>n.kind==='Enhancer');
+ ok(!!E.change(jump.state,tree.id,way.id,1).error);ok(!!E.change(jump.state,tree.id,enhancer.id,1).error);
+ const empty=E.fresh();empty.caps[tree.id]=50;ok(!E.validate(empty));ok(E.sum(empty.points)===0);
+ const blocked=E.fresh();blocked.levelLocked=true;blocked.characterLevel=44;ok(!!E.change(blocked,tree.id,ultimate.id,1).error);ok(blocked.caps[tree.id]===10);
+ blocked.characterLevel=45;ok(!E.change(blocked,tree.id,ultimate.id,1).error);
+}
+vm.runInContext('state=E.fresh();current="MINING";render();editNode("MINING-ULT",1)',context);
+ok(el('cap').innerHTML.includes('selected>50'));ok(el('badges').innerHTML.includes('7 / 0'));ok(el('badges').innerHTML.includes('1 / 0'));ok(el('badgepopup').className==='ultimate');
+ok(!el('tree').innerHTML.includes('class="skill-warning"'));ok(html.includes('data-i18n="NoteTreeLevelUnlock"'));
+vm.runInContext('clearTimeout(badgeTimer)',context);
+console.log('Alle 25 Bäume: direkte Tier-/Ultimate-/Passivwahl, Badge-Sprünge, leere Level-50-Bäume, Level-Sperre, Way-Voraussetzungen, Rücknahme und UI geprüft.');
+
+let keepUltimate=E.change(E.fresh(),'MINING','MINING-ULT',1).state;
+keepUltimate=E.change(keepUltimate,'MINING','MINING-T1',1).state;
+keepUltimate=E.change(keepUltimate,'MINING','MINING-T1',-1).state;
+ok(keepUltimate.caps.MINING===50);ok(JSON.stringify(E.usage(keepUltimate))==='[7,1]');
+let keepTier=E.change(E.fresh(),'MINING','MINING-T3',1).state;
+keepTier=E.change(keepTier,'MINING','MINING-ULT',1).state;
+keepTier=E.change(keepTier,'MINING','MINING-ULT',-1).state;
+ok(keepTier.caps.MINING===35);ok(JSON.stringify(E.usage(keepTier))==='[5,0]');
+vm.runInContext('state=E.fresh();state.caps.MINING=50;render()',context);ok(el('overviewcontent').innerHTML.includes('overview-tree-card'));
+ok(!html.includes('Amnesia Pills'));console.log('Rücknahme behält nötige Tier-Freischaltungen; leere Bäume mit Badges in der Übersicht; Amnesia-Hinweis entfernt.');
