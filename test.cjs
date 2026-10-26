@@ -175,3 +175,20 @@ keepTier=E.change(keepTier,'MINING','MINING-ULT',-1).state;
 ok(keepTier.caps.MINING===35);ok(JSON.stringify(E.usage(keepTier))==='[5,0]');
 vm.runInContext('state=E.fresh();state.caps.MINING=50;render()',context);ok(el('overviewcontent').innerHTML.includes('overview-tree-card'));
 ok(!html.includes('Amnesia Pills'));console.log('Rücknahme behält nötige Tier-Freischaltungen; leere Bäume mit Badges in der Übersicht; Amnesia-Hinweis entfernt.');
+// Display the current unlock state even when clicking can automatically plan badges.
+for(const tree of D.trees){
+ for(const passive of tree.nodes.filter(n=>n.kind==='Passiv'&&n.gate>0)){
+  context.lockTreeId=tree.id;context.lockPassiveId=passive.id;
+  vm.runInContext('state=E.fresh();current=lockTreeId;render()',context);
+  ok(vm.runInContext('node(tree().nodes.find(n=>n.id===lockPassiveId)).includes("class=\\"skill-lock\\"")',context));
+  vm.runInContext('editNode(lockPassiveId,1)',context);
+  ok(!vm.runInContext('node(tree().nodes.find(n=>n.id===lockPassiveId)).includes("class=\\"skill-lock\\"")',context));
+  ok(vm.runInContext('state.caps[current]',context)===Math.ceil(passive.gate/5)*5);
+  vm.runInContext('editNode(lockPassiveId,-1)',context);
+  ok(vm.runInContext('node(tree().nodes.find(n=>n.id===lockPassiveId)).includes("class=\\"skill-lock\\"")',context));
+  vm.runInContext('state.caps[current]=50;render()',context);
+  ok(!vm.runInContext('node(tree().nodes.find(n=>n.id===lockPassiveId)).includes("class=\\"skill-lock\\"")',context));
+ }
+}
+vm.runInContext('clearTimeout(badgeTimer)',context);
+console.log('T0-Passiva aller Bäume: Schloss vor Badge-Einsatz, direkte Freischaltung, erneutes Schloss nach Rücknahme und manuell erhöhtes Baumlevel geprüft.');
