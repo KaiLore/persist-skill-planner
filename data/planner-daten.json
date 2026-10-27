@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "version": "0.14.4",
+  "version": "0.14.5",
   "trees": [
     {
       "id": "ASSAULTRIFLES",
@@ -627,7 +627,6 @@
             "effectKey": "SkillAssaultRifleUltDesc",
             "buffDurationSeconds": 8,
             "requiresActiveWeaponKey": "LabelTreeAssaultRifleName",
-            "recoilReductionPercent": 50,
             "metrics": [
               {
                 "metricKey": "MetricStaminaCost",
@@ -1517,7 +1516,13 @@
           "row": 0,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialNoSpecialName",
+          "descriptionKey": "SpecialNoSpecialDesc"
+        }
+      ]
     },
     {
       "id": "MACHINEGUNS",
@@ -1845,7 +1850,6 @@
             "buffDurationSeconds": 12,
             "baseDamageBonusPercent": 20,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeMachineGunName"
           },
           "descriptionKey": "SkillMachineGunT2Desc",
@@ -3083,7 +3087,13 @@
           "row": 6,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialPenetratingName",
+          "descriptionKey": "SpecialPenetratingDesc"
+        }
+      ]
     },
     {
       "id": "PISTOLS",
@@ -4599,7 +4609,17 @@
           "row": 2,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialSwayName",
+          "descriptionKey": "SpecialSwayDesc"
+        },
+        {
+          "nameKey": "SpecialSteadyAimName",
+          "descriptionKey": "SpecialSteadyAimDesc"
+        }
+      ]
     },
     {
       "id": "REVOLVERS",
@@ -4756,7 +4776,6 @@
             "buffDurationSeconds": 6,
             "baseHeadshotDamageBonusPercent": 30,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRevolverName"
           },
           "descriptionKey": "SkillRevolverT1Desc",
@@ -5227,7 +5246,6 @@
             "nameKey": "SkillRevolverUltName",
             "effectKey": "SkillRevolverUltDesc",
             "shotIntervalSeconds": 0.1,
-            "recoilReductionPercent": 80,
             "paralyzedDurationSeconds": 4,
             "requiresActiveWeaponKey": "LabelTreeRevolverName",
             "metrics": [
@@ -6072,7 +6090,13 @@
           "row": 5,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialStackingHitsName",
+          "descriptionKey": "SpecialStackingHitsDesc"
+        }
+      ]
     },
     {
       "id": "RIFLES",
@@ -6230,7 +6254,6 @@
             "buffDurationSeconds": 8,
             "baseDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRifleName"
           },
           "descriptionKey": "SkillRifleT1Desc",
@@ -6390,7 +6413,6 @@
             "buffDurationSeconds": 5,
             "baseDamageBonusPercent": 60,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRifleName"
           },
           "descriptionKey": "SkillRifleT2Desc",
@@ -7593,7 +7615,17 @@
           "row": 6,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialScopeName",
+          "descriptionKey": "SpecialScopeDesc"
+        },
+        {
+          "nameKey": "SpecialHiddenName",
+          "descriptionKey": "SpecialHiddenDesc"
+        }
+      ]
     },
     {
       "id": "SHOTGUNS",
@@ -9112,7 +9144,17 @@
           "row": 2,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialSpreadName",
+          "descriptionKey": "SpecialSpreadDesc"
+        },
+        {
+          "nameKey": "SpecialKnockbackName",
+          "descriptionKey": "SpecialKnockbackDesc"
+        }
+      ]
     },
     {
       "id": "SUBMACHINEGUNS",
@@ -9270,7 +9312,6 @@
             "buffDurationSeconds": 6,
             "baseDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 80,
             "requiresActiveWeaponKey": "LabelTreeSubmachineGunName"
           },
           "descriptionKey": "SkillSubmachineGunT1Desc",
@@ -9746,7 +9787,6 @@
             "effectKey": "SkillSubmachineGunUltDesc",
             "buffDurationSeconds": 10,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeSubmachineGunName",
             "metrics": [
               {
@@ -10590,7 +10630,13 @@
           "row": 0,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialAutoReloadName",
+          "descriptionKey": "SpecialAutoReloadDesc"
+        }
+      ]
     },
     {
       "id": "AXES",
@@ -12219,7 +12265,13 @@
           "row": 5,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialExecutionerName",
+          "descriptionKey": "SpecialExecutionerDesc"
+        }
+      ]
     },
     {
       "id": "HAMMERS",
@@ -13780,7 +13832,17 @@
           "row": 3,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialRageName",
+          "descriptionKey": "SpecialRageDesc"
+        },
+        {
+          "nameKey": "SpecialKnockbackName",
+          "descriptionKey": "SpecialKnockbackDesc"
+        }
+      ]
     },
     {
       "id": "KNIVES",
@@ -15250,7 +15312,13 @@
           "row": 2,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialBackstabName",
+          "descriptionKey": "SpecialBackstabDesc"
+        }
+      ]
     },
     {
       "id": "SWORDS",
@@ -16778,7 +16846,17 @@
           "row": 6,
           "provisional": false
         }
-      }
+      },
+      "weaponSpecials": [
+        {
+          "nameKey": "SpecialRiposteName",
+          "descriptionKey": "SpecialRiposteDesc"
+        },
+        {
+          "nameKey": "SpecialMomentumName",
+          "descriptionKey": "SpecialMomentumDesc"
+        }
+      ]
     },
     {
       "id": "FISH",
@@ -21546,41 +21624,6 @@
           "rank": 5,
           "metricKey": "MetricDurabilityLoss",
           "value": -25,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 1,
-          "metricKey": "MetricRecoil",
-          "value": -2,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 2,
-          "metricKey": "MetricRecoil",
-          "value": -4,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 3,
-          "metricKey": "MetricRecoil",
-          "value": -6,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 4,
-          "metricKey": "MetricRecoil",
-          "value": -8,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 5,
-          "metricKey": "MetricRecoil",
-          "value": -10,
           "unit": "%"
         },
         {
@@ -44104,22 +44147,6 @@
       ]
     },
     {
-      "id": "PERK-15",
-      "nameKey": "PerkRecoilReductionName",
-      "increments": [
-        20,
-        15,
-        10
-      ],
-      "unit": "%",
-      "icon": "assets/skills/Perk15WeaponRecoilReduction.png",
-      "rankStatusKeys": [
-        "SourceUserReadout",
-        "StatusEstimated",
-        "StatusEstimated"
-      ]
-    },
-    {
       "id": "PERK-16",
       "nameKey": "PerkDebuffResistanceName",
       "increments": [
@@ -44167,5 +44194,6 @@
       "STA": "assets/skills/OverlayEnhancerStamina.png",
       "IMP": "assets/skills/OverlayEnhancerImpact.png"
     }
-  }
+  },
+  "gamePatch": "0.7.0.0"
 }

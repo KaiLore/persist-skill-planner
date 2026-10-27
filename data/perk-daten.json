@@ -225,22 +225,6 @@
       ]
     },
     {
-      "id": "PERK-15",
-      "nameKey": "PerkRecoilReductionName",
-      "increments": [
-        20,
-        15,
-        10
-      ],
-      "unit": "%",
-      "icon": "assets/skills/Perk15WeaponRecoilReduction.png",
-      "rankStatusKeys": [
-        "SourceUserReadout",
-        "StatusEstimated",
-        "StatusEstimated"
-      ]
-    },
-    {
       "id": "PERK-16",
       "nameKey": "PerkDebuffResistanceName",
       "increments": [

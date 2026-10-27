@@ -154,7 +154,6 @@
         "buffDurationSeconds": 8,
         "baseDamageBonusPercent": 25,
         "accuracyBonusPercent": 50,
-        "recoilReductionPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeRifleName"
       },
       "descriptionKey": "SkillRifleT1Desc"
@@ -305,7 +304,6 @@
         "buffDurationSeconds": 5,
         "baseDamageBonusPercent": 60,
         "accuracyBonusPercent": 50,
-        "recoilReductionPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeRifleName"
       },
       "descriptionKey": "SkillRifleT2Desc"

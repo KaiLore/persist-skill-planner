@@ -596,7 +596,6 @@
         "effectKey": "SkillAssaultRifleUltDesc",
         "buffDurationSeconds": 8,
         "requiresActiveWeaponKey": "LabelTreeAssaultRifleName",
-        "recoilReductionPercent": 50,
         "metrics": [
           {
             "metricKey": "MetricStaminaCost",

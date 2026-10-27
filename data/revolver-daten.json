@@ -153,7 +153,6 @@
         "buffDurationSeconds": 6,
         "baseHeadshotDamageBonusPercent": 30,
         "accuracyBonusPercent": 50,
-        "recoilReductionPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeRevolverName"
       },
       "descriptionKey": "SkillRevolverT1Desc"
@@ -597,7 +596,6 @@
         "nameKey": "SkillRevolverUltName",
         "effectKey": "SkillRevolverUltDesc",
         "shotIntervalSeconds": 0.1,
-        "recoilReductionPercent": 80,
         "paralyzedDurationSeconds": 4,
         "requiresActiveWeaponKey": "LabelTreeRevolverName",
         "metrics": [

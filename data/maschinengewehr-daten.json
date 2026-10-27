@@ -315,7 +315,6 @@
         "buffDurationSeconds": 12,
         "baseDamageBonusPercent": 20,
         "accuracyBonusPercent": 50,
-        "recoilReductionPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeMachineGunName"
       },
       "descriptionKey": "SkillMachineGunT2Desc"

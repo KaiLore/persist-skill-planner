@@ -26,3 +26,7 @@ Weitere Sprachen und das Sprachformat sind in `locales/README.md` beschrieben. H
 ## Quellen
 
 Grundlage: Skill Planner 1.0 von Avalon [Westwood] (NA), 05.05.2026. Skillwerte aus Spiel-Tooltips und Spielbeobachtungen vom Oktober 2026. Persist Online befindet sich in Entwicklung; Spielwerte können sich ändern. Spielgrafiken und Spielbezeichnungen gehören ihren jeweiligen Rechteinhabern.
+
+## Spielpatch 0.7.0.0 (Planner 0.14.5)
+
+Entfernten Rückstoß-Perk aus der Auswahl genommen; Originalgrafik unter assets/skills/unvergeben/ erhalten. Alte Build-Importe geben seine geplanten Perk-Punkte mit Hinweis frei. Veraltete Rückstoß-Statwerte entfernt; Genauigkeits-Ersatzwerte bleiben bis zur Tooltip-Prüfung offen. Waffen-Zurückstoßen ist eine eigenständige Eigenschaft. Neue Kampfregeln und Badge-Rückgabe stehen unter Quellen und Regeln. Bestätigte Skillwerte und Freischaltregeln bleiben unverändert. Kein vollständiger Schadensrechner.

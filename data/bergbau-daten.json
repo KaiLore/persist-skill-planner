@@ -89,17 +89,6 @@
       "requirementKey": "ConditionCrouching",
       "metrics": [
         {
-          "metricKey": "MetricRecoil",
-          "unit": "%",
-          "values": [
-            -2,
-            -4,
-            -6,
-            -8,
-            -10
-          ]
-        },
-        {
           "metricKey": "MetricAccuracy",
           "unit": "%",
           "values": [

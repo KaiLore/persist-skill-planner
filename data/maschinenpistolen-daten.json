@@ -154,7 +154,6 @@
         "buffDurationSeconds": 6,
         "baseDamageBonusPercent": 25,
         "accuracyBonusPercent": 50,
-        "recoilReductionPercent": 80,
         "requiresActiveWeaponKey": "LabelTreeSubmachineGunName"
       },
       "descriptionKey": "SkillSubmachineGunT1Desc"
@@ -603,7 +602,6 @@
         "effectKey": "SkillSubmachineGunUltDesc",
         "buffDurationSeconds": 10,
         "accuracyBonusPercent": 50,
-        "recoilReductionPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeSubmachineGunName",
         "metrics": [
           {

@@ -28,7 +28,7 @@ ok(E.sum(auto.points.MINING)===50);ok(auto.caps.MINING===50);ok(crossings.length
 context.clearTimeout=clearTimeout;vm.runInContext('badgePopup({kind:"regular",from:10,to:15})',context);ok(el('badgepopup').className==='regular');ok(el('badgepopup').innerHTML.includes('10 → 15'));vm.runInContext('badgePopup({kind:"ultimate",from:45,to:50})',context);ok(el('badgepopup').className==='ultimate');ok(el('badgepopup').innerHTML.includes('Ultimate Badge'));vm.runInContext('clearTimeout(badgeTimer)',context);console.log('Alle automatischen Badge-Schwellen und beide Popup-Farben geprüft.');
 
 for(const [badges,expected] of [[[0,0],1],[[7,0],16],[[7,1],45],[[14,2],55],[[21,3],65],[[28,4],75],[[35,5],85],[[0,6],null],[[72,0],86]])ok(E.requiredLevel(badges)===expected);vm.runInContext('state=E.fresh();state.caps.MINING=50;render()',context);ok(el('planrequirement').innerHTML.includes('benötigt: 45'));vm.runInContext('state.caps.CONSTR=50;render()',context);ok(el('planrequirement').innerHTML.includes('benötigt: 55'));console.log('Mindestlevel, Ultimate-Engpässe und Gesamtanzeige geprüft.');
-for(const [level,points] of [[1,0],[9,0],[10,1],[14,1],[15,2],[20,3],[100,19]])ok(E.perkPoints(level)===points);ok(D.perks.length===17);ok(E.perkTotal('PERK-1',3)===12);ok(E.perkTotal('PERK-17',3)===3.5);ok(E.perkTotal('PERK-15',3)===45);let ps=E.fresh();ps.perks={'PERK-1':3};ok(!E.validate(ps));ok(E.planLevel(ps)===20);ok(E.parse(JSON.parse(JSON.stringify(ps))).perks['PERK-1']===3);ps.caps.MINING=50;ok(E.planLevel(ps)===45);ps.perks['PERK-1']=4;ok(!!E.validate(ps));ps.perks={'unknown':1};ok(!!E.validate(ps));const old=E.fresh();delete old.perks;ok(!E.validate(old));vm.runInContext('state=E.fresh();state.perks={"PERK-1":3};render()',context);ok(el('perklist').innerHTML.includes('teilweise geschätzt'));ok(el('planrequirement').innerHTML.includes('benötigt: 20'));console.log('Perk-Vergabe, kumulative Ränge, Schätzmarkierungen und Build-Kompatibilität geprüft.');
+for(const [level,points] of [[1,0],[9,0],[10,1],[14,1],[15,2],[20,3],[100,19]])ok(E.perkPoints(level)===points);ok(D.perks.length===16);ok(E.perkTotal('PERK-1',3)===12);ok(E.perkTotal('PERK-17',3)===3.5);ok(!D.perks.some(p=>p.id==='PERK-15'));let ps=E.fresh();ps.perks={'PERK-1':3};ok(!E.validate(ps));ok(E.planLevel(ps)===20);ok(E.parse(JSON.parse(JSON.stringify(ps))).perks['PERK-1']===3);ps.caps.MINING=50;ok(E.planLevel(ps)===45);ps.perks['PERK-1']=4;ok(!!E.validate(ps));ps.perks={'unknown':1};ok(!!E.validate(ps));const old=E.fresh();delete old.perks;ok(!E.validate(old));vm.runInContext('state=E.fresh();state.perks={"PERK-1":3};render()',context);ok(el('perklist').innerHTML.includes('teilweise geschätzt'));ok(el('planrequirement').innerHTML.includes('benötigt: 20'));console.log('Perk-Vergabe, kumulative Ränge, Schätzmarkierungen und Build-Kompatibilität geprüft.');
 
 const perkPlus={dataset:{perk:'PERK-1',delta:'1'}},perkMinus={dataset:{perk:'PERK-1',delta:'-1'}};context.document.querySelectorAll=q=>q==='[data-perk]'?[perkPlus,perkMinus]:[];vm.runInContext('state=E.fresh();render()',context);perkPlus.onclick();ok(el('perklist').innerHTML.includes('+6 '));ok(el('perklist').innerHTML.includes('1 von 3 Punkten'));perkPlus.onclick();ok(el('perklist').innerHTML.includes('+10 '));perkMinus.onclick();ok(el('perklist').innerHTML.includes('1 von 3 Punkten'));ok(!el('perklist').innerHTML.includes('<select'));console.log('Perk-Box: Plus, Minus, Gesamtbonus und Rangpunkte geprüft.');
 // Reverse a fully trained tree; every accepted refund releases unnecessary badges.
@@ -174,7 +174,7 @@ keepTier=E.change(keepTier,'MINING','MINING-ULT',1).state;
 keepTier=E.change(keepTier,'MINING','MINING-ULT',-1).state;
 ok(keepTier.caps.MINING===35);ok(JSON.stringify(E.usage(keepTier))==='[5,0]');
 vm.runInContext('state=E.fresh();state.caps.MINING=50;render()',context);ok(el('overviewcontent').innerHTML.includes('overview-tree-card'));
-ok(!html.includes('Amnesia Pills'));console.log('Rücknahme behält nötige Tier-Freischaltungen; leere Bäume mit Badges in der Übersicht; Amnesia-Hinweis entfernt.');
+ok(html.includes('Amnesia Pills'));console.log('Rücknahme behält nötige Tier-Freischaltungen; Badge-Rückgabe per Amnesia dokumentiert.');
 // Display the current unlock state even when clicking can automatically plan badges.
 for(const tree of D.trees){
  for(const passive of tree.nodes.filter(n=>n.kind==='Passiv'&&n.gate>0)){
@@ -192,3 +192,11 @@ for(const tree of D.trees){
 }
 vm.runInContext('clearTimeout(badgeTimer)',context);
 console.log('T0-Passiva aller Bäume: Schloss vor Badge-Einsatz, direkte Freischaltung, erneutes Schloss nach Rücknahme und manuell erhöhtes Baumlevel geprüft.');
+
+// Removed recoil perk must not invalidate existing builds or consume their budget.
+const legacyRecoil=E.fresh();legacyRecoil.characterLevel=10;legacyRecoil.levelLocked=true;legacyRecoil.perks={'PERK-15':3,'PERK-1':1};
+const migratedRecoil=E.parse(legacyRecoil);ok(!Object.hasOwn(migratedRecoil.perks,'PERK-15'));ok(migratedRecoil.perks['PERK-1']===1);ok(legacyRecoil.perks['PERK-15']===3);ok(!E.validate(migratedRecoil));ok(E.perkRequired(migratedRecoil)===10);
+legacyRecoil.perks['PERK-15']=4;assert.throws(()=>E.parse(legacyRecoil));
+ok(!JSON.stringify(D).includes('recoilReductionPercent'));ok(!JSON.stringify(D).includes('MetricRecoil'));
+const patchLabels=JSON.parse(fs.readFileSync(__dirname+'/locales/de.json')).texts;ok(patchLabels.PatchCombatRules.includes('Momentum'));ok(patchLabels.PatchCombatRules.includes('Charaktermenü'));
+console.log('0.7.0.0: alter Perk-Import, freie Punkte, ungültige Ränge, entfernte Rückstoßwerte und getrennte Waffenspecials geprüft.');

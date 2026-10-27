@@ -64,6 +64,6 @@ g.createPlanner=function(D,translate=(key)=>key){
   return {params,values,impactRank,missingImpact:impactRank>0&&(n.effectiveEffectsMissing||values.some(v=>v.missing))};
  }
  function buildFilename(s){const clean=value=>String(value||'').normalize('NFC').replace(/[<>:"/\\|?*\u0000-\u001f\u007f]/g,'-').trim().replace(/[. ]+$/g,'').replace(/^-+|-+$/g,'');const character=clean(s.characterName)||fail('DefaultCharName'),family=clean(s.familyName);let name=family?family+'-'+character:character;if(/^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i.test(name))name='_'+name;return name+'.json';}
- function parse(raw){const e=validate(raw,true);if(e)throw Error(e);return JSON.parse(JSON.stringify(raw));}
+ function parse(raw){raw=JSON.parse(JSON.stringify(raw));if(raw?.perks&&Object.hasOwn(raw.perks,'PERK-15')&&Number.isInteger(raw.perks['PERK-15'])&&raw.perks['PERK-15']>=0&&raw.perks['PERK-15']<=3)delete raw.perks['PERK-15'];const e=validate(raw,true);if(e)throw Error(e);return JSON.parse(JSON.stringify(raw));}
  return {invalidSkills,fresh,sum,earned,usage,requiredLevel,treeUsage,perkPoints,perkRequired,perkTotal,planLevel,validate,change,parse,buildFilename,effectiveSkill};
 };})(globalThis);

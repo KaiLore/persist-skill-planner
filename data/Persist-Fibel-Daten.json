@@ -3632,41 +3632,6 @@
         {
           "skillId": "MINING-P4",
           "rank": 1,
-          "metricKey": "MetricRecoil",
-          "value": -2,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 2,
-          "metricKey": "MetricRecoil",
-          "value": -4,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 3,
-          "metricKey": "MetricRecoil",
-          "value": -6,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 4,
-          "metricKey": "MetricRecoil",
-          "value": -8,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 5,
-          "metricKey": "MetricRecoil",
-          "value": -10,
-          "unit": "%"
-        },
-        {
-          "skillId": "MINING-P4",
-          "rank": 1,
           "metricKey": "MetricAccuracy",
           "value": 2,
           "unit": "%"
@@ -23230,7 +23195,6 @@
             "effectKey": "SkillAssaultRifleUltDesc",
             "buffDurationSeconds": 8,
             "requiresActiveWeaponKey": "LabelTreeAssaultRifleName",
-            "recoilReductionPercent": 50,
             "metrics": [
               {
                 "metricKey": "MetricStaminaCost",
@@ -24198,7 +24162,6 @@
             "buffDurationSeconds": 8,
             "baseDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRifleName"
           },
           "descriptionKey": "SkillRifleT1Desc"
@@ -24349,7 +24312,6 @@
             "buffDurationSeconds": 5,
             "baseDamageBonusPercent": 60,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRifleName"
           },
           "descriptionKey": "SkillRifleT2Desc"
@@ -25773,7 +25735,6 @@
             "buffDurationSeconds": 12,
             "baseDamageBonusPercent": 20,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeMachineGunName"
           },
           "descriptionKey": "SkillMachineGunT2Desc"
@@ -27071,7 +27032,6 @@
             "buffDurationSeconds": 6,
             "baseDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 80,
             "requiresActiveWeaponKey": "LabelTreeSubmachineGunName"
           },
           "descriptionKey": "SkillSubmachineGunT1Desc"
@@ -27520,7 +27480,6 @@
             "effectKey": "SkillSubmachineGunUltDesc",
             "buffDurationSeconds": 10,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeSubmachineGunName",
             "metrics": [
               {
@@ -29850,7 +29809,6 @@
             "buffDurationSeconds": 6,
             "baseHeadshotDamageBonusPercent": 30,
             "accuracyBonusPercent": 50,
-            "recoilReductionPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRevolverName"
           },
           "descriptionKey": "SkillRevolverT1Desc"
@@ -30294,7 +30252,6 @@
             "nameKey": "SkillRevolverUltName",
             "effectKey": "SkillRevolverUltDesc",
             "shotIntervalSeconds": 0.1,
-            "recoilReductionPercent": 80,
             "paralyzedDurationSeconds": 4,
             "requiresActiveWeaponKey": "LabelTreeRevolverName",
             "metrics": [

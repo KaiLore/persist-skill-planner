@@ -912,8 +912,8 @@
     "usage": "PERK-14"
   },
   {
-    "file": "assets/skills/Perk15WeaponRecoilReduction.png",
-    "usage": "PERK-15"
+    "file": "assets/skills/unvergeben/Perk15WeaponRecoilReduction.png",
+    "usage": "Unassigned; former PERK-15, removed in game 0.7.0.0"
   },
   {
     "file": "assets/skills/Perk16ResistanceToElementalDebuffs.png",
