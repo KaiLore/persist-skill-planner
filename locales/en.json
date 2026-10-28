@@ -896,7 +896,7 @@
     "SkillHuntingP2Name": "Faster Skinning",
     "SkillHuntingP3Desc": "Reduces durability loss when harvesting with knives.",
     "SkillHuntingP3Name": "Ranger’s Maintenance",
-    "SkillHuntingP4Desc": "Increases critical damage against non-player targets.",
+    "SkillHuntingP4Desc": "Increases critical damage against animals.",
     "SkillHuntingP4Name": "Animal Anatomy",
     "SkillHuntingP5Desc": "Requires an active ranged weapon and a position outside the target's line of sight. Increases critical hit chance and critical damage.",
     "SkillHuntingP5Name": "Stalking Your Prey",
@@ -1761,6 +1761,7 @@
     "SpecialRiposteName": "Riposte",
     "SpecialRiposteDesc": "Dodging a melee attack deals 25% riposte damage to all targets in melee range. The game describes riposte damage as the sum of all riposte damage increases. The damage reference and interaction with general DPS buffs remain unconfirmed.",
     "SpecialMomentumName": "Momentum",
-    "SpecialMomentumDesc": "Up to +10% dodge, depending on the percentage of stamina remaining. Example: +4% dodge at 40% stamina."
+    "SpecialMomentumDesc": "Up to +10% dodge, depending on the percentage of stamina remaining. Example: +4% dodge at 40% stamina.",
+    "MetricAnimalCritDamage": "Critical damage against animals"
   }
 }

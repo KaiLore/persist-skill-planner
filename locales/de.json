@@ -896,7 +896,7 @@
     "SkillHuntingP2Name": "Schnelleres Häuten",
     "SkillHuntingP3Desc": "Reduziert beim Ernten mit Messern den Haltbarkeitsverlust.",
     "SkillHuntingP3Name": "Ranger-Wartung",
-    "SkillHuntingP4Desc": "Erhöht kritischen Schaden gegen Nicht-Spieler.",
+    "SkillHuntingP4Desc": "Erhöht kritischen Schaden gegen Tiere.",
     "SkillHuntingP4Name": "Tieranatomie",
     "SkillHuntingP5Desc": "Benötigt aktive Fernkampfwaffe und eine Position außerhalb der Sichtlinie des Ziels. Erhöht kritische Chance und kritischen Schaden.",
     "SkillHuntingP5Name": "Stalking Your Prey",
@@ -1761,6 +1761,7 @@
     "SpecialRiposteName": "Riposte",
     "SpecialRiposteDesc": "Beim Ausweichen vor einem Nahkampfangriff: Fügt allen Zielen in Nahkampfreichweite 25 % Riposte-Schaden zu. Laut Spiel ist Riposte-Schaden die Summe aller Erhöhungen des Riposte-Schadens. Die Bezugsgröße und die Wirkung allgemeiner DPS-Verstärker sind damit noch nicht geklärt.",
     "SpecialMomentumName": "Schwung",
-    "SpecialMomentumDesc": "Bis zu +10 % Ausweichen, abhängig vom verbleibenden Ausdauer-Prozentsatz. Beispiel: +4 % Ausweichen bei 40 % Ausdauer."
+    "SpecialMomentumDesc": "Bis zu +10 % Ausweichen, abhängig vom verbleibenden Ausdauer-Prozentsatz. Beispiel: +4 % Ausweichen bei 40 % Ausdauer.",
+    "MetricAnimalCritDamage": "Kritischer Schaden gegen Tiere"
   }
 }

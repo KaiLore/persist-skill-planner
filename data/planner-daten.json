@@ -29640,7 +29640,7 @@
             "unlockDisplayed": 16,
             "metrics": [
               {
-                "metricKey": "MetricNpcCritDamage",
+                "metricKey": "MetricAnimalCritDamage",
                 "unit": "%",
                 "values": [
                   6,
@@ -30386,35 +30386,35 @@
         {
           "skillId": "HUNTING-P4",
           "rank": 1,
-          "metricKey": "MetricNpcCritDamage",
+          "metricKey": "MetricAnimalCritDamage",
           "value": 6,
           "unit": "%"
         },
         {
           "skillId": "HUNTING-P4",
           "rank": 2,
-          "metricKey": "MetricNpcCritDamage",
+          "metricKey": "MetricAnimalCritDamage",
           "value": 12,
           "unit": "%"
         },
         {
           "skillId": "HUNTING-P4",
           "rank": 3,
-          "metricKey": "MetricNpcCritDamage",
+          "metricKey": "MetricAnimalCritDamage",
           "value": 18,
           "unit": "%"
         },
         {
           "skillId": "HUNTING-P4",
           "rank": 4,
-          "metricKey": "MetricNpcCritDamage",
+          "metricKey": "MetricAnimalCritDamage",
           "value": 24,
           "unit": "%"
         },
         {
           "skillId": "HUNTING-P4",
           "rank": 5,
-          "metricKey": "MetricNpcCritDamage",
+          "metricKey": "MetricAnimalCritDamage",
           "value": 30,
           "unit": "%"
         },
