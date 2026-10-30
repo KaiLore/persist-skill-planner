@@ -1,6 +1,8 @@
 from pathlib import Path
 import json,re,html
+from sort_locales import organize
 p=Path(__file__).resolve().parent
+organize(p)
 d=json.loads((p/'data/planner-daten.json').read_text(encoding='utf-8'))
 languages=[json.loads(f.read_text(encoding='utf-8')) for f in sorted((p/'locales').glob('*.json'))]
 de=next(v['texts'] for v in languages if v['code']=='de')
