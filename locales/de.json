@@ -141,6 +141,7 @@
     "PoisonTick": "{seconds} s: {percent} % max. Ziel-HP",
     "TitleRankValues": "Stufenwerte",
     "HintSkillControls": "Linksklick +1 · Rechtsklick −1",
+    "HintStatusHelp": "Strg gedrückt halten: Statuseffekte erklären",
     "TitleEffectiveValues": "Aktuelle Werte der Skillung",
     "KindActive": "Aktiv",
     "KindEnhancer": "Enhancer",
@@ -148,6 +149,8 @@
     "KindUltimate": "Ultimate",
     "KindWay": "Way",
     "RankDurationFor": "für",
+    "TitleStatusHelp": "Effekte und Begriffe erklärt",
+    "HintStatusHelpRelease": "Strg loslassen: zurück zum Skill-Tooltip",
 
     "HintPlannerStatus": "0.14.6 · Build-JSON sichert Skillbäume, Perks, Charakterstufe und Level-Sperre. Lokale Browserspeicherung kann bei Datei-URLs eingeschränkt sein.",
 
@@ -189,7 +192,7 @@
 
     "TreeAssaultRifleName": "Sturmgewehre",
 
-    "SkillAssaultRifleP1Name": "Skilled Rifleman",
+    "SkillAssaultRifleP1Name": "Gewehrschützen-Geselle",
     "SkillAssaultRifleP1Desc": "Erhöht den Schaden mit aktivem Sturmgewehr.",
 
     "SkillAssaultRifleP2Name": "Notfall-Nachladen",
@@ -201,7 +204,7 @@
     "SkillAssaultRifleP4Name": "Kopfschmerzen",
     "SkillAssaultRifleP4Desc": "Erhöht den Kopfschussschaden mit aktivem Sturmgewehr, solange das Ziel unter einem physischen Debuff leidet.",
 
-    "SkillAssaultRifleT1Name": "Kneecapper",
+    "SkillAssaultRifleT1Name": "Kniescheibenbrecher",
     "SkillAssaultRifleT1Desc": "Gewährt für 6 s +40 % Schaden. Treffer wenden Verkrüppelt für 3 s an: −40 % Bewegungsgeschwindigkeit und −20 % Schaden des Ziels.",
     "SkillAssaultRifleT1EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden. Treffer wenden Verkrüppelt für 3 s an: −40 % Bewegungsgeschwindigkeit und −20 % Schaden des Ziels.",
 
@@ -211,16 +214,16 @@
     "SkillAssaultRifleT1StaminaName": "Ausdauerverstärker",
     "SkillAssaultRifleT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillAssaultRifleT1ImpactName": "Impact Enhancer",
+    "SkillAssaultRifleT1ImpactName": "Aufprallverstärker",
     "SkillAssaultRifleT1ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillAssaultRifleT1Way1Name": "Way of the Unfading",
+    "SkillAssaultRifleT1Way1Name": "Weg des Unvergänglichen",
     "SkillAssaultRifleT1Way1Desc": "Verlängert den Statuseffekt um 2 s.",
 
-    "SkillAssaultRifleT1Way2Name": "Way of the Berserker",
+    "SkillAssaultRifleT1Way2Name": "Weg des Berserkers",
     "SkillAssaultRifleT1Way2Desc": "Zusätzlich +25 % Schaden.",
 
-    "SkillAssaultRifleT2Name": "Killshot",
+    "SkillAssaultRifleT2Name": "Todesschuss",
     "SkillAssaultRifleT2Desc": "Der nächste Treffer verursacht zusätzlich 200 % aktive Waffen-DPS.",
     "SkillAssaultRifleT2EffectiveDesc": "Der nächste Treffer verursacht zusätzlich {effect0} % aktive Waffen-DPS.",
 
@@ -230,18 +233,18 @@
     "SkillAssaultRifleT2StaminaName": "Ausdauerverstärker",
     "SkillAssaultRifleT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillAssaultRifleT2ImpactName": "Impact Enhancer",
+    "SkillAssaultRifleT2ImpactName": "Aufprallverstärker",
     "SkillAssaultRifleT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
-    "SkillAssaultRifleT2Way1Name": "Way of the Oppressor",
+    "SkillAssaultRifleT2Way1Name": "Weg des Unterdrückers",
     "SkillAssaultRifleT2Way1Desc": "Treffer verursachen für 4 s Unterdrückt: −20 % Bewegungsgeschwindigkeit und −40 % Schaden des Ziels.",
 
-    "SkillAssaultRifleT2Way2Name": "Way of the Abhorrent",
+    "SkillAssaultRifleT2Way2Name": "Weg des Abscheulichen",
     "SkillAssaultRifleT2Way2Desc": "Treffer verursachen für 4 s Angewidert: Das Ziel kann keine Verbrauchsgegenstände nutzen.",
 
     "SkillAssaultRifleT3Name": "C-Clamp Grip",
-    "SkillAssaultRifleT3Desc": "Gewährt für 8 s beim Stillstehen +80 % Schaden. Treffer wenden Verwundbar für 5 s an: Das Ziel erleidet +25 % kritischen Schaden durch Angriffe.",
-    "SkillAssaultRifleT3EffectiveDesc": "Gewährt für 8 s beim Stillstehen +{effect0} % Schaden. Treffer wenden Verwundbar für 5 s an: Das Ziel erleidet +25 % kritischen Schaden durch Angriffe.",
+    "SkillAssaultRifleT3Desc": "Gewährt für 8 s beim Stillstehen +80 % Schaden. Treffer wenden Verwundbar für 5 s an: Das Ziel erleidet +25 % Schaden durch alle Angriffe.",
+    "SkillAssaultRifleT3EffectiveDesc": "Gewährt für 8 s beim Stillstehen +{effect0} % Schaden. Treffer wenden Verwundbar für 5 s an: Das Ziel erleidet +25 % Schaden durch alle Angriffe.",
 
     "SkillAssaultRifleT3CooldownName": "Abklingzeitverstärker",
     "SkillAssaultRifleT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -249,32 +252,32 @@
     "SkillAssaultRifleT3StaminaName": "Ausdauerverstärker",
     "SkillAssaultRifleT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillAssaultRifleT3ImpactName": "Impact Enhancer",
+    "SkillAssaultRifleT3ImpactName": "Aufprallverstärker",
     "SkillAssaultRifleT3ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillAssaultRifleT3Way1Name": "Way of the Sentinel",
+    "SkillAssaultRifleT3Way1Name": "Weg des Wächters",
     "SkillAssaultRifleT3Way1Desc": "Während des Stillstehens +25 % Schadensreduzierung.",
 
-    "SkillAssaultRifleT3Way2Name": "Way of the Strategist",
+    "SkillAssaultRifleT3Way2Name": "Weg des Strategen",
     "SkillAssaultRifleT3Way2Desc": "Reduziert die Abklingzeit um 30 s, wenn während des Statuseffekts keine Bewegung erfolgt.",
 
-    "SkillAssaultRifleUltName": "Storm of Steel",
+    "SkillAssaultRifleUltName": "Stahlgewitter",
     "SkillAssaultRifleUltDesc": "Gewährt für 8 s sofortiges Nachladen bei leerem Magazin, erhöht Schaden und Feuerrate und erhöht die Genauigkeit um 50 %. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
     "LabelTreeAssaultRifleName": "Sturmgewehr",
 
     "TreeMachineGunName": "Maschinengewehre",
 
-    "SkillMachineGunP1Name": "Skilled Machine Gunner",
+    "SkillMachineGunP1Name": "MG-Schützen-Geselle",
     "SkillMachineGunP1Desc": "Erhöht den Schaden mit aktivem Maschinengewehr.",
 
-    "SkillMachineGunP2Name": "Strategic Hand Positioning",
+    "SkillMachineGunP2Name": "Strategische Handpositionierung",
     "SkillMachineGunP2Desc": "Erhöht die Nachladegeschwindigkeit mit aktivem Maschinengewehr.",
 
     "SkillMachineGunP3Name": "Teileaustausch",
     "SkillMachineGunP3Desc": "Reduziert den Haltbarkeitsverlust beim Schießen mit aktivem Maschinengewehr.",
 
-    "SkillMachineGunP4Name": "Rip & Tear",
+    "SkillMachineGunP4Name": "Reißen & Zerfetzen",
     "SkillMachineGunP4Desc": "Wenn das Ziel Durchdringungsschaden von deinem aktiven Maschinengewehr erhalten hat, besteht die Chance, Verwundbar anzuwenden.",
 
     "SkillMachineGunT1Name": "Mäh sie nieder!",
@@ -287,13 +290,13 @@
     "SkillMachineGunT1StaminaName": "Ausdauerverstärker",
     "SkillMachineGunT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillMachineGunT1ImpactName": "Impact Enhancer",
+    "SkillMachineGunT1ImpactName": "Aufprallverstärker",
     "SkillMachineGunT1ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillMachineGunT1Way1Name": "Way of the Impaler",
+    "SkillMachineGunT1Way1Name": "Weg des Pfählers",
     "SkillMachineGunT1Way1Desc": "Zusätzlich +50 % Durchdringungsschaden.",
 
-    "SkillMachineGunT1Way2Name": "Way of the Colossus",
+    "SkillMachineGunT1Way2Name": "Weg des Kolosses",
     "SkillMachineGunT1Way2Desc": "Entfernt alle physischen Debuffs und gewährt während des Statuseffekts Immunität gegen physische Debuffs.",
 
     "SkillMachineGunT2Name": "Im Visier",
@@ -306,13 +309,13 @@
     "SkillMachineGunT2StaminaName": "Ausdauerverstärker",
     "SkillMachineGunT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillMachineGunT2ImpactName": "Impact Enhancer",
+    "SkillMachineGunT2ImpactName": "Aufprallverstärker",
     "SkillMachineGunT2ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillMachineGunT2Way1Name": "Way of the Sharpshooter",
+    "SkillMachineGunT2Way1Name": "Weg des Scharfschützen",
     "SkillMachineGunT2Way1Desc": "Zusätzlich +50 % Genauigkeit. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
-    "SkillMachineGunT2Way2Name": "Way of the Unfading",
+    "SkillMachineGunT2Way2Name": "Weg des Unvergänglichen",
     "SkillMachineGunT2Way2Desc": "Verlängert den Statuseffekt um 6 s.",
 
     "SkillMachineGunT3Name": "Sperrfeuer",
@@ -325,13 +328,13 @@
     "SkillMachineGunT3StaminaName": "Ausdauerverstärker",
     "SkillMachineGunT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillMachineGunT3ImpactName": "Impact Enhancer",
+    "SkillMachineGunT3ImpactName": "Aufprallverstärker",
     "SkillMachineGunT3ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillMachineGunT3Way1Name": "Way of the Butcher",
+    "SkillMachineGunT3Way1Name": "Weg des Schlächters",
     "SkillMachineGunT3Way1Desc": "Treffer wenden Blutung für 20 s an.",
 
-    "SkillMachineGunT3Way2Name": "Way of the Unfading",
+    "SkillMachineGunT3Way2Name": "Weg des Unvergänglichen",
     "SkillMachineGunT3Way2Desc": "Verlängert den Statuseffekt um 4 s.",
 
     "SkillMachineGunUltName": "Overkill",
@@ -341,7 +344,7 @@
 
     "TreePistolName": "Pistolen",
 
-    "SkillPistolP1Name": "Skilled Pistoleer",
+    "SkillPistolP1Name": "Pistolero-Geselle",
     "SkillPistolP1Desc": "Erhöht den Schaden mit aktivem Pistole.",
 
     "SkillPistolP2Name": "Schneller Magazinwechsel",
@@ -350,10 +353,10 @@
     "SkillPistolP3Name": "Gründliche Inspektion",
     "SkillPistolP3Desc": "Reduziert den Haltbarkeitsverlust beim Schießen mit aktivem Pistole.",
 
-    "SkillPistolP4Name": "Insult to Injury",
+    "SkillPistolP4Name": "Salz in die Wunde",
     "SkillPistolP4Desc": "Erhöht den kritischen Schaden gegen blutende Ziele mit aktiver Pistole.",
 
-    "SkillPistolT1Name": "Right on Target",
+    "SkillPistolT1Name": "Volltreffer",
     "SkillPistolT1Desc": "Gewährt für 6 s +25 % Schaden.",
     "SkillPistolT1EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden.",
 
@@ -363,13 +366,13 @@
     "SkillPistolT1StaminaName": "Ausdauerverstärker",
     "SkillPistolT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillPistolT1ImpactName": "Impact Enhancer",
+    "SkillPistolT1ImpactName": "Aufprallverstärker",
     "SkillPistolT1ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillPistolT1Way1Name": "Way of the Ruiner",
+    "SkillPistolT1Way1Name": "Weg des Verderbers",
     "SkillPistolT1Way1Desc": "Treffer wenden Verkrüppelt für 3 s an.",
 
-    "SkillPistolT1Way2Name": "Way of the Unfading",
+    "SkillPistolT1Way2Name": "Weg des Unvergänglichen",
     "SkillPistolT1Way2Desc": "Verlängert den Statuseffekt um 2 s.",
 
     "SkillPistolT2Name": "Arterienschuss",
@@ -382,16 +385,16 @@
     "SkillPistolT2StaminaName": "Ausdauerverstärker",
     "SkillPistolT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillPistolT2ImpactName": "Impact Enhancer",
+    "SkillPistolT2ImpactName": "Aufprallverstärker",
     "SkillPistolT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
-    "SkillPistolT2Way1Name": "Way of the Fugitive",
+    "SkillPistolT2Way1Name": "Weg des Flüchtigen",
     "SkillPistolT2Way1Desc": "Bei einem Treffer erhältst du Eile für 5 s.",
 
-    "SkillPistolT2Way2Name": "Way of the Butcher",
+    "SkillPistolT2Way2Name": "Weg des Schlächters",
     "SkillPistolT2Way2Desc": "Verlängert die Blutungsdauer um 10 s.",
 
-    "SkillPistolT3Name": "Cracking Skulls",
+    "SkillPistolT3Name": "Schädel knacken",
     "SkillPistolT3Desc": "Gewährt für 8 s +60 % Kopfschussschaden.",
     "SkillPistolT3EffectiveDesc": "Gewährt für 8 s +{effect0} % Kopfschussschaden.",
 
@@ -401,23 +404,23 @@
     "SkillPistolT3StaminaName": "Ausdauerverstärker",
     "SkillPistolT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillPistolT3ImpactName": "Impact Enhancer",
+    "SkillPistolT3ImpactName": "Aufprallverstärker",
     "SkillPistolT3ImpactDesc": "Verbessert Kopfschussschaden.",
 
-    "SkillPistolT3Way1Name": "Way of the Unfading",
+    "SkillPistolT3Way1Name": "Weg des Unvergänglichen",
     "SkillPistolT3Way1Desc": "Verlängert den Statuseffekt um 4 s.",
 
-    "SkillPistolT3Way2Name": "Way of the Skullpiercer",
+    "SkillPistolT3Way2Name": "Weg des Schädeldurchbohrers",
     "SkillPistolT3Way2Desc": "Zusätzlich +50 % Kopfschussschaden.",
 
-    "SkillPistolUltName": "Bullet Hell",
+    "SkillPistolUltName": "Kugelhagel",
     "SkillPistolUltDesc": "Während des Statuseffekts gewährt jeder Treffer einen Schadensbonus für alle folgenden Treffer. Der Bonus stapelt sich mit jedem Treffer.",
 
     "LabelTreePistolName": "Pistole",
 
     "TreeRevolverName": "Revolver",
 
-    "SkillRevolverP1Name": "Skilled Gunslinger",
+    "SkillRevolverP1Name": "Revolverhelden-Geselle",
     "SkillRevolverP1Desc": "Erhöht den Schaden mit aktivem Revolver.",
 
     "SkillRevolverP2Name": "Geschickter Griff",
@@ -426,7 +429,7 @@
     "SkillRevolverP3Name": "Feldreparatur",
     "SkillRevolverP3Desc": "Reduziert den Haltbarkeitsverlust beim Schießen mit aktivem Revolver.",
 
-    "SkillRevolverP4Name": "Gunslinger’s Gift",
+    "SkillRevolverP4Name": "Gabe des Revolverhelden",
     "SkillRevolverP4Desc": "Treffer mit aktivem Revolver haben eine Chance, als Kopfschuss zu zählen.",
 
     "SkillRevolverT1Name": "Atemkontrolle",
@@ -439,13 +442,13 @@
     "SkillRevolverT1StaminaName": "Ausdauerverstärker",
     "SkillRevolverT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillRevolverT1ImpactName": "Impact Enhancer",
+    "SkillRevolverT1ImpactName": "Aufprallverstärker",
     "SkillRevolverT1ImpactDesc": "Verbessert Kopfschussschaden.",
 
-    "SkillRevolverT1Way1Name": "Way of the Hunter",
+    "SkillRevolverT1Way1Name": "Weg des Jägers",
     "SkillRevolverT1Way1Desc": "Während des Statuseffekts +30 % kritische Trefferchance.",
 
-    "SkillRevolverT1Way2Name": "Way of the Oppressor",
+    "SkillRevolverT1Way2Name": "Weg des Unterdrückers",
     "SkillRevolverT1Way2Desc": "Treffer wenden Unterdrückt für 3 s an.",
 
     "SkillRevolverT2Name": "Schwäche ausnutzen",
@@ -458,13 +461,13 @@
     "SkillRevolverT2StaminaName": "Ausdauerverstärker",
     "SkillRevolverT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillRevolverT2ImpactName": "Impact Enhancer",
+    "SkillRevolverT2ImpactName": "Aufprallverstärker",
     "SkillRevolverT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
-    "SkillRevolverT2Way1Name": "Way of the Tormentor",
+    "SkillRevolverT2Way1Name": "Weg des Peinigers",
     "SkillRevolverT2Way1Desc": "Hat das Ziel mindestens einen physischen Debuff, zusätzlich +100 % aktive Waffen-DPS. Hat es mindestens einen mentalen Debuff, zusätzlich +100 % aktive Waffen-DPS.",
 
-    "SkillRevolverT2Way2Name": "Way of the Executioner",
+    "SkillRevolverT2Way2Name": "Weg des Henkers",
     "SkillRevolverT2Way2Desc": "Zählt als kritischer Treffer.",
 
     "SkillRevolverT3Name": "Neutralisierender Schuss",
@@ -477,23 +480,23 @@
     "SkillRevolverT3StaminaName": "Ausdauerverstärker",
     "SkillRevolverT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillRevolverT3ImpactName": "Impact Enhancer",
+    "SkillRevolverT3ImpactName": "Aufprallverstärker",
     "SkillRevolverT3ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
-    "SkillRevolverT3Way1Name": "Way of the Nightmare",
-    "SkillRevolverT3Way1Desc": "Treffer verursachen Traumatisiert für 3 s: Spieler verlieren die Mauskontrolle, Nicht-Spieler rennen in zufällige Richtungen davon.",
+    "SkillRevolverT3Way1Name": "Weg des Alptraums",
+    "SkillRevolverT3Way1Desc": "Treffer verursachen Traumatisiert für 3 s: Bei Spielern werden beide Mausachsen invertiert; Nicht-Spieler rennen in zufällige Richtungen davon.",
 
-    "SkillRevolverT3Way2Name": "Way of the Staggerer",
+    "SkillRevolverT3Way2Name": "Weg des Erschütterers",
     "SkillRevolverT3Way2Desc": "Treffer verursachen Benommen für 3 s: Bewegungstasten von Spielern werden zufällig vertauscht; Nicht-Spieler laufen in eine zufällige Richtung davon.",
 
-    "SkillRevolverUltName": "Furious Fanning",
+    "SkillRevolverUltName": "Wildes Fächerfeuer",
     "SkillRevolverUltDesc": "Beim nächsten Treffer: Lädt bei Bedarf sofort nach, feuert automatisch bis zum leeren Magazin, setzt die Feuerrate auf 0,1 s zwischen Schüssen, erhöht rangabhängig Schaden und wendet Gelähmt für 4 s an. Lädt nach Ende der Fähigkeit sofort nach. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
     "LabelTreeRevolverName": "Revolver",
 
     "TreeRifleName": "Gewehre",
 
-    "SkillRifleP1Name": "Skilled Marksman",
+    "SkillRifleP1Name": "Präzisionsschütze-Geselle",
     "SkillRifleP1Desc": "Erhöht den Schaden mit aktivem Gewehr.",
 
     "SkillRifleP2Name": "Muskelgedächtnis",
@@ -515,16 +518,16 @@
     "SkillRifleT1StaminaName": "Ausdauerverstärker",
     "SkillRifleT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillRifleT1ImpactName": "Impact Enhancer",
+    "SkillRifleT1ImpactName": "Aufprallverstärker",
     "SkillRifleT1ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillRifleT1Way1Name": "Way of the Obscured",
+    "SkillRifleT1Way1Name": "Weg des Verborgenen",
     "SkillRifleT1Way1Desc": "Während des Statuseffekts ist dein Namensschild verborgen, und alle positiven visuellen Effekte sind für andere Spieler nicht sichtbar.",
 
-    "SkillRifleT1Way2Name": "Way of the Skullpiercer",
+    "SkillRifleT1Way2Name": "Weg des Schädeldurchbohrers",
     "SkillRifleT1Way2Desc": "Zusätzlich +30 % Kopfschussschaden.",
 
-    "SkillRifleT2Name": "Mobility Kill",
+    "SkillRifleT2Name": "Lahmlegen",
     "SkillRifleT2Desc": "Gewährt für 5 s +60 % Schaden, +50 % Genauigkeit. Treffer wenden Verkrüppelt für 3 s an. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
     "SkillRifleT2EffectiveDesc": "Gewährt für 5 s +{effect0} % Schaden, +50 % Genauigkeit. Treffer wenden Verkrüppelt für 3 s an. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
@@ -534,13 +537,13 @@
     "SkillRifleT2StaminaName": "Ausdauerverstärker",
     "SkillRifleT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillRifleT2ImpactName": "Impact Enhancer",
+    "SkillRifleT2ImpactName": "Aufprallverstärker",
     "SkillRifleT2ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillRifleT2Way1Name": "Way of the Unfading",
+    "SkillRifleT2Way1Name": "Weg des Unvergänglichen",
     "SkillRifleT2Way1Desc": "Verlängert den Statuseffekt um 3 s.",
 
-    "SkillRifleT2Way2Name": "Way of the Ravager",
+    "SkillRifleT2Way2Name": "Weg des Verwüsters",
     "SkillRifleT2Way2Desc": "Treffer wenden Verwundbar für 5 s an.",
 
     "SkillRifleT3Name": "Roter Nebel",
@@ -553,13 +556,13 @@
     "SkillRifleT3StaminaName": "Ausdauerverstärker",
     "SkillRifleT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillRifleT3ImpactName": "Impact Enhancer",
+    "SkillRifleT3ImpactName": "Aufprallverstärker",
     "SkillRifleT3ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
-    "SkillRifleT3Way1Name": "Way of the Stalker",
+    "SkillRifleT3Way1Name": "Weg des Pirschers",
     "SkillRifleT3Way1Desc": "Zieht einen einzelnen Feind, ohne Aggro bei anderen Feinden in der Nähe auszulösen.",
 
-    "SkillRifleT3Way2Name": "Way of the Trapper",
+    "SkillRifleT3Way2Name": "Weg des Fallenstellers",
     "SkillRifleT3Way2Desc": "Kopfschüsse wenden Gelähmt für 6 s an.",
 
     "SkillRifleUltName": "Pew Pew!",
@@ -569,7 +572,7 @@
 
     "TreeShotgunName": "Schrotflinten",
 
-    "SkillShotgunP1Name": "Skilled Shotgunner",
+    "SkillShotgunP1Name": "Schrotschützen-Geselle",
     "SkillShotgunP1Desc": "Erhöht den Schaden mit aktivem Schrotflinte.",
 
     "SkillShotgunP2Name": "Flinke Finger",
@@ -578,10 +581,10 @@
     "SkillShotgunP3Name": "Laufreinigung",
     "SkillShotgunP3Desc": "Reduziert den Haltbarkeitsverlust beim Schießen mit aktivem Schrotflinte.",
 
-    "SkillShotgunP4Name": "Crit Festival",
+    "SkillShotgunP4Name": "Krit-Festival",
     "SkillShotgunP4Desc": "Schüsse haben eine rangabhängige Chance, für 6 s +20 % verursachten kritischen Schaden zu gewähren. Höchstens einmal pro Sekunde auslösbar und bis zu 5-mal stapelbar.",
 
-    "SkillShotgunT1Name": "Trigger Control",
+    "SkillShotgunT1Name": "Abzugs-Kontrolle",
     "SkillShotgunT1Desc": "Gewährt für 6 s +30 % kritische Trefferchance.",
     "SkillShotgunT1EffectiveDesc": "Gewährt für 6 s +{effect0} % kritische Trefferchance.",
 
@@ -591,13 +594,13 @@
     "SkillShotgunT1StaminaName": "Ausdauerverstärker",
     "SkillShotgunT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillShotgunT1ImpactName": "Impact Enhancer",
+    "SkillShotgunT1ImpactName": "Aufprallverstärker",
     "SkillShotgunT1ImpactDesc": "Verbessert Kritische Trefferchance.",
 
-    "SkillShotgunT1Way1Name": "Way of the Sharpshooter",
+    "SkillShotgunT1Way1Name": "Weg des Scharfschützen",
     "SkillShotgunT1Way1Desc": "Zusätzlich +100 % Genauigkeit.",
 
-    "SkillShotgunT1Way2Name": "Way of the Assassin",
+    "SkillShotgunT1Way2Name": "Weg des Assassinen",
     "SkillShotgunT1Way2Desc": "Zusätzlich +50 % kritischer Schaden.",
 
     "SkillShotgunT2Name": "Friedenswächter",
@@ -610,16 +613,16 @@
     "SkillShotgunT2StaminaName": "Ausdauerverstärker",
     "SkillShotgunT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillShotgunT2ImpactName": "Impact Enhancer",
+    "SkillShotgunT2ImpactName": "Aufprallverstärker",
     "SkillShotgunT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
-    "SkillShotgunT2Way1Name": "Way of the Binder",
+    "SkillShotgunT2Way1Name": "Weg des Fesslers",
     "SkillShotgunT2Way1Desc": "Treffer verursachen Betäubt für 3 s, wenn die Ziel-HP höchstens 40 % betragen. Andernfalls wird Gelähmt für 4 s angewendet.",
 
-    "SkillShotgunT2Way2Name": "Way of the Butcher",
+    "SkillShotgunT2Way2Name": "Weg des Schlächters",
     "SkillShotgunT2Way2Desc": "Treffer verursachen Blutung für 20 s.",
 
-    "SkillShotgunT3Name": "Point Blank Slug",
+    "SkillShotgunT3Name": "Slug aus nächster Nähe",
     "SkillShotgunT3Desc": "Beim nächsten Treffer: +25 % Schaden für alle folgenden Geschosse, die dasselbe Ziel treffen. Stapelt sich mit jedem Geschosstreffer. Treffer verursachen Verwirrt für 4 s.",
     "SkillShotgunT3EffectiveDesc": "Beim nächsten Treffer: +{effect0} % Schaden für alle folgenden Geschosse, die dasselbe Ziel treffen. Stapelt sich mit jedem Geschosstreffer. Treffer verursachen Verwirrt für 4 s.",
 
@@ -629,35 +632,35 @@
     "SkillShotgunT3StaminaName": "Ausdauerverstärker",
     "SkillShotgunT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillShotgunT3ImpactName": "Impact Enhancer",
+    "SkillShotgunT3ImpactName": "Aufprallverstärker",
     "SkillShotgunT3ImpactDesc": "Verbessert Schadensbonus pro Projektil.",
 
-    "SkillShotgunT3Way1Name": "Way of the Strategist",
+    "SkillShotgunT3Way1Name": "Weg des Strategen",
     "SkillShotgunT3Way1Desc": "Reduziert die Abklingzeit um 5 s für jeden Projektiltreffer.",
 
-    "SkillShotgunT3Way2Name": "Way of the Fugitive",
+    "SkillShotgunT3Way2Name": "Weg des Flüchtigen",
     "SkillShotgunT3Way2Desc": "Bei einem Treffer erhältst du Eile für 5 s.",
 
-    "SkillShotgunUltName": "World of Hurt",
+    "SkillShotgunUltName": "Welt voller Schmerz",
     "SkillShotgunUltDesc": "Gewährt +25 % kritische Trefferchance sowie rangabhängig mehr kritischen Schaden für eine rangabhängige Dauer.",
 
     "LabelTreeShotgunName": "Schrotflinte",
 
     "TreeSubmachineGunName": "Maschinenpistolen",
 
-    "SkillSubmachineGunP1Name": "Skilled Submachine Gunner",
+    "SkillSubmachineGunP1Name": "MP-Schützen-Geselle",
     "SkillSubmachineGunP1Desc": "Erhöht den Schaden mit aktivem Maschinenpistole.",
 
     "SkillSubmachineGunP2Name": "Sparsame Bewegung",
     "SkillSubmachineGunP2Desc": "Erhöht die Nachladegeschwindigkeit mit aktivem Maschinenpistole.",
 
-    "SkillSubmachineGunP3Name": "Friction Point Lubrication",
+    "SkillSubmachineGunP3Name": "Reibpunkt-Schmierung",
     "SkillSubmachineGunP3Desc": "Reduziert den Haltbarkeitsverlust beim Schießen mit aktivem Maschinenpistole.",
 
     "SkillSubmachineGunP4Name": "Center Axis Relock",
     "SkillSubmachineGunP4Desc": "Gewährt beim Nachladen für 2 s erhöhte kritische Trefferchance.",
 
-    "SkillSubmachineGunT1Name": "Iron Grip",
+    "SkillSubmachineGunT1Name": "Eiserner Griff",
     "SkillSubmachineGunT1Desc": "Gewährt für 6 s +50 % Genauigkeit und +25 % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
     "SkillSubmachineGunT1EffectiveDesc": "Gewährt für 6 s +50 % Genauigkeit und +{effect0} % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
@@ -667,16 +670,16 @@
     "SkillSubmachineGunT1StaminaName": "Ausdauerverstärker",
     "SkillSubmachineGunT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillSubmachineGunT1ImpactName": "Impact Enhancer",
+    "SkillSubmachineGunT1ImpactName": "Aufprallverstärker",
     "SkillSubmachineGunT1ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillSubmachineGunT1Way1Name": "Way of the Unfading",
+    "SkillSubmachineGunT1Way1Name": "Weg des Unvergänglichen",
     "SkillSubmachineGunT1Way1Desc": "Verlängert den Statuseffekt um 2 s.",
 
-    "SkillSubmachineGunT1Way2Name": "Way of the Ravager",
+    "SkillSubmachineGunT1Way2Name": "Weg des Verwüsters",
     "SkillSubmachineGunT1Way2Desc": "Treffer verursachen Verwundbar. Eine Dauer wird im Tooltip nicht genannt.",
 
-    "SkillSubmachineGunT2Name": "Ricochet",
+    "SkillSubmachineGunT2Name": "Querschläger",
     "SkillSubmachineGunT2Desc": "Gewährt für 7 s: Kugeln treffen bis zu 2 zusätzliche Ziele im Umkreis von 5 m mit 50 % Schaden. Diese zusätzlichen Treffer können keine Debuffs anwenden.",
     "SkillSubmachineGunT2EffectiveDesc": "Gewährt für {effect0} s: Kugeln treffen bis zu 2 zusätzliche Ziele im Umkreis von 5 m mit 50 % Schaden. Diese zusätzlichen Treffer können keine Debuffs anwenden.",
 
@@ -686,13 +689,13 @@
     "SkillSubmachineGunT2StaminaName": "Ausdauerverstärker",
     "SkillSubmachineGunT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillSubmachineGunT2ImpactName": "Impact Enhancer",
+    "SkillSubmachineGunT2ImpactName": "Aufprallverstärker",
     "SkillSubmachineGunT2ImpactDesc": "Verbessert Statuseffektdauer.",
 
-    "SkillSubmachineGunT2Way1Name": "Way of the Reaper",
-    "SkillSubmachineGunT2Way1Desc": "Ricochet trifft bis zu 2 zusätzliche Ziele mehr.",
+    "SkillSubmachineGunT2Way1Name": "Weg des Schnitters",
+    "SkillSubmachineGunT2Way1Desc": "Querschläger trifft bis zu 2 zusätzliche Ziele mehr.",
 
-    "SkillSubmachineGunT2Way2Name": "Way of the Berserker",
+    "SkillSubmachineGunT2Way2Name": "Weg des Berserkers",
     "SkillSubmachineGunT2Way2Desc": "Zusätzlich +30 % Schaden auf zusätzliche Ziele.",
 
     "SkillSubmachineGunT3Name": "Umfangreiches ballistisches Trauma",
@@ -705,35 +708,35 @@
     "SkillSubmachineGunT3StaminaName": "Ausdauerverstärker",
     "SkillSubmachineGunT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillSubmachineGunT3ImpactName": "Impact Enhancer",
+    "SkillSubmachineGunT3ImpactName": "Aufprallverstärker",
     "SkillSubmachineGunT3ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillSubmachineGunT3Way1Name": "Way of the Abhorrent",
+    "SkillSubmachineGunT3Way1Name": "Weg des Abscheulichen",
     "SkillSubmachineGunT3Way1Desc": "Treffer wenden Angewidert für 4 s an.",
 
-    "SkillSubmachineGunT3Way2Name": "Way of the Berserker",
+    "SkillSubmachineGunT3Way2Name": "Weg des Berserkers",
     "SkillSubmachineGunT3Way2Desc": "Zusätzlich +50 % Schaden.",
 
-    "SkillSubmachineGunUltName": "Apex Gunman",
+    "SkillSubmachineGunUltName": "Spitzenschütze",
     "SkillSubmachineGunUltDesc": "Gewährt für 10 s rangabhängig mehr Schaden, +50 % Genauigkeit und sofortiges Nachladen bei leerem Magazin. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
     "LabelTreeSubmachineGunName": "Maschinenpistole",
 
     "TreeAxeName": "Äxte",
 
-    "SkillAxeP1Name": "Skilled Axeman",
+    "SkillAxeP1Name": "Axtkämpfer-Geselle",
     "SkillAxeP1Desc": "Erhöht den Schaden mit aktivem Axt.",
 
-    "SkillAxeP2Name": "Follow-Through",
+    "SkillAxeP2Name": "Durchschwung",
     "SkillAxeP2Desc": "Erhöht die Angriffsgeschwindigkeit mit aktiver Axt.",
 
     "SkillAxeP3Name": "Rostschutz",
     "SkillAxeP3Desc": "Reduziert den Haltbarkeitsverlust beim Angreifen mit aktiver Axt.",
 
-    "SkillAxeP4Name": "Headman’s Edge",
+    "SkillAxeP4Name": "Schneide des Scharfrichters",
     "SkillAxeP4Desc": "Henker löst aus, wenn die HP des Ziels unter dem rangabhängigen Schwellenwert liegen.",
 
-    "SkillAxeT1Name": "Timber!",
+    "SkillAxeT1Name": "Baum fällt!",
     "SkillAxeT1Desc": "Greift alle Ziele im Nahkampf mit 200 % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
     "SkillAxeT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
 
@@ -743,13 +746,13 @@
     "SkillAxeT1StaminaName": "Ausdauerverstärker",
     "SkillAxeT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillAxeT1ImpactName": "Impact Enhancer",
+    "SkillAxeT1ImpactName": "Aufprallverstärker",
     "SkillAxeT1ImpactDesc": "Erhöht die aktive Waffen-DPS.",
 
-    "SkillAxeT1Way1Name": "Way of the Trapper",
+    "SkillAxeT1Way1Name": "Weg des Fallenstellers",
     "SkillAxeT1Way1Desc": "Treffer verursachen Gelähmt für 6 s bei allen Zielen.",
 
-    "SkillAxeT1Way2Name": "Way of the Hunter",
+    "SkillAxeT1Way2Name": "Weg des Jägers",
     "SkillAxeT1Way2Desc": "Bei einem Treffer erhältst du für 5 s +30 % kritische Trefferchance.",
 
     "SkillAxeT2Name": "Erschöpfender Angriff",
@@ -762,13 +765,13 @@
     "SkillAxeT2StaminaName": "Ausdauerverstärker",
     "SkillAxeT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillAxeT2ImpactName": "Impact Enhancer",
+    "SkillAxeT2ImpactName": "Aufprallverstärker",
     "SkillAxeT2ImpactDesc": "Verbessert Waffen-DPS, Verkrüppelt-Dauer, Buffdauer und kritischen Schaden. Die Rangwerte zeigen alle gleichzeitig geltenden Boni je Rang.",
 
-    "SkillAxeT2Way1Name": "Way of the Executioner",
+    "SkillAxeT2Way1Name": "Weg des Henkers",
     "SkillAxeT2Way1Desc": "100 % kritische Trefferchance.",
 
-    "SkillAxeT2Way2Name": "Way of the Reclaimer",
+    "SkillAxeT2Way2Name": "Weg des Rückeroberers",
     "SkillAxeT2Way2Desc": "Die Ausdauerkosten werden nach Einsatz der Fähigkeit zurückerstattet.",
 
     "SkillAxeT3Name": "Qualvolle Treffer",
@@ -781,13 +784,13 @@
     "SkillAxeT3StaminaName": "Ausdauerverstärker",
     "SkillAxeT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillAxeT3ImpactName": "Impact Enhancer",
+    "SkillAxeT3ImpactName": "Aufprallverstärker",
     "SkillAxeT3ImpactDesc": "Erhöht den Schadensbonus.",
 
-    "SkillAxeT3Way1Name": "Way of the Ravager",
+    "SkillAxeT3Way1Name": "Weg des Verwüsters",
     "SkillAxeT3Way1Desc": "Verlängert Verwundbar um 3 s.",
 
-    "SkillAxeT3Way2Name": "Way of the Shieldbreaker",
+    "SkillAxeT3Way2Name": "Weg des Schildbrechers",
     "SkillAxeT3Way2Desc": "Bei einem Treffer wird der Schild des Ziels entfernt.",
 
     "SkillAxeUltName": "Berserkergeist",
@@ -797,7 +800,7 @@
 
     "TreeHammerName": "Hämmer",
 
-    "SkillHammerP1Name": "Skilled Hammer Fighter",
+    "SkillHammerP1Name": "Hammerkämpfer-Geselle",
     "SkillHammerP1Desc": "Erhöht den Schaden mit aktivem Axt.",
 
     "SkillHammerP2Name": "Griffstärke-Training",
@@ -806,7 +809,7 @@
     "SkillHammerP3Name": "Oberflächenglättung",
     "SkillHammerP3Desc": "Reduziert den Haltbarkeitsverlust beim Angreifen mit aktivem Hammer.",
 
-    "SkillHammerP4Name": "Wrath Unbound",
+    "SkillHammerP4Name": "Ungebundener Zorn",
     "SkillHammerP4Desc": "Erhöht den Raserei-Gewinn mit aktivem Hammer.",
 
     "SkillHammerT1Name": "Knochenbrecher",
@@ -819,13 +822,13 @@
     "SkillHammerT1StaminaName": "Ausdauerverstärker",
     "SkillHammerT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillHammerT1ImpactName": "Impact Enhancer",
+    "SkillHammerT1ImpactName": "Aufprallverstärker",
     "SkillHammerT1ImpactDesc": "Verbessert Aktive Waffen-DPS.",
 
-    "SkillHammerT1Way1Name": "Way of the Tireless",
+    "SkillHammerT1Way1Name": "Weg des Unermüdlichen",
     "SkillHammerT1Way1Desc": "Bei einem Treffer erhältst du für 5 s +100 % Ausdauerregeneration.",
 
-    "SkillHammerT1Way2Name": "Way of the Pacifier",
+    "SkillHammerT1Way2Name": "Weg des Befrieders",
     "SkillHammerT1Way2Desc": "Verlängert Entwaffnet um 2 s.",
 
     "SkillHammerT2Name": "Provozierende Treffer",
@@ -838,13 +841,13 @@
     "SkillHammerT2StaminaName": "Ausdauerverstärker",
     "SkillHammerT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillHammerT2ImpactName": "Impact Enhancer",
+    "SkillHammerT2ImpactName": "Aufprallverstärker",
     "SkillHammerT2ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillHammerT2Way1Name": "Way of the Trickster",
+    "SkillHammerT2Way1Name": "Weg des Tricksters",
     "SkillHammerT2Way1Desc": "Treffer verursachen Verwirrt für 4 s.",
 
-    "SkillHammerT2Way2Name": "Way of the Unfading",
+    "SkillHammerT2Way2Name": "Weg des Unvergänglichen",
     "SkillHammerT2Way2Desc": "Verlängert den Statuseffekt um 2 s.",
 
     "SkillHammerT3Name": "Aggressiver Ansturm",
@@ -857,13 +860,13 @@
     "SkillHammerT3StaminaName": "Ausdauerverstärker",
     "SkillHammerT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillHammerT3ImpactName": "Impact Enhancer",
+    "SkillHammerT3ImpactName": "Aufprallverstärker",
     "SkillHammerT3ImpactDesc": "Verbessert Aktive Waffen-DPS.",
 
-    "SkillHammerT3Way1Name": "Way of the Sightreaver",
+    "SkillHammerT3Way1Name": "Wege des Blickräubers",
     "SkillHammerT3Way1Desc": "Treffer verursachen Geblendet für 3 s.",
 
-    "SkillHammerT3Way2Name": "Way of the Unshackled",
+    "SkillHammerT3Way2Name": "Wege des Entfesselten",
     "SkillHammerT3Way2Desc": "Entfernt alle geschwindigkeitsreduzierenden Debuffs. Diese können während des Statuseffekts nicht angewendet werden.",
 
     "SkillHammerUltName": "Den Schmerz spüren",
@@ -873,7 +876,7 @@
 
     "TreeKnifeName": "Messer",
 
-    "SkillKnifeP1Name": "Skilled Bladedancer",
+    "SkillKnifeP1Name": "Klingentänzer-Geselle",
     "SkillKnifeP1Desc": "Erhöht den Schaden mit aktivem Messer.",
 
     "SkillKnifeP2Name": "Biomechanische Analyse",
@@ -882,7 +885,7 @@
     "SkillKnifeP3Name": "Ölbehandlung",
     "SkillKnifeP3Desc": "Reduziert den Haltbarkeitsverlust beim Angreifen mit aktivem Messer.",
 
-    "SkillKnifeP4Name": "Cutthroat",
+    "SkillKnifeP4Name": "Halsabschneider",
     "SkillKnifeP4Desc": "Erhöht mit aktivem Messer außerhalb der Sichtlinie des Ziels den kritischen Schaden.",
 
     "SkillKnifeT1Name": "Sehnenriss",
@@ -895,13 +898,13 @@
     "SkillKnifeT1StaminaName": "Ausdauerverstärker",
     "SkillKnifeT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillKnifeT1ImpactName": "Impact Enhancer",
+    "SkillKnifeT1ImpactName": "Aufprallverstärker",
     "SkillKnifeT1ImpactDesc": "Verbessert Schadensbonus.",
 
-    "SkillKnifeT1Way1Name": "Way of the Fugitive",
+    "SkillKnifeT1Way1Name": "Weg des Flüchtigen",
     "SkillKnifeT1Way1Desc": "Bei einem Treffer erhältst du Eile für 5 s.",
 
-    "SkillKnifeT1Way2Name": "Way of the Unfading",
+    "SkillKnifeT1Way2Name": "Weg des Unvergänglichen",
     "SkillKnifeT1Way2Desc": "Verlängert den Statuseffekt um 2 s.",
 
     "SkillKnifeT2Name": "Blutende Wunde",
@@ -914,13 +917,13 @@
     "SkillKnifeT2StaminaName": "Ausdauerverstärker",
     "SkillKnifeT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillKnifeT2ImpactName": "Impact Enhancer",
+    "SkillKnifeT2ImpactName": "Aufprallverstärker",
     "SkillKnifeT2ImpactDesc": "Verbessert Aktive Waffen-DPS.",
 
-    "SkillKnifeT2Way1Name": "Way of the Ruiner",
+    "SkillKnifeT2Way1Name": "Weg des Verderbers",
     "SkillKnifeT2Way1Desc": "Treffer verursachen Verkrüppelt für 4 s.",
 
-    "SkillKnifeT2Way2Name": "Way of the Ghost",
+    "SkillKnifeT2Way2Name": "Weg des Geistes",
     "SkillKnifeT2Way2Desc": "Gewährt für 6 s +20 % Ausweichen.",
 
     "SkillKnifeT3Name": "Todgeweiht",
@@ -933,23 +936,23 @@
     "SkillKnifeT3StaminaName": "Ausdauerverstärker",
     "SkillKnifeT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillKnifeT3ImpactName": "Impact Enhancer",
+    "SkillKnifeT3ImpactName": "Aufprallverstärker",
     "SkillKnifeT3ImpactDesc": "Verbessert Aktive Waffen-DPS.",
 
-    "SkillKnifeT3Way1Name": "Way of the Tormentor",
+    "SkillKnifeT3Way1Name": "Weg des Peinigers",
     "SkillKnifeT3Way1Desc": "Fügt +100 % aktive Waffen-DPS pro Debuff auf dem Ziel hinzu.",
 
     "SkillKnifeT3Way2Name": "Way of the Petrifier",
     "SkillKnifeT3Way2Desc": "Treffer verursachen Betäubt für 2 s.",
 
-    "SkillKnifeUltName": "Butcher’s Fury",
+    "SkillKnifeUltName": "Zorn des Schlächters",
     "SkillKnifeUltDesc": "Gewährt für 4 s rangabhängig mehr Angriffsgeschwindigkeit. Das Verwenden anderer Fertigkeiten oder Gegenstände bricht den Effekt ab.",
 
     "LabelTreeKnifeName": "Messer",
 
     "TreeSwordName": "Schwerter",
 
-    "SkillSwordP1Name": "Skilled Swordsman",
+    "SkillSwordP1Name": "Schwertkämpfer-Geselle",
     "SkillSwordP1Desc": "Erhöht den Schaden mit aktivem Schwert.",
 
     "SkillSwordP2Name": "Verbesserte Beinarbeit",
@@ -961,7 +964,7 @@
     "SkillSwordP4Name": "Eröffnungsschlag",
     "SkillSwordP4Desc": "Erhöht den Riposte-Schaden mit aktivem Schwert.",
 
-    "SkillSwordT1Name": "Savage Sweeps",
+    "SkillSwordT1Name": "Wilde HIebe",
     "SkillSwordT1Desc": "Greift alle Ziele im Nahkampf mit 150 % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
     "SkillSwordT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
 
@@ -971,13 +974,13 @@
     "SkillSwordT1StaminaName": "Ausdauerverstärker",
     "SkillSwordT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillSwordT1ImpactName": "Impact Enhancer",
+    "SkillSwordT1ImpactName": "Aufprallverstärker",
     "SkillSwordT1ImpactDesc": "Erhöht die aktive Waffen-DPS.",
 
-    "SkillSwordT1Way1Name": "Way of the Bloodhound",
+    "SkillSwordT1Way1Name": "Weg des Bluthunds",
     "SkillSwordT1Way1Desc": "Stellt zusätzlich 10 Ausdauer pro getroffenem und beschädigtem Ziel wieder her.",
 
-    "SkillSwordT1Way2Name": "Way of the Berserker",
+    "SkillSwordT1Way2Name": "Weg des Berserkers",
     "SkillSwordT1Way2Desc": "Heilt zusätzlich 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
 
     "SkillSwordT2Name": "Ausweichhaltung",
@@ -990,13 +993,13 @@
     "SkillSwordT2StaminaName": "Ausdauerverstärker",
     "SkillSwordT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillSwordT2ImpactName": "Impact Enhancer",
+    "SkillSwordT2ImpactName": "Aufprallverstärker",
     "SkillSwordT2ImpactDesc": "Erhöht Ausweichen.",
 
-    "SkillSwordT2Way1Name": "Way of the Unfading",
+    "SkillSwordT2Way1Name": "Weg des Unvergänglichen",
     "SkillSwordT2Way1Desc": "Verlängert den Statuseffekt um 4 s.",
 
-    "SkillSwordT2Way2Name": "Way of the Ghost",
+    "SkillSwordT2Way2Name": "Weg des Geistes",
     "SkillSwordT2Way2Desc": "Zusätzlich +10 % Ausweichen.",
 
     "SkillSwordT3Name": "Blutiges Spalten",
@@ -1009,16 +1012,16 @@
     "SkillSwordT3StaminaName": "Ausdauerverstärker",
     "SkillSwordT3StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillSwordT3ImpactName": "Impact Enhancer",
+    "SkillSwordT3ImpactName": "Aufprallverstärker",
     "SkillSwordT3ImpactDesc": "Verbessert Waffen-DPS und Schadensbonus des Buffs. Die Rangwerte zeigen beide gleichzeitig geltenden Boni je Rang.",
 
-    "SkillSwordT3Way1Name": "Way of the Unshaken",
+    "SkillSwordT3Way1Name": "Weg des Unerschütterten",
     "SkillSwordT3Way1Desc": "Immunität gegen mentale Debuffs während des Statuseffekts.",
 
-    "SkillSwordT3Way2Name": "Way of the Colossus",
+    "SkillSwordT3Way2Name": "Weg des Kolosses",
     "SkillSwordT3Way2Desc": "Immunität gegen physische Debuffs während des Statuseffekts.",
 
-    "SkillSwordUltName": "Hurricane Blade",
+    "SkillSwordUltName": "Orkanklinge",
     "SkillSwordUltDesc": "Drei Angriffe gegen alle Ziele in Nahkampfreichweite. Jeder Angriff trifft bis zu doppelt so viele Ziele wie die Waffe. Treffer wenden Gelähmt für 4 s an. Während der Angriffe +100 % Ausweichen; ignoriert Fähigkeiten, die normalerweise Ausweichen ignorieren.",
 
     "LabelTreeSwordName": "Schwert",
@@ -1031,7 +1034,7 @@
     "SkillFishingP2Name": "Schnelleres Angeln",
     "SkillFishingP2Desc": "Erhöht die Sammelgeschwindigkeit.",
 
-    "SkillFishingP3Name": "Fisher’s Maintenance",
+    "SkillFishingP3Name": "Fischer-Wartung",
     "SkillFishingP3Desc": "Verringert den Haltbarkeitsverlust der Angel.",
 
     "SkillFishingP4Name": "Geschicktes Schwimmen",
@@ -1040,7 +1043,7 @@
     "SkillFishingP5Name": "Regenfest",
     "SkillFishingP5Desc": "Erhöht die Ausdauerregeneration bei Regen oder Sturm außerhalb von Gebäuden.",
 
-    "SkillFishingT1Name": "Rotten Fish Slap",
+    "SkillFishingT1Name": "Ohrfeige mit faulem Fisch",
     "SkillFishingT1Desc": "Nahkampffähigkeit ohne direkten Schaden. Angewidert 3 s, Benommen 1 s und Traumatisiert 1 s. Basis: 65 Ausdauer, 50 s Abklingzeit.",
     "SkillFishingT1EffectiveDesc": "Nahkampffähigkeit ohne direkten Schaden. Angewidert 3 s, Benommen {effect1} s und Traumatisiert {effect0} s. Basis: 65 Ausdauer, 50 s Abklingzeit.",
 
@@ -1053,13 +1056,13 @@
     "SkillFishingT1ImpactName": "Wirkung",
     "SkillFishingT1ImpactDesc": "Erhöht abwechselnd die Dauer von Traumatisiert und Benommen. Die Rangwerte zeigen beide Dauern zusammen; bereits erreichte Verbesserungen bleiben erhalten.",
 
-    "SkillFishingT1WayREAPERName": "Way of the Reaper",
+    "SkillFishingT1WayREAPERName": "Weg des Schnitters",
     "SkillFishingT1WayREAPERDesc": "Trifft alle Ziele in Nahkampfreichweite.",
 
-    "SkillFishingT1WayABHORRENTName": "Way of the Abhorrent",
+    "SkillFishingT1WayABHORRENTName": "Weg des Abscheulichen",
     "SkillFishingT1WayABHORRENTDesc": "Angewidert hält 2 s länger an.",
 
-    "SkillFishingT2Name": "Steadfast",
+    "SkillFishingT2Name": "Standfest",
     "SkillFishingT2Desc": "Blockiert 10 s lang neue physische Debuffs. Entfernt keine bestehenden Debuffs. Basis: 75 Ausdauer, 100 s Abklingzeit.",
     "SkillFishingT2EffectiveDesc": "Blockiert {effect0} s lang neue physische Debuffs. Entfernt keine bestehenden Debuffs. Basis: 75 Ausdauer, 100 s Abklingzeit.",
 
@@ -1070,15 +1073,15 @@
     "SkillFishingT2StaminaDesc": "Verringert die Ausdauerkosten.",
 
     "SkillFishingT2ImpactName": "Wirkung",
-    "SkillFishingT2ImpactDesc": "Erhöht die Wirkungsdauer von Steadfast. Grunddauer: 10 s. Die vollständige Dauer jedes Rangs steht in den Rangwerten.",
+    "SkillFishingT2ImpactDesc": "Erhöht die Wirkungsdauer von Standfest. Grunddauer: 10 s. Die vollständige Dauer jedes Rangs steht in den Rangwerten.",
 
-    "SkillFishingT2WayFUGITIVEName": "Way of the Fugitive",
+    "SkillFishingT2WayFUGITIVEName": "Weg des Flüchtigen",
     "SkillFishingT2WayFUGITIVEDesc": "Ein blockierter Debuff gewährt Eile für 5 s: +35 % Bewegungsgeschwindigkeit.",
 
-    "SkillFishingT2WayBASTIONName": "Way of the Bastion",
+    "SkillFishingT2WayBASTIONName": "Weg der Bastion",
     "SkillFishingT2WayBASTIONDesc": "Ein blockierter Debuff gewährt +25 % Schadensreduktion für 5 s.",
 
-    "SkillFishingT3Name": "Clean Catch",
+    "SkillFishingT3Name": "Sauberer Fang",
     "SkillFishingT3Desc": "Benötigt eine aktive Fernkampfwaffe. Nächster Treffer: zusätzlich 100 % aktive Waffen-DPS und Neutralisiert. Basis: 85 Ausdauer, 150 s Abklingzeit.",
     "SkillFishingT3EffectiveDesc": "Benötigt eine aktive Fernkampfwaffe. Nächster Treffer: zusätzlich {effect0} % aktive Waffen-DPS und Neutralisiert. Basis: 85 Ausdauer, 150 s Abklingzeit.",
 
@@ -1091,13 +1094,13 @@
     "SkillFishingT3ImpactName": "Wirkung",
     "SkillFishingT3ImpactDesc": "Verstärkt den zugehörigen aktiven Skill. Benötigt dessen Basispunkt.",
 
-    "SkillFishingT3WayTRAPPERName": "Way of the Trapper",
+    "SkillFishingT3WayTRAPPERName": "Weg des Fallenstellers",
     "SkillFishingT3WayTRAPPERDesc": "Gelähmt für 6 s: −60 % Bewegungsgeschwindigkeit.",
 
-    "SkillFishingT3WayRAVAGERName": "Way of the Ravager",
+    "SkillFishingT3WayRAVAGERName": "Weg des Verwüsters",
     "SkillFishingT3WayRAVAGERDesc": "Verwundbar für 8 s: +25 % erlittener Schaden durch alle Angriffe.",
 
-    "SkillFishingUltName": "Curare Curse",
+    "SkillFishingUltName": "Curare-Fluch",
     "SkillFishingUltDesc": "Nächster Treffer verursacht keinen direkten Schaden, aber Verwirrt, Angewidert, Verkrüppelt und Vergiftet. Gift jeweils 10 s. Anwendung der Drei-Sekunden-Regel auf diesen Skill noch nicht separat bestätigt.",
 
     "TreeConstructionName": "Bau",
@@ -1127,16 +1130,16 @@
     "SkillConstructionT1StaminaName": "Ausdauerverstärker",
     "SkillConstructionT1StaminaDesc": "",
 
-    "SkillConstructionT1ImpactName": "Impact Enhancer",
+    "SkillConstructionT1ImpactName": "Aufprallverstärker",
     "SkillConstructionT1ImpactDesc": "",
 
-    "SkillConstructionT1WayBASTIONName": "Way of the Bastion",
+    "SkillConstructionT1WayBASTIONName": "Weg der Bastion",
     "SkillConstructionT1WayBASTIONDesc": "+20 % Schadensreduzierung während des Statuseffekts.",
 
-    "SkillConstructionT1WayUNFADINGName": "Way of the Unfading",
+    "SkillConstructionT1WayUNFADINGName": "Weg des Unvergänglichen",
     "SkillConstructionT1WayUNFADINGDesc": "+2 Sekunden Statuseffektdauer; insgesamt 6 Sekunden.",
 
-    "SkillConstructionT2Name": "Tough as Nails",
+    "SkillConstructionT2Name": "Hart im Nehmen",
     "SkillConstructionT2Desc": "Gewährt für 15 Sekunden +10 % Schadensreduzierung.",
     "SkillConstructionT2EffectiveDesc": "Gewährt für 15 Sekunden +{effect0} % Schadensreduzierung.",
 
@@ -1146,13 +1149,13 @@
     "SkillConstructionT2StaminaName": "Ausdauerverstärker",
     "SkillConstructionT2StaminaDesc": "",
 
-    "SkillConstructionT2ImpactName": "Impact Enhancer",
+    "SkillConstructionT2ImpactName": "Aufprallverstärker",
     "SkillConstructionT2ImpactDesc": "",
 
-    "SkillConstructionT2WayUNBOUNDName": "Way of the Unbound",
-    "SkillConstructionT2WayUNBOUNDDesc": "Ignoriert alle negativen Effekte auf Bewegungsgeschwindigkeit durch geschwindigkeitsreduzierende Debuffs.",
+    "SkillConstructionT2WayUNBOUNDName": "Weg des Ungebundenen",
+    "SkillConstructionT2WayUNBOUNDDesc": "Ignoriert alle negativen Effekte auf Bewegungsgeschwindigkeit durch geschwindigkeitsreduzierende Debuffs: Verkrüppelt, Gelähmt und Unterdrückt.",
 
-    "SkillConstructionT2WayUNFADINGName": "Way of the Unfading",
+    "SkillConstructionT2WayUNFADINGName": "Weg des Unvergänglichen",
     "SkillConstructionT2WayUNFADINGDesc": "+10 Sekunden Statuseffektdauer; insgesamt 25 Sekunden.",
 
     "SkillConstructionT3Name": "Pechpfütze",
@@ -1165,13 +1168,13 @@
     "SkillConstructionT3StaminaName": "Ausdauerverstärker",
     "SkillConstructionT3StaminaDesc": "",
 
-    "SkillConstructionT3ImpactName": "Impact Enhancer",
+    "SkillConstructionT3ImpactName": "Aufprallverstärker",
     "SkillConstructionT3ImpactDesc": "",
 
-    "SkillConstructionT3WayREAPERName": "Way of the Reaper",
+    "SkillConstructionT3WayREAPERName": "Weg des Schnitters",
     "SkillConstructionT3WayREAPERDesc": "+50 % Pfützengröße.",
 
-    "SkillConstructionT3WaySURVIVALISTName": "Way of the Survivalist",
+    "SkillConstructionT3WaySURVIVALISTName": "Weg des Überlebenskünstlers",
     "SkillConstructionT3WaySURVIVALISTDesc": "Verdoppelt die Anzahl der Ladungen: 20 auf 40.",
 
     "SkillConstructionUltName": "Schlachtfeld-Bollwerk",
@@ -1190,13 +1193,13 @@
     "SkillMiningP3Name": "Bergarbeiter-Wartung",
     "SkillMiningP3Desc": "Beim Ernten mit Spitzhacken",
 
-    "SkillMiningP4Name": "Tunnel Rat",
+    "SkillMiningP4Name": "Tunnelratte",
     "SkillMiningP4Desc": "Beim Ducken. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
-    "SkillMiningP5Name": "Danger Eye",
+    "SkillMiningP5Name": "Gefahrenblick",
     "SkillMiningP5Desc": "Wenn Ausweichen ausgelöst wird",
 
-    "SkillMiningT1Name": "Orebreaker",
+    "SkillMiningT1Name": "Erzbrecher",
     "SkillMiningT1Desc": "Angriff gegen alle Ziele im Nahkampf; ursprünglich 150 % aktive Waffen-DPS.",
     "SkillMiningT1EffectiveDesc": "Angriff gegen alle Ziele im Nahkampf; {effect0} % aktive Waffen-DPS.",
 
@@ -1206,13 +1209,13 @@
     "SkillMiningT1StaminaName": "Ausdauerverstärker",
     "SkillMiningT1StaminaDesc": "",
 
-    "SkillMiningT1ImpactName": "Impact Enhancer",
+    "SkillMiningT1ImpactName": "Aufprallverstärker",
     "SkillMiningT1ImpactDesc": "",
 
-    "SkillMiningT1WayBERSERKERName": "Way of the Berserker",
+    "SkillMiningT1WayBERSERKERName": "Weg des Berserkers",
     "SkillMiningT1WayBERSERKERDesc": "Zusätzlich +100 % aktive Waffen-DPS.",
 
-    "SkillMiningT1WayGHOSTName": "Way of the Ghost",
+    "SkillMiningT1WayGHOSTName": "Weg des Geistes",
     "SkillMiningT1WayGHOSTDesc": "Gewährt für 3 Sekunden +30 % Ausweichen. Ausweichen: Chance, Schaden von allen Angriffen außer Fähigkeiten vollständig zu negieren.",
 
     "SkillMiningT2Name": "Glück Auf",
@@ -1225,16 +1228,16 @@
     "SkillMiningT2StaminaName": "Ausdauerverstärker",
     "SkillMiningT2StaminaDesc": "",
 
-    "SkillMiningT2ImpactName": "Impact Enhancer",
+    "SkillMiningT2ImpactName": "Aufprallverstärker",
     "SkillMiningT2ImpactDesc": "",
 
-    "SkillMiningT2WayPHYSICIANName": "Way of the Physician",
+    "SkillMiningT2WayPHYSICIANName": "Weg des Arztes",
     "SkillMiningT2WayPHYSICIANDesc": "Entfernt auch physische Debuffs von Gruppenmitgliedern im Umkreis von 20 m.",
 
-    "SkillMiningT2WayNURTURERName": "Way of the Nurturer",
+    "SkillMiningT2WayNURTURERName": "Weg des Fürsorglichen",
     "SkillMiningT2WayNURTURERDesc": "Heilt auch Gruppenmitglieder im Umkreis von 20 m.",
 
-    "SkillMiningT3Name": "Sharpen Edge",
+    "SkillMiningT3Name": "Schneide schärfen",
     "SkillMiningT3Desc": "Für 7 s +50 % Schaden mit Nahkampfwaffen. Treffer mit Nahkampfwaffen verursachen Blutung für 20 s.",
     "SkillMiningT3EffectiveDesc": "Für {effect0} s +50 % Schaden mit Nahkampfwaffen. Treffer mit Nahkampfwaffen verursachen Blutung für 20 s.",
 
@@ -1244,13 +1247,13 @@
     "SkillMiningT3StaminaName": "Ausdauerverstärker",
     "SkillMiningT3StaminaDesc": "",
 
-    "SkillMiningT3ImpactName": "Impact Enhancer",
+    "SkillMiningT3ImpactName": "Aufprallverstärker",
     "SkillMiningT3ImpactDesc": "",
 
-    "SkillMiningT3WayBERSERKERName": "Way of the Berserker",
+    "SkillMiningT3WayBERSERKERName": "Weg des Berserkers",
     "SkillMiningT3WayBERSERKERDesc": "Zusätzlich +20 % Schaden.",
 
-    "SkillMiningT3WayASSASSINName": "Way of the Assassin",
+    "SkillMiningT3WayASSASSINName": "Weg des Assassinen",
     "SkillMiningT3WayASSASSINDesc": "+75 % kritischer Schaden.",
 
     "SkillMiningUltName": "Ein harter Tag in der Mine",
@@ -1275,7 +1278,7 @@
     "SkillBotanyP5Name": "Her mit dem guten Zeug!",
     "SkillBotanyP5Desc": "Erhöhte Chance auf +20 % Dauer bei eigenen Buffs und Statuseffekten beim Anwenden. Die Staffel erhöht die Chance, nicht die Höhe der Dauerverlängerung.",
 
-    "SkillBotanyT1Name": "Inner Focus",
+    "SkillBotanyT1Name": "Innerer Fokus",
     "SkillBotanyT1Desc": "Blockiert den nächsten eingehenden mentalen Debuff für ursprünglich 15 s. Der Status endet, sobald ein mentaler Debuff geblockt wurde.",
     "SkillBotanyT1EffectiveDesc": "Blockiert den nächsten eingehenden mentalen Debuff für {effect0} s. Der Status endet, sobald ein mentaler Debuff geblockt wurde.",
 
@@ -1288,13 +1291,13 @@
     "SkillBotanyT1ImpactName": "Verstärkter Aufprall-Verbesserer",
     "SkillBotanyT1ImpactDesc": "",
 
-    "SkillBotanyT1WayUNFADINGName": "Way of the Unfading",
+    "SkillBotanyT1WayUNFADINGName": "Weg des Unvergänglichen",
     "SkillBotanyT1WayUNFADINGDesc": "+20 Sekunden Statuseffektdauer.",
 
-    "SkillBotanyT1WaySTOICName": "Way of the Stoic",
+    "SkillBotanyT1WaySTOICName": "Weg des Stoikers",
     "SkillBotanyT1WaySTOICDesc": "Blockiert zusätzlich einen mentalen Debuff.",
 
-    "SkillBotanyT2Name": "Blinding Powder",
+    "SkillBotanyT2Name": "Blendpulver",
     "SkillBotanyT2Desc": "Kein Schaden; alle Ziele im Umkreis erhalten Geblendet (3 s). Spielerbildschirme werden heller; Nicht-Spieler greifen nicht an.",
     "SkillBotanyT2EffectiveDesc": "Kein Schaden; alle Ziele im Umkreis erhalten Geblendet (3 s). Spielerbildschirme werden heller; Nicht-Spieler greifen nicht an. Reichweite: {effect0} m.",
 
@@ -1304,13 +1307,13 @@
     "SkillBotanyT2StaminaName": "Ausdauerverstärker",
     "SkillBotanyT2StaminaDesc": "",
 
-    "SkillBotanyT2ImpactName": "Impact Enhancer",
+    "SkillBotanyT2ImpactName": "Aufprallverstärker",
     "SkillBotanyT2ImpactDesc": "",
 
-    "SkillBotanyT2WaySTAGGERERName": "Way of the Staggerer",
+    "SkillBotanyT2WaySTAGGERERName": "Weg des Erschütterers",
     "SkillBotanyT2WaySTAGGERERDesc": "Treffer verursacht Benommen (3 s) und Traumatisiert (3 s).",
 
-    "SkillBotanyT2WaySTRATEGISTName": "Way of the Strategist",
+    "SkillBotanyT2WaySTRATEGISTName": "Weg des Strategen",
     "SkillBotanyT2WaySTRATEGISTDesc": "−5 s Abklingzeit je geblendetem Ziel; kann Abklingzeit auf 0 senken.",
 
     "SkillBotanyT3Name": "Giftbeschichtung",
@@ -1323,16 +1326,16 @@
     "SkillBotanyT3StaminaName": "Ausdauerverstärker",
     "SkillBotanyT3StaminaDesc": "",
 
-    "SkillBotanyT3ImpactName": "Impact Enhancer",
+    "SkillBotanyT3ImpactName": "Aufprallverstärker",
     "SkillBotanyT3ImpactDesc": "",
 
-    "SkillBotanyT3WayREAPERName": "Way of the Reaper",
+    "SkillBotanyT3WayREAPERName": "Weg des Schnitters",
     "SkillBotanyT3WayREAPERDesc": "Trifft stattdessen alle Ziele in Nahkampfreichweite.",
 
-    "SkillBotanyT3WayBUTCHERName": "Way of the Butcher",
+    "SkillBotanyT3WayBUTCHERName": "Weg des Schlächters",
     "SkillBotanyT3WayBUTCHERDesc": "Treffer verursacht Blutung (20 s).",
 
-    "SkillBotanyUltName": "Fungal Fallout",
+    "SkillBotanyUltName": "Pilz-Fallout",
     "SkillBotanyUltDesc": "Sporenwolke im Umkreis von 5 m. Sporen folgen dir 8 s lang und treffen jede Sekunde alle Ziele; Schaden, Verwirrt und Abgelenkt. Seit 0.7.0.1 gilt die höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe; waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden werden nicht übernommen.",
 
     "LabelTreeBotanyName": "Botanik",
@@ -1348,13 +1351,13 @@
     "SkillThieveryP3Name": "Diebeswartung",
     "SkillThieveryP3Desc": "Reduziert beim Ernten mit Dietrichen den Haltbarkeitsverlust.",
 
-    "SkillThieveryP4Name": "Cat-like Agility",
+    "SkillThieveryP4Name": "Katzenhafte Gewandtheit",
     "SkillThieveryP4Desc": "Erhöht Klettergeschwindigkeit und Sprunghöhe.",
 
-    "SkillThieveryP5Name": "Steady Hands",
+    "SkillThieveryP5Name": "Ruhige Hände",
     "SkillThieveryP5Desc": "Benötigt aktive Fernkampfwaffe. Erhöht Genauigkeit beim Schießen.",
 
-    "SkillThieveryT1Name": "Sixth Sense",
+    "SkillThieveryT1Name": "Sechster Sinn",
     "SkillThieveryT1Desc": "Markiert alle erntbaren Objekte im Gebiet und macht sie leichter erkennbar, auch hinter Wänden, Deckung oder Hindernissen. Grunddauer: 10 s; Grundkosten: 65 AP (Ausdauer).",
     "SkillThieveryT1EffectiveDesc": "Markiert alle erntbaren Objekte im Gebiet und macht sie leichter erkennbar, auch hinter Wänden, Deckung oder Hindernissen. Grunddauer: {effect0} s; Grundkosten: 65 AP (Ausdauer).",
 
@@ -1364,16 +1367,16 @@
     "SkillThieveryT1StaminaName": "Ausdauerverstärker",
     "SkillThieveryT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillThieveryT1ImpactName": "Impact Enhancer",
+    "SkillThieveryT1ImpactName": "Aufprallverstärker",
     "SkillThieveryT1ImpactDesc": "Verstärkt statuseffektdauer.",
 
-    "SkillThieveryT1Way1Name": "Way of the Scavenger",
+    "SkillThieveryT1Way1Name": "Weg des Plünderers",
     "SkillThieveryT1Way1Desc": "Verdoppelt die Werte aller Werkzeug-Perks. Welche Werkzeug-Perks dies genau umfasst, ist im Tooltip nicht aufgelistet.",
 
-    "SkillThieveryT1Way2Name": "Way of the Gatherer",
+    "SkillThieveryT1Way2Name": "Weg des Sammlers",
     "SkillThieveryT1Way2Desc": "Ein Symbol zeigt den Typ des erntbaren Objekts an.",
 
-    "SkillThieveryT2Name": "Cut and Run",
+    "SkillThieveryT2Name": "Zuschlagen und Abhauen",
     "SkillThieveryT2Desc": "Gewährt für 10 s +25 % Bewegungsgeschwindigkeit. Nicht stapelbar mit Eile.",
     "SkillThieveryT2EffectiveDesc": "Gewährt für 10 s +{effect0} % Bewegungsgeschwindigkeit. Nicht stapelbar mit Eile.",
 
@@ -1383,13 +1386,13 @@
     "SkillThieveryT2StaminaName": "Ausdauerverstärker",
     "SkillThieveryT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillThieveryT2ImpactName": "Impact Enhancer",
+    "SkillThieveryT2ImpactName": "Aufprallverstärker",
     "SkillThieveryT2ImpactDesc": "Verstärkt bewegungsgeschwindigkeit.",
 
-    "SkillThieveryT2Way1Name": "Way of the Unbound",
+    "SkillThieveryT2Way1Name": "Weg des Ungebundenen",
     "SkillThieveryT2Way1Desc": "Ignoriert alle negativen Effekte auf die Bewegungsgeschwindigkeit durch geschwindigkeitsreduzierende Debuffs.",
 
-    "SkillThieveryT2Way2Name": "Way of the Unfading",
+    "SkillThieveryT2Way2Name": "Weg des Unvergänglichen",
     "SkillThieveryT2Way2Desc": "Verlängert den Statuseffekt um 5 s (Basis 10 s, insgesamt 15 s).",
 
     "SkillThieveryT3Name": "Chloroform",
@@ -1402,16 +1405,16 @@
     "SkillThieveryT3StaminaName": "Ausdauerverstärker",
     "SkillThieveryT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillThieveryT3ImpactName": "Impact Enhancer",
+    "SkillThieveryT3ImpactName": "Aufprallverstärker",
     "SkillThieveryT3ImpactDesc": "Verstärkt dauer von eile.",
 
-    "SkillThieveryT3Way1Name": "Way of the Staggerer",
+    "SkillThieveryT3Way1Name": "Weg des Erschütterers",
     "SkillThieveryT3Way1Desc": "Nachdem Betäubt entfernt wurde, wird Benommen für 5 s angewendet. Spieler: Bewegungstasten zufällig vertauscht; Nicht-Spieler laufen in zufällige Richtungen.",
 
-    "SkillThieveryT3Way2Name": "Way of the Viper",
+    "SkillThieveryT3Way2Name": "Weg der Viper",
     "SkillThieveryT3Way2Desc": "Treffer verursacht Vergiftet für 10 s. Erweiterte allgemeine Giftstaffel: nach 2/4/6/8/10/12 s jeweils 10/7/4/3/2/1 % maximaler Ziel-HP. Die allgemeine Erklärung reicht über die Skilldauer hinaus; keine Gesamtschadenssumme daraus ableiten.",
 
-    "SkillThieveryUltName": "Surveillance Sentry",
+    "SkillThieveryUltName": "Überwachungsposten",
     "SkillThieveryUltDesc": "Erstellt eine Wache. Ein Statuseffekt zeigt die Anzahl anderer menschlicher Spieler in 5 m Umkreis der Wache an. Diese Spieler sind hinter Hindernissen sichtbar, solange sie im Bereich sind, und nach Verlassen für eine rangabhängige Dauer (siehe Rangwerte). Der Status kann nicht neutralisiert werden. Wache verschwindet nach 1200 s, beim Ausloggen oder Betreten des Bunkers. Höchstens eine eigene Wache gleichzeitig; eine neue entfernt die älteste. Schadensverändernde Effekte haben keinen Einfluss.",
 
     "LabelTreeThieveryName": "Dieberei",
@@ -1430,10 +1433,10 @@
     "SkillElectronicsP4Name": "Elektrisches Feld",
     "SkillElectronicsP4Desc": "Wenn du von einem Nahkampfangriff getroffen wirst, verursachst du Schaden anhand deiner besten Basis-Waffen-DPS am Gegner. Diesem Schaden kann nicht ausgewichen werden; er kann nicht reduziert werden. Höchstens einmal alle 5 s auslösbar. Seit 0.7.0.1 gilt die höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe; waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden werden nicht übernommen.",
 
-    "SkillElectronicsP5Name": "Brainwave Transmitter",
+    "SkillElectronicsP5Name": "Hirnwellensender",
     "SkillElectronicsP5Desc": "Erhöht die Chance, beim Anwenden mentaler Debuffs und physischer Debuffs deren Dauer um 20 % zu verlängern. Die Rangwerte verändern die Chance, nicht die Verlängerung.",
 
-    "SkillElectronicsT1Name": "Taste the Arc",
+    "SkillElectronicsT1Name": "Schmeck den Lichtbogen",
     "SkillElectronicsT1Desc": "Benötigt eine aktive Fernkampfwaffe. Beim nächsten Treffer: ursprünglich +150 % Waffenschaden anhand aktiver Waffen-DPS und Angewidert für 4 s. Grundkosten: 65 Ausdauer; Grund-Abklingzeit: 50 s.",
     "SkillElectronicsT1EffectiveDesc": "Benötigt eine aktive Fernkampfwaffe. Beim nächsten Treffer: +{effect0} % Waffenschaden anhand aktiver Waffen-DPS und Angewidert für 4 s. Grundkosten: 65 Ausdauer; Grund-Abklingzeit: 50 s.",
 
@@ -1443,18 +1446,18 @@
     "SkillElectronicsT1StaminaName": "Ausdauerverstärker",
     "SkillElectronicsT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillElectronicsT1ImpactName": "Impact Enhancer",
+    "SkillElectronicsT1ImpactName": "Aufprallverstärker",
     "SkillElectronicsT1ImpactDesc": "Verstärkt zusatzschaden anhand aktiver waffen-dps.",
 
-    "SkillElectronicsT1Way1Name": "Way of the Abhorrent",
+    "SkillElectronicsT1Way1Name": "Weg des Abscheulichen",
     "SkillElectronicsT1Way1Desc": "Verlängert Angewidert um 2 s (Basis 4 s, insgesamt 6 s).",
 
-    "SkillElectronicsT1Way2Name": "Way of the Berserker",
+    "SkillElectronicsT1Way2Name": "Weg des Berserkers",
     "SkillElectronicsT1Way2Desc": "Zusätzlich +50 % aktive Waffen-DPS.",
 
-    "SkillElectronicsT2Name": "MedPulse Unit",
-    "SkillElectronicsT2Desc": "Erstellt eine MedPulse Unit. Jede Sekunde heilt ein Puls dich sowie Gruppen- und Gildenmitglieder in 5 m Umkreis um ursprünglich 2,5 % maximale HP. Die Einheit hat 10 % deiner maximalen HP und verschwindet nach 10 s. Grundkosten: 75 Ausdauer; Grund-Abklingzeit: 180 s.",
-    "SkillElectronicsT2EffectiveDesc": "Erstellt eine MedPulse Unit. Jede Sekunde heilt ein Puls dich sowie Gruppen- und Gildenmitglieder in 5 m Umkreis um {effect0} % maximale HP. Die Einheit hat 10 % deiner maximalen HP und verschwindet nach 10 s. Grundkosten: 75 Ausdauer; Grund-Abklingzeit: 180 s.",
+    "SkillElectronicsT2Name": "MedPulse-Einheit",
+    "SkillElectronicsT2Desc": "Erstellt eine MedPulse-Einheit. Jede Sekunde heilt ein Puls dich sowie Gruppen- und Gildenmitglieder in 5 m Umkreis um ursprünglich 2,5 % maximale HP. Die Einheit hat 10 % deiner maximalen HP und verschwindet nach 10 s. Grundkosten: 75 Ausdauer; Grund-Abklingzeit: 180 s.",
+    "SkillElectronicsT2EffectiveDesc": "Erstellt eine MedPulse-Einheit. Jede Sekunde heilt ein Puls dich sowie Gruppen- und Gildenmitglieder in 5 m Umkreis um {effect0} % maximale HP. Die Einheit hat 10 % deiner maximalen HP und verschwindet nach 10 s. Grundkosten: 75 Ausdauer; Grund-Abklingzeit: 180 s.",
 
     "SkillElectronicsT2CooldownName": "Abklingzeitverstärker",
     "SkillElectronicsT2CooldownDesc": "Verstärkt abklingzeit.",
@@ -1462,16 +1465,16 @@
     "SkillElectronicsT2StaminaName": "Ausdauerverstärker",
     "SkillElectronicsT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillElectronicsT2ImpactName": "Impact Enhancer",
+    "SkillElectronicsT2ImpactName": "Aufprallverstärker",
     "SkillElectronicsT2ImpactDesc": "Verstärkt heilung maximaler hp je puls.",
 
-    "SkillElectronicsT2Way1Name": "Way of the Unfading",
-    "SkillElectronicsT2Way1Desc": "Verlängert die Lebensdauer der MedPulse Unit um 10 s (Basis 10 s, insgesamt 20 s).",
+    "SkillElectronicsT2Way1Name": "Weg des Unvergänglichen",
+    "SkillElectronicsT2Way1Desc": "Verlängert die Lebensdauer der MedPulse-Einheit um 10 s (Basis 10 s, insgesamt 20 s).",
 
-    "SkillElectronicsT2Way2Name": "Way of the Nurturer",
+    "SkillElectronicsT2Way2Name": "Weg des Fürsorglichen",
     "SkillElectronicsT2Way2Desc": "Bei Zerstörung durch einen Feind heilt die Einheit 25 % maximale HP aller Gruppen- und Gildenmitglieder in 5 m Umkreis, einschließlich dir selbst.",
 
-    "SkillElectronicsT3Name": "Thermal Imaging Camera",
+    "SkillElectronicsT3Name": "Wärmebildkamera",
     "SkillElectronicsT3Desc": "Gewährt für 20 s einen Statuseffekt: Spieler und Nicht-Spieler im Gebiet werden markiert und sind leichter zu erkennen, auch hinter Wänden, Deckung oder Hindernissen.",
     "SkillElectronicsT3EffectiveDesc": "Gewährt für {effect0} s einen Statuseffekt: Spieler und Nicht-Spieler im Gebiet werden markiert und sind leichter zu erkennen, auch hinter Wänden, Deckung oder Hindernissen.",
 
@@ -1481,13 +1484,13 @@
     "SkillElectronicsT3StaminaName": "Ausdauerverstärker",
     "SkillElectronicsT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillElectronicsT3ImpactName": "Impact Enhancer",
+    "SkillElectronicsT3ImpactName": "Aufprallverstärker",
     "SkillElectronicsT3ImpactDesc": "Verstärkt statuseffektdauer.",
 
-    "SkillElectronicsT3Way1Name": "Way of the Unfading",
+    "SkillElectronicsT3Way1Name": "Weg des Unvergänglichen",
     "SkillElectronicsT3Way1Desc": "Verlängert die Statuseffektdauer um 20 s.",
 
-    "SkillElectronicsT3Way2Name": "Way of the Watcher",
+    "SkillElectronicsT3Way2Name": "Weg des Beobachters",
     "SkillElectronicsT3Way2Desc": "Zeigt zusätzlich Skill-Objekte an.",
 
     "SkillElectronicsUltName": "Überladung",
@@ -1503,10 +1506,10 @@
     "SkillWoodworkingP2Name": "Schnelleres Holzfällen",
     "SkillWoodworkingP2Desc": "Erhöht beim Ernten mit Äxten die Sammelgeschwindigkeit.",
 
-    "SkillWoodworkingP3Name": "Lumberjack’s Maintenance",
+    "SkillWoodworkingP3Name": "Holzfäller-Wartung",
     "SkillWoodworkingP3Desc": "Reduziert beim Ernten mit Äxten den Haltbarkeitsverlust.",
 
-    "SkillWoodworkingP4Name": "Under Open Skies",
+    "SkillWoodworkingP4Name": "Unter freiem Himmel",
     "SkillWoodworkingP4Desc": "Erhöht außerhalb von Gebäuden die Ausdauerregeneration.",
 
     "SkillWoodworkingP5Name": "Gymnastik",
@@ -1522,13 +1525,13 @@
     "SkillWoodworkingT1StaminaName": "Ausdauerverstärker",
     "SkillWoodworkingT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillWoodworkingT1ImpactName": "Impact Enhancer",
+    "SkillWoodworkingT1ImpactName": "Aufprallverstärker",
     "SkillWoodworkingT1ImpactDesc": "Verstärkt schaden anhand aktiver waffen-dps.",
 
-    "SkillWoodworkingT1Way1Name": "Way of the Butcher",
+    "SkillWoodworkingT1Way1Name": "Weg des Schlächters",
     "SkillWoodworkingT1Way1Desc": "Verlängert Blutung um 10 s (Basis 10 s, insgesamt 20 s).",
 
-    "SkillWoodworkingT1Way2Name": "Way of the Hunter",
+    "SkillWoodworkingT1Way2Name": "Weg des Jägers",
     "SkillWoodworkingT1Way2Desc": "+100 % kritische Chance. Verrechnung mit anderer kritischer Chance nicht aus dem Tooltip ableitbar.",
 
     "SkillWoodworkingT2Name": "In die Bresche!",
@@ -1541,16 +1544,16 @@
     "SkillWoodworkingT2StaminaName": "Ausdauerverstärker",
     "SkillWoodworkingT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillWoodworkingT2ImpactName": "Impact Enhancer",
+    "SkillWoodworkingT2ImpactName": "Aufprallverstärker",
     "SkillWoodworkingT2ImpactDesc": "Verstärkt statuseffektdauer.",
 
-    "SkillWoodworkingT2Way1Name": "Way of the Consoler",
+    "SkillWoodworkingT2Way1Name": "Weg des Trösters",
     "SkillWoodworkingT2Way1Desc": "Entfernt auch alle mentalen Debuffs von Gruppenmitgliedern in Reichweite. Keine konkrete Meterangabe im Tooltip.",
 
-    "SkillWoodworkingT2Way2Name": "Way of the Benevolent",
+    "SkillWoodworkingT2Way2Name": "Weg des Wohlwollenden",
     "SkillWoodworkingT2Way2Desc": "Wendet den Statuseffekt auch auf Gruppenmitglieder in Reichweite an. Keine konkrete Meterangabe im Tooltip.",
 
-    "SkillWoodworkingT3Name": "Sap Rush",
+    "SkillWoodworkingT3Name": "Saftrausch",
     "SkillWoodworkingT3Desc": "Gewährt für 6 s +50 % Schaden.",
     "SkillWoodworkingT3EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden.",
 
@@ -1560,13 +1563,13 @@
     "SkillWoodworkingT3StaminaName": "Ausdauerverstärker",
     "SkillWoodworkingT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillWoodworkingT3ImpactName": "Impact Enhancer",
+    "SkillWoodworkingT3ImpactName": "Aufprallverstärker",
     "SkillWoodworkingT3ImpactDesc": "Verstärkt schadensbonus.",
 
-    "SkillWoodworkingT3Way1Name": "Way of the Ravager",
+    "SkillWoodworkingT3Way1Name": "Weg des Verwüsters",
     "SkillWoodworkingT3Way1Desc": "Verlängert den Statuseffekt um 2 s (Basis 6 s, insgesamt 8 s).",
 
-    "SkillWoodworkingT3Way2Name": "Way of the Shieldbreaker",
+    "SkillWoodworkingT3Way2Name": "Weg des Schildbrechers",
     "SkillWoodworkingT3Way2Desc": "Bei Treffer: entfernt Schild des Ziels.",
 
     "SkillWoodworkingUltName": "Eins mit der Natur",
@@ -1588,10 +1591,10 @@
     "SkillHuntingP4Name": "Tieranatomie",
     "SkillHuntingP4Desc": "Erhöht kritischen Schaden gegen Tiere.",
 
-    "SkillHuntingP5Name": "Stalking Your Prey",
+    "SkillHuntingP5Name": "Pirsch auf die Beute",
     "SkillHuntingP5Desc": "Benötigt aktive Fernkampfwaffe und eine Position außerhalb der Sichtlinie des Ziels. Erhöht kritische Chance und kritischen Schaden.",
 
-    "SkillHuntingT1Name": "Instinct Override",
+    "SkillHuntingT1Name": "Instinktübersteuerung",
     "SkillHuntingT1Desc": "Benötigt einen aktiven mentalen Debuff. Entfernt den letzten mentalen Debuff und gewährt für 4 s +30 % Schaden. Kann auch verwendet werden, wenn ein Debuff die Fähigkeitsnutzung verhindern würde.",
     "SkillHuntingT1EffectiveDesc": "Benötigt einen aktiven mentalen Debuff. Entfernt den letzten mentalen Debuff und gewährt für 4 s +{effect0} % Schaden. Kann auch verwendet werden, wenn ein Debuff die Fähigkeitsnutzung verhindern würde.",
 
@@ -1601,16 +1604,16 @@
     "SkillHuntingT1StaminaName": "Ausdauerverstärker",
     "SkillHuntingT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillHuntingT1ImpactName": "Impact Enhancer",
+    "SkillHuntingT1ImpactName": "Aufprallverstärker",
     "SkillHuntingT1ImpactDesc": "Verstärkt schadensbonus.",
 
-    "SkillHuntingT1Way1Name": "Way of the Ghost",
+    "SkillHuntingT1Way1Name": "Weg des Geistes",
     "SkillHuntingT1Way1Desc": "+20 % Ausweichen während des Statuseffekts.",
 
-    "SkillHuntingT1Way2Name": "Way of the Unfading",
+    "SkillHuntingT1Way2Name": "Weg des Unvergänglichen",
     "SkillHuntingT1Way2Desc": "Verlängert den Statuseffekt um 2 s (Basis 4 s, insgesamt 6 s).",
 
-    "SkillHuntingT2Name": "Heart Shots",
+    "SkillHuntingT2Name": "Herzschüsse",
     "SkillHuntingT2Desc": "Benötigt aktive Fernkampfwaffe. Gewährt für 6 s +25 % kritische Chance.",
     "SkillHuntingT2EffectiveDesc": "Benötigt aktive Fernkampfwaffe. Gewährt für 6 s +{effect0} % kritische Chance.",
 
@@ -1620,16 +1623,16 @@
     "SkillHuntingT2StaminaName": "Ausdauerverstärker",
     "SkillHuntingT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillHuntingT2ImpactName": "Impact Enhancer",
+    "SkillHuntingT2ImpactName": "Aufprallverstärker",
     "SkillHuntingT2ImpactDesc": "Verstärkt kritische chance.",
 
-    "SkillHuntingT2Way1Name": "Way of the Hunter",
+    "SkillHuntingT2Way1Name": "Weg des Jägers",
     "SkillHuntingT2Way1Desc": "Zusätzlich +25 % kritische Chance.",
 
-    "SkillHuntingT2Way2Name": "Way of the Unfading",
+    "SkillHuntingT2Way2Name": "Weg des Unvergänglichen",
     "SkillHuntingT2Way2Desc": "Verlängert den Statuseffekt um 3 s (Basis 6 s, insgesamt 9 s).",
 
-    "SkillHuntingT3Name": "Hunter’s Howl",
+    "SkillHuntingT3Name": "Jägergeheul",
     "SkillHuntingT3Desc": "Angriff gegen alle Ziele in 5 m Reichweite. Verursacht keinen Schaden; wendet Betäubt für 3 s an.",
     "SkillHuntingT3EffectiveDesc": "Angriff gegen alle Ziele in {effect0} m Reichweite. Verursacht keinen Schaden; wendet Betäubt für 3 s an.",
 
@@ -1639,16 +1642,16 @@
     "SkillHuntingT3StaminaName": "Ausdauerverstärker",
     "SkillHuntingT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillHuntingT3ImpactName": "Impact Enhancer",
+    "SkillHuntingT3ImpactName": "Aufprallverstärker",
     "SkillHuntingT3ImpactDesc": "Verstärkt reichweite.",
 
-    "SkillHuntingT3Way1Name": "Way of the Healer",
+    "SkillHuntingT3Way1Name": "Weg des Heilers",
     "SkillHuntingT3Way1Desc": "Heilt 25 % deiner eigenen maximalen HP.",
 
-    "SkillHuntingT3Way2Name": "Way of the Endurant",
+    "SkillHuntingT3Way2Name": "Weg des Ausdauernden",
     "SkillHuntingT3Way2Desc": "Gewährt 100 Ausdauer.",
 
-    "SkillHuntingUltName": "Stasis Mine",
+    "SkillHuntingUltName": "StasisMine",
     "SkillHuntingUltDesc": "Erstellt eine Mine, die explodiert, wenn andere Spieler oder Nicht-Spieler zu nahe kommen. Trifft alle Ziele im Bereich außer Besitzer und dessen Gruppen- und Gildenmitgliedern. Verursacht Schaden anhand maximaler Ziel-HP und Betäubt für 3 s. Lebensdauer abhängig vom Rang (siehe Rangwerte); verschwindet auch beim Ausloggen oder Betreten des Bunkers. Höchstens eine eigene Mine gleichzeitig; eine neue entfernt die älteste. Schadensverändernde Effekte haben keinen Einfluss.",
 
     "LabelTreeHuntingName": "Jagd",
@@ -1667,10 +1670,10 @@
     "SkillMechanicsP4Name": "Entschlossene Widerstandskraft",
     "SkillMechanicsP4Desc": "Erhöht Widerstand. Die genaue Verrechnung dieses Wertes wird im gezeigten Tooltip nicht erklärt.",
 
-    "SkillMechanicsP5Name": "Workaholic",
+    "SkillMechanicsP5Name": "Arbeitstier",
     "SkillMechanicsP5Desc": "Erhöht die Chance auf eine um 20 % verkürzte Schwächungsdauer beim Erhalten mentaler und physischer Debuffs. Die Rangwerte verändern die Chance, nicht die Höhe der Dauerverkürzung.",
 
-    "SkillMechanicsT1Name": "Deadlock",
+    "SkillMechanicsT1Name": "Stillstand",
     "SkillMechanicsT1Desc": "Gewährt für 4 s einen Statuseffekt: Treffer haben ursprünglich 25 % Chance, Gelähmt für 2 s anzuwenden, sofern das Ziel nicht bereits Gelähmt ist.",
     "SkillMechanicsT1EffectiveDesc": "Gewährt für 4 s einen Statuseffekt: Treffer haben {effect0} % Chance, Gelähmt für 2 s anzuwenden, sofern das Ziel nicht bereits Gelähmt ist.",
 
@@ -1680,18 +1683,18 @@
     "SkillMechanicsT1StaminaName": "Ausdauerverstärker",
     "SkillMechanicsT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillMechanicsT1ImpactName": "Impact Enhancer",
+    "SkillMechanicsT1ImpactName": "Aufprallverstärker",
     "SkillMechanicsT1ImpactDesc": "Verstärkt chance auf gelähmt.",
 
-    "SkillMechanicsT1Way1Name": "Way of the Trapper",
+    "SkillMechanicsT1Way1Name": "Weg des Fallenstellers",
     "SkillMechanicsT1Way1Desc": "Verlängert Gelähmt um 2 s (Basis 2 s, insgesamt 4 s).",
 
-    "SkillMechanicsT1Way2Name": "Way of the Unfading",
+    "SkillMechanicsT1Way2Name": "Weg des Unvergänglichen",
     "SkillMechanicsT1Way2Desc": "Verlängert den Statuseffekt um 4 s (Basis 4 s, insgesamt 8 s).",
 
     "SkillMechanicsT2Name": "Ablenkungsroboter",
-    "SkillMechanicsT2Desc": "Erstellt einen unbeweglichen, unverwundbaren Roboter. Verspottet alle Nicht-Spieler im Gebiet und befriedet alle Ziele mit Aggro zu dir. Verschwindet nach 5 s. Spott setzt den Roboter an die Spitze der Aggro-Liste; Befriedung entfernt dich von der Aggro-Liste eines Nicht-Spielers.",
-    "SkillMechanicsT2EffectiveDesc": "Erstellt einen unbeweglichen, unverwundbaren Roboter. Verspottet alle Nicht-Spieler im Gebiet und befriedet alle Ziele mit Aggro zu dir. Verschwindet nach {effect0} s. Spott setzt den Roboter an die Spitze der Aggro-Liste; Befriedung entfernt dich von der Aggro-Liste eines Nicht-Spielers.",
+    "SkillMechanicsT2Desc": "Erstellt einen unbeweglichen, unverwundbaren Ablenkungsroboter. Verspottet alle Nicht-Spieler im Umkreis von 10 m und befriedet alle Ziele mit Aggro zu dir. Verschwindet nach 5 s.",
+    "SkillMechanicsT2EffectiveDesc": "Erstellt einen unbeweglichen, unverwundbaren Ablenkungsroboter. Verspottet alle Nicht-Spieler im Umkreis von 10 m und befriedet alle Ziele mit Aggro zu dir. Verschwindet nach {effect0} s.",
 
     "SkillMechanicsT2CooldownName": "Abklingzeitverstärker",
     "SkillMechanicsT2CooldownDesc": "Verstärkt abklingzeit.",
@@ -1699,13 +1702,13 @@
     "SkillMechanicsT2StaminaName": "Ausdauerverstärker",
     "SkillMechanicsT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillMechanicsT2ImpactName": "Impact Enhancer",
+    "SkillMechanicsT2ImpactName": "Aufprallverstärker",
     "SkillMechanicsT2ImpactDesc": "Verstärkt zeit bis zum verschwinden.",
 
-    "SkillMechanicsT2Way1Name": "Way of the Ruiner",
+    "SkillMechanicsT2Way1Name": "Weg des Verderbers",
     "SkillMechanicsT2Way1Desc": "Wenn der Ablenkungsroboter verschwindet, wendet er Verkrüppelt für 4 s auf alle Ziele in Reichweite an.",
 
-    "SkillMechanicsT2Way2Name": "Way of the Ravager",
+    "SkillMechanicsT2Way2Name": "Weg des Verwüsters",
     "SkillMechanicsT2Way2Desc": "Wenn der Ablenkungsroboter verschwindet, wendet er Verwundbar für 4 s auf alle Ziele in Reichweite an.",
 
     "SkillMechanicsT3Name": "Blackout",
@@ -1718,21 +1721,21 @@
     "SkillMechanicsT3StaminaName": "Ausdauerverstärker",
     "SkillMechanicsT3StaminaDesc": "Reduziert die Ausdauerkosten.",
 
-    "SkillMechanicsT3ImpactName": "Impact Enhancer",
+    "SkillMechanicsT3ImpactName": "Aufprallverstärker",
     "SkillMechanicsT3ImpactDesc": "Verbessert abwechselnd Geblendet- und Benommen-Dauer. Die Rangwerte zeigen beide gleichzeitig geltenden Dauern je Rang.",
 
-    "SkillMechanicsT3Way1Name": "Way of the Trickster",
+    "SkillMechanicsT3Way1Name": "Weg des Tricksters",
     "SkillMechanicsT3Way1Desc": "Verlängert Verwirrt um 3 s (Basis 3 s, insgesamt 6 s).",
 
-    "SkillMechanicsT3Way2Name": "Way of the Reclaimer",
+    "SkillMechanicsT3Way2Name": "Weg des Rückeroberers",
     "SkillMechanicsT3Way2Desc": "Erstattet die Ausdauerkosten nach einem Treffer zurück.",
 
-    "SkillMechanicsUltName": "Titan Turret",
+    "SkillMechanicsUltName": "Titan-Geschützturm",
     "SkillMechanicsUltDesc": "Erstellt ein von jedem Spieler benutzbares Geschütz mit 120 Schuss. Hat 30 % deiner maximalen HP. DPS je Rang anhand bester Basis-Waffen-DPS; kann bei Dauerfeuer überhitzen. Verschwindet nach 900 s oder wenn die Munition aufgebraucht ist. Höchstens ein eigenes Geschütz gleichzeitig; ein neues entfernt das älteste. Seit 0.7.0.1 gilt die höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe; waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden werden nicht übernommen.",
 
     "LabelTreeMechanicsName": "Mechanik",
 
-    "TreeStreetSmartsName": "Street Smarts",
+    "TreeStreetSmartsName": "Straßenklugheit",
 
     "SkillStreetSmartsP1Name": "Effizienter Ausgestoßener",
     "SkillStreetSmartsP1Desc": "Erhöht beim Ernten mit Brechstangen die Chance auf zusätzliche Beute.",
@@ -1740,16 +1743,16 @@
     "SkillStreetSmartsP2Name": "Schnelleres Aufbrechen",
     "SkillStreetSmartsP2Desc": "Erhöht beim Ernten mit Brechstangen die Sammelgeschwindigkeit.",
 
-    "SkillStreetSmartsP3Name": "Urban Outcast’s Maintenance",
+    "SkillStreetSmartsP3Name": "Stadtstreicher-Wartung",
     "SkillStreetSmartsP3Desc": "Reduziert beim Ernten mit Brechstangen den Haltbarkeitsverlust.",
 
     "SkillStreetSmartsP4Name": "Schutz suchen",
     "SkillStreetSmartsP4Desc": "Erhöht innerhalb von Gebäuden die Ausdauerregeneration.",
 
-    "SkillStreetSmartsP5Name": "Inner Vandal",
+    "SkillStreetSmartsP5Name": "Innerer Vandale",
     "SkillStreetSmartsP5Desc": "Wenn die letzte verwendete Fähigkeit mehr als 10 s zurückliegt: reduziert Ausdauerkosten und Abklingzeit der nächsten eingesetzten Fähigkeit.",
 
-    "SkillStreetSmartsT1Name": "Hoodlum’s Heel",
+    "SkillStreetSmartsT1Name": "Ganoventritt",
     "SkillStreetSmartsT1Desc": "Angriff gegen ein einzelnes Ziel im Nahkampf. Verursacht keinen Schaden, neutralisiert das Ziel und verursacht Verkrüppelt für ursprünglich 2 s. Grundkosten: 65 AP (Ausdauer); Grund-Abklingzeit: 50 s.",
     "SkillStreetSmartsT1EffectiveDesc": "Angriff gegen ein einzelnes Ziel im Nahkampf. Verursacht keinen Schaden, neutralisiert das Ziel und verursacht Verkrüppelt für {effect0} s. Grundkosten: 65 AP (Ausdauer); Grund-Abklingzeit: 50 s.",
 
@@ -1759,16 +1762,16 @@
     "SkillStreetSmartsT1StaminaName": "Ausdauerverstärker",
     "SkillStreetSmartsT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillStreetSmartsT1ImpactName": "Impact Enhancer",
+    "SkillStreetSmartsT1ImpactName": "Aufprallverstärker",
     "SkillStreetSmartsT1ImpactDesc": "Verstärkt verkrüppelt-dauer.",
 
-    "SkillStreetSmartsT1Way1Name": "Way of the Reaper",
+    "SkillStreetSmartsT1Way1Name": "Weg des Schnitters",
     "SkillStreetSmartsT1Way1Desc": "Trifft alle Ziele in Nahkampfreichweite.",
 
-    "SkillStreetSmartsT1Way2Name": "Way of the Deceiver",
+    "SkillStreetSmartsT1Way2Name": "Weg des Betrügers",
     "SkillStreetSmartsT1Way2Desc": "Wendet Abgelenkt für 4 s an.",
 
-    "SkillStreetSmartsT2Name": "Ruffian’s Rage",
+    "SkillStreetSmartsT2Name": "Wut des Raufbolds",
     "SkillStreetSmartsT2Desc": "Gewährt für 15 s +0,5 % Schaden pro fehlendem Prozent deiner HP.",
     "SkillStreetSmartsT2EffectiveDesc": "Gewährt für {effect0} s +0,5 % Schaden pro fehlendem Prozent deiner HP.",
 
@@ -1778,13 +1781,13 @@
     "SkillStreetSmartsT2StaminaName": "Ausdauerverstärker",
     "SkillStreetSmartsT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillStreetSmartsT2ImpactName": "Impact Enhancer",
+    "SkillStreetSmartsT2ImpactName": "Aufprallverstärker",
     "SkillStreetSmartsT2ImpactDesc": "Verstärkt statuseffektdauer.",
 
-    "SkillStreetSmartsT2Way1Name": "Way of the Avenger",
+    "SkillStreetSmartsT2Way1Name": "Weg des Rächers",
     "SkillStreetSmartsT2Way1Desc": "Zusätzlich +0,5 % kritische Chance pro fehlendem Prozent deiner HP.",
 
-    "SkillStreetSmartsT2Way2Name": "Way of the Beast",
+    "SkillStreetSmartsT2Way2Name": "Weg der Bestie",
     "SkillStreetSmartsT2Way2Desc": "Zusätzlich +0,5 % kritischer Schaden pro fehlendem Prozent deiner HP.",
 
     "SkillStreetSmartsT3Name": "Spotten und Verstümmeln",
@@ -1797,16 +1800,16 @@
     "SkillStreetSmartsT3StaminaName": "Ausdauerverstärker",
     "SkillStreetSmartsT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillStreetSmartsT3ImpactName": "Impact Enhancer",
+    "SkillStreetSmartsT3ImpactName": "Aufprallverstärker",
     "SkillStreetSmartsT3ImpactDesc": "Verstärkt schaden anhand aktiver waffen-dps.",
 
-    "SkillStreetSmartsT3Way1Name": "Way of the Fugitive",
+    "SkillStreetSmartsT3Way1Name": "Weg des Flüchtigen",
     "SkillStreetSmartsT3Way1Desc": "Bei Treffer erhältst du Eile für 5 s.",
 
-    "SkillStreetSmartsT3Way2Name": "Way of the Ravager",
+    "SkillStreetSmartsT3Way2Name": "Weg des Verwüsters",
     "SkillStreetSmartsT3Way2Desc": "Verlängert Verwundbar um 4 s (Basis 4 s, insgesamt 8 s).",
 
-    "SkillStreetSmartsUltName": "Anarchist’s Revolution",
+    "SkillStreetSmartsUltName": "Revolution des Anarchisten",
     "SkillStreetSmartsUltDesc": "Angriff gegen alle Ziele im Nahkampf. Schaden anhand des besten Basis-DPS-Wertes von Primär- und Sekundärwaffe. Treffer neutralisiert das Ziel und verursacht Betäubt. Neutralisiert entfernt alle Statuseffekte und unterbricht Fähigkeitskanalisierung. Seit 0.7.0.1 gilt die höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe; waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden werden nicht übernommen.",
 
     "LabelTreeStreetSmartsName": "Street Smarts",
@@ -1819,7 +1822,7 @@
     "SkillFlexibleArmorP2Name": "Reaktive Denkweise",
     "SkillFlexibleArmorP2Desc": "Bei Treffer: Statuseffekt für 4 s, bis zu zehnmal stapelbar. Erhöht die Ausweichwertung abhängig von Rang und Anzahl getragener flexibler Teile. Die Tabellenwerte sind Wertung, keine Prozentpunkte Ausweichchance.",
 
-    "SkillFlexibleArmorP3Name": "Lithe Movement",
+    "SkillFlexibleArmorP3Name": "Geschmeidige Bewegung",
     "SkillFlexibleArmorP3Desc": "Erhöht die Ausweichwertung abhängig von Rang und Anzahl getragener flexibler Teile. Prozentuale Wertungsänderung nicht automatisch mit Prozentpunkten Ausweichchance gleichsetzen.",
 
     "SkillFlexibleArmorP4Name": "Erneuerte Standhaftigkeit",
@@ -1828,10 +1831,10 @@
     "SkillFlexibleArmorP5Name": "Einfallsreiche Schichtung",
     "SkillFlexibleArmorP5Desc": "Erhöht den Schadensreduzierungswert abhängig von Rang und Anzahl getragener flexibler Teile. Wertungsänderung nicht automatisch als direkte Schadensreduktion interpretieren.",
 
-    "SkillFlexibleArmorP6Name": "Garbed Confidence",
+    "SkillFlexibleArmorP6Name": "Gekleidetes Selbstvertrauen",
     "SkillFlexibleArmorP6Desc": "Chance, mentale Debuffs zu blocken, abhängig von Rang und Anzahl getragener flexibler Teile.",
 
-    "SkillFlexibleArmorT1Name": "Vengeful Guardian",
+    "SkillFlexibleArmorT1Name": "Rachsüchtiger Wächter",
     "SkillFlexibleArmorT1Desc": "Erhält für ursprünglich 5 s einen Schild als Anteil deiner maximalen HP, abhängig von flexiblen Teilen. Wird der Schild durch einen feindlichen Angriff aufgebraucht, erhältst du für 5 s erhöhten Schaden laut zweiter Tabelle. Die Schild-Tabelle zeigt die Basis ohne den zusätzlich angezeigten Vanguard-Way. Grundkosten: 65 AP; Grund-Abklingzeit: 60 s.",
     "SkillFlexibleArmorT1EffectiveDesc": "Erhält für {effect0} s einen Schild als Anteil deiner maximalen HP, abhängig von flexiblen Teilen. Wird der Schild durch einen feindlichen Angriff aufgebraucht, erhältst du für 5 s erhöhten Schaden laut zweiter Tabelle. Die Schild-Tabelle zeigt die Basis ohne den zusätzlich angezeigten Vanguard-Way. Grundkosten: 65 AP; Grund-Abklingzeit: 60 s.",
 
@@ -1841,13 +1844,13 @@
     "SkillFlexibleArmorT1StaminaName": "Ausdauerverstärker",
     "SkillFlexibleArmorT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillFlexibleArmorT1ImpactName": "Impact Enhancer",
+    "SkillFlexibleArmorT1ImpactName": "Aufprallverstärker",
     "SkillFlexibleArmorT1ImpactDesc": "Verstärkt statuseffektdauer.",
 
-    "SkillFlexibleArmorT1Way1Name": "Way of the Vanguard",
+    "SkillFlexibleArmorT1Way1Name": "Weg der Vorhut",
     "SkillFlexibleArmorT1Way1Desc": "+7 % Schild.",
 
-    "SkillFlexibleArmorT1Way2Name": "Way of the Vindicator",
+    "SkillFlexibleArmorT1Way2Name": "Weg des Verfechters",
     "SkillFlexibleArmorT1Way2Desc": "+5 % Schaden.",
 
     "SkillFlexibleArmorT2Name": "Negierende Barriere",
@@ -1860,13 +1863,13 @@
     "SkillFlexibleArmorT2StaminaName": "Ausdauerverstärker",
     "SkillFlexibleArmorT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillFlexibleArmorT2ImpactName": "Impact Enhancer",
+    "SkillFlexibleArmorT2ImpactName": "Aufprallverstärker",
     "SkillFlexibleArmorT2ImpactDesc": "Verstärkt zusätzliche statuseffektdauer.",
 
-    "SkillFlexibleArmorT2Way1Name": "Way of the Unshaken",
+    "SkillFlexibleArmorT2Way1Name": "Weg des Unerschütterten",
     "SkillFlexibleArmorT2Way1Desc": "Kann zwei zusätzliche mentale Debuffs blocken.",
 
-    "SkillFlexibleArmorT2Way2Name": "Way of the Colossus",
+    "SkillFlexibleArmorT2Way2Name": "Weg des Kolosses",
     "SkillFlexibleArmorT2Way2Desc": "Kann zwei zusätzliche physische Debuffs blocken.",
 
     "SkillFlexibleArmorT3Name": "Auslauf",
@@ -1879,35 +1882,35 @@
     "SkillFlexibleArmorT3StaminaName": "Ausdauerverstärker",
     "SkillFlexibleArmorT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillFlexibleArmorT3ImpactName": "Impact Enhancer",
+    "SkillFlexibleArmorT3ImpactName": "Aufprallverstärker",
     "SkillFlexibleArmorT3ImpactDesc": "Verstärkt ausweichen.",
 
-    "SkillFlexibleArmorT3Way1Name": "Way of the Berserker",
+    "SkillFlexibleArmorT3Way1Name": "Weg des Berserkers",
     "SkillFlexibleArmorT3Way1Desc": "Zusätzlich +15 % Schaden.",
 
-    "SkillFlexibleArmorT3Way2Name": "Way of the Unburdened",
+    "SkillFlexibleArmorT3Way2Name": "Weg des Unbelasteten",
     "SkillFlexibleArmorT3Way2Desc": "Der Folgeeffekt tritt nicht ein.",
 
     "SkillFlexibleArmorUltName": "Unberührbar",
     "SkillFlexibleArmorUltDesc": "Benötigt sieben flexible Rüstungsteile. Entfernt alle physischen und mentalen Debuffs. Blockt während des Statuseffekts alle eingehenden physischen und mentalen Debuffs und gewährt 100 % Ausweichen. Weicht auch Fähigkeiten aus, die Ausweichen normalerweise ignorieren. Kann auch verwendet werden, wenn ein Debuff die Fähigkeitsnutzung verhindern würde.",
 
-    "LabelTreeFlexibleArmorName": "Flexible Armor",
+    "LabelTreeFlexibleArmorName": "Flexible Rüstung",
 
     "TreeSturdyArmorName": "Robuste Rüstung",
 
     "SkillSturdyArmorP1Name": "Gewissenhafte Instandhaltung",
     "SkillSturdyArmorP1Desc": "Reduziert den Haltbarkeitsverlust robuster Rüstung abhängig von Rang und Anzahl getragener robuster Teile. Strich bedeutet keine ausgewiesene Wirkung.",
 
-    "SkillSturdyArmorP2Name": "StF-Behandlung",
+    "SkillSturdyArmorP2Name": "STF-Behandlung",
     "SkillSturdyArmorP2Desc": "Bei Treffer: Statuseffekt für 4 s, bis zu zehnmal stapelbar. Erhöht den Schadensreduzierungswert abhängig von Rang und Teilezahl. Die Tabellenwerte sind Wertung, keine Prozentpunkte Schadensreduktion.",
 
-    "SkillSturdyArmorP3Name": "Stalwart Positioning",
+    "SkillSturdyArmorP3Name": "Unverrückbare Stellung",
     "SkillSturdyArmorP3Desc": "Erhöht den Schadensreduzierungswert abhängig von Rang und Anzahl robuster Teile. Prozentuale Wertungsänderung nicht automatisch als direkte Schadensreduktion interpretieren.",
 
     "SkillSturdyArmorP4Name": "Trauma-Resistenz",
     "SkillSturdyArmorP4Desc": "Mindestens vier robuste Teile. Wenn HP nach erlittenem Schaden unter 20 % liegen: entfernt alle physischen und mentalen Debuffs und gewährt für 5 s erhöhte Schadensreduzierung laut Tabelle. Höchstens einmal alle 60 s. Kann auch auslösen, wenn ein Debuff die Fähigkeitsnutzung verhindern würde. Tabellenwerte für weniger als vier Teile bleiben dokumentiert, erfüllen jedoch nicht die Voraussetzung.",
 
-    "SkillSturdyArmorP5Name": "Siege Maneuvers",
+    "SkillSturdyArmorP5Name": "Belagerungsmanöver",
     "SkillSturdyArmorP5Desc": "Erhöht die Ausweichwertung abhängig von Rang und Anzahl robuster Teile. Nicht automatisch mit Prozentpunkten Ausweichchance gleichsetzen.",
 
     "SkillSturdyArmorP6Name": "Eiserner Wille",
@@ -1923,16 +1926,16 @@
     "SkillSturdyArmorT1StaminaName": "Ausdauerverstärker",
     "SkillSturdyArmorT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillSturdyArmorT1ImpactName": "Impact Enhancer",
+    "SkillSturdyArmorT1ImpactName": "Aufprallverstärker",
     "SkillSturdyArmorT1ImpactDesc": "Verstärkt erhöhte statuseffektlänge laut tooltip.",
 
-    "SkillSturdyArmorT1Way1Name": "Way of the Vanguard",
+    "SkillSturdyArmorT1Way1Name": "Weg der Vorhut",
     "SkillSturdyArmorT1Way1Desc": "Schild-Wert um +7 % erhöht.",
 
-    "SkillSturdyArmorT1Way2Name": "Way of the Reclaimer",
+    "SkillSturdyArmorT1Way2Name": "Weg des Rückeroberers",
     "SkillSturdyArmorT1Way2Desc": "Ausdauerkosten werden nach Einsatz der Fähigkeit zurückerstattet.",
 
-    "SkillSturdyArmorT2Name": "Snap Out Of It!",
+    "SkillSturdyArmorT2Name": "Reiß dich zusammen!",
     "SkillSturdyArmorT2Desc": "Gewährt einen Statuseffekt mit −50 % Dauer mentaler und physischer Debuffs. Grunddauer abhängig von der Anzahl robuster Teile laut Tabelle.",
     "SkillSturdyArmorT2EffectiveDesc": "Gewährt einen Statuseffekt mit −50 % Dauer mentaler und physischer Debuffs. Grunddauer abhängig von der Anzahl robuster Teile laut Tabelle. Erhöhte Statuseffektlänge laut Tooltip: {effect0} s.",
 
@@ -1942,16 +1945,16 @@
     "SkillSturdyArmorT2StaminaName": "Ausdauerverstärker",
     "SkillSturdyArmorT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillSturdyArmorT2ImpactName": "Impact Enhancer",
+    "SkillSturdyArmorT2ImpactName": "Aufprallverstärker",
     "SkillSturdyArmorT2ImpactDesc": "Verstärkt erhöhte statuseffektlänge laut tooltip.",
 
-    "SkillSturdyArmorT2Way1Name": "Way of the Colossus",
+    "SkillSturdyArmorT2Way1Name": "Weg des Kolosses",
     "SkillSturdyArmorT2Way1Desc": "Zusätzlich −25 % Dauer physischer Debuffs.",
 
-    "SkillSturdyArmorT2Way2Name": "Way of the Unshaken",
+    "SkillSturdyArmorT2Way2Name": "Weg des Unerschütterten",
     "SkillSturdyArmorT2Way2Desc": "Zusätzlich −25 % Dauer mentaler Debuffs.",
 
-    "SkillSturdyArmorT3Name": "Reverse Gambit",
+    "SkillSturdyArmorT3Name": "Umgekehrtes Gambit",
     "SkillSturdyArmorT3Desc": "Gewährt +10 % Schadensreduzierung und +100 % Ausdauerregeneration. Grunddauer abhängig von robuster Teilezahl laut Tabelle. Danach Folgeeffekt mit −20 % Schadensreduzierung; angezeigte Folgeeffektdauer bei sieben Teilen: 13 s.",
     "SkillSturdyArmorT3EffectiveDesc": "Gewährt +{effect0} % Schadensreduzierung und +100 % Ausdauerregeneration. Grunddauer abhängig von robuster Teilezahl laut Tabelle. Danach Folgeeffekt mit −20 % Schadensreduzierung; angezeigte Folgeeffektdauer bei sieben Teilen: 13 s.",
 
@@ -1961,13 +1964,13 @@
     "SkillSturdyArmorT3StaminaName": "Ausdauerverstärker",
     "SkillSturdyArmorT3StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillSturdyArmorT3ImpactName": "Impact Enhancer",
+    "SkillSturdyArmorT3ImpactName": "Aufprallverstärker",
     "SkillSturdyArmorT3ImpactDesc": "Verstärkt schadensreduzierung.",
 
-    "SkillSturdyArmorT3Way1Name": "Way of the Tireless",
+    "SkillSturdyArmorT3Way1Name": "Weg des Unermüdlichen",
     "SkillSturdyArmorT3Way1Desc": "Zusätzlich +200 % Ausdauerregeneration.",
 
-    "SkillSturdyArmorT3Way2Name": "Way of the Unburdened",
+    "SkillSturdyArmorT3Way2Name": "Weg des Unbelasteten",
     "SkillSturdyArmorT3Way2Desc": "Der Folgeeffekt tritt nicht ein.",
 
     "SkillSturdyArmorUltName": "Auge um Auge",
@@ -1977,13 +1980,13 @@
 
     "TreeEnduranceName": "Ausdauer",
 
-    "SkillEnduranceP1Name": "Skilled Athlete",
+    "SkillEnduranceP1Name": "Athleten-Geselle",
     "SkillEnduranceP1Desc": "Erhöht die Ausdauer um 3 je Rang, bis zu 45 bei Rang 15.",
 
     "SkillEnduranceP2Name": "Meditatives Training",
     "SkillEnduranceP2Desc": "Erhöht beim Sitzen oder Stehen die Ausdauerregeneration.",
 
-    "SkillEnduranceP3Name": "Situational Awareness",
+    "SkillEnduranceP3Name": "Situationsbewusstsein",
     "SkillEnduranceP3Desc": "Erhöht die Fallhöhe, die ohne Schaden überstanden werden kann.",
 
     "SkillEnduranceP4Name": "Plyometrie",
@@ -1999,13 +2002,13 @@
     "SkillEnduranceT1StaminaName": "Ausdauerverstärker",
     "SkillEnduranceT1StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillEnduranceT1ImpactName": "Impact Enhancer",
+    "SkillEnduranceT1ImpactName": "Aufprallverstärker",
     "SkillEnduranceT1ImpactDesc": "Verstärkt statuseffektdauer.",
 
-    "SkillEnduranceT1Way1Name": "Way of the Unfading",
+    "SkillEnduranceT1Way1Name": "Weg des Unvergänglichen",
     "SkillEnduranceT1Way1Desc": "Verlängert den Statuseffekt um 5 s.",
 
-    "SkillEnduranceT1Way2Name": "Way of the Tireless",
+    "SkillEnduranceT1Way2Name": "Weg des Unermüdlichen",
     "SkillEnduranceT1Way2Desc": "Während des Statuseffekts regeneriert Ausdauer auch beim Sprinten.",
 
     "SkillEnduranceT2Name": "Laufschritt!",
@@ -2018,16 +2021,16 @@
     "SkillEnduranceT2StaminaName": "Ausdauerverstärker",
     "SkillEnduranceT2StaminaDesc": "Verstärkt ausdauerkosten.",
 
-    "SkillEnduranceT2ImpactName": "Impact Enhancer",
+    "SkillEnduranceT2ImpactName": "Aufprallverstärker",
     "SkillEnduranceT2ImpactDesc": "Verstärkt eile-dauer.",
 
-    "SkillEnduranceT2Way1Name": "Way of the Lone Wolf",
+    "SkillEnduranceT2Way1Name": "Weg des einsamen Wolfs",
     "SkillEnduranceT2Way1Desc": "Erhöht die Eile-Dauer auf dir selbst um 15 s.",
 
-    "SkillEnduranceT2Way2Name": "Way of the Leader",
+    "SkillEnduranceT2Way2Name": "Weg des Anführers",
     "SkillEnduranceT2Way2Desc": "Erhöht die Eile-Dauer auf dir selbst und Gruppenmitgliedern um 10 s.",
 
-    "SkillEnduranceT3Name": "Second Wind",
+    "SkillEnduranceT3Name": "Zweiter Atem",
     "SkillEnduranceT3Desc": "Gewährt für 5 s +50 maximale Ausdauer und gibt sofort 50 Ausdauer.",
     "SkillEnduranceT3EffectiveDesc": "Gewährt für 5 s +{effect0} maximale Ausdauer und gibt sofort {effect1} Ausdauer.",
 
@@ -2037,16 +2040,16 @@
     "SkillEnduranceT3StaminaName": "Ausdauerverstärker",
     "SkillEnduranceT3StaminaDesc": "Reduziert die Ausdauerkosten.",
 
-    "SkillEnduranceT3ImpactName": "Impact Enhancer",
+    "SkillEnduranceT3ImpactName": "Aufprallverstärker",
     "SkillEnduranceT3ImpactDesc": "Erhöht sowohl maximale Ausdauer als auch die sofort gewährte Ausdauer.",
 
-    "SkillEnduranceT3Way1Name": "Way of the Endurant",
+    "SkillEnduranceT3Way1Name": "Weg des Ausdauernden",
     "SkillEnduranceT3Way1Desc": "Zusätzlich +25 maximale Ausdauer und sofort zusätzlich 25 Ausdauer.",
 
-    "SkillEnduranceT3Way2Name": "Way of the Unbound",
+    "SkillEnduranceT3Way2Name": "Weg des Ungebundenen",
     "SkillEnduranceT3Way2Desc": "Ignoriert alle negativen Effekte auf Bewegungsgeschwindigkeit durch geschwindigkeitsreduzierende Debuffs.",
 
-    "SkillEnduranceUltName": "Last Stand",
+    "SkillEnduranceUltName": "Letztes Gefecht",
     "SkillEnduranceUltDesc": "Gewährt einen Statuseffekt mit je nach Rang erhöhter Regeneration (siehe Rangwerte). Kann nicht neutralisiert werden. Der gezeigte Tooltip erläutert die genaue Berechnungsbasis der Regeneration nicht.",
 
     "TreeFirstAidName": "Erste Hilfe",
@@ -2054,7 +2057,7 @@
     "SkillFirstAidP1Name": "Sterilisation",
     "SkillFirstAidP1Desc": "Erhöht die Heilung bei Nutzung medizinischer Verbrauchsgüter.",
 
-    "SkillFirstAidP2Name": "First Responder",
+    "SkillFirstAidP2Name": "Ersthelfer",
     "SkillFirstAidP2Desc": "Erhöht die Anwendungsgeschwindigkeit medizinischer Verbrauchsgüter.",
 
     "SkillFirstAidP3Name": "Trainierter Körper",
@@ -2063,7 +2066,7 @@
     "SkillFirstAidP4Name": "Feldroutine",
     "SkillFirstAidP4Desc": "Chance, die Wirkung medizinischer Verbrauchsgüter zu verdoppeln.",
 
-    "SkillFirstAidT1Name": "Focus Serum",
+    "SkillFirstAidT1Name": "Fokusserum",
     "SkillFirstAidT1Desc": "Gewährt für 30 s eine Chance von 5 %, Debuffs zu blockieren.",
     "SkillFirstAidT1EffectiveDesc": "Gewährt für 30 s eine Chance von {effect0} %, Debuffs zu blockieren.",
 
@@ -2073,16 +2076,16 @@
     "SkillFirstAidT1StaminaName": "Ausdauerverstärker",
     "SkillFirstAidT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
-    "SkillFirstAidT1ImpactName": "Impact Enhancer",
+    "SkillFirstAidT1ImpactName": "Aufprallverstärker",
     "SkillFirstAidT1ImpactDesc": "Verbessert Debuff-Blockchance.",
 
-    "SkillFirstAidT1Way1Name": "Way of the Painbearer",
+    "SkillFirstAidT1Way1Name": "Weg des Schmerzträgers",
     "SkillFirstAidT1Way1Desc": "Wenn ein Debuff geblockt wird, werden 10 % der maximalen HP wiederhergestellt.",
 
-    "SkillFirstAidT1Way2Name": "Way of the Relentless",
+    "SkillFirstAidT1Way2Name": "Weg des Unerbittlichen",
     "SkillFirstAidT1Way2Desc": "Wenn ein Debuff geblockt wird, werden 10 Ausdauer wiederhergestellt.",
 
-    "SkillFirstAidT2Name": "Give’em Hell",
+    "SkillFirstAidT2Name": "Mach ihnen die Hölle heiß",
     "SkillFirstAidT2Desc": "Gewährt dir und Gruppenmitgliedern für 20 s +5 % Schaden.",
     "SkillFirstAidT2EffectiveDesc": "Gewährt dir und Gruppenmitgliedern für 20 s +{effect0} % Schaden.",
 
@@ -2092,13 +2095,13 @@
     "SkillFirstAidT2StaminaName": "Ausdauerverstärker",
     "SkillFirstAidT2StaminaDesc": "Verstärkt Ausdauerkosten.",
 
-    "SkillFirstAidT2ImpactName": "Impact Enhancer",
+    "SkillFirstAidT2ImpactName": "Aufprallverstärker",
     "SkillFirstAidT2ImpactDesc": "Verstärkt Schadensbonus.",
 
-    "SkillFirstAidT2Way1Name": "Way of the Unfading",
+    "SkillFirstAidT2Way1Name": "Weg des Unvergänglichen",
     "SkillFirstAidT2Way1Desc": "Verlängert den Statuseffekt um 15 s.",
 
-    "SkillFirstAidT2Way2Name": "Way of the Hunter",
+    "SkillFirstAidT2Way2Name": "Weg des Jägers",
     "SkillFirstAidT2Way2Desc": "Gewährt zusätzlich +10 % kritische Trefferchance.",
 
     "SkillFirstAidT3Name": "Niemand wird zurückgelassen",
@@ -2111,13 +2114,13 @@
     "SkillFirstAidT3StaminaName": "Ausdauerverstärker",
     "SkillFirstAidT3StaminaDesc": "Verstärkt Ausdauerkosten.",
 
-    "SkillFirstAidT3ImpactName": "Impact Enhancer",
+    "SkillFirstAidT3ImpactName": "Aufprallverstärker",
     "SkillFirstAidT3ImpactDesc": "Verstärkt Heilung maximaler HP.",
 
-    "SkillFirstAidT3Way1Name": "Way of the Benevolent",
+    "SkillFirstAidT3Way1Name": "Weg des Wohlwollenden",
     "SkillFirstAidT3Way1Desc": "Der Skill betrifft auch alle Gruppenmitglieder.",
 
-    "SkillFirstAidT3Way2Name": "Way of the Unshaken",
+    "SkillFirstAidT3Way2Name": "Weg des Unerschütterten",
     "SkillFirstAidT3Way2Desc": "Entfernt auch alle mentalen Debuffs. Kann auch bei Debuffs eingesetzt werden, die die Skillnutzung verhindern würden.",
 
     "SkillFirstAidUltName": "Wiederbelebung",
@@ -2298,7 +2301,7 @@
     "DebuffMental": "Mentaler Debuff",
     "DebuffPhysical": "Physischer Debuff",
     "EffectBaseDuration": "Grunddauer des Statuseffekts",
-    "EffectBlinded": "Spieler: Bildschirm wird heller. Nicht-Spieler greifen nicht an.",
+    "EffectBlinded": "Spieler: Der Bildschirm wird weiß und verhindert die Sicht. Nicht-Spieler greifen nicht an.",
     "EffectConfused": "Verwirrt",
     "EffectCrippled": "Verkrüppelt",
     "EffectDamageBonus": "Schadensbonus des Statuseffekts",
@@ -2312,7 +2315,7 @@
     "EffectMovePenalty": "−60 % Bewegungsgeschwindigkeit.",
     "EffectNauseated": "Angeekelt",
     "EffectNeutralized": "Neutralisiert",
-    "EffectOutgoingDamagePenalty": "−80 % verursachter Schaden mit allen Quellen außer Schaden-über-Zeit-Effekten.",
+    "EffectOutgoingDamagePenalty": "Das Ziel verursacht −80 % Schaden mit allen Quellen, ausgenommen Schaden-über-Zeit-Effekte.",
     "EffectParalyzed": "Paralysiert",
     "EffectPoisoned": "Vergiftet",
     "EffectRadiation": "Strahlung",
@@ -2325,6 +2328,27 @@
     "EffectTraumatizedName": "Traumatisiert",
     "EffectVulnerable": "Verwundbar",
     "EffectiveTooltipDurationNote": "Zusätzliche Dauer laut Tooltip.",
+    "GlossaryAggroDesc": "Die Priorisierung, welches Ziel ein Nicht-Spieler als Nächstes angreift.",
+    "GlossaryAggroName": "Aggro",
+    "GlossaryBleedingDesc": "Verursacht pro Sekunde Schaden in Höhe von 2 % der maximalen HP des Ziels. Stapelt nicht; erneute Anwendung erneuert die Dauer. Blutung umgeht Schilde.",
+    "GlossaryBleedingName": "Blutung",
+    "GlossaryDisarmedDesc": "Spieler können keine Waffen benutzen. Nicht-Spieler greifen nicht an.",
+    "GlossaryDisarmedName": "Entwaffnet",
+    "GlossaryHasteDesc": "+35 % Bewegungsgeschwindigkeit.",
+    "GlossaryHasteName": "Eile",
+    "GlossaryMoveSpeedDesc": "Die Geschwindigkeit, mit der du dich bewegst.",
+    "GlossaryMoveSpeedName": "Bewegungsgeschwindigkeit",
+    "GlossaryNpcDesc": "Jede Einheit, die kein Spieler ist, zum Beispiel Zombies und NPCs.",
+    "GlossaryNpcName": "Nicht-Spieler",
+    "GlossaryPacifiedDesc": "Entfernt dich von der Aggro-Liste eines Nicht-Spielers.",
+    "GlossaryPacifiedName": "Befriedet",
+    "GlossarySlowedName": "Gelähmt",
+    "GlossarySlowingDebuffsDesc": "Verkrüppelt, Gelähmt und Unterdrückt gelten als geschwindigkeitsreduzierende Debuffs.",
+    "GlossarySlowingDebuffsName": "Geschwindigkeitsreduzierende Debuffs",
+    "GlossaryStunnedDesc": "Das Ziel kann sich nicht bewegen, nicht angreifen, keine Gegenstände nutzen und keine Fähigkeiten einsetzen.",
+    "GlossarySuppressedDesc": "−20 % Bewegungsgeschwindigkeit und −40 % verursachter Schaden.",
+    "GlossaryTauntDesc": "Setzt den Anwender des Spotts an die Spitze der Aggro-Liste eines Nicht-Spielers.",
+    "GlossaryTauntName": "Spott",
 
     "ConditionChargesExhausted": "Ladungen aufgebraucht",
     "ConditionCrouching": "Beim Ducken",
@@ -2367,7 +2391,7 @@
     "UnitRating": "Wertung",
     "UnitStamina": "Ausdauer",
 
-    "NoteUnboundDebuffList": "Verkrüppelt, Paralysiert und Unterdrückt laut erweitertem Unbound-Tooltip.",
+    "NoteUnboundDebuffList": "Verkrüppelt, Gelähmt und Unterdrückt laut erweitertem Unbound-Tooltip.",
     "RuleBestWeaponDps": "Höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe (0.7.0.1)",
     "RuleDebuffImmunity": "Nach einem erlittenen Debuff besteht für einige Sekunden Immunität gegen weitere Instanzen desselben Debuffs. Dauer nicht beziffert.",
     "RuleRoundUpSeconds": "Auf nächste volle Sekunde aufrunden",
@@ -2412,7 +2436,7 @@
     "TreePoisonedName": "Vergiftet",
     "TreeSlowedDesc": "−60 % Bewegungsgeschwindigkeit; keine vollständige Immobilisierung.",
     "TreeSlowedName": "Gelähmt",
-    "TreeTraumatizedDesc": "",
+    "TreeTraumatizedDesc": "Spieler: beide Mausachsen invertiert. Nicht-Spieler rennen in zufällige Richtungen davon.",
     "TreeTraumatizedName": "Traumatisiert",
     "TreeVulnerableDesc": "+25 % erlittener Schaden durch alle Angriffe.",
     "TreeVulnerableName": "Verwundbar"
@@ -2458,7 +2482,7 @@
       "id": "ui.tooltips",
       "title": "Gemeinsame Skill-Tooltips",
       "firstKey": "TooltipRank",
-      "lastKey": "RankDurationFor"
+      "lastKey": "HintStatusHelpRelease"
     },
     {
       "id": "ui.footer",
@@ -2594,7 +2618,7 @@
     },
     {
       "id": "tree.STREETSMARTS",
-      "title": "Street Smarts",
+      "title": "Straßenklugheit",
       "firstKey": "TreeStreetSmartsName",
       "lastKey": "LabelTreeStreetSmartsName"
     },
@@ -2644,7 +2668,7 @@
       "id": "shared.effects",
       "title": "Effekte und Debuffs",
       "firstKey": "DebuffMental",
-      "lastKey": "EffectiveTooltipDurationNote"
+      "lastKey": "GlossaryTauntName"
     },
     {
       "id": "shared.conditions",

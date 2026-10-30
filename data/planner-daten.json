@@ -19237,7 +19237,7 @@
             "effectKey": "SkillConstructionT2WayUNBOUNDDesc",
             "speedReducingDebuffsNamedKeys": [
               "EffectCrippled",
-              "EffectParalyzed",
+              "EffectRooted",
               "EffectSuppressed"
             ]
           },
@@ -31462,7 +31462,8 @@
             "baseStaminaCost": 75,
             "baseCooldownSeconds": 100,
             "objectDurationSeconds": 5,
-            "unlockDisplayed": 16
+            "unlockDisplayed": 16,
+            "radiusMeters": 10
           },
           "descriptionKey": "SkillMechanicsT2Desc",
           "effectiveEffects": [

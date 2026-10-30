@@ -141,6 +141,7 @@
     "PoisonTick": "{seconds} s: {percent}% max target HP",
     "TitleRankValues": "Rank values",
     "HintSkillControls": "Left-click +1 · Right-click −1",
+    "HintStatusHelp": "Hold Ctrl to explain status effects",
     "TitleEffectiveValues": "Current build values",
     "KindActive": "Active",
     "KindEnhancer": "Enhancer",
@@ -148,6 +149,8 @@
     "KindUltimate": "Ultimate",
     "KindWay": "Way",
     "RankDurationFor": "for",
+    "TitleStatusHelp": "Effects and terms explained",
+    "HintStatusHelpRelease": "Release Ctrl to return to the skill tooltip",
 
     "HintPlannerStatus": "0.14.6 · Build JSON saves skill trees, perks, character level and the level lock. Local browser storage may be restricted for file URLs.",
 
@@ -240,8 +243,8 @@
     "SkillAssaultRifleT2Way2Desc": "Hits apply Disgusted for 4 s: the target cannot use consumables.",
 
     "SkillAssaultRifleT3Name": "C-Clamp Grip",
-    "SkillAssaultRifleT3Desc": "Grants +80% damage for 8 s while standing still. Hits apply Vulnerable for 5 s: the target takes +25% critical damage from attacks.",
-    "SkillAssaultRifleT3EffectiveDesc": "Grants +{effect0}% damage for 8 s while standing still. Hits apply Vulnerable for 5 s: the target takes +25% critical damage from attacks.",
+    "SkillAssaultRifleT3Desc": "Grants +80% damage for 8 s while standing still. Hits apply Vulnerable for 5 s: the target takes +25% damage from all attacks.",
+    "SkillAssaultRifleT3EffectiveDesc": "Grants +{effect0}% damage for 8 s while standing still. Hits apply Vulnerable for 5 s: the target takes +25% damage from all attacks.",
 
     "SkillAssaultRifleT3CooldownName": "Cooldown Enhancer",
     "SkillAssaultRifleT3CooldownDesc": "Improves cooldown.",
@@ -481,7 +484,7 @@
     "SkillRevolverT3ImpactDesc": "Improves additional active weapon DPS.",
 
     "SkillRevolverT3Way1Name": "Way of the Nightmare",
-    "SkillRevolverT3Way1Desc": "Hits inflict Traumatized for 3 s: players lose mouse control, non-player targets run away in random directions.",
+    "SkillRevolverT3Way1Desc": "Hits inflict Traumatized for 3 s: both mouse axes are inverted for players; non-player targets run away in random directions.",
 
     "SkillRevolverT3Way2Name": "Way of the Staggerer",
     "SkillRevolverT3Way2Desc": "Hits inflict Dazed for 3 s: player movement keys are randomly swapped; non-player targets run away in a random direction.",
@@ -1150,7 +1153,7 @@
     "SkillConstructionT2ImpactDesc": "",
 
     "SkillConstructionT2WayUNBOUNDName": "Way of the Unbound",
-    "SkillConstructionT2WayUNBOUNDDesc": "Ignores all negative movement speed effects caused by movement-reducing debuffs.",
+    "SkillConstructionT2WayUNBOUNDDesc": "Ignores all negative movement speed effects caused by movement-reducing debuffs: Crippled, Slowed and Suppressed.",
 
     "SkillConstructionT2WayUNFADINGName": "Way of the Unfading",
     "SkillConstructionT2WayUNFADINGDesc": "+10 seconds status effect duration; 25 seconds total.",
@@ -1690,8 +1693,8 @@
     "SkillMechanicsT1Way2Desc": "Extends the status effect by 4 s (base 4 s, total 8 s).",
 
     "SkillMechanicsT2Name": "Distracting Robot",
-    "SkillMechanicsT2Desc": "Creates a stationary, invulnerable robot. Taunts all non-player targets in the area and pacifies all targets currently aggroed on you. Disappears after 5 s. Taunt moves the robot to the top of the aggro list; pacification removes you from a non-player target’s aggro list.",
-    "SkillMechanicsT2EffectiveDesc": "Creates a stationary, invulnerable robot. Taunts all non-player targets in the area and pacifies all targets currently aggroed on you. Disappears after {effect0} s. Taunt moves the robot to the top of the aggro list; pacification removes you from a non-player target’s aggro list.",
+    "SkillMechanicsT2Desc": "Creates a stationary, invulnerable Distracting Robot. Taunts all non-player targets within 10 m and pacifies all targets currently aggroed on you. Disappears after 5 s.",
+    "SkillMechanicsT2EffectiveDesc": "Creates a stationary, invulnerable Distracting Robot. Taunts all non-player targets within 10 m and pacifies all targets currently aggroed on you. Disappears after {effect0} s.",
 
     "SkillMechanicsT2CooldownName": "Cooldown Enhancer",
     "SkillMechanicsT2CooldownDesc": "Improves cooldown.",
@@ -2298,7 +2301,7 @@
     "DebuffMental": "Mental debuff",
     "DebuffPhysical": "Physical debuff",
     "EffectBaseDuration": "Base status effect duration",
-    "EffectBlinded": "Players: screen becomes brighter. Non-player targets do not attack.",
+    "EffectBlinded": "Players: the screen turns white, obscuring vision. Non-player targets do not attack.",
     "EffectConfused": "Confused",
     "EffectCrippled": "Crippled",
     "EffectDamageBonus": "Status effect damage bonus",
@@ -2312,7 +2315,7 @@
     "EffectMovePenalty": "−60% movement speed.",
     "EffectNauseated": "Disgusted",
     "EffectNeutralized": "Neutralized",
-    "EffectOutgoingDamagePenalty": "−80% damage dealt from all sources except damage-over-time effects.",
+    "EffectOutgoingDamagePenalty": "The target deals −80 % damage from all sources except damage-over-time effects.",
     "EffectParalyzed": "Paralyzed",
     "EffectPoisoned": "Poisoned",
     "EffectRadiation": "Radiation",
@@ -2325,6 +2328,27 @@
     "EffectTraumatizedName": "Traumatized",
     "EffectVulnerable": "Vulnerable",
     "EffectiveTooltipDurationNote": "Additional duration stated in the tooltip.",
+    "GlossaryAggroDesc": "The priority that determines which target a non-player unit attacks next.",
+    "GlossaryAggroName": "Aggro",
+    "GlossaryBleedingDesc": "Deals damage equal to 2 % of the target's maximum HP per second. Does not stack; reapplication refreshes the duration. Bleeding bypasses shields.",
+    "GlossaryBleedingName": "Bleeding",
+    "GlossaryDisarmedDesc": "Players cannot use weapons. Non-player targets do not attack.",
+    "GlossaryDisarmedName": "Disarmed",
+    "GlossaryHasteDesc": "+35 % movement speed.",
+    "GlossaryHasteName": "Haste",
+    "GlossaryMoveSpeedDesc": "The speed at which you move.",
+    "GlossaryMoveSpeedName": "Movement speed",
+    "GlossaryNpcDesc": "Any unit that is not a player, such as zombies and NPCs.",
+    "GlossaryNpcName": "Non-player",
+    "GlossaryPacifiedDesc": "Removes you from a non-player target's aggro list.",
+    "GlossaryPacifiedName": "Pacified",
+    "GlossarySlowedName": "Slowed",
+    "GlossarySlowingDebuffsDesc": "Crippled, Slowed and Suppressed count as movement-reducing debuffs.",
+    "GlossarySlowingDebuffsName": "Movement-reducing debuffs",
+    "GlossaryStunnedDesc": "The target cannot move, attack, use items or use abilities.",
+    "GlossarySuppressedDesc": "−20 % movement speed and −40 % damage dealt.",
+    "GlossaryTauntDesc": "Places the taunting entity at the top of a non-player target's aggro list.",
+    "GlossaryTauntName": "Taunt",
 
     "ConditionChargesExhausted": "Charges exhausted",
     "ConditionCrouching": "While crouching",
@@ -2367,7 +2391,7 @@
     "UnitRating": "Rating",
     "UnitStamina": "Stamina",
 
-    "NoteUnboundDebuffList": "Crippled, Paralyzed, and Suppressed according to the extended Unbound tooltip.",
+    "NoteUnboundDebuffList": "Crippled, Slowed and Suppressed according to the extended Unbound tooltip.",
     "RuleBestWeaponDps": "Highest base weapon DPS across primary and secondary weapons (0.7.0.1)",
     "RuleDebuffImmunity": "After suffering a debuff, there is immunity against further instances of the same debuff for several seconds. Duration not specified.",
     "RuleRoundUpSeconds": "Round up to the next whole second",
@@ -2412,9 +2436,9 @@
     "TreePoisonedName": "Poisoned",
     "TreeSlowedDesc": "−60% movement speed; does not fully immobilize.",
     "TreeSlowedName": "Paralyzed",
-    "TreeTraumatizedDesc": "",
+    "TreeTraumatizedDesc": "Players: both mouse axes are inverted. Non-player targets run away in random directions.",
     "TreeTraumatizedName": "Traumatized",
-    "TreeVulnerableDesc": "+25% damage taken from all attacks.",
+    "TreeVulnerableDesc": "+25 % damage taken from all attacks.",
     "TreeVulnerableName": "Vulnerable"
   },
   "textGroups": [
@@ -2458,7 +2482,7 @@
       "id": "ui.tooltips",
       "title": "Shared skill tooltips",
       "firstKey": "TooltipRank",
-      "lastKey": "RankDurationFor"
+      "lastKey": "HintStatusHelpRelease"
     },
     {
       "id": "ui.footer",
@@ -2644,7 +2668,7 @@
       "id": "shared.effects",
       "title": "Effects and debuffs",
       "firstKey": "DebuffMental",
-      "lastKey": "EffectiveTooltipDurationNote"
+      "lastKey": "GlossaryTauntName"
     },
     {
       "id": "shared.conditions",

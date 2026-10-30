@@ -9,7 +9,7 @@ ok(JSON.stringify(E.parse(JSON.parse(JSON.stringify(s))))===JSON.stringify(s));a
 // Every tree can unlock ultimate after a reachable 45-point investment.
 for(const t of D.trees){let state=E.fresh();state.characterLevel=85;state.caps[t.id]=50;for(let loop=0;loop<60&&E.sum(state.points[t.id]||{})<45;loop++){let changed=false;for(const node of t.nodes){if(node.kind==='Way'||node.kind==='Ultimate'||E.sum(state.points[t.id]||{})>=45)continue;const res=E.change(state,t.id,node.id,1);if(!res.error){state=res.state;changed=true;}}if(!changed)break;}const ult=t.nodes.find(n=>n.kind==='Ultimate'),res=E.change(state,t.id,ult.id,1);assert(!res.error,t.name+': '+res.error);n++;}
 const html=fs.readFileSync(__dirname+'/Persist-Skill-Planner.html','utf8'),scripts=[...html.matchAll(/<script(?: [^>]*)?>([\s\S]*?)<\/script>/g)].map(m=>m[1]);const els=new Map();function el(id){if(!els.has(id))els.set(id,{value:'',style:{setProperty(){}},files:[],textContent:id==='dataset'?JSON.stringify(D):'',setAttribute(){},click(){}});return els.get(id);}
-const context={console,document:{getElementById:el,querySelectorAll:()=>[],createElement:()=>({click(){}})},localStorage:{getItem:()=>null,setItem(){}},setTimeout,URL,Blob};vm.createContext(context);vm.runInContext(scripts[1],context);vm.runInContext(scripts[2],context);vm.runInContext(scripts[3],context);ok(el('nav').innerHTML.includes('Schrotflinten'));ok(el('tree').innerHTML.includes('data-node'));ok(!html.includes('id="tasklist"'));el('charlevel').value='23';el('charlevel').onchange();ok(el('charlevel').value===23);ok(!/\b(?:src|href)=["']https?:/.test(html));console.log(n+' Prüfungen bestanden.');
+const tooltipEvents={};const context={console,document:{addEventListener:(type,handler)=>tooltipEvents[type]=handler,defaultView:{addEventListener:(type,handler)=>tooltipEvents['window-'+type]=handler},getElementById:el,querySelectorAll:()=>[],createElement:()=>({click(){}})},localStorage:{getItem:()=>null,setItem(){}},setTimeout,URL,Blob};vm.createContext(context);vm.runInContext(scripts[1],context);vm.runInContext(scripts[2],context);vm.runInContext(scripts[3],context);ok(el('nav').innerHTML.includes('Schrotflinten'));ok(el('tree').innerHTML.includes('data-node'));ok(!html.includes('id="tasklist"'));el('charlevel').value='23';el('charlevel').onchange();ok(el('charlevel').value===23);ok(!/\b(?:src|href)=["']https?:/.test(html));console.log(n+' Prüfungen bestanden.');
 
 for(const [level,expected] of [[1,[0,0]],[9,[0,0]],[10,[1,0]],[44,[35,0]],[45,[35,1]],[46,[36,1]],[55,[44,2]],[85,[71,5]]])ok(JSON.stringify(E.earned(level))===JSON.stringify(expected));
 let q=E.fresh();q.characterLevel=44;q.caps.MINING=50;ok(!E.validate(q));q.characterLevel=45;ok(!E.validate(q));ok(JSON.stringify(E.usage(q))==='[7,1]');q.caps.CONSTR=50;ok(!E.validate(q));q.characterLevel=55;ok(!E.validate(q));console.log('Zusätzliche Badge-Grenzfälle bestanden.');
@@ -32,7 +32,7 @@ for(const [level,points] of [[1,0],[9,0],[10,1],[14,1],[15,2],[20,3],[100,19]])o
 
 const perkPlus={dataset:{perk:'PERK-1',delta:'1'}},perkMinus={dataset:{perk:'PERK-1',delta:'-1'}};context.document.querySelectorAll=q=>q==='[data-perk]'?[perkPlus,perkMinus]:[];vm.runInContext('state=E.fresh();render()',context);perkPlus.onclick();ok(el('perklist').innerHTML.includes('+6 '));ok(el('perklist').innerHTML.includes('1 von 3 Punkten'));perkPlus.onclick();ok(el('perklist').innerHTML.includes('+10 '));perkMinus.onclick();ok(el('perklist').innerHTML.includes('1 von 3 Punkten'));ok(!el('perklist').innerHTML.includes('<select'));console.log('Perk-Box: Plus, Minus, Gesamtbonus und Rangpunkte geprüft.');
 // Reverse a fully trained tree; every accepted refund releases unnecessary badges.
-let refund=structuredClone(auto),capsSeen=[];for(let loop=0;loop<80&&E.sum(refund.points.MINING||{});loop++){let changed=false;for(const n of [...mining.nodes].reverse()){const res=E.change(refund,'MINING',n.id,-1);if(!res.error){refund=res.state;capsSeen.push(refund.caps.MINING);ok(refund.caps.MINING>=Math.max(10,Math.ceil(E.sum(refund.points.MINING)/5)*5));changed=true;}}if(!changed)break;}ok(E.sum(refund.points.MINING)===0);ok(refund.caps.MINING===10);ok(E.planLevel(refund)===1);vm.runInContext('state=E.fresh();state.points.MINING={"MINING-T1":1};render()',context);ok(el('overviewcontent').innerHTML.includes('Orebreaker'));ok(el('overviewcontent').innerHTML.includes('Aktiv nutzbare Fähigkeiten'));ok(!html.includes('data-budget='));console.log('Rückbau bis null, Badge-Freigabe und neue Build-Übersicht geprüft.');
+let refund=structuredClone(auto),capsSeen=[];for(let loop=0;loop<80&&E.sum(refund.points.MINING||{});loop++){let changed=false;for(const n of [...mining.nodes].reverse()){const res=E.change(refund,'MINING',n.id,-1);if(!res.error){refund=res.state;capsSeen.push(refund.caps.MINING);ok(refund.caps.MINING>=Math.max(10,Math.ceil(E.sum(refund.points.MINING)/5)*5));changed=true;}}if(!changed)break;}ok(E.sum(refund.points.MINING)===0);ok(refund.caps.MINING===10);ok(E.planLevel(refund)===1);vm.runInContext('state=E.fresh();state.points.MINING={"MINING-T1":1};render()',context);ok(el('overviewcontent').innerHTML.includes(D.trees.find(t=>t.id==='MINING').nodes.find(n=>n.id==='MINING-T1').name));ok(el('overviewcontent').innerHTML.includes('Aktiv nutzbare Fähigkeiten'));ok(!html.includes('data-budget='));console.log('Rückbau bis null, Badge-Freigabe und neue Build-Übersicht geprüft.');
 vm.runInContext('state.caps.MINING=15;switchLanguage("en")',context);ok(el('planrequirement').innerHTML.includes('Entered: 1 · required: 10'));vm.runInContext('switchLanguage("de")',context);ok(el('planrequirement').innerHTML.includes('Eingegeben: 1 · benötigt: 10'));console.log('Direkter Sprachwechsel mit Schlüsseln geprüft.');
 const thief=D.trees.find(t=>t.id==='THIEVERY');ok(thief.documented);ok(thief.nodes.length===24);ok(thief.nodes.find(n=>n.id==='THIEVERY-T2').details.baseCooldownSeconds===220);ok(thief.levels.find(v=>v.skillId==='THIEVERY-T2-CD'&&v.rank===1).value===192);ok(thief.levels.find(v=>v.skillId==='THIEVERY-ULT'&&v.rank===5&&v.metric==='Sichtbarkeit nach Verlassen').value===60);const enPack=JSON.parse(fs.readFileSync(__dirname+'/locales/en.json'));ok(!enPack.reference);for(const t of D.trees)for(const n of t.nodes){ok(typeof enPack.texts[n.nameKey]==='string');ok(typeof enPack.texts[n.descriptionKey]==='string');}console.log('Dieberei und übersetzte Skilltexte in englischer Datei geprüft.');
 const elec=D.trees.find(t=>t.id==='ELECTRONICS'),wood=D.trees.find(t=>t.id==='WOODWORKING');ok(elec.nodes.find(n=>n.id==='ELECTRONICS-T1').details.baseActiveWeaponDpsPercent===150);ok(elec.nodes.find(n=>n.id==='ELECTRONICS-T2').details.baseCooldownSeconds===180);ok(elec.nodes.find(n=>n.id==='ELECTRONICS-T2').details.baseHealingPercent===2.5);ok(wood.documented);ok(wood.levels.find(x=>x.skillId==='WOODWORKING-ULT'&&x.rank===5&&x.metric==='Abklingzeitverkürzung aktiver Fähigkeiten').value===78);ok(wood.nodes.find(n=>n.id==='WOODWORKING-T2').details.blockedMentalDebuffs===1);console.log('Elektronik-Grundwerte und Holzverarbeitungsstaffeln geprüft.');
@@ -70,7 +70,7 @@ vm.runInContext('state=E.fresh();render()',context);el('charactername').value='W
 }
 // Key catalog parity, parameter compatibility and text-only skill reworks.
 const de2=JSON.parse(fs.readFileSync(__dirname+'/locales/de.json')),en2=JSON.parse(fs.readFileSync(__dirname+'/locales/en.json'));
-ok(de2.schemaVersion===2&&en2.schemaVersion===2);ok(JSON.stringify(Object.keys(de2.texts))===JSON.stringify(Object.keys(en2.texts)));ok(de2.texts.TitleCharPlanner==='Charakter & Skill Planner');ok(de2.texts.SkillShotgunT1Name==='Trigger Control');
+ok(de2.schemaVersion===2&&en2.schemaVersion===2);ok(JSON.stringify(Object.keys(de2.texts))===JSON.stringify(Object.keys(en2.texts)));ok(de2.texts.TitleCharPlanner==='Charakter & Skill Planner');ok(D.trees.find(t=>t.id==='SHOTGUNS').nodes.find(n=>n.id==='SHOTGUNS-T1').name===de2.texts.SkillShotgunT1Name);
 const paramsOf=s=>[...s.matchAll(/\{([A-Za-z][A-Za-z0-9]*)\}/g)].map(m=>m[1]).sort().join('|');for(const k of Object.keys(de2.texts))ok(paramsOf(de2.texts[k])===paramsOf(en2.texts[k]));
 const il=createI18n([de2,en2]);ok(il.t('BadgeRemaining',{count:7})==='7 frei');il.setCode('en');ok(il.t('BadgeRemaining',{count:7})==='7 remaining');assert.throws(()=>il.check({schemaVersion:1,code:'fr',label:'Français',strings:{},skills:{}}));assert.throws(()=>il.check({schemaVersion:2,code:'fr',label:'Français',texts:{BadgeRemaining:'Restant'}}));il.install({schemaVersion:2,code:'fr',label:'Français',texts:{BadgeRemaining:'{count} libres',SkillShotgunT1Name:'Nouveau nom'}});ok(il.t('BadgeRemaining',{count:3})==='3 libres');ok(il.t('TitleCharPlanner')===de2.texts.TitleCharPlanner);const keyData=JSON.parse(fs.readFileSync(__dirname+'/data/planner-daten.json'));const rebuilt=il.resolve(keyData);ok(rebuilt.trees.find(t=>t.id==='SHOTGUNS').nodes.find(n=>n.id==='SHOTGUNS-T1').name==='Nouveau nom');ok(keyData.trees.find(t=>t.id==='SHOTGUNS').nodes.find(n=>n.id==='SHOTGUNS-T1').name===undefined);
 // Static labels and placeholders bind directly to keys; no text matching or TreeWalker.
@@ -200,3 +200,50 @@ legacyRecoil.perks['PERK-15']=4;assert.throws(()=>E.parse(legacyRecoil));
 ok(!JSON.stringify(D).includes('recoilReductionPercent'));ok(!JSON.stringify(D).includes('MetricRecoil'));
 const patchLabels=JSON.parse(fs.readFileSync(__dirname+'/locales/de.json')).texts;ok(patchLabels.PatchCombatRules.includes('Momentum'));ok(patchLabels.PatchCombatRules.includes('Charaktermenü'));
 console.log('0.7.0.0: alter Perk-Import, freie Punkte, ungültige Ränge, entfernte Rückstoßwerte und getrennte Waffenspecials geprüft.');
+
+// Run inside the existing planner test context after test.cjs initializes its DOM.
+for(const code of ['de','en']){
+ context.helpLanguage=code;
+ vm.runInContext('switchLanguage(helpLanguage);state=E.fresh();current="MINING";showTip({getBoundingClientRect:()=>({right:100,top:100})},"MINING-T3")',context);
+ const standardTip=el('skilltooltip').innerHTML;
+ ok(standardTip.includes(code==='de'?'Strg':'Ctrl'));
+ const stateBefore=vm.runInContext('JSON.stringify(state)',context);
+ tooltipEvents.keydown({key:'Control',ctrlKey:true});
+ ok(el('skilltooltip').innerHTML.includes('status-help'));
+ ok(el('skilltooltip').innerHTML.includes(code==='de'?'Blutung':'Bleeding'));
+ ok(el('skilltooltip').innerHTML.includes('2 %'));
+ ok(vm.runInContext('JSON.stringify(state)',context)===stateBefore);
+ tooltipEvents.keyup({key:'Control',ctrlKey:false});
+ ok(el('skilltooltip').innerHTML===standardTip);
+ tooltipEvents.keydown({key:'Control',ctrlKey:true});
+ tooltipEvents['window-blur']();ok(el('skilltooltip').hidden);
+ ok(vm.runInContext('!controlHeld&&activeTooltip===null',context));
+ vm.runInContext('showTip({getBoundingClientRect:()=>({right:100,top:100})},"MINING-P1")',context);
+ tooltipEvents.keydown({key:'Control',ctrlKey:true});
+ ok(!el('skilltooltip').innerHTML.includes('class="status-help"'));
+ tooltipEvents.keyup({key:'Control',ctrlKey:false});
+}
+ok(vm.runInContext('relevantStatusHelp("Verkrüppelt Crippled Verkrüppelt").length',context)===1);
+ok(vm.runInContext('relevantStatusHelp("Heilen").length',context)===0);
+ok(vm.runInContext('relevantStatusHelp("Unterdrückt, Angewidert, Abgelenkt").length',context)===3);
+// Hostile text from an imported language pack is displayed as text, never markup.
+vm.runInContext('I.install({schemaVersion:2,code:"fr",label:"Test",texts:{GlossaryHasteName:"<img src=x onerror=alert(1)>",GlossaryHasteDesc:"<script>alert(1)</script>"}})',context);
+const safeHelp=vm.runInContext('statusHelpContent(STATUS_HELP.filter(x=>x[0]==="haste"))',context);
+ok(!safeHelp.includes('<img'));ok(!safeHelp.includes('<script>'));ok(safeHelp.includes('&lt;img'));
+vm.runInContext('switchLanguage("de");hideTip();controlHeld=false',context);
+console.log('Strg/Ctrl-Tooltips: DE/EN, passende Effekte, Loslassen, Fokusverlust, keine Skilländerung, Wortgrenzen und sichere Textausgabe geprüft.');
+for(const code of ['de','en']){
+ context.helpLanguage=code;
+ vm.runInContext('switchLanguage(helpLanguage);state=E.fresh();current="MECHANICS";showTip({getBoundingClientRect:()=>({right:100,top:100})},"MECHANICS-T2");setControlHelp(true)',context);
+ for(const term of (code==='de'?['Spott','Befriedet','Aggro','Nicht-Spieler']:['Taunt','Pacified','Aggro','Non-player']))ok(el('skilltooltip').innerHTML.includes(term));
+ vm.runInContext('setControlHelp(false);current="CONSTR";showTip({getBoundingClientRect:()=>({right:100,top:100})},"CONSTR-T2-WAY-UNBOUND");setControlHelp(true)',context);
+ for(const term of (code==='de'?['Verkrüppelt','Gelähmt','Unterdrückt','−60']:['Crippled','Slowed','Suppressed','−60']))ok(el('skilltooltip').innerHTML.includes(term));
+ vm.runInContext('setControlHelp(false);hideTip()',context);
+}
+ok(vm.runInContext('relevantStatusHelp("Paralysiert Paralysis Paralyzed Rooted").length',context)===0);
+const glossaryDe=JSON.parse(fs.readFileSync(__dirname+'/locales/de.json')).texts;
+ok(glossaryDe.EffectParalyzed==='Paralysiert');ok(glossaryDe.SkillRevolverT3Way1Desc.includes('Mausachsen invertiert'));
+ok(!glossaryDe.SkillAssaultRifleT3Desc.includes('kritischen Schaden'));ok(glossaryDe.SkillAssaultRifleT3Desc.includes('Schaden durch alle Angriffe'));
+ok(glossaryDe.GlossaryStunnedDesc.includes('keine Gegenstände'));ok(glossaryDe.GlossaryDisarmedDesc.includes('keine Waffen'));
+vm.runInContext('switchLanguage("de")',context);
+console.log('Screenshot-Abgleich: Spott, Befriedung, Aggro, Nicht-Spieler, Unbound, Traumatisiert und getrennte Paralysiert-Bezeichnung geprüft.');

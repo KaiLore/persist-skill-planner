@@ -12,6 +12,8 @@ Baumlevel und vergebene Skillpunkte sind unabhängig. Höhere Tiers werden durch
 
 ## Entwicklung
 
+Skill-Tooltips: Strg (englisch Ctrl) gedrückt halten, um die zum Skill passenden Statuseffekt-Erklärungen anzuzeigen. Beim Loslassen erscheint wieder der normale Tooltip. Die Zuordnung steht in `status-help.js`; Erklärungen und Bedienhinweise stehen übersetzbar in den Sprachdateien.
+
 `data/planner-daten.json` enthält die Planungsdaten. Sprachdateien liegen in `locales/`, Grafiken in `assets/skills/`. `engine.js` enthält die Planungsregeln, `app.js` und `template.html` die Oberfläche.
 
 Nach Änderungen mit Python 3 neu bauen und mit Node.js testen:

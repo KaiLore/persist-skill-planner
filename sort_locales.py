@@ -56,7 +56,7 @@ def organize(root, check=False):
             keys += ['PerkAdd', 'PerkRemove', 'PerkPointCount', 'PartlyEstimated', 'StatusEstimated', 'SourceUserReadout']
         add('ui.' + page, keys)
     add('ui.tooltips', function_keys('showTip') + function_keys('effectiveValues') +
-        [k for k in base if k.startswith('Kind')] + ['RankCount', 'RankDurationFor'])
+        [k for k in base if k.startswith('Kind')] + ['RankCount', 'RankDurationFor', 'TitleStatusHelp', 'HintStatusHelp', 'HintStatusHelpRelease'])
     add('ui.footer', ['HintPlannerStatus'])
     add('ui.messages', [k for k in base if k.startswith(('Msg', 'Err', 'Warn', 'Default'))])
 
@@ -77,7 +77,7 @@ def organize(root, check=False):
     for group, prefixes in [
         ('shared.weaponSpecials', ('Special', 'TitleWeaponSpecials', 'WeaponSpecialsSource')),
         ('shared.metrics', ('Metric',)), ('shared.facts', ('Fact',)),
-        ('shared.effects', ('Effect', 'Debuff',)), ('shared.conditions', ('Condition',)),
+        ('shared.effects', ('Effect', 'Debuff', 'Glossary')), ('shared.conditions', ('Condition',)),
         ('shared.targets', ('Target',)), ('shared.units', ('Unit',)),
         ('shared.rules', ('Rule', 'Patch', 'Poison', 'Note')),
         ('shared.other', ('',))]:
