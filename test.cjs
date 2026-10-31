@@ -267,3 +267,23 @@ for(const code of ['de','en']){
 }
 vm.runInContext('switchLanguage("de");hideTip()',context);
 console.log('Aufgeräumte DE/EN-Tooltips: allgemeine Wirkungen nur unter Strg, einschließlich Detailfelder und verschachtelter Begriffserklärungen.');
+// Enhancers change current values, while the separately labelled base facts stay fixed.
+for(const code of ['de','en']){
+ context.baseFactLanguage=code;
+ for(const tree of D.trees)for(const node of tree.nodes.filter(n=>n.kind==='Aktiv'&&n.details?.baseCooldownSeconds!==undefined&&n.details?.baseStaminaCost!==undefined)){
+  context.baseFactTree=tree.id;context.baseFactNode=node.id;
+  vm.runInContext('switchLanguage(baseFactLanguage);state=E.fresh();current=baseFactTree;state.caps[current]=50;state.points[current]={[baseFactNode]:1}',context);
+  for(const rank of [0,1,5]){
+   context.baseFactRank=rank;
+   const result=vm.runInContext(`(()=>{const t=tree(),n=t.nodes.find(n=>n.id===baseFactNode);for(const suffix of ['CD','STA']){const child=t.nodes.find(x=>x.parent===n.id&&x.id.endsWith('-'+suffix));if(child)state.points[current][child.id]=baseFactRank;}return {facts:skillFacts(t,n),values:E.effectiveSkill(state,current,n.id).values,base:n.details};})()`,context);
+   const cdLabel=code==='de'?'Grund-Abklingzeit (s)':'Base cooldown (s)',staLabel=code==='de'?'Grundkosten Ausdauer':'Base stamina cost';
+   ok(result.facts.includes(cdLabel+': '+result.base.baseCooldownSeconds));ok(result.facts.includes(staLabel+': '+result.base.baseStaminaCost));
+   for(const metric of ['MetricCooldown','MetricStaminaCost']){
+    const value=result.values.find(v=>v.metricKey===metric);assert(value);
+    if(rank>0){const child=tree.nodes.find(x=>x.parent===node.id&&x.id.endsWith(metric==='MetricCooldown'?'-CD':'-STA'));const row=tree.levels.find(x=>x.skillId===child?.id&&x.rank===rank);if(row)ok(value.value===row.value);}
+   }
+  }
+ }
+}
+vm.runInContext('switchLanguage("de");hideTip()',context);
+console.log('Grundkosten und Grund-Abklingzeit aller aktiven Skills bleiben bei Enhancer-Rang 0/1/5 unverändert; aktuelle Werte werden weiterhin reduziert (DE/EN).');
