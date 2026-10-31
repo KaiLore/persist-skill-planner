@@ -205,8 +205,8 @@
     "SkillAssaultRifleP4Desc": "Increases headshot damage with an active assault rifle while the target is affected by a physical debuff.",
 
     "SkillAssaultRifleT1Name": "Kneecapper",
-    "SkillAssaultRifleT1Desc": "Grants +40% damage for 6 s. Hits apply Crippled for 3 s: −40% movement speed and −20% target damage.",
-    "SkillAssaultRifleT1EffectiveDesc": "Grants +{effect0}% damage for 6 s. Hits apply Crippled for 3 s: −40% movement speed and −20% target damage.",
+    "SkillAssaultRifleT1Desc": "Grants +40% damage for 6 s. Hits apply Crippled for 3 s.",
+    "SkillAssaultRifleT1EffectiveDesc": "Grants +{effect0}% damage for 6 s. Hits apply Crippled for 3 s.",
 
     "SkillAssaultRifleT1CooldownName": "Cooldown Enhancer",
     "SkillAssaultRifleT1CooldownDesc": "Improves cooldown.",
@@ -237,14 +237,14 @@
     "SkillAssaultRifleT2ImpactDesc": "Improves additional active weapon DPS.",
 
     "SkillAssaultRifleT2Way1Name": "Way of the Oppressor",
-    "SkillAssaultRifleT2Way1Desc": "Hits apply Suppressed for 4 s: −20% movement speed and −40% target damage.",
+    "SkillAssaultRifleT2Way1Desc": "Hits apply Suppressed for 4 s.",
 
     "SkillAssaultRifleT2Way2Name": "Way of the Abhorrent",
     "SkillAssaultRifleT2Way2Desc": "Hits apply Disgusted for 4 s: the target cannot use consumables.",
 
     "SkillAssaultRifleT3Name": "C-Clamp Grip",
-    "SkillAssaultRifleT3Desc": "Grants +80% damage for 8 s while standing still. Hits apply Vulnerable for 5 s: the target takes +25% damage from all attacks.",
-    "SkillAssaultRifleT3EffectiveDesc": "Grants +{effect0}% damage for 8 s while standing still. Hits apply Vulnerable for 5 s: the target takes +25% damage from all attacks.",
+    "SkillAssaultRifleT3Desc": "Grants +80% damage for 8 s while standing still. Hits apply Vulnerable for 5 s.",
+    "SkillAssaultRifleT3EffectiveDesc": "Grants +{effect0}% damage for 8 s while standing still. Hits apply Vulnerable for 5 s.",
 
     "SkillAssaultRifleT3CooldownName": "Cooldown Enhancer",
     "SkillAssaultRifleT3CooldownDesc": "Improves cooldown.",
@@ -484,10 +484,10 @@
     "SkillRevolverT3ImpactDesc": "Improves additional active weapon DPS.",
 
     "SkillRevolverT3Way1Name": "Way of the Nightmare",
-    "SkillRevolverT3Way1Desc": "Hits inflict Traumatized for 3 s: both mouse axes are inverted for players; non-player targets run away in random directions.",
+    "SkillRevolverT3Way1Desc": "Hits inflict Traumatized for 3 s.",
 
     "SkillRevolverT3Way2Name": "Way of the Staggerer",
-    "SkillRevolverT3Way2Desc": "Hits inflict Dazed for 3 s: player movement keys are randomly swapped; non-player targets run away in a random direction.",
+    "SkillRevolverT3Way2Desc": "Hits inflict Dazed for 3 s.",
 
     "SkillRevolverUltName": "Furious Fanning",
     "SkillRevolverUltDesc": "On the next hit: instantly reloads if necessary, automatically fires until the magazine is empty, sets fire rate to 0.1 s between shots, increases damage based on rank, and applies Paralysis for 4 s. Instantly reloads again when the ability ends. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
@@ -1076,7 +1076,7 @@
     "SkillFishingT2ImpactDesc": "Increases Steadfast duration. Base duration: 10 s. Rank values show the full duration at each rank.",
 
     "SkillFishingT2WayFUGITIVEName": "Way of the Fugitive",
-    "SkillFishingT2WayFUGITIVEDesc": "A blocked debuff grants Haste for 5 s: +35% movement speed.",
+    "SkillFishingT2WayFUGITIVEDesc": "A blocked debuff grants Haste for 5 s.",
 
     "SkillFishingT2WayBASTIONName": "Way of the Bastion",
     "SkillFishingT2WayBASTIONDesc": "A blocked debuff grants +25% damage reduction for 5 s.",
@@ -1095,10 +1095,10 @@
     "SkillFishingT3ImpactDesc": "Improves the associated active skill. Requires its base point.",
 
     "SkillFishingT3WayTRAPPERName": "Way of the Trapper",
-    "SkillFishingT3WayTRAPPERDesc": "Paralyzed for 6 s: −60% movement speed.",
+    "SkillFishingT3WayTRAPPERDesc": "Paralyzed for 6 s.",
 
     "SkillFishingT3WayRAVAGERName": "Way of the Ravager",
-    "SkillFishingT3WayRAVAGERDesc": "Vulnerable for 8 s: +25% damage taken from all attacks.",
+    "SkillFishingT3WayRAVAGERDesc": "Vulnerable for 8 s.",
 
     "SkillFishingUltName": "Curare Curse",
     "SkillFishingUltDesc": "The next hit deals no direct damage but applies Confused, Disgusted, Crippled, and Poisoned. Poison lasts 10 s. Application of the three-second rule to this skill has not yet been separately confirmed.",
@@ -1153,7 +1153,7 @@
     "SkillConstructionT2ImpactDesc": "",
 
     "SkillConstructionT2WayUNBOUNDName": "Way of the Unbound",
-    "SkillConstructionT2WayUNBOUNDDesc": "Ignores all negative movement speed effects caused by movement-reducing debuffs: Crippled, Slowed and Suppressed.",
+    "SkillConstructionT2WayUNBOUNDDesc": "Ignores all negative movement speed effects caused by movement-reducing debuffs.",
 
     "SkillConstructionT2WayUNFADINGName": "Way of the Unfading",
     "SkillConstructionT2WayUNFADINGDesc": "+10 seconds status effect duration; 25 seconds total.",
@@ -1298,8 +1298,8 @@
     "SkillBotanyT1WaySTOICDesc": "Blocks one additional mental debuff.",
 
     "SkillBotanyT2Name": "Blinding Powder",
-    "SkillBotanyT2Desc": "Deals no damage; all targets in range are Blinded (3 s). Player screens become brighter; non-player targets do not attack.",
-    "SkillBotanyT2EffectiveDesc": "Deals no damage; all targets in range are Blinded (3 s). Player screens become brighter; non-player targets do not attack. Range: {effect0} m.",
+    "SkillBotanyT2Desc": "Deals no damage; all targets in range are Blinded (3 s).",
+    "SkillBotanyT2EffectiveDesc": "Deals no damage; all targets in range are Blinded (3 s). Range: {effect0} m.",
 
     "SkillBotanyT2CooldownName": "Cooldown Enhancer",
     "SkillBotanyT2CooldownDesc": "",
@@ -1409,7 +1409,7 @@
     "SkillThieveryT3ImpactDesc": "Improves Haste duration.",
 
     "SkillThieveryT3Way1Name": "Way of the Staggerer",
-    "SkillThieveryT3Way1Desc": "After Stunned is removed, Dazed is applied for 5 s. Players: movement keys are randomly shuffled; non-player targets move in random directions.",
+    "SkillThieveryT3Way1Desc": "After Stunned is removed, Dazed is applied for 5 s.",
 
     "SkillThieveryT3Way2Name": "Way of the Viper",
     "SkillThieveryT3Way2Desc": "Hit applies Poisoned for 10 s. Extended general poison scaling: after 2/4/6/8/10/12 s, deals 10/7/4/3/2/1% of the target's maximum HP respectively. This general explanation extends beyond the skill duration; do not derive a total damage value from it.",
@@ -1494,7 +1494,7 @@
     "SkillElectronicsT3Way2Desc": "Also reveals skill objects.",
 
     "SkillElectronicsUltName": "Overcharge",
-    "SkillElectronicsUltDesc": "Attack against all nearby targets. Deals damage based on the highest DPS value of your primary and secondary weapon and applies Blinded and Disgusted. Blinded: player screens become brighter, non-player targets do not attack. Disgusted: the target cannot use consumables. Since 0.7.0.1, damage uses the highest base DPS across primary and secondary weapons; weapon-specific bonuses such as backstab, critical damage and weapon identity damage do not apply.",
+    "SkillElectronicsUltDesc": "Attack against all nearby targets. Deals damage based on the highest DPS value of your primary and secondary weapon and applies Blinded and Disgusted. Since 0.7.0.1, damage uses the highest base DPS across primary and secondary weapons; weapon-specific bonuses such as backstab, critical damage and weapon identity damage do not apply.",
 
     "LabelTreeElectronicsName": "Electronics",
 

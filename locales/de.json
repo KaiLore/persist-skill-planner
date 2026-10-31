@@ -205,8 +205,8 @@
     "SkillAssaultRifleP4Desc": "Erhöht den Kopfschussschaden mit aktivem Sturmgewehr, solange das Ziel unter einem physischen Debuff leidet.",
 
     "SkillAssaultRifleT1Name": "Kniescheibenbrecher",
-    "SkillAssaultRifleT1Desc": "Gewährt für 6 s +40 % Schaden. Treffer wenden Verkrüppelt für 3 s an: −40 % Bewegungsgeschwindigkeit und −20 % Schaden des Ziels.",
-    "SkillAssaultRifleT1EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden. Treffer wenden Verkrüppelt für 3 s an: −40 % Bewegungsgeschwindigkeit und −20 % Schaden des Ziels.",
+    "SkillAssaultRifleT1Desc": "Gewährt für 6 s +40 % Schaden. Treffer wenden Verkrüppelt für 3 s an.",
+    "SkillAssaultRifleT1EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden. Treffer wenden Verkrüppelt für 3 s an.",
 
     "SkillAssaultRifleT1CooldownName": "Abklingzeitverstärker",
     "SkillAssaultRifleT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -237,14 +237,14 @@
     "SkillAssaultRifleT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
     "SkillAssaultRifleT2Way1Name": "Weg des Unterdrückers",
-    "SkillAssaultRifleT2Way1Desc": "Treffer verursachen für 4 s Unterdrückt: −20 % Bewegungsgeschwindigkeit und −40 % Schaden des Ziels.",
+    "SkillAssaultRifleT2Way1Desc": "Treffer verursachen für 4 s Unterdrückt.",
 
     "SkillAssaultRifleT2Way2Name": "Weg des Abscheulichen",
     "SkillAssaultRifleT2Way2Desc": "Treffer verursachen für 4 s Angewidert: Das Ziel kann keine Verbrauchsgegenstände nutzen.",
 
     "SkillAssaultRifleT3Name": "C-Clamp Grip",
-    "SkillAssaultRifleT3Desc": "Gewährt für 8 s beim Stillstehen +80 % Schaden. Treffer wenden Verwundbar für 5 s an: Das Ziel erleidet +25 % Schaden durch alle Angriffe.",
-    "SkillAssaultRifleT3EffectiveDesc": "Gewährt für 8 s beim Stillstehen +{effect0} % Schaden. Treffer wenden Verwundbar für 5 s an: Das Ziel erleidet +25 % Schaden durch alle Angriffe.",
+    "SkillAssaultRifleT3Desc": "Gewährt für 8 s beim Stillstehen +80 % Schaden. Treffer wenden Verwundbar für 5 s an.",
+    "SkillAssaultRifleT3EffectiveDesc": "Gewährt für 8 s beim Stillstehen +{effect0} % Schaden. Treffer wenden Verwundbar für 5 s an.",
 
     "SkillAssaultRifleT3CooldownName": "Abklingzeitverstärker",
     "SkillAssaultRifleT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -484,10 +484,10 @@
     "SkillRevolverT3ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
     "SkillRevolverT3Way1Name": "Weg des Alptraums",
-    "SkillRevolverT3Way1Desc": "Treffer verursachen Traumatisiert für 3 s: Bei Spielern werden beide Mausachsen invertiert; Nicht-Spieler rennen in zufällige Richtungen davon.",
+    "SkillRevolverT3Way1Desc": "Treffer verursachen Traumatisiert für 3 s.",
 
     "SkillRevolverT3Way2Name": "Weg des Erschütterers",
-    "SkillRevolverT3Way2Desc": "Treffer verursachen Benommen für 3 s: Bewegungstasten von Spielern werden zufällig vertauscht; Nicht-Spieler laufen in eine zufällige Richtung davon.",
+    "SkillRevolverT3Way2Desc": "Treffer verursachen Benommen für 3 s.",
 
     "SkillRevolverUltName": "Wildes Fächerfeuer",
     "SkillRevolverUltDesc": "Beim nächsten Treffer: Lädt bei Bedarf sofort nach, feuert automatisch bis zum leeren Magazin, setzt die Feuerrate auf 0,1 s zwischen Schüssen, erhöht rangabhängig Schaden und wendet Gelähmt für 4 s an. Lädt nach Ende der Fähigkeit sofort nach. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
@@ -1076,7 +1076,7 @@
     "SkillFishingT2ImpactDesc": "Erhöht die Wirkungsdauer von Standfest. Grunddauer: 10 s. Die vollständige Dauer jedes Rangs steht in den Rangwerten.",
 
     "SkillFishingT2WayFUGITIVEName": "Weg des Flüchtigen",
-    "SkillFishingT2WayFUGITIVEDesc": "Ein blockierter Debuff gewährt Eile für 5 s: +35 % Bewegungsgeschwindigkeit.",
+    "SkillFishingT2WayFUGITIVEDesc": "Ein blockierter Debuff gewährt Eile für 5 s.",
 
     "SkillFishingT2WayBASTIONName": "Weg der Bastion",
     "SkillFishingT2WayBASTIONDesc": "Ein blockierter Debuff gewährt +25 % Schadensreduktion für 5 s.",
@@ -1095,10 +1095,10 @@
     "SkillFishingT3ImpactDesc": "Verstärkt den zugehörigen aktiven Skill. Benötigt dessen Basispunkt.",
 
     "SkillFishingT3WayTRAPPERName": "Weg des Fallenstellers",
-    "SkillFishingT3WayTRAPPERDesc": "Gelähmt für 6 s: −60 % Bewegungsgeschwindigkeit.",
+    "SkillFishingT3WayTRAPPERDesc": "Gelähmt für 6 s.",
 
     "SkillFishingT3WayRAVAGERName": "Weg des Verwüsters",
-    "SkillFishingT3WayRAVAGERDesc": "Verwundbar für 8 s: +25 % erlittener Schaden durch alle Angriffe.",
+    "SkillFishingT3WayRAVAGERDesc": "Verwundbar für 8 s.",
 
     "SkillFishingUltName": "Curare-Fluch",
     "SkillFishingUltDesc": "Nächster Treffer verursacht keinen direkten Schaden, aber Verwirrt, Angewidert, Verkrüppelt und Vergiftet. Gift jeweils 10 s. Anwendung der Drei-Sekunden-Regel auf diesen Skill noch nicht separat bestätigt.",
@@ -1153,7 +1153,7 @@
     "SkillConstructionT2ImpactDesc": "",
 
     "SkillConstructionT2WayUNBOUNDName": "Weg des Ungebundenen",
-    "SkillConstructionT2WayUNBOUNDDesc": "Ignoriert alle negativen Effekte auf Bewegungsgeschwindigkeit durch geschwindigkeitsreduzierende Debuffs: Verkrüppelt, Gelähmt und Unterdrückt.",
+    "SkillConstructionT2WayUNBOUNDDesc": "Ignoriert alle negativen Effekte auf Bewegungsgeschwindigkeit durch geschwindigkeitsreduzierende Debuffs.",
 
     "SkillConstructionT2WayUNFADINGName": "Weg des Unvergänglichen",
     "SkillConstructionT2WayUNFADINGDesc": "+10 Sekunden Statuseffektdauer; insgesamt 25 Sekunden.",
@@ -1298,8 +1298,8 @@
     "SkillBotanyT1WaySTOICDesc": "Blockiert zusätzlich einen mentalen Debuff.",
 
     "SkillBotanyT2Name": "Blendpulver",
-    "SkillBotanyT2Desc": "Kein Schaden; alle Ziele im Umkreis erhalten Geblendet (3 s). Spielerbildschirme werden heller; Nicht-Spieler greifen nicht an.",
-    "SkillBotanyT2EffectiveDesc": "Kein Schaden; alle Ziele im Umkreis erhalten Geblendet (3 s). Spielerbildschirme werden heller; Nicht-Spieler greifen nicht an. Reichweite: {effect0} m.",
+    "SkillBotanyT2Desc": "Kein Schaden; alle Ziele im Umkreis erhalten Geblendet (3 s).",
+    "SkillBotanyT2EffectiveDesc": "Kein Schaden; alle Ziele im Umkreis erhalten Geblendet (3 s). Reichweite: {effect0} m.",
 
     "SkillBotanyT2CooldownName": "Abklingzeitverstärker",
     "SkillBotanyT2CooldownDesc": "",
@@ -1409,7 +1409,7 @@
     "SkillThieveryT3ImpactDesc": "Verstärkt dauer von eile.",
 
     "SkillThieveryT3Way1Name": "Weg des Erschütterers",
-    "SkillThieveryT3Way1Desc": "Nachdem Betäubt entfernt wurde, wird Benommen für 5 s angewendet. Spieler: Bewegungstasten zufällig vertauscht; Nicht-Spieler laufen in zufällige Richtungen.",
+    "SkillThieveryT3Way1Desc": "Nachdem Betäubt entfernt wurde, wird Benommen für 5 s angewendet.",
 
     "SkillThieveryT3Way2Name": "Weg der Viper",
     "SkillThieveryT3Way2Desc": "Treffer verursacht Vergiftet für 10 s. Erweiterte allgemeine Giftstaffel: nach 2/4/6/8/10/12 s jeweils 10/7/4/3/2/1 % maximaler Ziel-HP. Die allgemeine Erklärung reicht über die Skilldauer hinaus; keine Gesamtschadenssumme daraus ableiten.",
@@ -1494,7 +1494,7 @@
     "SkillElectronicsT3Way2Desc": "Zeigt zusätzlich Skill-Objekte an.",
 
     "SkillElectronicsUltName": "Überladung",
-    "SkillElectronicsUltDesc": "Angriff gegen alle Ziele im Nahkampf. Schaden anhand des besten Basis-DPS-Wertes von Primär- und Sekundärwaffe; verursacht Geblendet und Angewidert. Geblendet: Spielerbildschirm heller, Nicht-Spieler greifen nicht an. Angewidert: Ziel kann keine Verbrauchsgegenstände benutzen. Seit 0.7.0.1 gilt die höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe; waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden werden nicht übernommen.",
+    "SkillElectronicsUltDesc": "Angriff gegen alle Ziele im Nahkampf. Schaden anhand des besten Basis-DPS-Wertes von Primär- und Sekundärwaffe; verursacht Geblendet und Angewidert. Seit 0.7.0.1 gilt die höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe; waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden werden nicht übernommen.",
 
     "LabelTreeElectronicsName": "Elektronik",
 

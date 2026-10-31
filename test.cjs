@@ -223,9 +223,9 @@ for(const code of ['de','en']){
  ok(!el('skilltooltip').innerHTML.includes('class="status-help"'));
  tooltipEvents.keyup({key:'Control',ctrlKey:false});
 }
-ok(vm.runInContext('relevantStatusHelp("Verkrüppelt Crippled Verkrüppelt").length',context)===1);
+ok(vm.runInContext('relevantStatusHelp("Verkrüppelt Crippled Verkrüppelt").filter(x=>x[0]==="crippled").length',context)===1);
 ok(vm.runInContext('relevantStatusHelp("Heilen").length',context)===0);
-ok(vm.runInContext('relevantStatusHelp("Unterdrückt, Angewidert, Abgelenkt").length',context)===3);
+ok(vm.runInContext('relevantStatusHelp("Unterdrückt, Angewidert, Abgelenkt").filter(x=>["suppressed","disgusted","distracted"].includes(x[0])).length',context)===3);
 // Hostile text from an imported language pack is displayed as text, never markup.
 vm.runInContext('I.install({schemaVersion:2,code:"fr",label:"Test",texts:{GlossaryHasteName:"<img src=x onerror=alert(1)>",GlossaryHasteDesc:"<script>alert(1)</script>"}})',context);
 const safeHelp=vm.runInContext('statusHelpContent(STATUS_HELP.filter(x=>x[0]==="haste"))',context);
@@ -242,8 +242,28 @@ for(const code of ['de','en']){
 }
 ok(vm.runInContext('relevantStatusHelp("Paralysiert Paralysis Paralyzed Rooted").length',context)===0);
 const glossaryDe=JSON.parse(fs.readFileSync(__dirname+'/locales/de.json')).texts;
-ok(glossaryDe.EffectParalyzed==='Paralysiert');ok(glossaryDe.SkillRevolverT3Way1Desc.includes('Mausachsen invertiert'));
-ok(!glossaryDe.SkillAssaultRifleT3Desc.includes('kritischen Schaden'));ok(glossaryDe.SkillAssaultRifleT3Desc.includes('Schaden durch alle Angriffe'));
+ok(glossaryDe.EffectParalyzed==='Paralysiert');ok(!glossaryDe.SkillRevolverT3Way1Desc.includes('Mausachsen invertiert'));ok(glossaryDe.EffectTraumatized.includes('Mausachsen invertiert'));
+ok(!glossaryDe.SkillAssaultRifleT3Desc.includes('kritischen Schaden'));ok(glossaryDe.TreeVulnerableDesc.includes('Schaden durch alle Angriffe'));
 ok(glossaryDe.GlossaryStunnedDesc.includes('keine Gegenstände'));ok(glossaryDe.GlossaryDisarmedDesc.includes('keine Waffen'));
 vm.runInContext('switchLanguage("de")',context);
 console.log('Screenshot-Abgleich: Spott, Befriedung, Aggro, Nicht-Spieler, Unbound, Traumatisiert und getrennte Paralysiert-Bezeichnung geprüft.');
+// Generic definitions belong only to Ctrl help; durations and skill bonuses remain.
+for(const code of ['de','en']){
+ context.helpLanguage=code;
+ const cases=[['ASSAULTRIFLES','ASSAULTRIFLES-T1','−40'],['ASSAULTRIFLES','ASSAULTRIFLES-T3','+25'],['REVOLVERS','REVOLVERS-T3-WAY-1','axes'],['FISH','FISH-T2-WAY-FUGITIVE','+35'],['FISH','FISH-T3-WAY-TRAPPER','−60'],['BOTANY','BOTANY-T2','do not attack'],['CONSTR','CONSTR-T2-WAY-UNBOUND','Crippled']];
+ for(const [treeId,nodeId,englishDefinition] of cases){
+  const t=D.trees.find(t=>t.id===treeId),node=t.nodes.find(n=>n.id===nodeId);
+  // Some Way IDs use their names; locate those through their translation keys.
+  const fallback=node||t.nodes.find(n=>n.descriptionKey===({REVOLVERS:'SkillRevolverT3Way1Desc',FISH:nodeId.includes('FUGITIVE')?'SkillFishingT2WayFUGITIVEDesc':'SkillFishingT3WayTRAPPERDesc',CONSTR:'SkillConstructionT2WayUNBOUNDDesc'})[treeId]);
+  assert(fallback,nodeId);context.cleanTreeId=treeId;context.cleanNodeId=fallback.id;
+  vm.runInContext('switchLanguage(helpLanguage);state=E.fresh();current=cleanTreeId;showTip({getBoundingClientRect:()=>({right:100,top:100})},cleanNodeId)',context);
+  const normal=el('skilltooltip').innerHTML.replace(/<[^>]*>/g,'');
+  const detail=code==='de'?({'axes':'Mausachsen','do not attack':'greifen nicht an','Crippled':'Verkrüppelt'})[englishDefinition]||englishDefinition:englishDefinition;
+  ok(!normal.includes(detail));
+  tooltipEvents.keydown({key:'Control',ctrlKey:true});
+  ok(el('skilltooltip').innerHTML.replace(/<[^>]*>/g,'').includes(detail));
+  tooltipEvents.keyup({key:'Control',ctrlKey:false});ok(el('skilltooltip').innerHTML.replace(/<[^>]*>/g,'')===normal);
+ }
+}
+vm.runInContext('switchLanguage("de");hideTip()',context);
+console.log('Aufgeräumte DE/EN-Tooltips: allgemeine Wirkungen nur unter Strg, einschließlich Detailfelder und verschachtelter Begriffserklärungen.');

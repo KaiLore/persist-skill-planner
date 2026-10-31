@@ -24,15 +24,18 @@ const STATUS_HELP=[
  ['slowingDebuffs','GlossarySlowingDebuffsName','GlossarySlowingDebuffsDesc',['Geschwindigkeitsreduzierende Debuffs','Movement-reducing debuffs']],
 ];
 let controlHeld=false,activeTooltip=null;
+function skillStatusText(n,text){return text+' '+(LANGUAGE_PACKS.find(pack=>pack.code==='de')?.texts[n.descriptionKey]||'');}
 function relevantStatusHelp(text){
- const plain=String(text).replace(/<[^>]*>/g,' ').toLocaleLowerCase();
- return STATUS_HELP.filter(([,nameKey,descriptionKey,aliases])=>{
+ const matches=(entry,source)=>{const [,nameKey,descriptionKey,aliases]=entry,plain=String(source).replace(/<[^>]*>/g,' ').toLocaleLowerCase();
   if(!T(descriptionKey).trim())return false;
   return [...aliases,T(nameKey)].some(term=>{
    const escaped=term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
    return new RegExp('(^|[^\\p{L}\\p{N}])'+escaped+'(?=$|[^\\p{L}\\p{N}])','iu').test(plain);
   });
- });
+ };const selected=new Set(STATUS_HELP.filter(entry=>matches(entry,text)).map(entry=>entry[0]));
+ // Definitions may refer to other terms (for example slowing debuffs -> Slowed).
+ let changed=true;while(changed){changed=false;const definitions=STATUS_HELP.filter(entry=>selected.has(entry[0])).map(entry=>T(entry[2])).join(' ');for(const entry of STATUS_HELP)if(!selected.has(entry[0])&&matches(entry,definitions)){selected.add(entry[0]);changed=true;}}
+ return STATUS_HELP.filter(entry=>selected.has(entry[0]));
 }
 function statusHelpContent(entries){return '<strong>'+H('TitleStatusHelp')+'</strong><div class="status-help">'+entries.map(([,nameKey,descriptionKey])=>'<section><b>'+esc(T(nameKey))+'</b><p>'+richText(T(descriptionKey))+'</p></section>').join('')+'</div><small>'+H('HintStatusHelpRelease')+'</small>';}
 function setControlHelp(pressed){if(controlHeld===pressed)return;controlHeld=pressed;if(activeTooltip)showTip(activeTooltip.button,activeTooltip.id);}
