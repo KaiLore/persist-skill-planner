@@ -14,6 +14,9 @@
     "LabelFamilie": "Familie",
     "BtnSaveBuild": "Build speichern",
     "BtnLoadBuild": "Build laden",
+    "BtnCopyURL": "URL kopieren",
+    "LabelBuildURL": "Build-Link zum Kopieren",
+    "HintBuildLink": "Teile deinen Build per URL. Charakter- und Familienname sind nicht enthalten.",
     "BtnNewBuild": "Neuer Build",
     "LabelCharLevel": "Charakterstufe",
     "LabelLevelLock": "Auf Charakterstufe begrenzen",
@@ -129,6 +132,7 @@
     "RuleLevelLock": "Mit „Auf Charakterstufe begrenzen“ sind Badge- und Perk-Ausgaben auf die gewählte Charakterstufe beschränkt. Ohne Sperre lässt sich frei vorausplanen; die benötigte Charakterstufe wird angezeigt. Ein bereits zu großer Plan muss vor Aktivierung der Sperre reduziert oder die Charakterstufe erhöht werden.",
     "TitlePlanAndReset": "Planung und Zurücksetzen",
     "RulePlanAndReset": "Jede Baumstufe gibt einen Skillpunkt. Beim Zurücknehmen von Skillpunkten reduziert der Planner das geplante Baumlevel und den Badge-Bedarf automatisch auf das für die verbleibenden Skills nötige Niveau. Das Baumlevel kann auch unabhängig von der Punktevergabe über die Auswahl am Skillbaum geplant werden. Seit Spielpatch 0.7.0.0 können Amnesia Pills auch investierte Badges des gewählten Skillbaums zurückgeben. Die automatische Reduktion hier beschreibt die Planung, nicht den vollständigen Ingame-Resetablauf.",
+    "RuleBuildLinks": "Beim Planen wird die URL ohne Neuladen aktualisiert. „URL kopieren“ kopiert einen Link mit Skillpunkten, Baumleveln, Perks, Charakterstufe, Level-Sperre und Rüstungsszenario. Wer den Link öffnet, lädt diesen Build; Charakter- und Familienname werden nicht geteilt. Änderungen nach dem Kopieren sind erst in einem neu kopierten Link enthalten. Ungültige Links werden abgewiesen und ersetzen keinen vorhandenen Build.",
     "RuleEnhancersAndWays": "Verstärker benötigen den Grundskill. Ein Way benötigt elf investierte Punkte im zugehörigen horizontalen Skillzweig und kostet selbst einen Punkt. Pro Fähigkeit ist ein Way wählbar. Die Aktionsleisten bieten zehn Plätze plus zehn Alt-Plätze; waffenabhängige Belegungen werden hier noch nicht simuliert.",
     "TitleLanguagePacks": "Eigene Sprachpakete",
     "HintLanguagePacks": "Du kannst eigene Sprachpakete erstellen: Exportiere die gewählte Sprache als JSON-Datei, übersetze die Texte unter „texts“ und behalte die Schlüssel und Platzhalter bei. Für eine neue Sprache passe „code“ und „label“ an. Lade die Datei anschließend hier; sie steht dann im Sprachmenü zur Verfügung.",
@@ -189,6 +193,11 @@
     "MsgSkillRank": "{name}: Rang {rank} / {max}",
     "MsgStorageUnavailable": "Lokaler Speicher nicht verfügbar. Bitte Build als Datei speichern.",
     "MsgRemovedPerk": "Build geladen. Der seit 0.7.0.0 entfernte Rückstoß-Perk wurde aus der Planung genommen; seine Perk-Punkte sind wieder frei.",
+    "MsgBuildURLCopied": "Build-URL kopiert.",
+    "MsgBuildURLManual": "Automatisches Kopieren ist nicht verfügbar. Kopiere den markierten Link aus dem Feld.",
+    "MsgBuildLinkLoaded": "Build aus URL geladen.",
+    "MsgBuildLinkRejected": "Ungültiger oder nicht unterstützter Build-Link. Dein vorhandener Build bleibt erhalten.",
+    "ErrBuildLink": "Ungültiger oder nicht unterstützter Build-Link.",
 
     "TreeAssaultRifleName": "Sturmgewehre",
 
@@ -2494,7 +2503,7 @@
       "id": "ui.messages",
       "title": "Rückmeldungen und Fehler",
       "firstKey": "DefaultCharName",
-      "lastKey": "MsgRemovedPerk"
+      "lastKey": "ErrBuildLink"
     },
     {
       "id": "tree.ASSAULTRIFLES",

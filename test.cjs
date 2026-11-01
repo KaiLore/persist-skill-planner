@@ -9,7 +9,7 @@ ok(JSON.stringify(E.parse(JSON.parse(JSON.stringify(s))))===JSON.stringify(s));a
 // Every tree can unlock ultimate after a reachable 45-point investment.
 for(const t of D.trees){let state=E.fresh();state.characterLevel=85;state.caps[t.id]=50;for(let loop=0;loop<60&&E.sum(state.points[t.id]||{})<45;loop++){let changed=false;for(const node of t.nodes){if(node.kind==='Way'||node.kind==='Ultimate'||E.sum(state.points[t.id]||{})>=45)continue;const res=E.change(state,t.id,node.id,1);if(!res.error){state=res.state;changed=true;}}if(!changed)break;}const ult=t.nodes.find(n=>n.kind==='Ultimate'),res=E.change(state,t.id,ult.id,1);assert(!res.error,t.name+': '+res.error);n++;}
 const html=fs.readFileSync(__dirname+'/Persist-Skill-Planner.html','utf8'),scripts=[...html.matchAll(/<script(?: [^>]*)?>([\s\S]*?)<\/script>/g)].map(m=>m[1]);const els=new Map();function el(id){if(!els.has(id))els.set(id,{value:'',style:{setProperty(){}},files:[],textContent:id==='dataset'?JSON.stringify(D):'',setAttribute(){},click(){}});return els.get(id);}
-const tooltipEvents={};const context={console,document:{addEventListener:(type,handler)=>tooltipEvents[type]=handler,defaultView:{addEventListener:(type,handler)=>tooltipEvents['window-'+type]=handler},getElementById:el,querySelectorAll:()=>[],createElement:()=>({click(){}})},localStorage:{getItem:()=>null,setItem(){}},setTimeout,URL,Blob};vm.createContext(context);vm.runInContext(scripts[1],context);vm.runInContext(scripts[2],context);vm.runInContext(scripts[3],context);ok(el('nav').innerHTML.includes('Schrotflinten'));ok(el('tree').innerHTML.includes('data-node'));ok(!html.includes('id="tasklist"'));el('charlevel').value='23';el('charlevel').onchange();ok(el('charlevel').value===23);ok(!/\b(?:src|href)=["']https?:/.test(html));console.log(n+' Prüfungen bestanden.');
+const tooltipEvents={};const context={console,btoa,atob,document:{addEventListener:(type,handler)=>tooltipEvents[type]=handler,defaultView:{addEventListener:(type,handler)=>tooltipEvents['window-'+type]=handler},getElementById:el,querySelectorAll:()=>[],createElement:()=>({click(){}})},localStorage:{getItem:()=>null,setItem(){}},setTimeout,URL,Blob};vm.createContext(context);vm.runInContext(scripts[1],context);vm.runInContext(scripts[2],context);vm.runInContext(scripts[3],context);ok(el('nav').innerHTML.includes('Schrotflinten'));ok(el('tree').innerHTML.includes('data-node'));ok(!html.includes('id="tasklist"'));el('charlevel').value='23';el('charlevel').onchange();ok(el('charlevel').value===23);ok(!/\b(?:src|href)=["']https?:/.test(html));console.log(n+' Prüfungen bestanden.');
 
 for(const [level,expected] of [[1,[0,0]],[9,[0,0]],[10,[1,0]],[44,[35,0]],[45,[35,1]],[46,[36,1]],[55,[44,2]],[85,[71,5]]])ok(JSON.stringify(E.earned(level))===JSON.stringify(expected));
 let q=E.fresh();q.characterLevel=44;q.caps.MINING=50;ok(!E.validate(q));q.characterLevel=45;ok(!E.validate(q));ok(JSON.stringify(E.usage(q))==='[7,1]');q.caps.CONSTR=50;ok(!E.validate(q));q.characterLevel=55;ok(!E.validate(q));console.log('Zusätzliche Badge-Grenzfälle bestanden.');
@@ -287,3 +287,37 @@ for(const code of ['de','en']){
 }
 vm.runInContext('switchLanguage("de");hideTip()',context);
 console.log('Grundkosten und Grund-Abklingzeit aller aktiven Skills bleiben bei Enhancer-Rang 0/1/5 unverändert; aktuelle Werte werden weiterhin reduziert (DE/EN).');
+// Share links are versioned, language independent and exclude personal names.
+const packURL=value=>btoa(JSON.stringify(value)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+vm.runInContext('state=E.fresh();state.characterLevel=85;state.levelLocked=true;state.characterName="Private name";state.familyName="Private family";state.armorPieces=4;state.iconMode="unlocked";state.caps.MINING=50;state.points.MINING={"MINING-ULT":3,"MINING-T1":1};state.perks={"PERK-1":2}',context);
+const shareState=JSON.parse(vm.runInContext('JSON.stringify(state)',context));
+const encodedBuild=vm.runInContext('encodeBuildLink(state)',context);context.linkPayload=encodedBuild;
+ok(!atob(encodedBuild.replace(/-/g,'+').replace(/_/g,'/')).includes('Private'));
+const decodedBuild=JSON.parse(vm.runInContext('JSON.stringify(decodeBuildLink(linkPayload))',context));
+ok(decodedBuild.characterName===''&&decodedBuild.familyName==='');ok(decodedBuild.caps.MINING===50);ok(decodedBuild.points.MINING['MINING-ULT']===3);ok(decodedBuild.perks['PERK-1']===2);ok(decodedBuild.armorPieces===4&&decodedBuild.iconMode==='unlocked');ok(decodedBuild.characterLevel===85&&decodedBuild.levelLocked);
+vm.runInContext('switchLanguage("en")',context);ok(vm.runInContext('encodeBuildLink(state)',context)===encodedBuild);vm.runInContext('switchLanguage("de")',context);
+for(const bad of ['', '!', 'A'.repeat(32769),packURL([2,1,false,7,'rank',[],[]]),packURL([1,1,false,7,'rank',[['__proto__',50,[]]],[]]),packURL([1,1,false,7,'rank',[['MINING',50,[['__proto__',1]]]],[]]),packURL([1,1,false,7,'rank',[['MINING',50,[]],['MINING',50,[]]],[]]),packURL([1,1,false,7,'rank',[['MINING',50,[['T1',999]]]],[]]),packURL([1,1,false,7,'rank',[],[['PERK-1',4]]]),packURL([1,1,true,7,'rank',[['MINING',50,[]]],[]])]){context.linkPayload=bad;assert.throws(()=>vm.runInContext('decodeBuildLink(linkPayload)',context));n++;}
+context.linkPayload=encodedBuild;
+// Browser history updates replace the current URL rather than creating new entries.
+const localWrites=[];context.location={protocol:'https:',origin:'https://persistplanner.com',pathname:'/',href:'https://persistplanner.com/',hash:''};
+context.history={replaceState(a,b,url){const u=new URL(url);context.location.href=u.href;context.location.hash=u.hash;}};
+const savedStorage=context.localStorage;context.localStorage={getItem:()=>null,setItem:(key,value)=>localWrites.push([key,value])};
+vm.runInContext('remember()',context);ok(context.location.hash.startsWith('#build='));ok(!context.location.href.includes('Private'));ok(localWrites.length===1);
+const beforeBad=vm.runInContext('JSON.stringify(state)',context),writesBeforeBad=localWrites.length;
+context.location.hash='#build=bad!';tooltipEvents['window-hashchange']();ok(vm.runInContext('JSON.stringify(state)',context)===beforeBad);ok(localWrites.length===writesBeforeBad);ok(el('feedback').textContent.includes('Ungültiger'));
+context.location.hash='#build='+encodedBuild;tooltipEvents['window-hashchange']();ok(vm.runInContext('state.characterName',context)==='');ok(vm.runInContext('state.points.MINING["MINING-ULT"]',context)===3);ok(el('feedback').textContent.includes('URL geladen'));
+vm.runInContext('state=E.fresh();remember()',context);ok(context.location.hash!=='#build='+encodedBuild);
+// Empty, manually levelled and wide builds also round-trip within the URL limit.
+vm.runInContext('state=E.fresh();state.caps.CONSTR=50',context);const emptyLevel=vm.runInContext('decodeBuildLink(encodeBuildLink(state)).caps.CONSTR',context);ok(emptyLevel===50);
+vm.runInContext('state=E.fresh();for(const t of D.trees){state.caps[t.id]=50;state.points[t.id]=Object.fromEntries(t.nodes.filter(n=>n.kind!=="Way").map(n=>[n.id,1]));}',context);
+ok(vm.runInContext('encodeBuildLink(state).length<32768',context));ok(vm.runInContext('JSON.stringify(decodeBuildLink(encodeBuildLink(state)).points)===JSON.stringify(state.points)',context));
+context.localStorage=savedStorage;delete context.location;delete context.history;
+ok(vm.runInContext('buildShareURL().startsWith("https://persistplanner.com/#build=")',context));
+ok(html.indexOf('id="copyurl"')>html.indexOf('id="load"'));ok(html.includes('data-i18n="RuleBuildLinks"'));
+(async()=>{
+ let copied='';context.navigator={clipboard:{writeText:async url=>{copied=url;}}};
+ await vm.runInContext('copyBuildURL()',context);ok(copied.startsWith('https://persistplanner.com/#build='));ok(el('shareurl').hidden);ok(el('feedback').textContent.includes('kopiert'));
+ context.navigator={clipboard:{writeText:async()=>{throw Error('Denied');}}};await vm.runInContext('copyBuildURL()',context);ok(!el('shareurl').hidden);ok(el('shareurl').value===copied);ok(el('feedback').textContent.includes('markierten Link'));
+ delete context.navigator;vm.runInContext('state=E.fresh();render()',context);
+ console.log('Build-URLs: Rundreise, Namen ausgeschlossen, DE/EN, ungültige Daten, lokale Daten geschützt, History, Hashwechsel, große/leere Builds und Kopier-Fallback geprüft.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

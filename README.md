@@ -10,6 +10,12 @@ Skills mit einem Klick erhöhen, mit Rechtsklick oder der Minustaste reduzieren.
 
 Baumlevel und vergebene Skillpunkte sind unabhängig. Höhere Tiers werden durch das Baumlevel freigeschaltet; ein Klick plant die nötigen Badges automatisch ein. Ultimate benötigt Baumlevel 50 (sieben reguläre Badges und ein Ultimate Badge). Ways benötigen elf investierte Punkte im zugehörigen Skillzweig. Beim Zurücknehmen von Skillpunkten reduziert sich das geplante Baumlevel auf das für die übrigen Skills nötige Niveau.
 
+## Build-Links
+
+Beim Planen wird die URL ohne Neuladen aktualisiert. „URL kopieren“ unter den Build-Datei-Schaltflächen kopiert einen teilbaren Link. Enthalten sind Skillpunkte, Baumlevel, Perks, Charakterstufe, Level-Sperre, Rüstungsteile und Icon-Anzeige. Charakter- und Familienname werden nicht geteilt. Links sind Momentaufnahmen; für spätere Änderungen einen neuen Link kopieren. Ungültige Links ersetzen keine vorhandenen lokalen Builds. Die Daten stehen im URL-Fragment, es wird kein Speicherdienst benötigt. Offline erzeugte Links verweisen auf `https://persistplanner.com/`.
+
+Das versionierte Linkformat verwendet stabile Baum- und Skill-IDs; die Sprache und Reihenfolge der Sprachdateien sind unabhängig davon. JSON-Dateien bleiben als zusätzliche Sicherung verfügbar.
+
 ## Entwicklung
 
 Skill-Tooltips: Strg (englisch Ctrl) gedrückt halten, um die zum Skill passenden Statuseffekt-Erklärungen anzuzeigen. Beim Loslassen erscheint wieder der normale Tooltip. Die Zuordnung steht in `status-help.js`; Erklärungen und Bedienhinweise stehen übersetzbar in den Sprachdateien.

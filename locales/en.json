@@ -14,6 +14,9 @@
     "LabelFamilie": "Family",
     "BtnSaveBuild": "Save build",
     "BtnLoadBuild": "Load build",
+    "BtnCopyURL": "Copy URL",
+    "LabelBuildURL": "Build link to copy",
+    "HintBuildLink": "Share your build via URL. Character and family names are not included.",
     "BtnNewBuild": "New build",
     "LabelCharLevel": "Character level",
     "LabelLevelLock": "Limit to character level",
@@ -129,6 +132,7 @@
     "RuleLevelLock": "With 'Limit to character level' enabled, badge and perk spending is restricted to the selected character level. Without the lock, you can freely plan ahead; the required character level is displayed. A plan that already exceeds the limit must be reduced before enabling the lock or the character level must be increased.",
     "TitlePlanAndReset": "Planning and reset",
     "RulePlanAndReset": "Each tree level grants one skill point. Refunding skill points automatically reduces the planned tree level and badge requirement to the level needed by the remaining skills. You can also plan the tree level independently of point allocation using the selector at the skill tree. Since game patch 0.7.0.0, Amnesia Pills can also refund badges invested in the selected skill tree. Automatic reductions here describe planning, not the complete in-game reset process.",
+    "RuleBuildLinks": "Planning updates the URL without reloading. “Copy URL” copies a link containing skill points, tree levels, perks, character level, level lock and armor scenario. Opening the link loads that build; character and family names are not shared. Changes made after copying require a new link. Invalid links are rejected and do not replace an existing build.",
     "RuleEnhancersAndWays": "Enhancers require the base skill. A Way requires eleven invested points in the associated horizontal skill branch and itself costs one point. One Way can be selected per ability. Action bars provide ten slots plus ten alternate slots; weapon-dependent loadouts are not yet simulated here.",
     "TitleLanguagePacks": "Custom language packs",
     "HintLanguagePacks": "You can create custom language packs: export the selected language as a JSON file, translate the values under “texts”, and keep the keys and placeholders unchanged. For a new language, change “code” and “label”. Load the file here to add it to the language menu.",
@@ -189,6 +193,11 @@
     "MsgSkillRank": "{name}: rank {rank} / {max}",
     "MsgStorageUnavailable": "Local storage unavailable. Save the build as a file.",
     "MsgRemovedPerk": "Build loaded. The recoil perk removed in 0.7.0.0 was removed from the plan; its perk points are available again.",
+    "MsgBuildURLCopied": "Build URL copied.",
+    "MsgBuildURLManual": "Automatic copying is unavailable. Copy the selected link from the field.",
+    "MsgBuildLinkLoaded": "Build loaded from URL.",
+    "MsgBuildLinkRejected": "Invalid or unsupported build link. Your existing build has been kept.",
+    "ErrBuildLink": "Invalid or unsupported build link.",
 
     "TreeAssaultRifleName": "Assault Rifles",
 
@@ -2494,7 +2503,7 @@
       "id": "ui.messages",
       "title": "Feedback and errors",
       "firstKey": "DefaultCharName",
-      "lastKey": "MsgRemovedPerk"
+      "lastKey": "ErrBuildLink"
     },
     {
       "id": "tree.ASSAULTRIFLES",
