@@ -152,9 +152,9 @@
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
         "buffDurationSeconds": 8,
-        "baseDamageBonusPercent": 25,
         "accuracyBonusPercent": 50,
-        "requiresActiveWeaponKey": "LabelTreeRifleName"
+        "requiresActiveWeaponKey": "LabelTreeRifleName",
+        "baseHeadshotDamageBonusPercent": 30
       },
       "descriptionKey": "SkillRifleT1Desc"
     },
@@ -301,7 +301,7 @@
         "effectKey": "SkillRifleT2Desc",
         "baseStaminaCost": 75,
         "baseCooldownSeconds": 100,
-        "buffDurationSeconds": 5,
+        "buffDurationSeconds": 8,
         "baseDamageBonusPercent": 60,
         "accuracyBonusPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeRifleName"
@@ -636,7 +636,7 @@
             ]
           },
           {
-            "metricKey": "MetricDamageBonus",
+            "metricKey": "MetricHeadshotDamage",
             "unit": "%",
             "values": [
               20,
@@ -940,36 +940,40 @@
     {
       "skillId": "RIFLES-T1-IMP",
       "rank": 1,
-      "metricKey": "MetricDamageBonus",
-      "value": 28,
-      "unit": "%"
+      "metricKey": "MetricHeadshotDamage",
+      "value": 34.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "RIFLES-T1-IMP",
       "rank": 2,
-      "metricKey": "MetricDamageBonus",
-      "value": 31,
-      "unit": "%"
+      "metricKey": "MetricHeadshotDamage",
+      "value": 38.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "RIFLES-T1-IMP",
       "rank": 3,
-      "metricKey": "MetricDamageBonus",
-      "value": 34,
-      "unit": "%"
+      "metricKey": "MetricHeadshotDamage",
+      "value": 42.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "RIFLES-T1-IMP",
       "rank": 4,
-      "metricKey": "MetricDamageBonus",
-      "value": 37,
-      "unit": "%"
+      "metricKey": "MetricHeadshotDamage",
+      "value": 46.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "RIFLES-T1-IMP",
       "rank": 5,
-      "metricKey": "MetricDamageBonus",
-      "value": 40,
+      "metricKey": "MetricHeadshotDamage",
+      "value": 50.0,
       "unit": "%"
     },
     {
@@ -1305,35 +1309,35 @@
     {
       "skillId": "RIFLES-ULT",
       "rank": 1,
-      "metricKey": "MetricDamageBonus",
+      "metricKey": "MetricHeadshotDamage",
       "value": 20,
       "unit": "%"
     },
     {
       "skillId": "RIFLES-ULT",
       "rank": 2,
-      "metricKey": "MetricDamageBonus",
+      "metricKey": "MetricHeadshotDamage",
       "value": 40,
       "unit": "%"
     },
     {
       "skillId": "RIFLES-ULT",
       "rank": 3,
-      "metricKey": "MetricDamageBonus",
+      "metricKey": "MetricHeadshotDamage",
       "value": 60,
       "unit": "%"
     },
     {
       "skillId": "RIFLES-ULT",
       "rank": 4,
-      "metricKey": "MetricDamageBonus",
+      "metricKey": "MetricHeadshotDamage",
       "value": 80,
       "unit": "%"
     },
     {
       "skillId": "RIFLES-ULT",
       "rank": 5,
-      "metricKey": "MetricDamageBonus",
+      "metricKey": "MetricHeadshotDamage",
       "value": 100,
       "unit": "%"
     }

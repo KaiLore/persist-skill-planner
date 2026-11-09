@@ -151,7 +151,7 @@
         "effectKey": "SkillSubmachineGunT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "buffDurationSeconds": 6,
+        "buffDurationSeconds": 8,
         "baseDamageBonusPercent": 25,
         "accuracyBonusPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeSubmachineGunName"

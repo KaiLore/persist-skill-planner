@@ -154,8 +154,8 @@
         "effectKey": "SkillShotgunT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "buffDurationSeconds": 6,
-        "baseCritChancePercent": 30,
+        "buffDurationSeconds": 12,
+        "baseCritChancePercent": 20,
         "requiresActiveWeaponKey": "LabelTreeShotgunName"
       },
       "descriptionKey": "SkillShotgunT1Desc"
@@ -452,7 +452,7 @@
         "effectKey": "SkillShotgunT3Desc",
         "baseStaminaCost": 85,
         "baseCooldownSeconds": 150,
-        "baseDamageBonusPerProjectilePercent": 25,
+        "baseDamageBonusPerProjectilePercent": 70,
         "requiresActiveWeaponKey": "LabelTreeShotgunName"
       },
       "descriptionKey": "SkillShotgunT3Desc"
@@ -941,35 +941,39 @@
       "skillId": "SHOTGUNS-T1-IMP",
       "rank": 1,
       "metricKey": "MetricCriticalHitChance",
-      "value": 34,
-      "unit": "%"
+      "value": 24.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T1-IMP",
       "rank": 2,
       "metricKey": "MetricCriticalHitChance",
-      "value": 38,
-      "unit": "%"
+      "value": 28.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T1-IMP",
       "rank": 3,
       "metricKey": "MetricCriticalHitChance",
-      "value": 42,
-      "unit": "%"
+      "value": 32.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T1-IMP",
       "rank": 4,
       "metricKey": "MetricCriticalHitChance",
-      "value": 46,
-      "unit": "%"
+      "value": 36.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T1-IMP",
       "rank": 5,
       "metricKey": "MetricCriticalHitChance",
-      "value": 50,
+      "value": 40.0,
       "unit": "%"
     },
     {
@@ -1161,35 +1165,39 @@
       "skillId": "SHOTGUNS-T3-IMP",
       "rank": 1,
       "metricKey": "MetricProjectileDamage",
-      "value": 28,
-      "unit": "%"
+      "value": 76.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T3-IMP",
       "rank": 2,
       "metricKey": "MetricProjectileDamage",
-      "value": 31,
-      "unit": "%"
+      "value": 82.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T3-IMP",
       "rank": 3,
       "metricKey": "MetricProjectileDamage",
-      "value": 34,
-      "unit": "%"
+      "value": 88.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T3-IMP",
       "rank": 4,
       "metricKey": "MetricProjectileDamage",
-      "value": 37,
-      "unit": "%"
+      "value": 94.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SHOTGUNS-T3-IMP",
       "rank": 5,
       "metricKey": "MetricProjectileDamage",
-      "value": 40,
+      "value": 100.0,
       "unit": "%"
     },
     {

@@ -4,7 +4,7 @@
   "label": "Deutsch",
   "texts": {
     "LabelLanguage": "Sprache",
-    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.6",
+    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.7",
     "TitleCharPlanner": "Charakter & Skill Planner",
     "HintTreeCount": "25 Bäume · Waffen, Berufe, Rüstungen und Sonstiges · offline",
     "LabelCharakterUndBadges": "Charakter und Badges",
@@ -121,7 +121,7 @@
     "SourceUserReadout": "Im Spiel abgelesen",
 
     "TitleSources": "Quellen und Regeln",
-    "PatchDataStatus": "Datenabgleich mit 0.7.0.1: Die Schadensreferenz der sechs Best-Weapon-DPS-Skills wurde auf beste Basis-Waffen-DPS korrigiert. Vom Spieler bestätigte, investierte Skill-Rangwerte bleiben unverändert. Ungeprüfte Fernkampf-Genauigkeitswerte sind keine bestätigten neuen Patchwerte. Die neue Charakter-XP-Kurve ab Level 20 ändert nicht nachweislich die Badge- oder Perk-Punkt-Vergabe.",
+    "PatchDataStatus": "Datenstand: Spielpatch 0.7.0.5. Wo der Patch nur eine Spannweite nennt, sind Zwischenränge als Schätzwerte gekennzeichnet.",
     "PatchCombatRules": "Spielpatch 0.7.0.0: Schadensboni werden innerhalb desselben Keyword-Buckets addiert und zwischen Buckets multipliziert. Der Planner berechnet keine vollständigen Kampfschäden. Blutung, Feuer und Gift umgehen Schilde. Genauigkeit beeinflusst Streuung und Kamerarückstoß; der frühere Rückstoß-Stat entfällt. Waffenspecials bleiben davon getrennt: Alle Schrotflinten besitzen Streuschuss (kegelförmige Projektile) und Rückstoß (Zurückstoßen von Nicht-Spielern); Schwerter besitzen Riposte und Momentum. Bei Fähigkeiten mit aktiven Waffen-DPS ist der Wert im Charaktermenü mit gezogener passender Waffe maßgeblich, nicht die DPS im Gegenstands-Tooltip. Buffs werden im Charaktermenü geprüft.",
     "RuleBestWeaponDpsDetail": "Seit 0.7.0.1 verwenden Titan Turret, Fungal Fallout, Battlefield Bulwark, Electric Field, Overcharge und Anarchist’s Revolution die höchste Basis-Waffen-DPS der Charakterwaffen. Waffenspezifische Boni wie Rückenstich, kritischer Schaden und Schaden aus Waffenspecials werden nicht übernommen. Dies ist eine andere Referenz als die verstärkte aktive Waffen-DPS.",
     "SourcePlannerCredits": "Inoffizieller Community-Planner für Persist Online. Grundlage: Skill Planner 1.0 von Avalon [Westwood] (NA), 05.05.2026; aktuelle Skillwerte aus Spiel-Tooltips und Spielbeobachtungen vom Oktober 2026. Das Spiel befindet sich in Entwicklung; Werte können sich ändern.",
@@ -214,7 +214,7 @@
     "SkillAssaultRifleP4Desc": "Erhöht den Kopfschussschaden mit aktivem Sturmgewehr, solange das Ziel unter einem physischen Debuff leidet.",
 
     "SkillAssaultRifleT1Name": "Kniescheibenbrecher",
-    "SkillAssaultRifleT1Desc": "Gewährt für 6 s +40 % Schaden. Treffer wenden Verkrüppelt für 3 s an.",
+    "SkillAssaultRifleT1Desc": "Gewährt für 6 s +30 % Schaden. Treffer wenden Verkrüppelt für 3 s an.",
     "SkillAssaultRifleT1EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden. Treffer wenden Verkrüppelt für 3 s an.",
 
     "SkillAssaultRifleT1CooldownName": "Abklingzeitverstärker",
@@ -233,8 +233,8 @@
     "SkillAssaultRifleT1Way2Desc": "Zusätzlich +25 % Schaden.",
 
     "SkillAssaultRifleT2Name": "Todesschuss",
-    "SkillAssaultRifleT2Desc": "Der nächste Treffer verursacht zusätzlich 200 % aktive Waffen-DPS.",
-    "SkillAssaultRifleT2EffectiveDesc": "Der nächste Treffer verursacht zusätzlich {effect0} % aktive Waffen-DPS.",
+    "SkillAssaultRifleT2Desc": "Der nächste Treffer verursacht zusätzlich 150 % aktive Waffen-DPS. Kopfschüsse sind immer kritische Treffer.",
+    "SkillAssaultRifleT2EffectiveDesc": "Der nächste Treffer verursacht zusätzlich {effect0} % aktive Waffen-DPS. Kopfschüsse sind immer kritische Treffer.",
 
     "SkillAssaultRifleT2CooldownName": "Abklingzeitverstärker",
     "SkillAssaultRifleT2CooldownDesc": "Verbessert Abklingzeit.",
@@ -246,7 +246,7 @@
     "SkillAssaultRifleT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
     "SkillAssaultRifleT2Way1Name": "Weg des Unterdrückers",
-    "SkillAssaultRifleT2Way1Desc": "Treffer verursachen für 4 s Unterdrückt.",
+    "SkillAssaultRifleT2Way1Desc": "Treffer verursachen Entwaffnet für 4 s.",
 
     "SkillAssaultRifleT2Way2Name": "Weg des Abscheulichen",
     "SkillAssaultRifleT2Way2Desc": "Treffer verursachen für 4 s Angewidert: Das Ziel kann keine Verbrauchsgegenstände nutzen.",
@@ -290,8 +290,8 @@
     "SkillMachineGunP4Desc": "Wenn das Ziel Durchdringungsschaden von deinem aktiven Maschinengewehr erhalten hat, besteht die Chance, Verwundbar anzuwenden.",
 
     "SkillMachineGunT1Name": "Mäh sie nieder!",
-    "SkillMachineGunT1Desc": "Gewährt für 8 s +25 % Schaden und +25 % Durchdringungsschaden.",
-    "SkillMachineGunT1EffectiveDesc": "Gewährt für 8 s +{effect0} % Schaden und +25 % Durchdringungsschaden.",
+    "SkillMachineGunT1Desc": "Gewährt für 8 s +20 % Schaden und +25 % Durchdringungsschaden.",
+    "SkillMachineGunT1EffectiveDesc": "Gewährt für 8 s +{effect0} % Schaden und +20 % Durchdringungsschaden.",
 
     "SkillMachineGunT1CooldownName": "Abklingzeitverstärker",
     "SkillMachineGunT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -309,8 +309,8 @@
     "SkillMachineGunT1Way2Desc": "Entfernt alle physischen Debuffs und gewährt während des Statuseffekts Immunität gegen physische Debuffs.",
 
     "SkillMachineGunT2Name": "Im Visier",
-    "SkillMachineGunT2Desc": "Gewährt für 12 s +50 % Genauigkeit und +20 % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
-    "SkillMachineGunT2EffectiveDesc": "Gewährt für 12 s +50 % Genauigkeit und +{effect0} % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillMachineGunT2Desc": "Gewährt für 10 s +30 % Genauigkeit, +10 % kritische Trefferchance und +30 % kritischen Schaden.",
+    "SkillMachineGunT2EffectiveDesc": "Gewährt für 10 s +30 % Genauigkeit, +{effect0} % kritische Trefferchance und +30 % kritischen Schaden.",
 
     "SkillMachineGunT2CooldownName": "Abklingzeitverstärker",
     "SkillMachineGunT2CooldownDesc": "Verbessert Abklingzeit.",
@@ -319,17 +319,17 @@
     "SkillMachineGunT2StaminaDesc": "Verbessert Ausdauerkosten.",
 
     "SkillMachineGunT2ImpactName": "Aufprallverstärker",
-    "SkillMachineGunT2ImpactDesc": "Verbessert Schadensbonus.",
+    "SkillMachineGunT2ImpactDesc": "Erhöht die kritische Trefferchance.",
 
     "SkillMachineGunT2Way1Name": "Weg des Scharfschützen",
-    "SkillMachineGunT2Way1Desc": "Zusätzlich +50 % Genauigkeit. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillMachineGunT2Way1Desc": "Zusätzlich +60 % Genauigkeit.",
 
     "SkillMachineGunT2Way2Name": "Weg des Unvergänglichen",
-    "SkillMachineGunT2Way2Desc": "Verlängert den Statuseffekt um 6 s.",
+    "SkillMachineGunT2Way2Desc": "Verlängert den Statuseffekt um 5 s.",
 
     "SkillMachineGunT3Name": "Sperrfeuer",
-    "SkillMachineGunT3Desc": "Gewährt für 8 s +30 % Schaden. Treffer auf ein Ziel oder nahe Objekte wenden Unterdrückt für 6 s an.",
-    "SkillMachineGunT3EffectiveDesc": "Gewährt für 8 s +{effect0} % Schaden. Treffer auf ein Ziel oder nahe Objekte wenden Unterdrückt für 6 s an.",
+    "SkillMachineGunT3Desc": "Gewährt für 10 s +30 % Schaden. Treffer auf ein Ziel oder nahe Objekte wenden Unterdrückt für 6 s an.",
+    "SkillMachineGunT3EffectiveDesc": "Gewährt für 10 s +{effect0} % Schaden. Treffer auf ein Ziel oder nahe Objekte wenden Unterdrückt für 6 s an.",
 
     "SkillMachineGunT3CooldownName": "Abklingzeitverstärker",
     "SkillMachineGunT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -344,7 +344,7 @@
     "SkillMachineGunT3Way1Desc": "Treffer wenden Blutung für 20 s an.",
 
     "SkillMachineGunT3Way2Name": "Weg des Unvergänglichen",
-    "SkillMachineGunT3Way2Desc": "Verlängert den Statuseffekt um 4 s.",
+    "SkillMachineGunT3Way2Desc": "Verlängert den Statuseffekt um 5 s.",
 
     "SkillMachineGunUltName": "Overkill",
     "SkillMachineGunUltDesc": "Während des Statuseffekts gewährt jeder Treffer einen Schadensbonus für alle folgenden Treffer. Der Bonus stapelt sich mit jedem Treffer.",
@@ -366,8 +366,8 @@
     "SkillPistolP4Desc": "Erhöht den kritischen Schaden gegen blutende Ziele mit aktiver Pistole.",
 
     "SkillPistolT1Name": "Volltreffer",
-    "SkillPistolT1Desc": "Gewährt für 6 s +25 % Schaden.",
-    "SkillPistolT1EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden.",
+    "SkillPistolT1Desc": "Gewährt für 10 s +25 % Schaden.",
+    "SkillPistolT1EffectiveDesc": "Gewährt für 10 s +{effect0} % Schaden.",
 
     "SkillPistolT1CooldownName": "Abklingzeitverstärker",
     "SkillPistolT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -382,7 +382,7 @@
     "SkillPistolT1Way1Desc": "Treffer wenden Verkrüppelt für 3 s an.",
 
     "SkillPistolT1Way2Name": "Weg des Unvergänglichen",
-    "SkillPistolT1Way2Desc": "Verlängert den Statuseffekt um 2 s.",
+    "SkillPistolT1Way2Desc": "Treffer verursachen Verwundbar für 3 s.",
 
     "SkillPistolT2Name": "Arterienschuss",
     "SkillPistolT2Desc": "Der nächste Treffer verursacht zusätzlich 150 % aktive Waffen-DPS und Blutung für 10 s.",
@@ -404,8 +404,8 @@
     "SkillPistolT2Way2Desc": "Verlängert die Blutungsdauer um 10 s.",
 
     "SkillPistolT3Name": "Schädel knacken",
-    "SkillPistolT3Desc": "Gewährt für 8 s +60 % Kopfschussschaden.",
-    "SkillPistolT3EffectiveDesc": "Gewährt für 8 s +{effect0} % Kopfschussschaden.",
+    "SkillPistolT3Desc": "Gewährt für 10 s +50 % Kopfschussschaden und +30 % Genauigkeit.",
+    "SkillPistolT3EffectiveDesc": "Gewährt für 10 s +{effect0} % Kopfschussschaden und +30 % Genauigkeit.",
 
     "SkillPistolT3CooldownName": "Abklingzeitverstärker",
     "SkillPistolT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -417,10 +417,10 @@
     "SkillPistolT3ImpactDesc": "Verbessert Kopfschussschaden.",
 
     "SkillPistolT3Way1Name": "Weg des Unvergänglichen",
-    "SkillPistolT3Way1Desc": "Verlängert den Statuseffekt um 4 s.",
+    "SkillPistolT3Way1Desc": "Verlängert den Statuseffekt um 5 s.",
 
     "SkillPistolT3Way2Name": "Weg des Schädeldurchbohrers",
-    "SkillPistolT3Way2Desc": "Zusätzlich +50 % Kopfschussschaden.",
+    "SkillPistolT3Way2Desc": "Zusätzlich +50 % kritischer Schaden.",
 
     "SkillPistolUltName": "Kugelhagel",
     "SkillPistolUltDesc": "Während des Statuseffekts gewährt jeder Treffer einen Schadensbonus für alle folgenden Treffer. Der Bonus stapelt sich mit jedem Treffer.",
@@ -442,8 +442,8 @@
     "SkillRevolverP4Desc": "Treffer mit aktivem Revolver haben eine Chance, als Kopfschuss zu zählen.",
 
     "SkillRevolverT1Name": "Atemkontrolle",
-    "SkillRevolverT1Desc": "Gewährt für 6 s +50 % Genauigkeit und +30 % Kopfschussschaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
-    "SkillRevolverT1EffectiveDesc": "Gewährt für 6 s +50 % Genauigkeit und +{effect0} % Kopfschussschaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillRevolverT1Desc": "Gewährt für 7 s +50 % Genauigkeit und +25 % Kopfschussschaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillRevolverT1EffectiveDesc": "Gewährt für 7 s +50 % Genauigkeit und +{effect0} % Kopfschussschaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
     "SkillRevolverT1CooldownName": "Abklingzeitverstärker",
     "SkillRevolverT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -518,8 +518,8 @@
     "SkillRifleP4Desc": "Erhöht den Schaden beim ersten Schuss nach 3 s ohne Angriff mit aktivem Gewehr.",
 
     "SkillRifleT1Name": "Punktgenaue Präzision",
-    "SkillRifleT1Desc": "Gewährt für 8 s +25 % Schaden, +50 % Genauigkeit. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
-    "SkillRifleT1EffectiveDesc": "Gewährt für 8 s +{effect0} % Schaden, +50 % Genauigkeit. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillRifleT1Desc": "Gewährt für 8 s +30 % Kopfschussschaden und +50 % Genauigkeit.",
+    "SkillRifleT1EffectiveDesc": "Gewährt für 8 s +{effect0} % Kopfschussschaden und +50 % Genauigkeit.",
 
     "SkillRifleT1CooldownName": "Abklingzeitverstärker",
     "SkillRifleT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -528,17 +528,17 @@
     "SkillRifleT1StaminaDesc": "Verbessert Ausdauerkosten.",
 
     "SkillRifleT1ImpactName": "Aufprallverstärker",
-    "SkillRifleT1ImpactDesc": "Verbessert Schadensbonus.",
+    "SkillRifleT1ImpactDesc": "Erhöht den Kopfschussschaden.",
 
     "SkillRifleT1Way1Name": "Weg des Verborgenen",
-    "SkillRifleT1Way1Desc": "Während des Statuseffekts ist dein Namensschild verborgen, und alle positiven visuellen Effekte sind für andere Spieler nicht sichtbar.",
+    "SkillRifleT1Way1Desc": "Verlängert den Statuseffekt um 2 s. Währenddessen sind dein Namensschild und positive visuelle Effekte für andere Spieler verborgen.",
 
     "SkillRifleT1Way2Name": "Weg des Schädeldurchbohrers",
-    "SkillRifleT1Way2Desc": "Zusätzlich +30 % Kopfschussschaden.",
+    "SkillRifleT1Way2Desc": "Zusätzlich +40 % Waffenschaden.",
 
     "SkillRifleT2Name": "Lahmlegen",
-    "SkillRifleT2Desc": "Gewährt für 5 s +60 % Schaden, +50 % Genauigkeit. Treffer wenden Verkrüppelt für 3 s an. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
-    "SkillRifleT2EffectiveDesc": "Gewährt für 5 s +{effect0} % Schaden, +50 % Genauigkeit. Treffer wenden Verkrüppelt für 3 s an. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillRifleT2Desc": "Gewährt für 8 s +60 % Schaden, +50 % Genauigkeit. Treffer wenden Verkrüppelt für 3 s an. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillRifleT2EffectiveDesc": "Gewährt für 8 s +{effect0} % Schaden, +50 % Genauigkeit. Treffer wenden Verkrüppelt für 3 s an. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
     "SkillRifleT2CooldownName": "Abklingzeitverstärker",
     "SkillRifleT2CooldownDesc": "Verbessert Abklingzeit.",
@@ -550,7 +550,7 @@
     "SkillRifleT2ImpactDesc": "Verbessert Schadensbonus.",
 
     "SkillRifleT2Way1Name": "Weg des Unvergänglichen",
-    "SkillRifleT2Way1Desc": "Verlängert den Statuseffekt um 3 s.",
+    "SkillRifleT2Way1Desc": "Gewährt Eile für 8 s.",
 
     "SkillRifleT2Way2Name": "Weg des Verwüsters",
     "SkillRifleT2Way2Desc": "Treffer wenden Verwundbar für 5 s an.",
@@ -575,7 +575,7 @@
     "SkillRifleT3Way2Desc": "Kopfschüsse wenden Gelähmt für 6 s an.",
 
     "SkillRifleUltName": "Pew Pew!",
-    "SkillRifleUltDesc": "Gewährt +100 % Feuerrate, rangabhängigen Schaden, punktgenaue Genauigkeit, lädt bei leerem Magazin sofort nach. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillRifleUltDesc": "Gewährt +100 % Feuerrate, rangabhängigen Kopfschussschaden und punktgenaue Präzision. Lädt sofort nach, wenn das Magazin leer ist.",
 
     "LabelTreeRifleName": "Gewehr",
 
@@ -594,8 +594,8 @@
     "SkillShotgunP4Desc": "Schüsse haben eine rangabhängige Chance, für 6 s +20 % verursachten kritischen Schaden zu gewähren. Höchstens einmal pro Sekunde auslösbar und bis zu 5-mal stapelbar.",
 
     "SkillShotgunT1Name": "Abzugs-Kontrolle",
-    "SkillShotgunT1Desc": "Gewährt für 6 s +30 % kritische Trefferchance.",
-    "SkillShotgunT1EffectiveDesc": "Gewährt für 6 s +{effect0} % kritische Trefferchance.",
+    "SkillShotgunT1Desc": "Gewährt für 12 s +20 % kritische Trefferchance.",
+    "SkillShotgunT1EffectiveDesc": "Gewährt für 12 s +{effect0} % kritische Trefferchance.",
 
     "SkillShotgunT1CooldownName": "Abklingzeitverstärker",
     "SkillShotgunT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -610,7 +610,7 @@
     "SkillShotgunT1Way1Desc": "Zusätzlich +100 % Genauigkeit.",
 
     "SkillShotgunT1Way2Name": "Weg des Assassinen",
-    "SkillShotgunT1Way2Desc": "Zusätzlich +50 % kritischer Schaden.",
+    "SkillShotgunT1Way2Desc": "Zusätzlich +30 % kritischer Schaden.",
 
     "SkillShotgunT2Name": "Friedenswächter",
     "SkillShotgunT2Desc": "Der nächste Treffer verursacht zusätzlich 150 % aktive Waffen-DPS und Entwaffnet für 4 s.",
@@ -632,7 +632,7 @@
     "SkillShotgunT2Way2Desc": "Treffer verursachen Blutung für 20 s.",
 
     "SkillShotgunT3Name": "Slug aus nächster Nähe",
-    "SkillShotgunT3Desc": "Beim nächsten Treffer: +25 % Schaden für alle folgenden Geschosse, die dasselbe Ziel treffen. Stapelt sich mit jedem Geschosstreffer. Treffer verursachen Verwirrt für 4 s.",
+    "SkillShotgunT3Desc": "Beim nächsten Treffer: +70 % Schaden für alle folgenden Geschosse, die dasselbe Ziel treffen. Stapelt sich mit jedem Geschosstreffer. Treffer verursachen Verwirrt für 4 s.",
     "SkillShotgunT3EffectiveDesc": "Beim nächsten Treffer: +{effect0} % Schaden für alle folgenden Geschosse, die dasselbe Ziel treffen. Stapelt sich mit jedem Geschosstreffer. Treffer verursachen Verwirrt für 4 s.",
 
     "SkillShotgunT3CooldownName": "Abklingzeitverstärker",
@@ -648,7 +648,7 @@
     "SkillShotgunT3Way1Desc": "Reduziert die Abklingzeit um 5 s für jeden Projektiltreffer.",
 
     "SkillShotgunT3Way2Name": "Weg des Flüchtigen",
-    "SkillShotgunT3Way2Desc": "Bei einem Treffer erhältst du Eile für 5 s.",
+    "SkillShotgunT3Way2Desc": "Jedes treffende Projektil gewährt Eile für 1 s.",
 
     "SkillShotgunUltName": "Welt voller Schmerz",
     "SkillShotgunUltDesc": "Gewährt +25 % kritische Trefferchance sowie rangabhängig mehr kritischen Schaden für eine rangabhängige Dauer.",
@@ -670,8 +670,8 @@
     "SkillSubmachineGunP4Desc": "Gewährt beim Nachladen für 2 s erhöhte kritische Trefferchance.",
 
     "SkillSubmachineGunT1Name": "Eiserner Griff",
-    "SkillSubmachineGunT1Desc": "Gewährt für 6 s +50 % Genauigkeit und +25 % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
-    "SkillSubmachineGunT1EffectiveDesc": "Gewährt für 6 s +50 % Genauigkeit und +{effect0} % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillSubmachineGunT1Desc": "Gewährt für 8 s +50 % Genauigkeit und +25 % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
+    "SkillSubmachineGunT1EffectiveDesc": "Gewährt für 8 s +50 % Genauigkeit und +{effect0} % Schaden. Seit 0.7.0.0 entfällt der Rückstoß-Stat; mögliche Änderungen der Genauigkeitswerte sind noch nicht geprüft.",
 
     "SkillSubmachineGunT1CooldownName": "Abklingzeitverstärker",
     "SkillSubmachineGunT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -746,7 +746,7 @@
     "SkillAxeP4Desc": "Henker löst aus, wenn die HP des Ziels unter dem rangabhängigen Schwellenwert liegen.",
 
     "SkillAxeT1Name": "Baum fällt!",
-    "SkillAxeT1Desc": "Greift alle Ziele im Nahkampf mit 200 % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
+    "SkillAxeT1Desc": "Greift alle Ziele im Nahkampf mit 150 % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
     "SkillAxeT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
 
     "SkillAxeT1CooldownName": "Abklingzeitverstärker",
@@ -797,7 +797,7 @@
     "SkillAxeT3ImpactDesc": "Erhöht den Schadensbonus.",
 
     "SkillAxeT3Way1Name": "Weg des Verwüsters",
-    "SkillAxeT3Way1Desc": "Verlängert Verwundbar um 3 s.",
+    "SkillAxeT3Way1Desc": "Verlängert Verwundbar um 5 s.",
 
     "SkillAxeT3Way2Name": "Weg des Schildbrechers",
     "SkillAxeT3Way2Desc": "Bei einem Treffer wird der Schild des Ziels entfernt.",
@@ -822,7 +822,7 @@
     "SkillHammerP4Desc": "Erhöht den Raserei-Gewinn mit aktivem Hammer.",
 
     "SkillHammerT1Name": "Knochenbrecher",
-    "SkillHammerT1Desc": "Greift alle Ziele im Nahkampf mit 60 % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
+    "SkillHammerT1Desc": "Greift alle Ziele im Nahkampf mit 100 % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
     "SkillHammerT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
 
     "SkillHammerT1CooldownName": "Abklingzeitverstärker",
@@ -835,13 +835,13 @@
     "SkillHammerT1ImpactDesc": "Verbessert Aktive Waffen-DPS.",
 
     "SkillHammerT1Way1Name": "Weg des Unermüdlichen",
-    "SkillHammerT1Way1Desc": "Bei einem Treffer erhältst du für 5 s +100 % Ausdauerregeneration.",
+    "SkillHammerT1Way1Desc": "Bei einem Treffer erhältst du für 7 s +100 % Ausdauerregeneration.",
 
     "SkillHammerT1Way2Name": "Weg des Befrieders",
-    "SkillHammerT1Way2Desc": "Verlängert Entwaffnet um 2 s.",
+    "SkillHammerT1Way2Desc": "Verlängert Entwaffnet um 3 s.",
 
     "SkillHammerT2Name": "Provozierende Treffer",
-    "SkillHammerT2Desc": "Gewährt für 6 s +50 % Schaden.",
+    "SkillHammerT2Desc": "Gewährt für 6 s +60 % Schaden.",
     "SkillHammerT2EffectiveDesc": "Gewährt für 6 s +{effect0} % Schaden.",
 
     "SkillHammerT2CooldownName": "Abklingzeitverstärker",
@@ -857,7 +857,7 @@
     "SkillHammerT2Way1Desc": "Treffer verursachen Verwirrt für 4 s.",
 
     "SkillHammerT2Way2Name": "Weg des Unvergänglichen",
-    "SkillHammerT2Way2Desc": "Verlängert den Statuseffekt um 2 s.",
+    "SkillHammerT2Way2Desc": "Verlängert den Statuseffekt um 3 s.",
 
     "SkillHammerT3Name": "Aggressiver Ansturm",
     "SkillHammerT3Desc": "Greift alle Ziele im Nahkampf mit 350 % aktiver Waffen-DPS an. Ignoriert für 8 s negative Bewegungsgeschwindigkeitseffekte durch verlangsamende Debuffs.",
@@ -876,7 +876,7 @@
     "SkillHammerT3Way1Desc": "Treffer verursachen Geblendet für 3 s.",
 
     "SkillHammerT3Way2Name": "Wege des Entfesselten",
-    "SkillHammerT3Way2Desc": "Entfernt alle geschwindigkeitsreduzierenden Debuffs. Diese können während des Statuseffekts nicht angewendet werden.",
+    "SkillHammerT3Way2Desc": "Gewährt zu Beginn der Fähigkeit Eile für 5 s.",
 
     "SkillHammerUltName": "Den Schmerz spüren",
     "SkillHammerUltDesc": "Greift alle Ziele im Nahkampf an und verursacht rangabhängig Schaden, Betäubt und Unterdrückt.",
@@ -952,7 +952,7 @@
     "SkillKnifeT3Way1Desc": "Fügt +100 % aktive Waffen-DPS pro Debuff auf dem Ziel hinzu.",
 
     "SkillKnifeT3Way2Name": "Way of the Petrifier",
-    "SkillKnifeT3Way2Desc": "Treffer verursachen Betäubt für 2 s.",
+    "SkillKnifeT3Way2Desc": "Treffer verursachen Betäubt für 3 s.",
 
     "SkillKnifeUltName": "Zorn des Schlächters",
     "SkillKnifeUltDesc": "Gewährt für 4 s rangabhängig mehr Angriffsgeschwindigkeit. Das Verwenden anderer Fertigkeiten oder Gegenstände bricht den Effekt ab.",
@@ -974,7 +974,7 @@
     "SkillSwordP4Desc": "Erhöht den Riposte-Schaden mit aktivem Schwert.",
 
     "SkillSwordT1Name": "Wilde HIebe",
-    "SkillSwordT1Desc": "Greift alle Ziele im Nahkampf mit 150 % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
+    "SkillSwordT1Desc": "Greift alle Ziele im Nahkampf mit 120 % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
     "SkillSwordT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
 
     "SkillSwordT1CooldownName": "Abklingzeitverstärker",
@@ -2400,6 +2400,7 @@
     "UnitRating": "Wertung",
     "UnitStamina": "Ausdauer",
 
+    "NoteEstimatedPatchRank": "Zwischenrang aus Patch-Spannweite geschätzt.",
     "NoteUnboundDebuffList": "Verkrüppelt, Gelähmt und Unterdrückt laut erweitertem Unbound-Tooltip.",
     "RuleBestWeaponDps": "Höchste Basis-Waffen-DPS aus Primär- und Sekundärwaffe (0.7.0.1)",
     "RuleDebuffImmunity": "Nach einem erlittenen Debuff besteht für einige Sekunden Immunität gegen weitere Instanzen desselben Debuffs. Dauer nicht beziffert.",
@@ -2700,7 +2701,7 @@
     {
       "id": "shared.rules",
       "title": "Weitere Regeln und Erklärungen",
-      "firstKey": "NoteUnboundDebuffList",
+      "firstKey": "NoteEstimatedPatchRank",
       "lastKey": "RuleWayUnlock"
     },
     {

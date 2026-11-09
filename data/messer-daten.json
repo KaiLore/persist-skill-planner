@@ -927,35 +927,39 @@
       "skillId": "KNIVES-T1-IMP",
       "rank": 1,
       "metricKey": "MetricDamageBonus",
-      "value": 44,
-      "unit": "%"
+      "value": 48.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "KNIVES-T1-IMP",
       "rank": 2,
       "metricKey": "MetricDamageBonus",
-      "value": 48,
-      "unit": "%"
+      "value": 56.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "KNIVES-T1-IMP",
       "rank": 3,
       "metricKey": "MetricDamageBonus",
-      "value": 52,
-      "unit": "%"
+      "value": 64.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "KNIVES-T1-IMP",
       "rank": 4,
       "metricKey": "MetricDamageBonus",
-      "value": 56,
-      "unit": "%"
+      "value": 72.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "KNIVES-T1-IMP",
       "rank": 5,
       "metricKey": "MetricDamageBonus",
-      "value": 60,
+      "value": 80.0,
       "unit": "%"
     },
     {

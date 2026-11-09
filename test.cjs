@@ -46,17 +46,17 @@ const endurance=D.trees.find(t=>t.id==='ENDURANCE');ok(endurance.documented&&end
 const aid=D.trees.find(t=>t.id==='FIRSTAID');ok(aid.nodes.find(n=>n.id==='FIRSTAID-P1').max===10);ok(aid.nodes.find(n=>n.id==='FIRSTAID-P3').max===10);ok(aid.levels.find(v=>v.skillId==='FIRSTAID-ULT'&&v.rank===5&&v.metric==='Heilung maximaler Ziel-HP').value===100);ok(aid.documented);console.log('Erste Hilfe: Passiv-Ränge, Wiederbelebung und offener Datenstatus geprüft.');
 
 const ar=D.trees.find(t=>t.id==='ASSAULTRIFLES');ok(ar.documented);ok(ar.nodes[0].max===15);ok(ar.levels.find(v=>v.skillId==='ASSAULTRIFLES-P1'&&v.rank===15).value===45);ok(aid.nodes.find(n=>n.id==='FIRSTAID-T1').details.baseCooldownSeconds===105);ok(ar.nodes.find(n=>n.id==='ASSAULTRIFLES-ULT').details.accuracyBonusPercent===50);console.log('Focus Serum und Sturmgewehr inklusive 15 Rängen und Ultimate geprüft.');
-const rifle=D.trees.find(t=>t.id==='RIFLES');ok(rifle.documented);ok(rifle.levels.find(v=>v.skillId==='RIFLES-T1-IMP'&&v.rank===5).value===40);ok(rifle.nodes.find(n=>n.id==='RIFLES-T3').details.baseActiveWeaponDpsPercent===150);ok(rifle.levels.find(v=>v.skillId==='RIFLES-ULT'&&v.rank===5&&v.metric==='Statuseffektdauer').value===10);console.log('Gewehr: eigene Schadensstaffeln und Ultimate-Dauer geprüft.');
-const mg=D.trees.find(t=>t.id==='MACHINEGUNS');ok(mg.documented&&mg.nodes[0].max===15);ok(mg.levels.find(v=>v.skillId==='MACHINEGUNS-P4'&&v.rank===5&&v.metric==='Chance auf Verwundbar').value===100);ok(mg.nodes.find(n=>n.id==='MACHINEGUNS-ULT').details.stacksPerHit);ok(mg.levels.find(v=>v.skillId==='MACHINEGUNS-ULT'&&v.rank===5&&v.metric==='Statuseffektdauer').value===9);console.log('MG: Rip & Tear und stapelnder Ultimate geprüft.');
+const rifle=D.trees.find(t=>t.id==='RIFLES');ok(rifle.documented);ok(rifle.levels.find(v=>v.skillId==='RIFLES-T1-IMP'&&v.rank===5).value===50);ok(rifle.nodes.find(n=>n.id==='RIFLES-T3').details.baseActiveWeaponDpsPercent===150);ok(rifle.levels.find(v=>v.skillId==='RIFLES-ULT'&&v.rank===5&&v.metric==='Statuseffektdauer').value===10);console.log('Gewehr: eigene Schadensstaffeln und Ultimate-Dauer geprüft.');
+const mg=D.trees.find(t=>t.id==='MACHINEGUNS');ok(mg.documented&&mg.nodes[0].max===15);ok(mg.levels.find(v=>v.skillId==='MACHINEGUNS-P4'&&v.rank===5&&v.metric==='Chance auf Verwundbar').value===100);ok(mg.nodes.find(n=>n.id==='MACHINEGUNS-ULT').details.stacksPerHit);ok(mg.levels.find(v=>v.skillId==='MACHINEGUNS-ULT'&&v.rank===5&&v.metric==='Statuseffektdauer').value===10);console.log('MG: Rip & Tear und stapelnder Ultimate geprüft.');
 const mp=D.trees.find(t=>t.id==='SUBMACHINEGUNS');ok(mp.documented&&mp.nodes[0].max===15);ok(mp.nodes.find(n=>n.id==='SUBMACHINEGUNS-T2').details.secondaryHitsApplyDebuffs===false);ok(mp.levels.find(v=>v.skillId==='SUBMACHINEGUNS-T2-IMP'&&v.rank===5).value===12);ok(mp.levels.find(v=>v.skillId==='SUBMACHINEGUNS-ULT'&&v.rank===5&&v.metric==='Schadensbonus').value===125);console.log('MP: Ricochet und Apex Gunman geprüft.');
 const pistol=D.trees.find(t=>t.id==='PISTOLS');ok(pistol.documented);ok(pistol.nodes.find(n=>n.id==='PISTOLS-T2').details.bleedDurationSeconds===10);ok(pistol.levels.find(v=>v.skillId==='PISTOLS-T3-IMP'&&v.rank===5).metric==='Kopfschussschaden');ok(pistol.levels.find(v=>v.skillId==='PISTOLS-ULT'&&v.rank===5&&v.metric==='Schadensbonus je Treffer').value===32);console.log('Pistole: Blutungsdauer, Kopfschussschaden und Stapelbonus geprüft.');
 const rev=D.trees.find(t=>t.id==='REVOLVERS');ok(rev.documented);ok(rev.levels.find(v=>v.skillId==='REVOLVERS-T2-IMP'&&v.rank===5).value===200);ok(rev.nodes.find(n=>n.id==='REVOLVERS-ULT').details.shotIntervalSeconds===0.1);console.log('Revolver: Schadensstaffel und automatische Schussfolge geprüft.');
 const sg=D.trees.find(t=>t.id==='SHOTGUNS');ok(sg.documented);ok(sg.nodes.find(n=>n.id==='SHOTGUNS-T2').details.baseStaminaCost===85);ok(sg.nodes.find(n=>n.id==='SHOTGUNS-T2').details.baseActiveWeaponDpsPercent===150);ok(sg.nodes.find(n=>n.id==='SHOTGUNS-P4').details.maxStacks===5);ok(sg.levels.find(v=>v.skillId==='SHOTGUNS-ULT'&&v.rank===5&&v.metric==='Kritischer Schaden').value===300);console.log('Schrotflinte: bestätigte Grundwerte, Stapelregel und Ultimate geprüft.');
 const axe=D.trees.find(t=>t.id==='AXES');ok(axe.documented);ok(axe.levels.find(v=>v.skillId==='AXES-T2-IMP'&&v.rank===3&&v.metric==='Aktive Waffen-DPS').value===350);ok(axe.levels.find(v=>v.skillId==='AXES-T2-IMP'&&v.rank===3&&v.metric==='Statuseffektdauer').value===7);ok(axe.nodes.find(n=>n.id==='AXES-ULT').details.hits===5);console.log('Axt: gemischte Impact-Ränge und fünf Ultimate-Treffer geprüft.');
-const hammer=D.trees.find(t=>t.id==='HAMMERS');ok(hammer.documented);ok(hammer.levels.some(v=>v.skillId==='HAMMERS-T1-IMP'));ok(hammer.nodes.find(n=>n.id==='HAMMERS-T1').details.baseActiveWeaponDpsPercent===60);ok(hammer.levels.find(v=>v.skillId==='HAMMERS-ULT'&&v.rank===3&&v.metric==='Betäubt').value===3);console.log('Hammer: T1-Lücke und Ultimate-Staffeln geprüft.');
+const hammer=D.trees.find(t=>t.id==='HAMMERS');ok(hammer.documented);ok(hammer.levels.some(v=>v.skillId==='HAMMERS-T1-IMP'));ok(hammer.nodes.find(n=>n.id==='HAMMERS-T1').details.baseActiveWeaponDpsPercent===100);ok(hammer.levels.find(v=>v.skillId==='HAMMERS-ULT'&&v.rank===3&&v.metric==='Betäubt').value===3);console.log('Hammer: T1-Lücke und Ultimate-Staffeln geprüft.');
 
 const knife=D.trees.find(t=>t.id==='KNIVES');ok(knife.documented);ok(knife.nodes.find(n=>n.id==='KNIVES-ULT').details.buffDurationSeconds===4);ok(knife.levels.find(v=>v.skillId==='KNIVES-ULT'&&v.rank===5&&v.metric==='Angriffsgeschwindigkeit').value===380);console.log('Messer-Ultimate und vervollständigter Hammer geprüft.');
-const sword=D.trees.find(t=>t.id==='SWORDS');ok(sword.documented);ok(sword.nodes.find(n=>n.id==='SWORDS-T1').details.baseStaminaCost===65);ok(sword.nodes.find(n=>n.id==='SWORDS-T1').details.baseActiveWeaponDpsPercent===150);ok(sword.levels.find(v=>v.skillId==='SWORDS-T3-IMP'&&v.rank===4&&v.metric==='Aktive Waffen-DPS').value===145);ok(sword.nodes.find(n=>n.id==='SWORDS-ULT').details.attacks===3);console.log('Schwert: Grundwerte, gemischte Rangwerte und drei Ultimate-Angriffe geprüft.');
+const sword=D.trees.find(t=>t.id==='SWORDS');ok(sword.documented);ok(sword.nodes.find(n=>n.id==='SWORDS-T1').details.baseStaminaCost===65);ok(sword.nodes.find(n=>n.id==='SWORDS-T1').details.baseActiveWeaponDpsPercent===120);ok(sword.levels.find(v=>v.skillId==='SWORDS-T3-IMP'&&v.rank===4&&v.metric==='Aktive Waffen-DPS').value===145);ok(sword.nodes.find(n=>n.id==='SWORDS-ULT').details.attacks===3);console.log('Schwert: Grundwerte, gemischte Rangwerte und drei Ultimate-Angriffe geprüft.');
 // Level-lock budgets are enforced centrally, including auto-expansion, perks and imports.
 let limited=E.fresh();limited.levelLocked=true;limited.characterLevel=9;limited.caps.MINING=15;ok(E.validate(limited).includes('Badges'));limited.characterLevel=10;ok(!E.validate(limited));limited.caps.CONSTR=15;ok(E.validate(limited).includes('Badges'));limited.caps.CONSTR=10;limited.levelLocked=false;ok(!E.validate(limited));
 limited=E.fresh();limited.levelLocked=true;limited.characterLevel=44;limited.caps.MINING=50;ok(E.validate(limited).includes('Badges'));limited.characterLevel=45;ok(!E.validate(limited));limited.caps.CONSTR=50;ok(E.validate(limited).includes('Badges'));limited.characterLevel=55;ok(!E.validate(limited));
@@ -287,6 +287,30 @@ for(const code of ['de','en']){
 }
 vm.runInContext('switchLanguage("de");hideTip()',context);
 console.log('Grundkosten und Grund-Abklingzeit aller aktiven Skills bleiben bei Enhancer-Rang 0/1/5 unverändert; aktuelle Werte werden weiterhin reduziert (DE/EN).');
+// Patch bounds and changed stat categories must reach the live calculations.
+for(const [id,base,maximum] of [
+ ['AXES-T1',150,250],['HAMMERS-T1',100,200],['HAMMERS-T2',60,120],['KNIVES-T1',40,80],
+ ['SWORDS-T1',120,220],['ASSAULTRIFLES-T1',30,60],['ASSAULTRIFLES-T2',150,250],
+ ['MACHINEGUNS-T1',20,50],['MACHINEGUNS-T2',10,50],['PISTOLS-T3',50,100],
+ ['REVOLVERS-T1',25,50],['REVOLVERS-T3',175,300],['RIFLES-T1',30,50],
+ ['SHOTGUNS-T1',20,40],['SHOTGUNS-T3',70,100]
+]){
+ const treeId=id.split('-')[0],plan=E.fresh();
+ ok(E.effectiveSkill(plan,treeId,id).params.effect0===base);
+ plan.points[treeId]={[id+'-IMP']:1};
+ ok(E.effectiveSkill(plan,treeId,id).values[0].noteKey==='NoteEstimatedPatchRank');
+ plan.points[treeId][id+'-IMP']=5;
+ const result=E.effectiveSkill(plan,treeId,id);
+ ok(result.params.effect0===maximum);ok(!result.values[0].noteKey);ok(!result.missingImpact);
+}
+const zeroed=E.effectiveSkill(E.fresh(),'MACHINEGUNS','MACHINEGUNS-T2').values;
+ok(zeroed.some(v=>v.metricKey==='MetricCriticalHitChance'&&v.value===10));
+ok(zeroed.some(v=>v.metricKey==='MetricCritDamage'&&v.value===30));
+ok(zeroed.some(v=>v.metricKey==='MetricAccuracy'&&v.value===30));
+ok(!zeroed.some(v=>v.metricKey==='MetricDamageBonus'));
+ok(E.effectiveSkill(E.fresh(),'RIFLES','RIFLES-ULT').values.some(v=>v.metricKey==='MetricHeadshotDamage'&&v.value===20));
+ok(D.gamePatch==='0.7.0.5');
+console.log('0.7.0.5: neue Grund- und Endwerte, gekennzeichnete Zwischenränge und geänderte Schadensarten geprüft.');
 // Share links are versioned, language independent and exclude personal names.
 const packURL=value=>btoa(JSON.stringify(value)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
 vm.runInContext('state=E.fresh();state.characterLevel=85;state.levelLocked=true;state.characterName="Private name";state.familyName="Private family";state.armorPieces=4;state.iconMode="unlocked";state.caps.MINING=50;state.points.MINING={"MINING-ULT":3,"MINING-T1":1};state.perks={"PERK-1":2}',context);

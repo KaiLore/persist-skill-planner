@@ -151,7 +151,7 @@
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
         "buffDurationSeconds": 6,
-        "baseDamageBonusPercent": 40,
+        "baseDamageBonusPercent": 30,
         "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
       },
       "descriptionKey": "SkillAssaultRifleT1Desc"
@@ -299,8 +299,9 @@
         "effectKey": "SkillAssaultRifleT2Desc",
         "baseStaminaCost": 75,
         "baseCooldownSeconds": 100,
-        "baseActiveWeaponDpsPercent": 200,
-        "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
+        "baseActiveWeaponDpsPercent": 150,
+        "requiresActiveWeaponKey": "LabelTreeAssaultRifleName",
+        "headshotsAlwaysCritical": true
       },
       "descriptionKey": "SkillAssaultRifleT2Desc"
     },
@@ -938,35 +939,39 @@
       "skillId": "ASSAULTRIFLES-T1-IMP",
       "rank": 1,
       "metricKey": "MetricDamageBonus",
-      "value": 44,
-      "unit": "%"
+      "value": 36.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T1-IMP",
       "rank": 2,
       "metricKey": "MetricDamageBonus",
-      "value": 48,
-      "unit": "%"
+      "value": 42.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T1-IMP",
       "rank": 3,
       "metricKey": "MetricDamageBonus",
-      "value": 52,
-      "unit": "%"
+      "value": 48.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T1-IMP",
       "rank": 4,
       "metricKey": "MetricDamageBonus",
-      "value": 56,
-      "unit": "%"
+      "value": 54.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T1-IMP",
       "rank": 5,
       "metricKey": "MetricDamageBonus",
-      "value": 60,
+      "value": 60.0,
       "unit": "%"
     },
     {
@@ -1048,35 +1053,39 @@
       "skillId": "ASSAULTRIFLES-T2-IMP",
       "rank": 1,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 230,
-      "unit": "%"
+      "value": 170.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T2-IMP",
       "rank": 2,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 260,
-      "unit": "%"
+      "value": 190.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T2-IMP",
       "rank": 3,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 290,
-      "unit": "%"
+      "value": 210.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T2-IMP",
       "rank": 4,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 320,
-      "unit": "%"
+      "value": 230.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "ASSAULTRIFLES-T2-IMP",
       "rank": 5,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 350,
+      "value": 250.0,
       "unit": "%"
     },
     {

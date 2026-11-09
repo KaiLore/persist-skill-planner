@@ -150,7 +150,7 @@
         "effectKey": "SkillAxeT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "baseActiveWeaponDpsPercent": 200,
+        "baseActiveWeaponDpsPercent": 150,
         "requiresActiveWeaponKey": "LabelTreeAxeName"
       },
       "descriptionKey": "SkillAxeT1Desc"
@@ -1113,35 +1113,39 @@
       "skillId": "AXES-T1-IMP",
       "rank": 1,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 220,
-      "unit": "%"
+      "value": 170.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "AXES-T1-IMP",
       "rank": 2,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 240,
-      "unit": "%"
+      "value": 190.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "AXES-T1-IMP",
       "rank": 3,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 260,
-      "unit": "%"
+      "value": 210.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "AXES-T1-IMP",
       "rank": 4,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 280,
-      "unit": "%"
+      "value": 230.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "AXES-T1-IMP",
       "rank": 5,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 300,
+      "value": 250.0,
       "unit": "%"
     },
     {

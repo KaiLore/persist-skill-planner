@@ -4,7 +4,7 @@
   "label": "English",
   "texts": {
     "LabelLanguage": "Language",
-    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.6",
+    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.7",
     "TitleCharPlanner": "Character & Skill Planner",
     "HintTreeCount": "25 trees · weapons, professions, armor, and miscellaneous · offline",
     "LabelCharakterUndBadges": "Character and Badges",
@@ -121,7 +121,7 @@
     "SourceUserReadout": "Observed in game",
 
     "TitleSources": "Sources and rules",
-    "PatchDataStatus": "Verification against 0.7.0.1: the damage reference for the six Best Weapon DPS skills has been corrected to best base weapon DPS. Skill rank values confirmed by the player remain unchanged. Unverified ranged accuracy values are not confirmed new patch values. The new character XP curve from level 20 does not establish a change to badge or perk point distribution.",
+    "PatchDataStatus": "Data version: game patch 0.7.0.5. Where the patch lists a range only, intermediate ranks are marked as estimates.",
     "PatchCombatRules": "Game patch 0.7.0.0: damage bonuses add within the same keyword bucket and multiply between buckets. This planner does not calculate complete combat damage. Bleeding, fire and poison bypass shields. Accuracy affects spread and camera recoil; the old recoil stat has been removed. Weapon specials are separate: all shotguns have Scattershot (projectiles spread in a cone) and knockback against NPCs; swords have Riposte and Momentum. Skills based on active weapon DPS use the Character Menu value with the required weapon drawn, rather than the item tooltip DPS. Check buffs in the Character Menu.",
     "RuleBestWeaponDpsDetail": "Since 0.7.0.1, Titan Turret, Fungal Fallout, Battlefield Bulwark, Electric Field, Overcharge and Anarchist’s Revolution use the highest base DPS of the character’s weapons. Weapon-specific bonuses such as backstab, critical damage and weapon identity damage do not apply. This is a different reference from boosted active weapon DPS.",
     "SourcePlannerCredits": "Unofficial community planner for Persist Online. Based on Skill Planner 1.0 by Avalon [Westwood] (NA), 2026-05-05; current skill values from in-game tooltips and observations from October 2026. The game is in development and values may change.",
@@ -214,7 +214,7 @@
     "SkillAssaultRifleP4Desc": "Increases headshot damage with an active assault rifle while the target is affected by a physical debuff.",
 
     "SkillAssaultRifleT1Name": "Kneecapper",
-    "SkillAssaultRifleT1Desc": "Grants +40% damage for 6 s. Hits apply Crippled for 3 s.",
+    "SkillAssaultRifleT1Desc": "Grants +30% damage for 6 s. Hits apply Crippled for 3 s.",
     "SkillAssaultRifleT1EffectiveDesc": "Grants +{effect0}% damage for 6 s. Hits apply Crippled for 3 s.",
 
     "SkillAssaultRifleT1CooldownName": "Cooldown Enhancer",
@@ -233,8 +233,8 @@
     "SkillAssaultRifleT1Way2Desc": "Additionally grants +25% damage.",
 
     "SkillAssaultRifleT2Name": "Killshot",
-    "SkillAssaultRifleT2Desc": "The next hit deals an additional 200% active weapon DPS.",
-    "SkillAssaultRifleT2EffectiveDesc": "The next hit deals an additional {effect0}% active weapon DPS.",
+    "SkillAssaultRifleT2Desc": "The next hit deals an additional 150% active weapon DPS. Headshots are always critical hits.",
+    "SkillAssaultRifleT2EffectiveDesc": "The next hit deals an additional {effect0}% active weapon DPS. Headshots are always critical hits.",
 
     "SkillAssaultRifleT2CooldownName": "Cooldown Enhancer",
     "SkillAssaultRifleT2CooldownDesc": "Improves cooldown.",
@@ -246,7 +246,7 @@
     "SkillAssaultRifleT2ImpactDesc": "Improves additional active weapon DPS.",
 
     "SkillAssaultRifleT2Way1Name": "Way of the Oppressor",
-    "SkillAssaultRifleT2Way1Desc": "Hits apply Suppressed for 4 s.",
+    "SkillAssaultRifleT2Way1Desc": "Hits apply Disarmed for 4 s.",
 
     "SkillAssaultRifleT2Way2Name": "Way of the Abhorrent",
     "SkillAssaultRifleT2Way2Desc": "Hits apply Disgusted for 4 s: the target cannot use consumables.",
@@ -290,8 +290,8 @@
     "SkillMachineGunP4Desc": "If the target has taken penetration damage from your active machine gun, there is a chance to apply Vulnerable.",
 
     "SkillMachineGunT1Name": "Mow 'em Down!",
-    "SkillMachineGunT1Desc": "Grants +25% damage and +25% penetration damage for 8 s.",
-    "SkillMachineGunT1EffectiveDesc": "Grants +{effect0}% damage and +25% penetration damage for 8 s.",
+    "SkillMachineGunT1Desc": "Grants +20% damage and +25% penetration damage for 8 s.",
+    "SkillMachineGunT1EffectiveDesc": "Grants +{effect0}% damage and +20% penetration damage for 8 s.",
 
     "SkillMachineGunT1CooldownName": "Cooldown Enhancer",
     "SkillMachineGunT1CooldownDesc": "Improves cooldown.",
@@ -309,8 +309,8 @@
     "SkillMachineGunT1Way2Desc": "Removes all physical debuffs and grants immunity to physical debuffs during the status effect.",
 
     "SkillMachineGunT2Name": "Zeroed in",
-    "SkillMachineGunT2Desc": "Grants +50% accuracy and +20% damage for 12 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
-    "SkillMachineGunT2EffectiveDesc": "Grants +50% accuracy and +{effect0}% damage for 12 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillMachineGunT2Desc": "Grants +30% accuracy, +10% critical hit chance and +30% critical damage for 10 s.",
+    "SkillMachineGunT2EffectiveDesc": "Grants +30% accuracy, +{effect0}% critical hit chance and +30% critical damage for 10 s.",
 
     "SkillMachineGunT2CooldownName": "Cooldown Enhancer",
     "SkillMachineGunT2CooldownDesc": "Improves cooldown.",
@@ -319,17 +319,17 @@
     "SkillMachineGunT2StaminaDesc": "Improves stamina cost.",
 
     "SkillMachineGunT2ImpactName": "Impact Enhancer",
-    "SkillMachineGunT2ImpactDesc": "Improves damage bonus.",
+    "SkillMachineGunT2ImpactDesc": "Increases critical hit chance.",
 
     "SkillMachineGunT2Way1Name": "Way of the Sharpshooter",
-    "SkillMachineGunT2Way1Desc": "Additionally grants +50% accuracy. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillMachineGunT2Way1Desc": "Additionally grants +60% accuracy.",
 
     "SkillMachineGunT2Way2Name": "Way of the Unfading",
-    "SkillMachineGunT2Way2Desc": "Extends the status effect by 6 s.",
+    "SkillMachineGunT2Way2Desc": "Extends the status effect by 5 s.",
 
     "SkillMachineGunT3Name": "Suppressive Fire",
-    "SkillMachineGunT3Desc": "Grants +30% damage for 8 s. Hits on a target or nearby objects apply Suppressed for 6 s.",
-    "SkillMachineGunT3EffectiveDesc": "Grants +{effect0}% damage for 8 s. Hits on a target or nearby objects apply Suppressed for 6 s.",
+    "SkillMachineGunT3Desc": "Grants +30% damage for 10 s. Hits on a target or nearby objects apply Suppressed for 6 s.",
+    "SkillMachineGunT3EffectiveDesc": "Grants +{effect0}% damage for 10 s. Hits on a target or nearby objects apply Suppressed for 6 s.",
 
     "SkillMachineGunT3CooldownName": "Cooldown Enhancer",
     "SkillMachineGunT3CooldownDesc": "Improves cooldown.",
@@ -344,7 +344,7 @@
     "SkillMachineGunT3Way1Desc": "Hits apply Bleeding for 20 s.",
 
     "SkillMachineGunT3Way2Name": "Way of the Unfading",
-    "SkillMachineGunT3Way2Desc": "Extends the status effect by 4 s.",
+    "SkillMachineGunT3Way2Desc": "Extends the status effect by 5 s.",
 
     "SkillMachineGunUltName": "Overkill",
     "SkillMachineGunUltDesc": "During the status effect, each hit grants a damage bonus to all subsequent hits. The bonus stacks with every hit.",
@@ -366,8 +366,8 @@
     "SkillPistolP4Desc": "Increases critical damage against bleeding targets while a pistol is active.",
 
     "SkillPistolT1Name": "Right on Target",
-    "SkillPistolT1Desc": "Grants +25% damage for 6 s.",
-    "SkillPistolT1EffectiveDesc": "Grants +{effect0}% damage for 6 s.",
+    "SkillPistolT1Desc": "Grants +25% damage for 10 s.",
+    "SkillPistolT1EffectiveDesc": "Grants +{effect0}% damage for 10 s.",
 
     "SkillPistolT1CooldownName": "Cooldown Enhancer",
     "SkillPistolT1CooldownDesc": "Improves cooldown.",
@@ -382,7 +382,7 @@
     "SkillPistolT1Way1Desc": "Hits apply Crippled for 3 s.",
 
     "SkillPistolT1Way2Name": "Way of the Unfading",
-    "SkillPistolT1Way2Desc": "Extends the status effect by 2 s.",
+    "SkillPistolT1Way2Desc": "Hits apply Vulnerable for 3 s.",
 
     "SkillPistolT2Name": "Artery Shot",
     "SkillPistolT2Desc": "The next hit deals an additional 150% active weapon DPS and applies Bleeding for 10 s.",
@@ -404,8 +404,8 @@
     "SkillPistolT2Way2Desc": "Extends the Bleeding duration by 10 s.",
 
     "SkillPistolT3Name": "Cracking Skulls",
-    "SkillPistolT3Desc": "Grants +60% headshot damage for 8 s.",
-    "SkillPistolT3EffectiveDesc": "Grants +{effect0}% headshot damage for 8 s.",
+    "SkillPistolT3Desc": "Grants +50% headshot damage and +30% accuracy for 10 s.",
+    "SkillPistolT3EffectiveDesc": "Grants +{effect0}% headshot damage and +30% accuracy for 10 s.",
 
     "SkillPistolT3CooldownName": "Cooldown Enhancer",
     "SkillPistolT3CooldownDesc": "Improves cooldown.",
@@ -417,10 +417,10 @@
     "SkillPistolT3ImpactDesc": "Improves headshot damage.",
 
     "SkillPistolT3Way1Name": "Way of the Unfading",
-    "SkillPistolT3Way1Desc": "Extends the status effect by 4 s.",
+    "SkillPistolT3Way1Desc": "Extends the status effect by 5 s.",
 
     "SkillPistolT3Way2Name": "Way of the Skullpiercer",
-    "SkillPistolT3Way2Desc": "Additionally +50% headshot damage.",
+    "SkillPistolT3Way2Desc": "Additionally grants +50% critical damage.",
 
     "SkillPistolUltName": "Bullet Hell",
     "SkillPistolUltDesc": "During the status effect, each hit grants a damage bonus to all subsequent hits. The bonus stacks with every hit.",
@@ -442,8 +442,8 @@
     "SkillRevolverP4Desc": "Hits with an active revolver have a chance to count as a headshot.",
 
     "SkillRevolverT1Name": "Breath Control",
-    "SkillRevolverT1Desc": "Grants +50% accuracy and +30% headshot damage for 6 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
-    "SkillRevolverT1EffectiveDesc": "Grants +50% accuracy and +{effect0}% headshot damage for 6 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillRevolverT1Desc": "Grants +50% accuracy and +25% headshot damage for 7 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillRevolverT1EffectiveDesc": "Grants +50% accuracy and +{effect0}% headshot damage for 7 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
 
     "SkillRevolverT1CooldownName": "Cooldown Enhancer",
     "SkillRevolverT1CooldownDesc": "Improves cooldown.",
@@ -518,8 +518,8 @@
     "SkillRifleP4Desc": "Increases damage on the first shot after 3 s without attacking while a rifle is active.",
 
     "SkillRifleT1Name": "Pinpoint Precision",
-    "SkillRifleT1Desc": "Grants +25% damage, +50% accuracy for 8 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
-    "SkillRifleT1EffectiveDesc": "Grants +{effect0}% damage, +50% accuracy for 8 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillRifleT1Desc": "Grants +30% headshot damage and +50% accuracy for 8 s.",
+    "SkillRifleT1EffectiveDesc": "Grants +{effect0}% headshot damage and +50% accuracy for 8 s.",
 
     "SkillRifleT1CooldownName": "Cooldown Enhancer",
     "SkillRifleT1CooldownDesc": "Improves cooldown.",
@@ -528,17 +528,17 @@
     "SkillRifleT1StaminaDesc": "Improves stamina cost.",
 
     "SkillRifleT1ImpactName": "Impact Enhancer",
-    "SkillRifleT1ImpactDesc": "Improves damage bonus.",
+    "SkillRifleT1ImpactDesc": "Increases headshot damage.",
 
     "SkillRifleT1Way1Name": "Way of the Obscured",
-    "SkillRifleT1Way1Desc": "During the status effect, your nameplate is hidden, and all positive visual effects are invisible to other players.",
+    "SkillRifleT1Way1Desc": "Extends the status effect by 2 s. During it, your nameplate and positive visual effects are hidden from other players.",
 
     "SkillRifleT1Way2Name": "Way of the Skullpiercer",
-    "SkillRifleT1Way2Desc": "Additionally +30% headshot damage.",
+    "SkillRifleT1Way2Desc": "Additionally grants +40% weapon damage.",
 
     "SkillRifleT2Name": "Mobility Kill",
-    "SkillRifleT2Desc": "Grants +60% damage, +50% accuracy for 5 s. Hits apply Crippled for 3 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
-    "SkillRifleT2EffectiveDesc": "Grants +{effect0}% damage, +50% accuracy for 5 s. Hits apply Crippled for 3 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillRifleT2Desc": "Grants +60% damage, +50% accuracy for 8 s. Hits apply Crippled for 3 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillRifleT2EffectiveDesc": "Grants +{effect0}% damage, +50% accuracy for 8 s. Hits apply Crippled for 3 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
 
     "SkillRifleT2CooldownName": "Cooldown Enhancer",
     "SkillRifleT2CooldownDesc": "Improves cooldown.",
@@ -550,7 +550,7 @@
     "SkillRifleT2ImpactDesc": "Improves damage bonus.",
 
     "SkillRifleT2Way1Name": "Way of the Unfading",
-    "SkillRifleT2Way1Desc": "Extends the status effect by 3 s.",
+    "SkillRifleT2Way1Desc": "Grants Haste for 8 s.",
 
     "SkillRifleT2Way2Name": "Way of the Ravager",
     "SkillRifleT2Way2Desc": "Hits apply Vulnerable for 5 s.",
@@ -575,7 +575,7 @@
     "SkillRifleT3Way2Desc": "Headshots apply Paralysis for 6 s.",
 
     "SkillRifleUltName": "Pew Pew!",
-    "SkillRifleUltDesc": "Grants +100% fire rate, rank-based damage, pinpoint accuracy, and instantly reloads when the magazine is empty. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillRifleUltDesc": "Grants +100% fire rate, rank-based headshot damage and pinpoint accuracy. Instantly reloads when the magazine is empty.",
 
     "LabelTreeRifleName": "Rifle",
 
@@ -594,8 +594,8 @@
     "SkillShotgunP4Desc": "Shots have a rank-dependent chance to grant +20% critical damage dealt for 6 s. Can trigger at most once per second and stacks up to 5 times.",
 
     "SkillShotgunT1Name": "Trigger Control",
-    "SkillShotgunT1Desc": "Grants +30% critical hit chance for 6 s.",
-    "SkillShotgunT1EffectiveDesc": "Grants +{effect0}% critical hit chance for 6 s.",
+    "SkillShotgunT1Desc": "Grants +20% critical hit chance for 12 s.",
+    "SkillShotgunT1EffectiveDesc": "Grants +{effect0}% critical hit chance for 12 s.",
 
     "SkillShotgunT1CooldownName": "Cooldown Enhancer",
     "SkillShotgunT1CooldownDesc": "Improves cooldown.",
@@ -610,7 +610,7 @@
     "SkillShotgunT1Way1Desc": "Additionally +100% accuracy.",
 
     "SkillShotgunT1Way2Name": "Way of the Assassin",
-    "SkillShotgunT1Way2Desc": "Additionally +50% critical damage.",
+    "SkillShotgunT1Way2Desc": "Additionally grants +30% critical damage.",
 
     "SkillShotgunT2Name": "Peacekeeper",
     "SkillShotgunT2Desc": "The next hit deals an additional 150 % active weapon DPS and Disarmed for 4 s.",
@@ -632,7 +632,7 @@
     "SkillShotgunT2Way2Desc": "Hits apply Bleeding for 20 s.",
 
     "SkillShotgunT3Name": "Point Blank Slug",
-    "SkillShotgunT3Desc": "On the next hit: +25% damage for all subsequent pellets that hit the same target. Stacks with each pellet hit. Hits apply Confused for 4 s.",
+    "SkillShotgunT3Desc": "On the next hit: +70% damage for all subsequent pellets that hit the same target. Stacks with each pellet hit. Hits apply Confused for 4 s.",
     "SkillShotgunT3EffectiveDesc": "On the next hit: +{effect0}% damage for all subsequent pellets that hit the same target. Stacks with each pellet hit. Hits apply Confused for 4 s.",
 
     "SkillShotgunT3CooldownName": "Cooldown Enhancer",
@@ -648,7 +648,7 @@
     "SkillShotgunT3Way1Desc": "Reduces cooldown by 5 s for each projectile hit.",
 
     "SkillShotgunT3Way2Name": "Way of the Fugitive",
-    "SkillShotgunT3Way2Desc": "On hit, gain Haste for 5 s.",
+    "SkillShotgunT3Way2Desc": "Each projectile hit grants Haste for 1 s.",
 
     "SkillShotgunUltName": "World of Hurt",
     "SkillShotgunUltDesc": "Grants +25% critical hit chance and rank-based critical damage for a rank-based duration.",
@@ -670,8 +670,8 @@
     "SkillSubmachineGunP4Desc": "Grants increased critical hit chance for 2 s after reloading.",
 
     "SkillSubmachineGunT1Name": "Iron Grip",
-    "SkillSubmachineGunT1Desc": "Grants +50% accuracy and +25% damage for 6 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
-    "SkillSubmachineGunT1EffectiveDesc": "Grants +50% accuracy and +{effect0}% damage for 6 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillSubmachineGunT1Desc": "Grants +50% accuracy and +25% damage for 8 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
+    "SkillSubmachineGunT1EffectiveDesc": "Grants +50% accuracy and +{effect0}% damage for 8 s. The recoil stat was removed in 0.7.0.0; possible accuracy value changes have not yet been verified.",
 
     "SkillSubmachineGunT1CooldownName": "Cooldown Enhancer",
     "SkillSubmachineGunT1CooldownDesc": "Improves cooldown.",
@@ -746,7 +746,7 @@
     "SkillAxeP4Desc": "Executioner triggers when the target's HP falls below the rank-based threshold.",
 
     "SkillAxeT1Name": "Timber!",
-    "SkillAxeT1Desc": "Attacks all nearby targets with 200% active weapon DPS. Hits knock back non-player targets.",
+    "SkillAxeT1Desc": "Attacks all nearby targets with 150% active weapon DPS. Hits knock back non-player targets.",
     "SkillAxeT1EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Hits knock back non-player targets.",
 
     "SkillAxeT1CooldownName": "Cooldown Enhancer",
@@ -797,7 +797,7 @@
     "SkillAxeT3ImpactDesc": "Increases the damage bonus.",
 
     "SkillAxeT3Way1Name": "Way of the Ravager",
-    "SkillAxeT3Way1Desc": "Extends Vulnerable by 3 s.",
+    "SkillAxeT3Way1Desc": "Extends Vulnerable by 5 s.",
 
     "SkillAxeT3Way2Name": "Way of the Shieldbreaker",
     "SkillAxeT3Way2Desc": "On hit, removes the target's shield.",
@@ -822,7 +822,7 @@
     "SkillHammerP4Desc": "Increases Frenzy gain while a hammer is active.",
 
     "SkillHammerT1Name": "Bonebreaker",
-    "SkillHammerT1Desc": "Attacks all nearby targets with 60% active weapon DPS. Hits inflict Disarmed for 3 s.",
+    "SkillHammerT1Desc": "Attacks all nearby targets with 100% active weapon DPS. Hits inflict Disarmed for 3 s.",
     "SkillHammerT1EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Hits inflict Disarmed for 3 s.",
 
     "SkillHammerT1CooldownName": "Cooldown Enhancer",
@@ -835,13 +835,13 @@
     "SkillHammerT1ImpactDesc": "Improves active weapon DPS.",
 
     "SkillHammerT1Way1Name": "Way of the Tireless",
-    "SkillHammerT1Way1Desc": "On hit, gain +100% stamina regeneration for 5 s.",
+    "SkillHammerT1Way1Desc": "On hit, gain +100% stamina regeneration for 7 s.",
 
     "SkillHammerT1Way2Name": "Way of the Pacifier",
-    "SkillHammerT1Way2Desc": "Extends Disarmed by 2 s.",
+    "SkillHammerT1Way2Desc": "Extends Disarmed by 3 s.",
 
     "SkillHammerT2Name": "Provoking Hits",
-    "SkillHammerT2Desc": "Grants +50% damage for 6 s.",
+    "SkillHammerT2Desc": "Grants +60% damage for 6 s.",
     "SkillHammerT2EffectiveDesc": "Grants +{effect0}% damage for 6 s.",
 
     "SkillHammerT2CooldownName": "Cooldown Enhancer",
@@ -857,7 +857,7 @@
     "SkillHammerT2Way1Desc": "Hits inflict Confused for 4 s.",
 
     "SkillHammerT2Way2Name": "Way of the Unfading",
-    "SkillHammerT2Way2Desc": "Extends the status effect by 2 s.",
+    "SkillHammerT2Way2Desc": "Extends the status effect by 3 s.",
 
     "SkillHammerT3Name": "Aggressive Onslaught",
     "SkillHammerT3Desc": "Attacks all nearby targets with 350% active weapon DPS. Ignores negative movement speed effects from slowing debuffs for 8 s.",
@@ -876,7 +876,7 @@
     "SkillHammerT3Way1Desc": "Hits inflict Blinded for 3 s.",
 
     "SkillHammerT3Way2Name": "Way of the Unshackled",
-    "SkillHammerT3Way2Desc": "Removes all movement-speed-reducing debuffs. Such debuffs cannot be applied during the status effect.",
+    "SkillHammerT3Way2Desc": "Grants Haste for 5 s when the skill starts.",
 
     "SkillHammerUltName": "Bringing the Pain",
     "SkillHammerUltDesc": "Attacks all nearby targets, dealing rank-dependent damage and applying Stunned and Suppressed.",
@@ -952,7 +952,7 @@
     "SkillKnifeT3Way1Desc": "Adds +100% active weapon DPS per debuff on the target.",
 
     "SkillKnifeT3Way2Name": "Way of the Petrifier",
-    "SkillKnifeT3Way2Desc": "Hits inflict Stunned for 2 s.",
+    "SkillKnifeT3Way2Desc": "Hits inflict Stunned for 3 s.",
 
     "SkillKnifeUltName": "Butcher’s Fury",
     "SkillKnifeUltDesc": "Grants increased attack speed for 4 s based on rank. Using other skills or items cancels the effect.",
@@ -974,7 +974,7 @@
     "SkillSwordP4Desc": "Increases riposte damage while a sword is active.",
 
     "SkillSwordT1Name": "Savage Sweeps",
-    "SkillSwordT1Desc": "Attacks all nearby targets with 150% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
+    "SkillSwordT1Desc": "Attacks all nearby targets with 120% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
     "SkillSwordT1EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
 
     "SkillSwordT1CooldownName": "Cooldown Enhancer",
@@ -2400,6 +2400,7 @@
     "UnitRating": "Rating",
     "UnitStamina": "Stamina",
 
+    "NoteEstimatedPatchRank": "Intermediate rank estimated from the patch range.",
     "NoteUnboundDebuffList": "Crippled, Slowed and Suppressed according to the extended Unbound tooltip.",
     "RuleBestWeaponDps": "Highest base weapon DPS across primary and secondary weapons (0.7.0.1)",
     "RuleDebuffImmunity": "After suffering a debuff, there is immunity against further instances of the same debuff for several seconds. Duration not specified.",
@@ -2700,7 +2701,7 @@
     {
       "id": "shared.rules",
       "title": "Other rules and explanations",
-      "firstKey": "NoteUnboundDebuffList",
+      "firstKey": "NoteEstimatedPatchRank",
       "lastKey": "RuleWayUnlock"
     },
     {

@@ -57,7 +57,7 @@ g.createPlanner=function(D,translate=(key)=>key){
   const selected=impactRank?rows(impact.id,impactRank):[],baseRows=rows(id,Math.max(1,points[id]||0)),params={},values=[];
   for(const rule of n.effectiveEffects||[]){let base=rule.baseMetricKey?baseRows.find(v=>v.metricKey===rule.baseMetricKey)?.value:rule.base;const row=selected.find(v=>v.metricKey===rule.metricKey);let value=row?row.value:base;
    if(row&&rule.mode==='add')value=base===undefined||base===null?null:base+row.value;
-   params[rule.slot]=value;values.push({...rule,value,base,enhanced:!!row,missing:impactRank>0&&!row,sourceStatusKey:row?.statusKey});
+   params[rule.slot]=value;values.push({...rule,value,base,enhanced:!!row,missing:!rule.fixed&&impactRank>0&&!row,sourceStatusKey:row?.statusKey,noteKey:row?.noteKey??rule.noteKey});
   }
   for(const suffix of ['CD','STA']){const child=t.nodes.find(x=>x.parent===id&&x.id.endsWith('-'+suffix)),rank=points[child?.id]||0;const row=rank&&child?rows(child.id,rank)[0]:null,base=n.details?.[suffix==='CD'?'baseCooldownSeconds':'baseStaminaCost'];if(row||base!==undefined)values.push({metricKey:suffix==='CD'?'MetricCooldown':'MetricStaminaCost',value:row?row.value:base,base,unit:row?.unit||(suffix==='CD'?'s':''),unitKey:row?.unitKey,enhanced:!!row});}
   for(const row of baseRows)if((row.armorPieces!==undefined||n.kind==='Ultimate')&&!values.some(v=>v.metricKey===row.metricKey||v.baseMetricKey===row.metricKey))values.push({...row,enhanced:false});

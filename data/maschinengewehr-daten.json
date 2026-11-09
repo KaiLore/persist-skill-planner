@@ -163,7 +163,7 @@
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
         "buffDurationSeconds": 8,
-        "baseDamageBonusPercent": 25,
+        "baseDamageBonusPercent": 20,
         "piercingDamageBonusPercent": 25,
         "requiresActiveWeaponKey": "LabelTreeMachineGunName"
       },
@@ -312,10 +312,11 @@
         "effectKey": "SkillMachineGunT2Desc",
         "baseStaminaCost": 75,
         "baseCooldownSeconds": 100,
-        "buffDurationSeconds": 12,
-        "baseDamageBonusPercent": 20,
-        "accuracyBonusPercent": 50,
-        "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+        "buffDurationSeconds": 10,
+        "accuracyBonusPercent": 30,
+        "requiresActiveWeaponKey": "LabelTreeMachineGunName",
+        "baseCritChancePercent": 10,
+        "criticalDamageBonusPercent": 30
       },
       "descriptionKey": "SkillMachineGunT2Desc"
     },
@@ -462,7 +463,7 @@
         "effectKey": "SkillMachineGunT3Desc",
         "baseStaminaCost": 85,
         "baseCooldownSeconds": 150,
-        "buffDurationSeconds": 8,
+        "buffDurationSeconds": 10,
         "baseDamageBonusPercent": 30,
         "requiresActiveWeaponKey": "LabelTreeMachineGunName"
       },
@@ -639,11 +640,11 @@
             "metricKey": "EffectDuration",
             "unit": "s",
             "values": [
-              5,
               6,
               7,
               8,
-              9
+              9,
+              10
             ]
           },
           {
@@ -987,35 +988,39 @@
       "skillId": "MACHINEGUNS-T1-IMP",
       "rank": 1,
       "metricKey": "MetricDamageBonus",
-      "value": 29,
-      "unit": "%"
+      "value": 26.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T1-IMP",
       "rank": 2,
       "metricKey": "MetricDamageBonus",
-      "value": 33,
-      "unit": "%"
+      "value": 32.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T1-IMP",
       "rank": 3,
       "metricKey": "MetricDamageBonus",
-      "value": 37,
-      "unit": "%"
+      "value": 38.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T1-IMP",
       "rank": 4,
       "metricKey": "MetricDamageBonus",
-      "value": 41,
-      "unit": "%"
+      "value": 44.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T1-IMP",
       "rank": 5,
       "metricKey": "MetricDamageBonus",
-      "value": 45,
+      "value": 50.0,
       "unit": "%"
     },
     {
@@ -1096,36 +1101,40 @@
     {
       "skillId": "MACHINEGUNS-T2-IMP",
       "rank": 1,
-      "metricKey": "MetricDamageBonus",
-      "value": 25,
-      "unit": "%"
+      "metricKey": "MetricCriticalHitChance",
+      "value": 18.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T2-IMP",
       "rank": 2,
-      "metricKey": "MetricDamageBonus",
-      "value": 30,
-      "unit": "%"
+      "metricKey": "MetricCriticalHitChance",
+      "value": 26.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T2-IMP",
       "rank": 3,
-      "metricKey": "MetricDamageBonus",
-      "value": 35,
-      "unit": "%"
+      "metricKey": "MetricCriticalHitChance",
+      "value": 34.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T2-IMP",
       "rank": 4,
-      "metricKey": "MetricDamageBonus",
-      "value": 40,
-      "unit": "%"
+      "metricKey": "MetricCriticalHitChance",
+      "value": 42.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-T2-IMP",
       "rank": 5,
-      "metricKey": "MetricDamageBonus",
-      "value": 45,
+      "metricKey": "MetricCriticalHitChance",
+      "value": 50.0,
       "unit": "%"
     },
     {
@@ -1317,35 +1326,38 @@
       "skillId": "MACHINEGUNS-ULT",
       "rank": 1,
       "metricKey": "EffectDuration",
-      "value": 5,
+      "value": 6,
       "unit": "s"
     },
     {
       "skillId": "MACHINEGUNS-ULT",
       "rank": 2,
       "metricKey": "EffectDuration",
-      "value": 6,
-      "unit": "s"
+      "value": 7,
+      "unit": "s",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-ULT",
       "rank": 3,
       "metricKey": "EffectDuration",
-      "value": 7,
-      "unit": "s"
+      "value": 8,
+      "unit": "s",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-ULT",
       "rank": 4,
       "metricKey": "EffectDuration",
-      "value": 8,
-      "unit": "s"
+      "value": 9,
+      "unit": "s",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "MACHINEGUNS-ULT",
       "rank": 5,
       "metricKey": "EffectDuration",
-      "value": 9,
+      "value": 10,
       "unit": "s"
     },
     {

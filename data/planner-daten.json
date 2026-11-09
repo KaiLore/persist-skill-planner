@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "version": "0.14.6",
+  "version": "0.14.7",
   "trees": [
     {
       "id": "ASSAULTRIFLES",
@@ -155,7 +155,7 @@
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
             "buffDurationSeconds": 6,
-            "baseDamageBonusPercent": 40,
+            "baseDamageBonusPercent": 30,
             "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
           },
           "descriptionKey": "SkillAssaultRifleT1Desc",
@@ -164,7 +164,7 @@
               "slot": "effect0",
               "metricKey": "MetricDamageBonus",
               "unit": "%",
-              "base": 40
+              "base": 30
             }
           ],
           "effectiveDescriptionKey": "SkillAssaultRifleT1EffectiveDesc"
@@ -312,8 +312,9 @@
             "effectKey": "SkillAssaultRifleT2Desc",
             "baseStaminaCost": 75,
             "baseCooldownSeconds": 100,
-            "baseActiveWeaponDpsPercent": 200,
-            "requiresActiveWeaponKey": "LabelTreeAssaultRifleName"
+            "baseActiveWeaponDpsPercent": 150,
+            "requiresActiveWeaponKey": "LabelTreeAssaultRifleName",
+            "headshotsAlwaysCritical": true
           },
           "descriptionKey": "SkillAssaultRifleT2Desc",
           "effectiveEffects": [
@@ -321,7 +322,7 @@
               "slot": "effect0",
               "metricKey": "MetricExtraActiveWeaponDps",
               "unit": "%",
-              "base": 200
+              "base": 150
             }
           ],
           "effectiveDescriptionKey": "SkillAssaultRifleT2EffectiveDesc"
@@ -969,35 +970,39 @@
           "skillId": "ASSAULTRIFLES-T1-IMP",
           "rank": 1,
           "metricKey": "MetricDamageBonus",
-          "value": 44,
-          "unit": "%"
+          "value": 36.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T1-IMP",
           "rank": 2,
           "metricKey": "MetricDamageBonus",
-          "value": 48,
-          "unit": "%"
+          "value": 42.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T1-IMP",
           "rank": 3,
           "metricKey": "MetricDamageBonus",
-          "value": 52,
-          "unit": "%"
+          "value": 48.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T1-IMP",
           "rank": 4,
           "metricKey": "MetricDamageBonus",
-          "value": 56,
-          "unit": "%"
+          "value": 54.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T1-IMP",
           "rank": 5,
           "metricKey": "MetricDamageBonus",
-          "value": 60,
+          "value": 60.0,
           "unit": "%"
         },
         {
@@ -1079,35 +1084,39 @@
           "skillId": "ASSAULTRIFLES-T2-IMP",
           "rank": 1,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 230,
-          "unit": "%"
+          "value": 170.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T2-IMP",
           "rank": 2,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 260,
-          "unit": "%"
+          "value": 190.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T2-IMP",
           "rank": 3,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 290,
-          "unit": "%"
+          "value": 210.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T2-IMP",
           "rank": 4,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 320,
-          "unit": "%"
+          "value": 230.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "ASSAULTRIFLES-T2-IMP",
           "rank": 5,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 350,
+          "value": 250.0,
           "unit": "%"
         },
         {
@@ -1689,7 +1698,7 @@
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
             "buffDurationSeconds": 8,
-            "baseDamageBonusPercent": 25,
+            "baseDamageBonusPercent": 20,
             "piercingDamageBonusPercent": 25,
             "requiresActiveWeaponKey": "LabelTreeMachineGunName"
           },
@@ -1699,7 +1708,7 @@
               "slot": "effect0",
               "metricKey": "MetricDamageBonus",
               "unit": "%",
-              "base": 25
+              "base": 20
             }
           ],
           "effectiveDescriptionKey": "SkillMachineGunT1EffectiveDesc"
@@ -1847,18 +1856,33 @@
             "effectKey": "SkillMachineGunT2Desc",
             "baseStaminaCost": 75,
             "baseCooldownSeconds": 100,
-            "buffDurationSeconds": 12,
-            "baseDamageBonusPercent": 20,
-            "accuracyBonusPercent": 50,
-            "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+            "buffDurationSeconds": 10,
+            "accuracyBonusPercent": 30,
+            "requiresActiveWeaponKey": "LabelTreeMachineGunName",
+            "baseCritChancePercent": 10,
+            "criticalDamageBonusPercent": 30
           },
           "descriptionKey": "SkillMachineGunT2Desc",
           "effectiveEffects": [
             {
               "slot": "effect0",
-              "metricKey": "MetricDamageBonus",
+              "metricKey": "MetricCriticalHitChance",
               "unit": "%",
-              "base": 20
+              "base": 10
+            },
+            {
+              "slot": "effect1",
+              "metricKey": "MetricAccuracy",
+              "unit": "%",
+              "base": 30,
+              "fixed": true
+            },
+            {
+              "slot": "effect2",
+              "metricKey": "MetricCritDamage",
+              "unit": "%",
+              "base": 30,
+              "fixed": true
             }
           ],
           "effectiveDescriptionKey": "SkillMachineGunT2EffectiveDesc"
@@ -2006,7 +2030,7 @@
             "effectKey": "SkillMachineGunT3Desc",
             "baseStaminaCost": 85,
             "baseCooldownSeconds": 150,
-            "buffDurationSeconds": 8,
+            "buffDurationSeconds": 10,
             "baseDamageBonusPercent": 30,
             "requiresActiveWeaponKey": "LabelTreeMachineGunName"
           },
@@ -2192,11 +2216,11 @@
                 "metricKey": "EffectDuration",
                 "unit": "s",
                 "values": [
-                  5,
                   6,
                   7,
                   8,
-                  9
+                  9,
+                  10
                 ]
               },
               {
@@ -2540,35 +2564,39 @@
           "skillId": "MACHINEGUNS-T1-IMP",
           "rank": 1,
           "metricKey": "MetricDamageBonus",
-          "value": 29,
-          "unit": "%"
+          "value": 26.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T1-IMP",
           "rank": 2,
           "metricKey": "MetricDamageBonus",
-          "value": 33,
-          "unit": "%"
+          "value": 32.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T1-IMP",
           "rank": 3,
           "metricKey": "MetricDamageBonus",
-          "value": 37,
-          "unit": "%"
+          "value": 38.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T1-IMP",
           "rank": 4,
           "metricKey": "MetricDamageBonus",
-          "value": 41,
-          "unit": "%"
+          "value": 44.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T1-IMP",
           "rank": 5,
           "metricKey": "MetricDamageBonus",
-          "value": 45,
+          "value": 50.0,
           "unit": "%"
         },
         {
@@ -2649,36 +2677,40 @@
         {
           "skillId": "MACHINEGUNS-T2-IMP",
           "rank": 1,
-          "metricKey": "MetricDamageBonus",
-          "value": 25,
-          "unit": "%"
+          "metricKey": "MetricCriticalHitChance",
+          "value": 18.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T2-IMP",
           "rank": 2,
-          "metricKey": "MetricDamageBonus",
-          "value": 30,
-          "unit": "%"
+          "metricKey": "MetricCriticalHitChance",
+          "value": 26.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T2-IMP",
           "rank": 3,
-          "metricKey": "MetricDamageBonus",
-          "value": 35,
-          "unit": "%"
+          "metricKey": "MetricCriticalHitChance",
+          "value": 34.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T2-IMP",
           "rank": 4,
-          "metricKey": "MetricDamageBonus",
-          "value": 40,
-          "unit": "%"
+          "metricKey": "MetricCriticalHitChance",
+          "value": 42.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-T2-IMP",
           "rank": 5,
-          "metricKey": "MetricDamageBonus",
-          "value": 45,
+          "metricKey": "MetricCriticalHitChance",
+          "value": 50.0,
           "unit": "%"
         },
         {
@@ -2870,35 +2902,38 @@
           "skillId": "MACHINEGUNS-ULT",
           "rank": 1,
           "metricKey": "EffectDuration",
-          "value": 5,
+          "value": 6,
           "unit": "s"
         },
         {
           "skillId": "MACHINEGUNS-ULT",
           "rank": 2,
           "metricKey": "EffectDuration",
-          "value": 6,
-          "unit": "s"
+          "value": 7,
+          "unit": "s",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-ULT",
           "rank": 3,
           "metricKey": "EffectDuration",
-          "value": 7,
-          "unit": "s"
+          "value": 8,
+          "unit": "s",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-ULT",
           "rank": 4,
           "metricKey": "EffectDuration",
-          "value": 8,
-          "unit": "s"
+          "value": 9,
+          "unit": "s",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "MACHINEGUNS-ULT",
           "rank": 5,
           "metricKey": "EffectDuration",
-          "value": 9,
+          "value": 10,
           "unit": "s"
         },
         {
@@ -3247,7 +3282,7 @@
             "effectKey": "SkillPistolT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "buffDurationSeconds": 6,
+            "buffDurationSeconds": 10,
             "baseDamageBonusPercent": 25,
             "requiresActiveWeaponKey": "LabelTreePistolName"
           },
@@ -3563,9 +3598,10 @@
             "effectKey": "SkillPistolT3Desc",
             "baseStaminaCost": 85,
             "baseCooldownSeconds": 150,
-            "buffDurationSeconds": 8,
-            "baseHeadshotDamageBonusPercent": 60,
-            "requiresActiveWeaponKey": "LabelTreePistolName"
+            "buffDurationSeconds": 10,
+            "baseHeadshotDamageBonusPercent": 50,
+            "requiresActiveWeaponKey": "LabelTreePistolName",
+            "accuracyBonusPercent": 30
           },
           "descriptionKey": "SkillPistolT3Desc",
           "effectiveEffects": [
@@ -3573,7 +3609,14 @@
               "slot": "effect0",
               "metricKey": "MetricHeadshotDamage",
               "unit": "%",
-              "base": 60
+              "base": 50
+            },
+            {
+              "slot": "effect1",
+              "metricKey": "MetricAccuracy",
+              "unit": "%",
+              "base": 30,
+              "fixed": true
             }
           ],
           "effectiveDescriptionKey": "SkillPistolT3EffectiveDesc"
@@ -4282,35 +4325,39 @@
           "skillId": "PISTOLS-T3-IMP",
           "rank": 1,
           "metricKey": "MetricHeadshotDamage",
-          "value": 68,
-          "unit": "%"
+          "value": 60.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "PISTOLS-T3-IMP",
           "rank": 2,
           "metricKey": "MetricHeadshotDamage",
-          "value": 76,
-          "unit": "%"
+          "value": 70.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "PISTOLS-T3-IMP",
           "rank": 3,
           "metricKey": "MetricHeadshotDamage",
-          "value": 84,
-          "unit": "%"
+          "value": 80.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "PISTOLS-T3-IMP",
           "rank": 4,
           "metricKey": "MetricHeadshotDamage",
-          "value": 92,
-          "unit": "%"
+          "value": 90.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "PISTOLS-T3-IMP",
           "rank": 5,
           "metricKey": "MetricHeadshotDamage",
-          "value": 100,
+          "value": 100.0,
           "unit": "%"
         },
         {
@@ -4773,8 +4820,8 @@
             "effectKey": "SkillRevolverT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "buffDurationSeconds": 6,
-            "baseHeadshotDamageBonusPercent": 30,
+            "buffDurationSeconds": 7,
+            "baseHeadshotDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRevolverName"
           },
@@ -4784,7 +4831,7 @@
               "slot": "effect0",
               "metricKey": "MetricHeadshotDamage",
               "unit": "%",
-              "base": 30
+              "base": 25
             }
           ],
           "effectiveDescriptionKey": "SkillRevolverT1EffectiveDesc"
@@ -5578,35 +5625,39 @@
           "skillId": "REVOLVERS-T1-IMP",
           "rank": 1,
           "metricKey": "MetricHeadshotDamage",
-          "value": 34,
-          "unit": "%"
+          "value": 30.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T1-IMP",
           "rank": 2,
           "metricKey": "MetricHeadshotDamage",
-          "value": 38,
-          "unit": "%"
+          "value": 35.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T1-IMP",
           "rank": 3,
           "metricKey": "MetricHeadshotDamage",
-          "value": 42,
-          "unit": "%"
+          "value": 40.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T1-IMP",
           "rank": 4,
           "metricKey": "MetricHeadshotDamage",
-          "value": 46,
-          "unit": "%"
+          "value": 45.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T1-IMP",
           "rank": 5,
           "metricKey": "MetricHeadshotDamage",
-          "value": 50,
+          "value": 50.0,
           "unit": "%"
         },
         {
@@ -5798,35 +5849,39 @@
           "skillId": "REVOLVERS-T3-IMP",
           "rank": 1,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 190,
-          "unit": "%"
+          "value": 200.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T3-IMP",
           "rank": 2,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 205,
-          "unit": "%"
+          "value": 225.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T3-IMP",
           "rank": 3,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 220,
-          "unit": "%"
+          "value": 250.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T3-IMP",
           "rank": 4,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 235,
-          "unit": "%"
+          "value": 275.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "REVOLVERS-T3-IMP",
           "rank": 5,
           "metricKey": "MetricExtraActiveWeaponDps",
-          "value": 250,
+          "value": 300.0,
           "unit": "%"
         },
         {
@@ -6252,17 +6307,17 @@
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
             "buffDurationSeconds": 8,
-            "baseDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
-            "requiresActiveWeaponKey": "LabelTreeRifleName"
+            "requiresActiveWeaponKey": "LabelTreeRifleName",
+            "baseHeadshotDamageBonusPercent": 30
           },
           "descriptionKey": "SkillRifleT1Desc",
           "effectiveEffects": [
             {
               "slot": "effect0",
-              "metricKey": "MetricDamageBonus",
+              "metricKey": "MetricHeadshotDamage",
               "unit": "%",
-              "base": 25
+              "base": 30
             }
           ],
           "effectiveDescriptionKey": "SkillRifleT1EffectiveDesc"
@@ -6410,7 +6465,7 @@
             "effectKey": "SkillRifleT2Desc",
             "baseStaminaCost": 75,
             "baseCooldownSeconds": 100,
-            "buffDurationSeconds": 5,
+            "buffDurationSeconds": 8,
             "baseDamageBonusPercent": 60,
             "accuracyBonusPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeRifleName"
@@ -6763,7 +6818,7 @@
                 ]
               },
               {
-                "metricKey": "MetricDamageBonus",
+                "metricKey": "MetricHeadshotDamage",
                 "unit": "%",
                 "values": [
                   20,
@@ -7067,36 +7122,40 @@
         {
           "skillId": "RIFLES-T1-IMP",
           "rank": 1,
-          "metricKey": "MetricDamageBonus",
-          "value": 28,
-          "unit": "%"
+          "metricKey": "MetricHeadshotDamage",
+          "value": 34.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "RIFLES-T1-IMP",
           "rank": 2,
-          "metricKey": "MetricDamageBonus",
-          "value": 31,
-          "unit": "%"
+          "metricKey": "MetricHeadshotDamage",
+          "value": 38.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "RIFLES-T1-IMP",
           "rank": 3,
-          "metricKey": "MetricDamageBonus",
-          "value": 34,
-          "unit": "%"
+          "metricKey": "MetricHeadshotDamage",
+          "value": 42.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "RIFLES-T1-IMP",
           "rank": 4,
-          "metricKey": "MetricDamageBonus",
-          "value": 37,
-          "unit": "%"
+          "metricKey": "MetricHeadshotDamage",
+          "value": 46.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "RIFLES-T1-IMP",
           "rank": 5,
-          "metricKey": "MetricDamageBonus",
-          "value": 40,
+          "metricKey": "MetricHeadshotDamage",
+          "value": 50.0,
           "unit": "%"
         },
         {
@@ -7432,35 +7491,35 @@
         {
           "skillId": "RIFLES-ULT",
           "rank": 1,
-          "metricKey": "MetricDamageBonus",
+          "metricKey": "MetricHeadshotDamage",
           "value": 20,
           "unit": "%"
         },
         {
           "skillId": "RIFLES-ULT",
           "rank": 2,
-          "metricKey": "MetricDamageBonus",
+          "metricKey": "MetricHeadshotDamage",
           "value": 40,
           "unit": "%"
         },
         {
           "skillId": "RIFLES-ULT",
           "rank": 3,
-          "metricKey": "MetricDamageBonus",
+          "metricKey": "MetricHeadshotDamage",
           "value": 60,
           "unit": "%"
         },
         {
           "skillId": "RIFLES-ULT",
           "rank": 4,
-          "metricKey": "MetricDamageBonus",
+          "metricKey": "MetricHeadshotDamage",
           "value": 80,
           "unit": "%"
         },
         {
           "skillId": "RIFLES-ULT",
           "rank": 5,
-          "metricKey": "MetricDamageBonus",
+          "metricKey": "MetricHeadshotDamage",
           "value": 100,
           "unit": "%"
         }
@@ -7783,8 +7842,8 @@
             "effectKey": "SkillShotgunT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "buffDurationSeconds": 6,
-            "baseCritChancePercent": 30,
+            "buffDurationSeconds": 12,
+            "baseCritChancePercent": 20,
             "requiresActiveWeaponKey": "LabelTreeShotgunName"
           },
           "descriptionKey": "SkillShotgunT1Desc",
@@ -7793,7 +7852,7 @@
               "slot": "effect0",
               "metricKey": "MetricCriticalHitChance",
               "unit": "%",
-              "base": 30
+              "base": 20
             }
           ],
           "effectiveDescriptionKey": "SkillShotgunT1EffectiveDesc"
@@ -8099,7 +8158,7 @@
             "effectKey": "SkillShotgunT3Desc",
             "baseStaminaCost": 85,
             "baseCooldownSeconds": 150,
-            "baseDamageBonusPerProjectilePercent": 25,
+            "baseDamageBonusPerProjectilePercent": 70,
             "requiresActiveWeaponKey": "LabelTreeShotgunName"
           },
           "descriptionKey": "SkillShotgunT3Desc",
@@ -8108,7 +8167,7 @@
               "slot": "effect0",
               "metricKey": "MetricProjectileDamage",
               "unit": "%",
-              "base": 25
+              "base": 70
             }
           ],
           "effectiveDescriptionKey": "SkillShotgunT3EffectiveDesc"
@@ -8597,35 +8656,39 @@
           "skillId": "SHOTGUNS-T1-IMP",
           "rank": 1,
           "metricKey": "MetricCriticalHitChance",
-          "value": 34,
-          "unit": "%"
+          "value": 24.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T1-IMP",
           "rank": 2,
           "metricKey": "MetricCriticalHitChance",
-          "value": 38,
-          "unit": "%"
+          "value": 28.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T1-IMP",
           "rank": 3,
           "metricKey": "MetricCriticalHitChance",
-          "value": 42,
-          "unit": "%"
+          "value": 32.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T1-IMP",
           "rank": 4,
           "metricKey": "MetricCriticalHitChance",
-          "value": 46,
-          "unit": "%"
+          "value": 36.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T1-IMP",
           "rank": 5,
           "metricKey": "MetricCriticalHitChance",
-          "value": 50,
+          "value": 40.0,
           "unit": "%"
         },
         {
@@ -8817,35 +8880,39 @@
           "skillId": "SHOTGUNS-T3-IMP",
           "rank": 1,
           "metricKey": "MetricProjectileDamage",
-          "value": 28,
-          "unit": "%"
+          "value": 76.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T3-IMP",
           "rank": 2,
           "metricKey": "MetricProjectileDamage",
-          "value": 31,
-          "unit": "%"
+          "value": 82.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T3-IMP",
           "rank": 3,
           "metricKey": "MetricProjectileDamage",
-          "value": 34,
-          "unit": "%"
+          "value": 88.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T3-IMP",
           "rank": 4,
           "metricKey": "MetricProjectileDamage",
-          "value": 37,
-          "unit": "%"
+          "value": 94.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SHOTGUNS-T3-IMP",
           "rank": 5,
           "metricKey": "MetricProjectileDamage",
-          "value": 40,
+          "value": 100.0,
           "unit": "%"
         },
         {
@@ -9309,7 +9376,7 @@
             "effectKey": "SkillSubmachineGunT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "buffDurationSeconds": 6,
+            "buffDurationSeconds": 8,
             "baseDamageBonusPercent": 25,
             "accuracyBonusPercent": 50,
             "requiresActiveWeaponKey": "LabelTreeSubmachineGunName"
@@ -10790,7 +10857,7 @@
             "effectKey": "SkillAxeT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "baseActiveWeaponDpsPercent": 200,
+            "baseActiveWeaponDpsPercent": 150,
             "requiresActiveWeaponKey": "LabelTreeAxeName"
           },
           "descriptionKey": "SkillAxeT1Desc",
@@ -10799,7 +10866,7 @@
               "slot": "effect0",
               "metricKey": "MetricActiveWeaponDps",
               "unit": "%",
-              "base": 200
+              "base": 150
             }
           ],
           "effectiveDescriptionKey": "SkillAxeT1EffectiveDesc"
@@ -11798,35 +11865,39 @@
           "skillId": "AXES-T1-IMP",
           "rank": 1,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 220,
-          "unit": "%"
+          "value": 170.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "AXES-T1-IMP",
           "rank": 2,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 240,
-          "unit": "%"
+          "value": 190.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "AXES-T1-IMP",
           "rank": 3,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 260,
-          "unit": "%"
+          "value": 210.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "AXES-T1-IMP",
           "rank": 4,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 280,
-          "unit": "%"
+          "value": 230.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "AXES-T1-IMP",
           "rank": 5,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 300,
+          "value": 250.0,
           "unit": "%"
         },
         {
@@ -12425,7 +12496,7 @@
             "effectKey": "SkillHammerT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "baseActiveWeaponDpsPercent": 60,
+            "baseActiveWeaponDpsPercent": 100,
             "disarmedDurationSeconds": 3,
             "requiresActiveWeaponKey": "LabelTreeHammerName"
           },
@@ -12435,7 +12506,7 @@
               "slot": "effect0",
               "metricKey": "MetricActiveWeaponDps",
               "unit": "%",
-              "base": 60
+              "base": 100
             }
           ],
           "effectiveDescriptionKey": "SkillHammerT1EffectiveDesc"
@@ -12584,7 +12655,7 @@
             "baseStaminaCost": 75,
             "baseCooldownSeconds": 100,
             "buffDurationSeconds": 6,
-            "baseDamageBonusPercent": 50,
+            "baseDamageBonusPercent": 60,
             "requiresActiveWeaponKey": "LabelTreeHammerName"
           },
           "descriptionKey": "SkillHammerT2Desc",
@@ -12593,7 +12664,7 @@
               "slot": "effect0",
               "metricKey": "MetricDamageBonus",
               "unit": "%",
-              "base": 50
+              "base": 60
             }
           ],
           "effectiveDescriptionKey": "SkillHammerT2EffectiveDesc"
@@ -13250,35 +13321,39 @@
           "skillId": "HAMMERS-T2-IMP",
           "rank": 1,
           "metricKey": "MetricDamageBonus",
-          "value": 58,
-          "unit": "%"
+          "value": 72.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T2-IMP",
           "rank": 2,
           "metricKey": "MetricDamageBonus",
-          "value": 66,
-          "unit": "%"
+          "value": 84.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T2-IMP",
           "rank": 3,
           "metricKey": "MetricDamageBonus",
-          "value": 74,
-          "unit": "%"
+          "value": 96.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T2-IMP",
           "rank": 4,
           "metricKey": "MetricDamageBonus",
-          "value": 82,
-          "unit": "%"
+          "value": 108.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T2-IMP",
           "rank": 5,
           "metricKey": "MetricDamageBonus",
-          "value": 90,
+          "value": 120.0,
           "unit": "%"
         },
         {
@@ -13650,35 +13725,39 @@
           "skillId": "HAMMERS-T1-IMP",
           "rank": 1,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 68,
-          "unit": "%"
+          "value": 120.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T1-IMP",
           "rank": 2,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 76,
-          "unit": "%"
+          "value": 140.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T1-IMP",
           "rank": 3,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 84,
-          "unit": "%"
+          "value": 160.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T1-IMP",
           "rank": 4,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 92,
-          "unit": "%"
+          "value": 180.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "HAMMERS-T1-IMP",
           "rank": 5,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 100,
+          "value": 200.0,
           "unit": "%"
         }
       ],
@@ -14800,35 +14879,39 @@
           "skillId": "KNIVES-T1-IMP",
           "rank": 1,
           "metricKey": "MetricDamageBonus",
-          "value": 44,
-          "unit": "%"
+          "value": 48.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "KNIVES-T1-IMP",
           "rank": 2,
           "metricKey": "MetricDamageBonus",
-          "value": 48,
-          "unit": "%"
+          "value": 56.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "KNIVES-T1-IMP",
           "rank": 3,
           "metricKey": "MetricDamageBonus",
-          "value": 52,
-          "unit": "%"
+          "value": 64.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "KNIVES-T1-IMP",
           "rank": 4,
           "metricKey": "MetricDamageBonus",
-          "value": 56,
-          "unit": "%"
+          "value": 72.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "KNIVES-T1-IMP",
           "rank": 5,
           "metricKey": "MetricDamageBonus",
-          "value": 60,
+          "value": 80.0,
           "unit": "%"
         },
         {
@@ -15472,7 +15555,7 @@
             "effectKey": "SkillSwordT1Desc",
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
-            "baseActiveWeaponDpsPercent": 150,
+            "baseActiveWeaponDpsPercent": 120,
             "staminaPerTarget": 5,
             "missingHpHealingPercentPerTarget": 10,
             "requiresActiveWeaponKey": "LabelTreeSwordName"
@@ -15483,7 +15566,7 @@
               "slot": "effect0",
               "metricKey": "MetricActiveWeaponDps",
               "unit": "%",
-              "base": 150
+              "base": 120
             }
           ],
           "effectiveDescriptionKey": "SkillSwordT1EffectiveDesc"
@@ -16449,35 +16532,39 @@
           "skillId": "SWORDS-T1-IMP",
           "rank": 1,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 170,
-          "unit": "%"
+          "value": 140.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SWORDS-T1-IMP",
           "rank": 2,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 190,
-          "unit": "%"
+          "value": 160.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SWORDS-T1-IMP",
           "rank": 3,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 210,
-          "unit": "%"
+          "value": 180.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SWORDS-T1-IMP",
           "rank": 4,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 230,
-          "unit": "%"
+          "value": 200.0,
+          "unit": "%",
+          "noteKey": "NoteEstimatedPatchRank"
         },
         {
           "skillId": "SWORDS-T1-IMP",
           "rank": 5,
           "metricKey": "MetricActiveWeaponDps",
-          "value": 250,
+          "value": 220.0,
           "unit": "%"
         },
         {
@@ -44196,5 +44283,5 @@
       "IMP": "assets/skills/OverlayEnhancerImpact.png"
     }
   },
-  "gamePatch": "0.7.0.1"
+  "gamePatch": "0.7.0.5"
 }

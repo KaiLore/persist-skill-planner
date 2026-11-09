@@ -150,7 +150,7 @@
         "effectKey": "SkillSwordT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "baseActiveWeaponDpsPercent": 150,
+        "baseActiveWeaponDpsPercent": 120,
         "staminaPerTarget": 5,
         "missingHpHealingPercentPerTarget": 10,
         "requiresActiveWeaponKey": "LabelTreeSwordName"
@@ -1094,35 +1094,39 @@
       "skillId": "SWORDS-T1-IMP",
       "rank": 1,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 170,
-      "unit": "%"
+      "value": 140.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SWORDS-T1-IMP",
       "rank": 2,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 190,
-      "unit": "%"
+      "value": 160.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SWORDS-T1-IMP",
       "rank": 3,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 210,
-      "unit": "%"
+      "value": 180.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SWORDS-T1-IMP",
       "rank": 4,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 230,
-      "unit": "%"
+      "value": 200.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "SWORDS-T1-IMP",
       "rank": 5,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 250,
+      "value": 220.0,
       "unit": "%"
     },
     {

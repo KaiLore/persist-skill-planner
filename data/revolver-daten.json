@@ -150,8 +150,8 @@
         "effectKey": "SkillRevolverT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "buffDurationSeconds": 6,
-        "baseHeadshotDamageBonusPercent": 30,
+        "buffDurationSeconds": 7,
+        "baseHeadshotDamageBonusPercent": 25,
         "accuracyBonusPercent": 50,
         "requiresActiveWeaponKey": "LabelTreeRevolverName"
       },
@@ -928,35 +928,39 @@
       "skillId": "REVOLVERS-T1-IMP",
       "rank": 1,
       "metricKey": "MetricHeadshotDamage",
-      "value": 34,
-      "unit": "%"
+      "value": 30.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T1-IMP",
       "rank": 2,
       "metricKey": "MetricHeadshotDamage",
-      "value": 38,
-      "unit": "%"
+      "value": 35.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T1-IMP",
       "rank": 3,
       "metricKey": "MetricHeadshotDamage",
-      "value": 42,
-      "unit": "%"
+      "value": 40.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T1-IMP",
       "rank": 4,
       "metricKey": "MetricHeadshotDamage",
-      "value": 46,
-      "unit": "%"
+      "value": 45.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T1-IMP",
       "rank": 5,
       "metricKey": "MetricHeadshotDamage",
-      "value": 50,
+      "value": 50.0,
       "unit": "%"
     },
     {
@@ -1148,35 +1152,39 @@
       "skillId": "REVOLVERS-T3-IMP",
       "rank": 1,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 190,
-      "unit": "%"
+      "value": 200.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T3-IMP",
       "rank": 2,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 205,
-      "unit": "%"
+      "value": 225.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T3-IMP",
       "rank": 3,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 220,
-      "unit": "%"
+      "value": 250.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T3-IMP",
       "rank": 4,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 235,
-      "unit": "%"
+      "value": 275.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "REVOLVERS-T3-IMP",
       "rank": 5,
       "metricKey": "MetricExtraActiveWeaponDps",
-      "value": 250,
+      "value": 300.0,
       "unit": "%"
     },
     {

@@ -150,7 +150,7 @@
         "effectKey": "SkillHammerT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "baseActiveWeaponDpsPercent": 60,
+        "baseActiveWeaponDpsPercent": 100,
         "disarmedDurationSeconds": 3,
         "requiresActiveWeaponKey": "LabelTreeHammerName"
       },
@@ -300,7 +300,7 @@
         "baseStaminaCost": 75,
         "baseCooldownSeconds": 100,
         "buffDurationSeconds": 6,
-        "baseDamageBonusPercent": 50,
+        "baseDamageBonusPercent": 60,
         "requiresActiveWeaponKey": "LabelTreeHammerName"
       },
       "descriptionKey": "SkillHammerT2Desc"
@@ -948,35 +948,39 @@
       "skillId": "HAMMERS-T2-IMP",
       "rank": 1,
       "metricKey": "MetricDamageBonus",
-      "value": 58,
-      "unit": "%"
+      "value": 72.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T2-IMP",
       "rank": 2,
       "metricKey": "MetricDamageBonus",
-      "value": 66,
-      "unit": "%"
+      "value": 84.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T2-IMP",
       "rank": 3,
       "metricKey": "MetricDamageBonus",
-      "value": 74,
-      "unit": "%"
+      "value": 96.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T2-IMP",
       "rank": 4,
       "metricKey": "MetricDamageBonus",
-      "value": 82,
-      "unit": "%"
+      "value": 108.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T2-IMP",
       "rank": 5,
       "metricKey": "MetricDamageBonus",
-      "value": 90,
+      "value": 120.0,
       "unit": "%"
     },
     {
@@ -1348,35 +1352,39 @@
       "skillId": "HAMMERS-T1-IMP",
       "rank": 1,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 68,
-      "unit": "%"
+      "value": 120.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T1-IMP",
       "rank": 2,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 76,
-      "unit": "%"
+      "value": 140.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T1-IMP",
       "rank": 3,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 84,
-      "unit": "%"
+      "value": 160.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T1-IMP",
       "rank": 4,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 92,
-      "unit": "%"
+      "value": 180.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "HAMMERS-T1-IMP",
       "rank": 5,
       "metricKey": "MetricActiveWeaponDps",
-      "value": 100,
+      "value": 200.0,
       "unit": "%"
     }
   ],

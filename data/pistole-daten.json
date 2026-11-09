@@ -150,7 +150,7 @@
         "effectKey": "SkillPistolT1Desc",
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
-        "buffDurationSeconds": 6,
+        "buffDurationSeconds": 10,
         "baseDamageBonusPercent": 25,
         "requiresActiveWeaponKey": "LabelTreePistolName"
       },
@@ -448,9 +448,10 @@
         "effectKey": "SkillPistolT3Desc",
         "baseStaminaCost": 85,
         "baseCooldownSeconds": 150,
-        "buffDurationSeconds": 8,
-        "baseHeadshotDamageBonusPercent": 60,
-        "requiresActiveWeaponKey": "LabelTreePistolName"
+        "buffDurationSeconds": 10,
+        "baseHeadshotDamageBonusPercent": 50,
+        "requiresActiveWeaponKey": "LabelTreePistolName",
+        "accuracyBonusPercent": 30
       },
       "descriptionKey": "SkillPistolT3Desc"
     },
@@ -1158,35 +1159,39 @@
       "skillId": "PISTOLS-T3-IMP",
       "rank": 1,
       "metricKey": "MetricHeadshotDamage",
-      "value": 68,
-      "unit": "%"
+      "value": 60.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "PISTOLS-T3-IMP",
       "rank": 2,
       "metricKey": "MetricHeadshotDamage",
-      "value": 76,
-      "unit": "%"
+      "value": 70.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "PISTOLS-T3-IMP",
       "rank": 3,
       "metricKey": "MetricHeadshotDamage",
-      "value": 84,
-      "unit": "%"
+      "value": 80.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "PISTOLS-T3-IMP",
       "rank": 4,
       "metricKey": "MetricHeadshotDamage",
-      "value": 92,
-      "unit": "%"
+      "value": 90.0,
+      "unit": "%",
+      "noteKey": "NoteEstimatedPatchRank"
     },
     {
       "skillId": "PISTOLS-T3-IMP",
       "rank": 5,
       "metricKey": "MetricHeadshotDamage",
-      "value": 100,
+      "value": 100.0,
       "unit": "%"
     },
     {

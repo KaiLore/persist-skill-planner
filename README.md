@@ -42,3 +42,9 @@ Entfernten Rückstoß-Perk aus der Auswahl genommen; Originalgrafik unter assets
 ## Spielpatch 0.7.0.1 (Planner 0.14.6)
 
 Sechs Best-Weapon-DPS-Skills verwenden jetzt höchste Basis-Waffen-DPS statt verstärkter Waffen-DPS. Waffenspezifische Boni wie Rückenstich, kritischer Schaden und Waffenspecial-Schaden gelten dafür nicht. Referenz und Beschreibungen in DE/EN korrigiert; Rangstaffeln unverändert. Quelle: vom Nutzer bereitgestellte Patchnotes.
+
+## Spielpatch 0.7.0.5 (Planner 0.14.7)
+
+Schadenswerte, Dauer, kritische Treffer und Way-Effekte der elf betroffenen Waffenbäume folgen den bereitgestellten Patchnotes. Bei Änderungen mit reinen Spannweiten sind Zwischenränge anhand der bisherigen Rangkurve geschätzt und mit `≈` markiert.
+
+Der Spielpatch enthält außerdem neue Funktionen in der Knotenübersicht, zusätzliche Fraktionsquests ab Rang 5, Änderungen am Safehouse-Dashboard und dessen Benachrichtigungen sowie einen Fix für einen möglichen Client-Absturz.
