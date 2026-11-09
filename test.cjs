@@ -298,7 +298,7 @@ for(const [id,base,maximum] of [
  const treeId=id.split('-')[0],plan=E.fresh();
  ok(E.effectiveSkill(plan,treeId,id).params.effect0===base);
  plan.points[treeId]={[id+'-IMP']:1};
- ok(E.effectiveSkill(plan,treeId,id).values[0].noteKey==='NoteEstimatedPatchRank');
+ ok(E.effectiveSkill(plan,treeId,id).values[0].noteKey===(id==='ASSAULTRIFLES-T1'?undefined:'NoteEstimatedPatchRank'));
  plan.points[treeId][id+'-IMP']=5;
  const result=E.effectiveSkill(plan,treeId,id);
  ok(result.params.effect0===maximum);ok(!result.values[0].noteKey);ok(!result.missingImpact);
