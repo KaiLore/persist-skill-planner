@@ -233,8 +233,8 @@
     "SkillAssaultRifleT1Way2Desc": "Additionally grants +25% damage.",
 
     "SkillAssaultRifleT2Name": "Killshot",
-    "SkillAssaultRifleT2Desc": "The next hit deals an additional 150% active weapon DPS. Headshots are always critical hits.",
-    "SkillAssaultRifleT2EffectiveDesc": "The next hit deals an additional {effect0}% active weapon DPS. Headshots are always critical hits.",
+    "SkillAssaultRifleT2Desc": "The next hit deals an additional 150% active weapon DPS. On a headshot, critical damage is applied.",
+    "SkillAssaultRifleT2EffectiveDesc": "The next hit deals an additional {effect0}% active weapon DPS. On a headshot, critical damage is applied.",
 
     "SkillAssaultRifleT2CooldownName": "Cooldown Enhancer",
     "SkillAssaultRifleT2CooldownDesc": "Improves cooldown.",

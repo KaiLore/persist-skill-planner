@@ -233,8 +233,8 @@
     "SkillAssaultRifleT1Way2Desc": "Zusätzlich +25 % Schaden.",
 
     "SkillAssaultRifleT2Name": "Todesschuss",
-    "SkillAssaultRifleT2Desc": "Der nächste Treffer verursacht zusätzlich 150 % aktive Waffen-DPS. Kopfschüsse sind immer kritische Treffer.",
-    "SkillAssaultRifleT2EffectiveDesc": "Der nächste Treffer verursacht zusätzlich {effect0} % aktive Waffen-DPS. Kopfschüsse sind immer kritische Treffer.",
+    "SkillAssaultRifleT2Desc": "Der nächste Treffer verursacht zusätzlich 150 % aktive Waffen-DPS. Bei Kopfschuss wird kritischer Schaden angewendet.",
+    "SkillAssaultRifleT2EffectiveDesc": "Der nächste Treffer verursacht zusätzlich {effect0} % aktive Waffen-DPS. Bei Kopfschuss wird kritischer Schaden angewendet.",
 
     "SkillAssaultRifleT2CooldownName": "Abklingzeitverstärker",
     "SkillAssaultRifleT2CooldownDesc": "Verbessert Abklingzeit.",
@@ -246,7 +246,7 @@
     "SkillAssaultRifleT2ImpactDesc": "Verbessert Zusätzliche aktive Waffen-DPS.",
 
     "SkillAssaultRifleT2Way1Name": "Weg des Unterdrückers",
-    "SkillAssaultRifleT2Way1Desc": "Treffer verursachen Entwaffnet für 4 s.",
+    "SkillAssaultRifleT2Way1Desc": "Treffer verursacht Entwaffnet für 4 s.",
 
     "SkillAssaultRifleT2Way2Name": "Weg des Abscheulichen",
     "SkillAssaultRifleT2Way2Desc": "Treffer verursachen für 4 s Angewidert: Das Ziel kann keine Verbrauchsgegenstände nutzen.",
