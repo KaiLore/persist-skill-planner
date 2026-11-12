@@ -4,7 +4,7 @@
   "label": "Deutsch",
   "texts": {
     "LabelLanguage": "Sprache",
-    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.7",
+    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.8",
     "TitleCharPlanner": "Charakter & Skill Planner",
     "HintTreeCount": "25 Bäume · Waffen, Berufe, Rüstungen und Sonstiges · offline",
     "LabelCharakterUndBadges": "Charakter und Badges",
@@ -121,8 +121,9 @@
     "SourceUserReadout": "Im Spiel abgelesen",
 
     "TitleSources": "Quellen und Regeln",
-    "PatchDataStatus": "Datenstand: Spielpatch 0.7.0.5. Wo der Patch nur eine Spannweite nennt, sind Zwischenränge als Schätzwerte gekennzeichnet.",
+    "PatchDataStatus": "Datenstand: Spielpatch 0.7.0.7. Nahkampfreichweiten und Angriffswinkel aus 0.7.0.6 sind berücksichtigt. Wo ältere Patches nur Spannweiten nennen, sind geschätzte Zwischenränge mit ≈ gekennzeichnet.",
     "PatchCombatRules": "Spielpatch 0.7.0.0: Schadensboni werden innerhalb desselben Keyword-Buckets addiert und zwischen Buckets multipliziert. Der Planner berechnet keine vollständigen Kampfschäden. Blutung, Feuer und Gift umgehen Schilde. Genauigkeit beeinflusst Streuung und Kamerarückstoß; der frühere Rückstoß-Stat entfällt. Waffenspecials bleiben davon getrennt: Alle Schrotflinten besitzen Streuschuss (kegelförmige Projektile) und Rückstoß (Zurückstoßen von Nicht-Spielern); Schwerter besitzen Riposte und Momentum. Bei Fähigkeiten mit aktiven Waffen-DPS ist der Wert im Charaktermenü mit gezogener passender Waffe maßgeblich, nicht die DPS im Gegenstands-Tooltip. Buffs werden im Charaktermenü geprüft.",
+    "RuleMeleeGeometry": "Seit 0.7.0.6 haben Nahkampfwaffen einen 90°-Angriffswinkel. Normale Nahkampf-Skillangriffe verwenden 3,5 m Reichweite und einen schmalen 90°-Bogen. Hurricane Blade und Berserker Spirit treffen im weiten 180°-Bogen, Bringing the Pain rund um dich (360°). Curare Curse trifft mit Nahkampfwaffen rund um dich (360°). Resurrection, No One Left Behind und Suppressive Fire haben 3,5 m Reichweite. Titan Turret profitiert seit dem Bugfix von +25 % Schaden gegen Verwundbare Ziele.",
     "RuleBestWeaponDpsDetail": "Seit 0.7.0.1 verwenden Titan Turret, Fungal Fallout, Battlefield Bulwark, Electric Field, Overcharge und Anarchist’s Revolution die höchste Basis-Waffen-DPS der Charakterwaffen. Waffenspezifische Boni wie Rückenstich, kritischer Schaden und Schaden aus Waffenspecials werden nicht übernommen. Dies ist eine andere Referenz als die verstärkte aktive Waffen-DPS.",
     "SourcePlannerCredits": "Inoffizieller Community-Planner für Persist Online. Grundlage: Skill Planner 1.0 von Avalon [Westwood] (NA), 05.05.2026; aktuelle Skillwerte aus Spiel-Tooltips und Spielbeobachtungen vom Oktober 2026. Das Spiel befindet sich in Entwicklung; Werte können sich ändern.",
     "TitleCharacterBadges": "Charakterstufe und Badges",
@@ -746,8 +747,8 @@
     "SkillAxeP4Desc": "Henker löst aus, wenn die HP des Ziels unter dem rangabhängigen Schwellenwert liegen.",
 
     "SkillAxeT1Name": "Baum fällt!",
-    "SkillAxeT1Desc": "Greift alle Ziele im Nahkampf mit 150 % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
-    "SkillAxeT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
+    "SkillAxeT1Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 150 % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
+    "SkillAxeT1EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an. Treffer schlagen Nicht-Spieler zurück.",
 
     "SkillAxeT1CooldownName": "Abklingzeitverstärker",
     "SkillAxeT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -765,8 +766,8 @@
     "SkillAxeT1Way2Desc": "Bei einem Treffer erhältst du für 5 s +30 % kritische Trefferchance.",
 
     "SkillAxeT2Name": "Erschöpfender Angriff",
-    "SkillAxeT2Desc": "Greift alle Ziele im Nahkampf mit 250 % aktiver Waffen-DPS an und verursacht Verkrüppelt für 4 s. Ein kritischer Treffer gewährt für 5 s +25 % kritischen Schaden.",
-    "SkillAxeT2EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an und verursacht Verkrüppelt für {effect1} s. Ein kritischer Treffer gewährt für {effect2} s +{effect3} % kritischen Schaden.",
+    "SkillAxeT2Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 250 % aktiver Waffen-DPS an und verursacht Verkrüppelt für 4 s. Ein kritischer Treffer gewährt für 5 s +25 % kritischen Schaden.",
+    "SkillAxeT2EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an und verursacht Verkrüppelt für {effect1} s. Ein kritischer Treffer gewährt für {effect2} s +{effect3} % kritischen Schaden.",
 
     "SkillAxeT2CooldownName": "Abklingzeitverstärker",
     "SkillAxeT2CooldownDesc": "Verbessert Abklingzeit.",
@@ -803,7 +804,7 @@
     "SkillAxeT3Way2Desc": "Bei einem Treffer wird der Schild des Ziels entfernt.",
 
     "SkillAxeUltName": "Berserkergeist",
-    "SkillAxeUltDesc": "Ein Angriff verteilt 5 Treffer auf alle Ziele im Nahkampf. Treffer wenden Blutung für 20 s und Unterdrückt für 6 s an.",
+    "SkillAxeUltDesc": "Ein Angriff verteilt 5 Treffer auf alle Ziele in einem weiten 180°-Bogen. Treffer wenden Blutung für 20 s und Unterdrückt für 6 s an.",
 
     "LabelTreeAxeName": "Axt",
 
@@ -822,8 +823,8 @@
     "SkillHammerP4Desc": "Erhöht den Raserei-Gewinn mit aktivem Hammer.",
 
     "SkillHammerT1Name": "Knochenbrecher",
-    "SkillHammerT1Desc": "Greift alle Ziele im Nahkampf mit 100 % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
-    "SkillHammerT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
+    "SkillHammerT1Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 100 % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
+    "SkillHammerT1EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Entwaffnet für 3 s.",
 
     "SkillHammerT1CooldownName": "Abklingzeitverstärker",
     "SkillHammerT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -860,8 +861,8 @@
     "SkillHammerT2Way2Desc": "Verlängert den Statuseffekt um 3 s.",
 
     "SkillHammerT3Name": "Aggressiver Ansturm",
-    "SkillHammerT3Desc": "Greift alle Ziele im Nahkampf mit 350 % aktiver Waffen-DPS an. Ignoriert für 8 s negative Bewegungsgeschwindigkeitseffekte durch verlangsamende Debuffs.",
-    "SkillHammerT3EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Ignoriert für 8 s negative Bewegungsgeschwindigkeitseffekte durch verlangsamende Debuffs.",
+    "SkillHammerT3Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 350 % aktiver Waffen-DPS an. Ignoriert für 8 s negative Bewegungsgeschwindigkeitseffekte durch verlangsamende Debuffs.",
+    "SkillHammerT3EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an. Ignoriert für 8 s negative Bewegungsgeschwindigkeitseffekte durch verlangsamende Debuffs.",
 
     "SkillHammerT3CooldownName": "Abklingzeitverstärker",
     "SkillHammerT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -879,7 +880,7 @@
     "SkillHammerT3Way2Desc": "Gewährt zu Beginn der Fähigkeit Eile für 5 s.",
 
     "SkillHammerUltName": "Den Schmerz spüren",
-    "SkillHammerUltDesc": "Greift alle Ziele im Nahkampf an und verursacht rangabhängig Schaden, Betäubt und Unterdrückt.",
+    "SkillHammerUltDesc": "Greift alle Ziele rund um dich (360°) an und verursacht rangabhängig Schaden, Betäubt und Unterdrückt.",
 
     "LabelTreeHammerName": "Hammer",
 
@@ -917,8 +918,8 @@
     "SkillKnifeT1Way2Desc": "Verlängert den Statuseffekt um 2 s.",
 
     "SkillKnifeT2Name": "Blutende Wunde",
-    "SkillKnifeT2Desc": "Greift alle Ziele im Nahkampf mit 150 % aktiver Waffen-DPS an. Treffer verursachen Blutung für 10 s.",
-    "SkillKnifeT2EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Blutung für 10 s.",
+    "SkillKnifeT2Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 150 % aktiver Waffen-DPS an. Treffer verursachen Blutung für 10 s.",
+    "SkillKnifeT2EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Blutung für 10 s.",
 
     "SkillKnifeT2CooldownName": "Abklingzeitverstärker",
     "SkillKnifeT2CooldownDesc": "Verbessert Abklingzeit.",
@@ -936,8 +937,8 @@
     "SkillKnifeT2Way2Desc": "Gewährt für 6 s +20 % Ausweichen.",
 
     "SkillKnifeT3Name": "Todgeweiht",
-    "SkillKnifeT3Desc": "Greift alle Ziele im Nahkampf mit 225 % aktiver Waffen-DPS an. Treffer verursachen Vergiftet für 10 s.",
-    "SkillKnifeT3EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Vergiftet für 10 s.",
+    "SkillKnifeT3Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 225 % aktiver Waffen-DPS an. Treffer verursachen Vergiftet für 10 s.",
+    "SkillKnifeT3EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an. Treffer verursachen Vergiftet für 10 s.",
 
     "SkillKnifeT3CooldownName": "Abklingzeitverstärker",
     "SkillKnifeT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -974,8 +975,8 @@
     "SkillSwordP4Desc": "Erhöht den Riposte-Schaden mit aktivem Schwert.",
 
     "SkillSwordT1Name": "Wilde HIebe",
-    "SkillSwordT1Desc": "Greift alle Ziele im Nahkampf mit 120 % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
-    "SkillSwordT1EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
+    "SkillSwordT1Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 120 % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
+    "SkillSwordT1EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an. Gibt 5 Ausdauer zurück und heilt 10 % fehlende HP pro getroffenem und beschädigtem Ziel.",
 
     "SkillSwordT1CooldownName": "Abklingzeitverstärker",
     "SkillSwordT1CooldownDesc": "Verbessert Abklingzeit.",
@@ -1012,8 +1013,8 @@
     "SkillSwordT2Way2Desc": "Zusätzlich +10 % Ausweichen.",
 
     "SkillSwordT3Name": "Blutiges Spalten",
-    "SkillSwordT3Desc": "Greift alle Ziele im Nahkampf mit 125 % aktiver Waffen-DPS an, verursacht Blutung für 20 s und gewährt für 6 s +30 % Schaden.",
-    "SkillSwordT3EffectiveDesc": "Greift alle Ziele im Nahkampf mit {effect0} % aktiver Waffen-DPS an, verursacht Blutung für 20 s und gewährt für 6 s +{effect1} % Schaden.",
+    "SkillSwordT3Desc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit 125 % aktiver Waffen-DPS an, verursacht Blutung für 20 s und gewährt für 6 s +30 % Schaden.",
+    "SkillSwordT3EffectiveDesc": "Greift alle Ziele im schmalen 90°-Bogen bis 3,5 m mit {effect0} % aktiver Waffen-DPS an, verursacht Blutung für 20 s und gewährt für 6 s +{effect1} % Schaden.",
 
     "SkillSwordT3CooldownName": "Abklingzeitverstärker",
     "SkillSwordT3CooldownDesc": "Verbessert Abklingzeit.",
@@ -1031,7 +1032,7 @@
     "SkillSwordT3Way2Desc": "Immunität gegen physische Debuffs während des Statuseffekts.",
 
     "SkillSwordUltName": "Orkanklinge",
-    "SkillSwordUltDesc": "Drei Angriffe gegen alle Ziele in Nahkampfreichweite. Jeder Angriff trifft bis zu doppelt so viele Ziele wie die Waffe. Treffer wenden Gelähmt für 4 s an. Während der Angriffe +100 % Ausweichen; ignoriert Fähigkeiten, die normalerweise Ausweichen ignorieren.",
+    "SkillSwordUltDesc": "Drei Angriffe gegen alle Ziele in einem weiten 180°-Bogen. Jeder Angriff trifft bis zu doppelt so viele Ziele wie die Waffe. Treffer wenden Gelähmt für 4 s an. Während der Angriffe +100 % Ausweichen; ignoriert Fähigkeiten, die normalerweise Ausweichen ignorieren.",
 
     "LabelTreeSwordName": "Schwert",
 
@@ -1110,7 +1111,7 @@
     "SkillFishingT3WayRAVAGERDesc": "Verwundbar für 8 s.",
 
     "SkillFishingUltName": "Curare-Fluch",
-    "SkillFishingUltDesc": "Nächster Treffer verursacht keinen direkten Schaden, aber Verwirrt, Angewidert, Verkrüppelt und Vergiftet. Gift jeweils 10 s. Anwendung der Drei-Sekunden-Regel auf diesen Skill noch nicht separat bestätigt.",
+    "SkillFishingUltDesc": "Nächster Treffer verursacht keinen direkten Schaden, aber Verwirrt, Angewidert, Verkrüppelt und Vergiftet. Gift jeweils 10 s. Anwendung der Drei-Sekunden-Regel auf diesen Skill noch nicht separat bestätigt. Mit Nahkampfwaffen trifft die Fähigkeit rund um dich (360°).",
 
     "TreeConstructionName": "Bau",
 
@@ -1209,8 +1210,8 @@
     "SkillMiningP5Desc": "Wenn Ausweichen ausgelöst wird",
 
     "SkillMiningT1Name": "Erzbrecher",
-    "SkillMiningT1Desc": "Angriff gegen alle Ziele im Nahkampf; ursprünglich 150 % aktive Waffen-DPS.",
-    "SkillMiningT1EffectiveDesc": "Angriff gegen alle Ziele im Nahkampf; {effect0} % aktive Waffen-DPS.",
+    "SkillMiningT1Desc": "Angriff gegen alle Ziele im schmalen 90°-Bogen bis 3,5 m; ursprünglich 150 % aktive Waffen-DPS.",
+    "SkillMiningT1EffectiveDesc": "Angriff gegen alle Ziele im schmalen 90°-Bogen bis 3,5 m; {effect0} % aktive Waffen-DPS.",
 
     "SkillMiningT1CooldownName": "Abklingzeitverstärker",
     "SkillMiningT1CooldownDesc": "",
@@ -1405,8 +1406,8 @@
     "SkillThieveryT2Way2Desc": "Verlängert den Statuseffekt um 5 s (Basis 10 s, insgesamt 15 s).",
 
     "SkillThieveryT3Name": "Chloroform",
-    "SkillThieveryT3Desc": "Angriff gegen ein einzelnes Ziel im Nahkampf. Verursacht keinen Schaden. Treffer verursacht Betäubt (5 s); bei Treffer erhältst du Eile (2 s).",
-    "SkillThieveryT3EffectiveDesc": "Angriff gegen ein einzelnes Ziel im Nahkampf. Verursacht keinen Schaden. Treffer verursacht Betäubt (5 s); bei Treffer erhältst du Eile ({effect0} s).",
+    "SkillThieveryT3Desc": "Angriff gegen ein einzelnes Ziel im schmalen 90°-Bogen bis 3,5 m. Verursacht keinen Schaden. Treffer verursacht Betäubt (5 s); bei Treffer erhältst du Eile (2 s).",
+    "SkillThieveryT3EffectiveDesc": "Angriff gegen ein einzelnes Ziel im schmalen 90°-Bogen bis 3,5 m. Verursacht keinen Schaden. Treffer verursacht Betäubt (5 s); bei Treffer erhältst du Eile ({effect0} s).",
 
     "SkillThieveryT3CooldownName": "Abklingzeitverstärker",
     "SkillThieveryT3CooldownDesc": "Verstärkt abklingzeit.",
@@ -1525,8 +1526,8 @@
     "SkillWoodworkingP5Desc": "Erhöht den Bonus auf Ausweichwertung.",
 
     "SkillWoodworkingT1Name": "Blutender Schlag",
-    "SkillWoodworkingT1Desc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im Nahkampf: ursprünglich 100 % Bonus anhand aktiver Waffen-DPS und Blutung für 10 s. Grundkosten: 65 Ausdauer; Grund-Abklingzeit: 50 s.",
-    "SkillWoodworkingT1EffectiveDesc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im Nahkampf: {effect0} % Bonus anhand aktiver Waffen-DPS und Blutung für 10 s. Grundkosten: 65 Ausdauer; Grund-Abklingzeit: 50 s.",
+    "SkillWoodworkingT1Desc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im schmalen 90°-Bogen bis 3,5 m: ursprünglich 100 % Bonus anhand aktiver Waffen-DPS und Blutung für 10 s. Grundkosten: 65 Ausdauer; Grund-Abklingzeit: 50 s.",
+    "SkillWoodworkingT1EffectiveDesc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im schmalen 90°-Bogen bis 3,5 m: {effect0} % Bonus anhand aktiver Waffen-DPS und Blutung für 10 s. Grundkosten: 65 Ausdauer; Grund-Abklingzeit: 50 s.",
 
     "SkillWoodworkingT1CooldownName": "Abklingzeitverstärker",
     "SkillWoodworkingT1CooldownDesc": "Verstärkt abklingzeit.",
@@ -1762,8 +1763,8 @@
     "SkillStreetSmartsP5Desc": "Wenn die letzte verwendete Fähigkeit mehr als 10 s zurückliegt: reduziert Ausdauerkosten und Abklingzeit der nächsten eingesetzten Fähigkeit.",
 
     "SkillStreetSmartsT1Name": "Ganoventritt",
-    "SkillStreetSmartsT1Desc": "Angriff gegen ein einzelnes Ziel im Nahkampf. Verursacht keinen Schaden, neutralisiert das Ziel und verursacht Verkrüppelt für ursprünglich 2 s. Grundkosten: 65 AP (Ausdauer); Grund-Abklingzeit: 50 s.",
-    "SkillStreetSmartsT1EffectiveDesc": "Angriff gegen ein einzelnes Ziel im Nahkampf. Verursacht keinen Schaden, neutralisiert das Ziel und verursacht Verkrüppelt für {effect0} s. Grundkosten: 65 AP (Ausdauer); Grund-Abklingzeit: 50 s.",
+    "SkillStreetSmartsT1Desc": "Angriff gegen ein einzelnes Ziel im schmalen 90°-Bogen bis 3,5 m. Verursacht keinen Schaden, neutralisiert das Ziel und verursacht Verkrüppelt für ursprünglich 2 s. Grundkosten: 65 AP (Ausdauer); Grund-Abklingzeit: 50 s.",
+    "SkillStreetSmartsT1EffectiveDesc": "Angriff gegen ein einzelnes Ziel im schmalen 90°-Bogen bis 3,5 m. Verursacht keinen Schaden, neutralisiert das Ziel und verursacht Verkrüppelt für {effect0} s. Grundkosten: 65 AP (Ausdauer); Grund-Abklingzeit: 50 s.",
 
     "SkillStreetSmartsT1CooldownName": "Abklingzeitverstärker",
     "SkillStreetSmartsT1CooldownDesc": "Verstärkt abklingzeit.",
@@ -1800,8 +1801,8 @@
     "SkillStreetSmartsT2Way2Desc": "Zusätzlich +0,5 % kritischer Schaden pro fehlendem Prozent deiner HP.",
 
     "SkillStreetSmartsT3Name": "Spotten und Verstümmeln",
-    "SkillStreetSmartsT3Desc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im Nahkampf: verursacht 400 % aktive Waffen-DPS; Treffer verursacht Verwundbar für 4 s.",
-    "SkillStreetSmartsT3EffectiveDesc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im Nahkampf: verursacht {effect0} % aktive Waffen-DPS; Treffer verursacht Verwundbar für 4 s.",
+    "SkillStreetSmartsT3Desc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im schmalen 90°-Bogen bis 3,5 m: verursacht 400 % aktive Waffen-DPS; Treffer verursacht Verwundbar für 4 s.",
+    "SkillStreetSmartsT3EffectiveDesc": "Benötigt aktive Nahkampfwaffe. Angriff gegen alle Ziele im schmalen 90°-Bogen bis 3,5 m: verursacht {effect0} % aktive Waffen-DPS; Treffer verursacht Verwundbar für 4 s.",
 
     "SkillStreetSmartsT3CooldownName": "Abklingzeitverstärker",
     "SkillStreetSmartsT3CooldownDesc": "Verstärkt abklingzeit.",
@@ -2133,7 +2134,7 @@
     "SkillFirstAidT3Way2Desc": "Entfernt auch alle mentalen Debuffs. Kann auch bei Debuffs eingesetzt werden, die die Skillnutzung verhindern würden.",
 
     "SkillFirstAidUltName": "Wiederbelebung",
-    "SkillFirstAidUltDesc": "Belebt einen toten Spieler im Nahkampfbereich wieder, der nicht den Statuseffekt Wiederbelebt hat. Stellt HP und Ausdauer anteilig zum jeweiligen Maximum wieder her und verleiht dem Ziel für 300 s den nicht entfernbaren Status Wiederbelebt.",
+    "SkillFirstAidUltDesc": "Belebt einen toten Spieler bis 3,5 m Entfernung wieder, der nicht den Statuseffekt Wiederbelebt hat. Stellt HP und Ausdauer anteilig zum jeweiligen Maximum wieder her und verleiht dem Ziel für 300 s den nicht entfernbaren Status Wiederbelebt.",
 
     "SpecialAutoReloadDesc": "Lädt während des Feuerns automatisch nach, sobald das Magazin leer ist. −50 % Nachladezeit beim automatischen Nachladen.",
     "SpecialAutoReloadName": "Auto-Nachladen",
@@ -2278,6 +2279,7 @@
     "MetricVulnerableChance": "Chance auf Verwundbar",
     "MetricVulnerableDuration": "Dauer Verwundbar",
 
+    "FactAttackConeDegrees": "Angriffswinkel (°)",
     "FactBarricadeVulnerableTo": "Barrikade beschädigbar durch",
     "FactBaseCooldownSeconds": "Grund-Abklingzeit (s)",
     "FactBaseDurationSeconds": "Grunddauer (s)",
@@ -2297,12 +2299,14 @@
     "FactHealingBasis": "Heilungsbasis",
     "FactInferenceStatus": "",
     "FactMaxStacks": "Maximale Stapel",
+    "FactMeleeAttackConeDegrees": "Angriffswinkel mit Nahkampfwaffe (°)",
     "FactMeleeDamageBonusPercent": "Nahkampfschaden (%)",
     "FactMoreValues": "",
     "FactMovementSpeedReductionPercent": "Verlangsamung (%)",
     "FactObjectDurationSeconds": "Objektlebensdauer (s)",
     "FactObservedDurationSeconds": "Angezeigte Dauer (s)",
     "FactRadiusMeters": "Umkreis (m)",
+    "FactRangeMeters": "Reichweite (m)",
     "FactRequirement": "Bedingung",
     "FactTickIntervalSeconds": "Trefferintervall (s)",
     "FactWeaponDpsReference": "Waffen-DPS-Bezug",
@@ -2671,7 +2675,7 @@
     {
       "id": "shared.facts",
       "title": "Detailbeschriftungen",
-      "firstKey": "FactBarricadeVulnerableTo",
+      "firstKey": "FactAttackConeDegrees",
       "lastKey": "FactWeaponDpsReference"
     },
     {

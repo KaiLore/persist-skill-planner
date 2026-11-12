@@ -447,7 +447,8 @@
         "baseStaminaCost": 85,
         "baseCooldownSeconds": 150,
         "baseHealingPercent": 20,
-        "buffDurationSeconds": 10
+        "buffDurationSeconds": 10,
+        "rangeMeters": 3.5
       },
       "descriptionKey": "SkillFirstAidT3Desc"
     },
@@ -639,7 +640,8 @@
               100
             ]
           }
-        ]
+        ],
+        "rangeMeters": 3.5
       },
       "descriptionKey": "SkillFirstAidUltDesc"
     }

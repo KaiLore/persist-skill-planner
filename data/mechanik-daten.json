@@ -487,7 +487,8 @@
             300
           ]
         }
-      ]
+      ],
+      "vulnerableDamageBonusPercent": 25
     }
   ],
   "levels": [

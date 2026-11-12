@@ -396,7 +396,9 @@
           }
         ],
         "minimumTickPercent": 1
-      }
+      },
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "BOTANY-T3-CD",

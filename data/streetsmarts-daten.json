@@ -151,7 +151,9 @@
         "impact": 4,
         "stamina": 5
       },
-      "descriptionKey": "SkillStreetSmartsT1Desc"
+      "descriptionKey": "SkillStreetSmartsT1Desc",
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "STREETSMARTS-T1-CD",
@@ -355,7 +357,9 @@
       "requirementKey": "ConditionMeleeWeapon",
       "debuffKey": "EffectVulnerable",
       "debuffDurationSeconds": 4,
-      "unlockDisplayed": 31
+      "unlockDisplayed": 31,
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "STREETSMARTS-T3-CD",

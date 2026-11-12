@@ -141,7 +141,9 @@
       },
       "requirementKey": "ConditionMeleeWeapon",
       "bleedingDurationSeconds": 10,
-      "descriptionKey": "SkillWoodworkingT1Desc"
+      "descriptionKey": "SkillWoodworkingT1Desc",
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "WOODWORKING-T1-CD",

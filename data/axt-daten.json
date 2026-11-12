@@ -151,7 +151,9 @@
         "baseStaminaCost": 65,
         "baseCooldownSeconds": 50,
         "baseActiveWeaponDpsPercent": 150,
-        "requiresActiveWeaponKey": "LabelTreeAxeName"
+        "requiresActiveWeaponKey": "LabelTreeAxeName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillAxeT1Desc"
     },
@@ -302,7 +304,9 @@
         "crippledDurationSeconds": 4,
         "buffDurationSeconds": 5,
         "baseCritDamageBonusPercent": 25,
-        "requiresActiveWeaponKey": "LabelTreeAxeName"
+        "requiresActiveWeaponKey": "LabelTreeAxeName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillAxeT2Desc"
     },
@@ -668,7 +672,8 @@
               200
             ]
           }
-        ]
+        ],
+        "attackConeDegrees": 180
       },
       "descriptionKey": "SkillAxeUltDesc"
     }
@@ -1504,5 +1509,6 @@
     "AXES-ULT": {
       "locked": "assets/skills/AxesULTBerserkerSpirit.png"
     }
-  }
+  },
+  "weaponAttackConeDegrees": 90
 }

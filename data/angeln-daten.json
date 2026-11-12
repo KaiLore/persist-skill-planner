@@ -159,7 +159,9 @@
           "base": 1
         }
       ],
-      "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc"
+      "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc",
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "FISH-T2",
@@ -198,7 +200,8 @@
       "tier": "ULT",
       "max": 5,
       "requiredTreePoints": 46,
-      "descriptionKey": "SkillFishingUltDesc"
+      "descriptionKey": "SkillFishingUltDesc",
+      "meleeAttackConeDegrees": 360
     },
     {
       "id": "FISH-T1-CD",

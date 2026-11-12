@@ -152,7 +152,9 @@
         "baseCooldownSeconds": 50,
         "baseActiveWeaponDpsPercent": 100,
         "disarmedDurationSeconds": 3,
-        "requiresActiveWeaponKey": "LabelTreeHammerName"
+        "requiresActiveWeaponKey": "LabelTreeHammerName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillHammerT1Desc"
     },
@@ -450,7 +452,9 @@
         "baseCooldownSeconds": 150,
         "baseActiveWeaponDpsPercent": 350,
         "buffDurationSeconds": 8,
-        "requiresActiveWeaponKey": "LabelTreeHammerName"
+        "requiresActiveWeaponKey": "LabelTreeHammerName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillHammerT3Desc"
     },
@@ -653,7 +657,8 @@
               6
             ]
           }
-        ]
+        ],
+        "attackConeDegrees": 360
       },
       "descriptionKey": "SkillHammerUltDesc"
     }
@@ -1458,5 +1463,6 @@
     "HAMMERS-ULT": {
       "locked": "assets/skills/HammersULTBringingThePain.png"
     }
-  }
+  },
+  "weaponAttackConeDegrees": 90
 }

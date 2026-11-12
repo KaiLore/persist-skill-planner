@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "version": "0.14.7",
+  "version": "0.14.8",
   "trees": [
     {
       "id": "ASSAULTRIFLES",
@@ -2028,7 +2028,8 @@
             "baseCooldownSeconds": 150,
             "buffDurationSeconds": 10,
             "baseDamageBonusPercent": 30,
-            "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+            "requiresActiveWeaponKey": "LabelTreeMachineGunName",
+            "rangeMeters": 3.5
           },
           "descriptionKey": "SkillMachineGunT3Desc",
           "effectiveEffects": [
@@ -10854,7 +10855,9 @@
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
             "baseActiveWeaponDpsPercent": 150,
-            "requiresActiveWeaponKey": "LabelTreeAxeName"
+            "requiresActiveWeaponKey": "LabelTreeAxeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillAxeT1Desc",
           "effectiveEffects": [
@@ -11014,7 +11017,9 @@
             "crippledDurationSeconds": 4,
             "buffDurationSeconds": 5,
             "baseCritDamageBonusPercent": 25,
-            "requiresActiveWeaponKey": "LabelTreeAxeName"
+            "requiresActiveWeaponKey": "LabelTreeAxeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillAxeT2Desc",
           "effectiveEffects": [
@@ -11416,7 +11421,8 @@
                   200
                 ]
               }
-            ]
+            ],
+            "attackConeDegrees": 180
           },
           "descriptionKey": "SkillAxeUltDesc"
         }
@@ -12338,7 +12344,8 @@
           "nameKey": "SpecialExecutionerName",
           "descriptionKey": "SpecialExecutionerDesc"
         }
-      ]
+      ],
+      "weaponAttackConeDegrees": 90
     },
     {
       "id": "HAMMERS",
@@ -12494,7 +12501,9 @@
             "baseCooldownSeconds": 50,
             "baseActiveWeaponDpsPercent": 100,
             "disarmedDurationSeconds": 3,
-            "requiresActiveWeaponKey": "LabelTreeHammerName"
+            "requiresActiveWeaponKey": "LabelTreeHammerName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillHammerT1Desc",
           "effectiveEffects": [
@@ -12810,7 +12819,9 @@
             "baseCooldownSeconds": 150,
             "baseActiveWeaponDpsPercent": 350,
             "buffDurationSeconds": 8,
-            "requiresActiveWeaponKey": "LabelTreeHammerName"
+            "requiresActiveWeaponKey": "LabelTreeHammerName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillHammerT3Desc",
           "effectiveEffects": [
@@ -13022,7 +13033,8 @@
                   6
                 ]
               }
-            ]
+            ],
+            "attackConeDegrees": 360
           },
           "descriptionKey": "SkillHammerUltDesc"
         }
@@ -13917,7 +13929,8 @@
           "nameKey": "SpecialKnockbackName",
           "descriptionKey": "SpecialKnockbackDesc"
         }
-      ]
+      ],
+      "weaponAttackConeDegrees": 90
     },
     {
       "id": "KNIVES",
@@ -14231,7 +14244,9 @@
             "baseCooldownSeconds": 100,
             "baseActiveWeaponDpsPercent": 150,
             "bleedDurationSeconds": 10,
-            "requiresActiveWeaponKey": "LabelTreeKnifeName"
+            "requiresActiveWeaponKey": "LabelTreeKnifeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillKnifeT2Desc",
           "effectiveEffects": [
@@ -14389,7 +14404,9 @@
             "baseCooldownSeconds": 150,
             "baseActiveWeaponDpsPercent": 225,
             "poisonDurationSeconds": 10,
-            "requiresActiveWeaponKey": "LabelTreeKnifeName"
+            "requiresActiveWeaponKey": "LabelTreeKnifeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillKnifeT3Desc",
           "effectiveEffects": [
@@ -15397,7 +15414,8 @@
           "nameKey": "SpecialBackstabName",
           "descriptionKey": "SpecialBackstabDesc"
         }
-      ]
+      ],
+      "weaponAttackConeDegrees": 90
     },
     {
       "id": "SWORDS",
@@ -15554,7 +15572,9 @@
             "baseActiveWeaponDpsPercent": 120,
             "staminaPerTarget": 5,
             "missingHpHealingPercentPerTarget": 10,
-            "requiresActiveWeaponKey": "LabelTreeSwordName"
+            "requiresActiveWeaponKey": "LabelTreeSwordName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillSwordT1Desc",
           "effectiveEffects": [
@@ -15872,7 +15892,9 @@
             "bleedDurationSeconds": 20,
             "buffDurationSeconds": 6,
             "baseDamageBonusPercent": 30,
-            "requiresActiveWeaponKey": "LabelTreeSwordName"
+            "requiresActiveWeaponKey": "LabelTreeSwordName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillSwordT3Desc",
           "effectiveEffects": [
@@ -16083,7 +16105,8 @@
                   300
                 ]
               }
-            ]
+            ],
+            "attackConeDegrees": 180
           },
           "descriptionKey": "SkillSwordUltDesc"
         }
@@ -16939,7 +16962,8 @@
           "nameKey": "SpecialMomentumName",
           "descriptionKey": "SpecialMomentumDesc"
         }
-      ]
+      ],
+      "weaponAttackConeDegrees": 90
     },
     {
       "id": "FISH",
@@ -17252,7 +17276,9 @@
                 "base": 1
               }
             ],
-            "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc"
+            "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillFishingT1Desc",
           "effectiveEffects": [
@@ -17893,7 +17919,8 @@
             "tier": "ULT",
             "max": 5,
             "requiredTreePoints": 46,
-            "descriptionKey": "SkillFishingUltDesc"
+            "descriptionKey": "SkillFishingUltDesc",
+            "meleeAttackConeDegrees": 360
           },
           "descriptionKey": "SkillFishingUltDesc"
         }
@@ -21120,7 +21147,9 @@
               "impact": 5
             },
             "descriptionKey": "SkillMiningT1Desc",
-            "baseActiveWeaponDpsPercent": 150
+            "baseActiveWeaponDpsPercent": 150,
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillMiningT1Desc",
           "baseActiveWeaponDpsPercent": 150,
@@ -23358,7 +23387,9 @@
                 }
               ],
               "minimumTickPercent": 1
-            }
+            },
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillBotanyT3Desc",
           "effectKey": "SkillBotanyT3Desc",
@@ -25444,7 +25475,9 @@
             "debuffKey": "EffectStunned",
             "debuffDurationSeconds": 5,
             "buffDurationSeconds": 2,
-            "unlockDisplayed": 31
+            "unlockDisplayed": 31,
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillThieveryT3Desc",
           "effectiveEffects": [
@@ -28284,7 +28317,9 @@
               "impact": 5
             },
             "requirementKey": "ConditionMeleeWeapon",
-            "bleedingDurationSeconds": 10
+            "bleedingDurationSeconds": 10,
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillWoodworkingT1Desc",
           "effectiveEffects": [
@@ -31917,7 +31952,8 @@
                   300
                 ]
               }
-            ]
+            ],
+            "vulnerableDamageBonusPercent": 25
           },
           "descriptionKey": "SkillMechanicsUltDesc"
         }
@@ -32964,7 +33000,9 @@
             "observedEnhancerRanks": {
               "impact": 4,
               "stamina": 5
-            }
+            },
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillStreetSmartsT1Desc",
           "effectiveEffects": [
@@ -33282,7 +33320,9 @@
             "requirementKey": "ConditionMeleeWeapon",
             "debuffKey": "EffectVulnerable",
             "debuffDurationSeconds": 4,
-            "unlockDisplayed": 31
+            "unlockDisplayed": 31,
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillStreetSmartsT3Desc",
           "effectiveEffects": [
@@ -42916,7 +42956,8 @@
             "baseStaminaCost": 85,
             "baseCooldownSeconds": 150,
             "baseHealingPercent": 20,
-            "buffDurationSeconds": 10
+            "buffDurationSeconds": 10,
+            "rangeMeters": 3.5
           },
           "descriptionKey": "SkillFirstAidT3Desc",
           "effectiveEffects": [
@@ -43117,7 +43158,8 @@
                   100
                 ]
               }
-            ]
+            ],
+            "rangeMeters": 3.5
           },
           "descriptionKey": "SkillFirstAidUltDesc"
         }
@@ -44279,5 +44321,5 @@
       "IMP": "assets/skills/OverlayEnhancerImpact.png"
     }
   },
-  "gamePatch": "0.7.0.5"
+  "gamePatch": "0.7.0.7"
 }

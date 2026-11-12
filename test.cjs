@@ -309,8 +309,32 @@ ok(zeroed.some(v=>v.metricKey==='MetricCritDamage'&&v.value===30));
 ok(zeroed.some(v=>v.metricKey==='MetricAccuracy'&&v.value===30));
 ok(!zeroed.some(v=>v.metricKey==='MetricDamageBonus'));
 ok(E.effectiveSkill(E.fresh(),'RIFLES','RIFLES-ULT').values.some(v=>v.metricKey==='MetricHeadshotDamage'&&v.value===20));
-ok(D.gamePatch==='0.7.0.5');
+ok(D.gamePatch==='0.7.0.7');
 console.log('0.7.0.5: neue Grund- und Endwerte, gekennzeichnete Zwischenränge und geänderte Schadensarten geprüft.');
+// Fixed melee geometry must be displayed for ordinary skills, including professions.
+for(const id of ['AXES-T1','AXES-T2','HAMMERS-T1','HAMMERS-T3','KNIVES-T2','KNIVES-T3','SWORDS-T1','SWORDS-T3','FISH-T1','MINING-T1','BOTANY-T3','THIEVERY-T3','WOODWORKING-T1','STREETSMARTS-T1','STREETSMARTS-T3']){
+ const tree=D.trees.find(t=>t.nodes.some(n=>n.id===id)),node=tree.nodes.find(n=>n.id===id);
+ ok(node.details.rangeMeters===3.5);ok(node.details.attackConeDegrees===90);
+ for(const code of ['de','en']){
+  context.geometryLanguage=code;context.geometryTree=tree.id;context.geometryNode=id;
+  vm.runInContext('switchLanguage(geometryLanguage);state=E.fresh();current=geometryTree;showTip({getBoundingClientRect:()=>({right:100,top:100})},geometryNode)',context);
+  const text=el('skilltooltip').innerHTML.replace(/<[^>]*>/g,'');
+  ok(text.includes((code==='de'?'Reichweite (m)':'Range (m)')+': 3.5'));
+  ok(text.includes((code==='de'?'Angriffswinkel (°)':'Attack arc (°)')+': 90'));
+ }
+}
+for(const [id,angle] of [['SWORDS-ULT',180],['AXES-ULT',180],['HAMMERS-ULT',360]]){
+ const node=D.trees.flatMap(t=>t.nodes).find(n=>n.id===id);ok(node.details.attackConeDegrees===angle);
+ ok(node.details.rangeMeters===undefined);
+}
+const curare=D.trees.find(t=>t.id==='FISH').nodes.find(n=>n.id==='FISH-ULT');
+ok(curare.details.meleeAttackConeDegrees===360);ok(curare.details.attackConeDegrees===undefined);
+for(const id of ['FIRSTAID-ULT','FIRSTAID-T3','MACHINEGUNS-T3'])ok(D.trees.flatMap(t=>t.nodes).find(n=>n.id===id).details.rangeMeters===3.5);
+ok(D.trees.find(t=>t.id==='MECHANICS').nodes.find(n=>n.id==='MECHANICS-ULT').details.vulnerableDamageBonusPercent===25);
+ok(D.trees.find(t=>t.id==='HUNTING').nodes.find(n=>n.id==='HUNTING-T3').details.radiusMeters===5);
+for(const id of ['AXES','HAMMERS','KNIVES','SWORDS'])ok(D.trees.find(t=>t.id===id).weaponAttackConeDegrees===90);
+vm.runInContext('switchLanguage("de");hideTip()',context);
+console.log('0.7.0.6/7: feste Nahkampfgeometrie, berufliche Angriffe, Ultimate-Winkel, bedingter Curare-Winkel, 3,5-m-Reichweiten und Titan-Turret-Bugfix geprüft.');
 // Share links are versioned, language independent and exclude personal names.
 const packURL=value=>btoa(JSON.stringify(value)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
 vm.runInContext('state=E.fresh();state.characterLevel=85;state.levelLocked=true;state.characterName="Private name";state.familyName="Private family";state.armorPieces=4;state.iconMode="unlocked";state.caps.MINING=50;state.points.MINING={"MINING-ULT":3,"MINING-T1":1};state.perks={"PERK-1":2}',context);

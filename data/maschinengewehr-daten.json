@@ -465,7 +465,8 @@
         "baseCooldownSeconds": 150,
         "buffDurationSeconds": 10,
         "baseDamageBonusPercent": 30,
-        "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+        "requiresActiveWeaponKey": "LabelTreeMachineGunName",
+        "rangeMeters": 3.5
       },
       "descriptionKey": "SkillMachineGunT3Desc"
     },

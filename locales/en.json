@@ -4,7 +4,7 @@
   "label": "English",
   "texts": {
     "LabelLanguage": "Language",
-    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.7",
+    "LabelAppVersion": "PERSIST ONLINE · COMMUNITY TOOL · 0.14.8",
     "TitleCharPlanner": "Character & Skill Planner",
     "HintTreeCount": "25 trees · weapons, professions, armor, and miscellaneous · offline",
     "LabelCharakterUndBadges": "Character and Badges",
@@ -121,8 +121,9 @@
     "SourceUserReadout": "Observed in game",
 
     "TitleSources": "Sources and rules",
-    "PatchDataStatus": "Data version: game patch 0.7.0.5. Where the patch lists a range only, intermediate ranks are marked as estimates.",
+    "PatchDataStatus": "Data version: game patch 0.7.0.7. Melee ranges and attack arcs from 0.7.0.6 are included. Estimated intermediate ranks from earlier range-only patch notes are marked with ≈.",
     "PatchCombatRules": "Game patch 0.7.0.0: damage bonuses add within the same keyword bucket and multiply between buckets. This planner does not calculate complete combat damage. Bleeding, fire and poison bypass shields. Accuracy affects spread and camera recoil; the old recoil stat has been removed. Weapon specials are separate: all shotguns have Scattershot (projectiles spread in a cone) and knockback against NPCs; swords have Riposte and Momentum. Skills based on active weapon DPS use the Character Menu value with the required weapon drawn, rather than the item tooltip DPS. Check buffs in the Character Menu.",
+    "RuleMeleeGeometry": "Since 0.7.0.6, melee weapons have a 90° attack cone. Normal melee skill attacks use a range of 3.5 m and a narrow 90° arc. Hurricane Blade and Berserker Spirit use a wide 180° arc; Bringing the Pain hits around you (360°). Curare Curse hits around you (360°) with melee weapons. Resurrection, No One Left Behind and Suppressive Fire have a 3.5 m range. Following the bugfix, Titan Turret benefits from +25% damage against Vulnerable targets.",
     "RuleBestWeaponDpsDetail": "Since 0.7.0.1, Titan Turret, Fungal Fallout, Battlefield Bulwark, Electric Field, Overcharge and Anarchist’s Revolution use the highest base DPS of the character’s weapons. Weapon-specific bonuses such as backstab, critical damage and weapon identity damage do not apply. This is a different reference from boosted active weapon DPS.",
     "SourcePlannerCredits": "Unofficial community planner for Persist Online. Based on Skill Planner 1.0 by Avalon [Westwood] (NA), 2026-05-05; current skill values from in-game tooltips and observations from October 2026. The game is in development and values may change.",
     "TitleCharacterBadges": "Character level and badges",
@@ -746,8 +747,8 @@
     "SkillAxeP4Desc": "Executioner triggers when the target's HP falls below the rank-based threshold.",
 
     "SkillAxeT1Name": "Timber!",
-    "SkillAxeT1Desc": "Attacks all nearby targets with 150% active weapon DPS. Hits knock back non-player targets.",
-    "SkillAxeT1EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Hits knock back non-player targets.",
+    "SkillAxeT1Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 150% active weapon DPS. Hits knock back non-player targets.",
+    "SkillAxeT1EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS. Hits knock back non-player targets.",
 
     "SkillAxeT1CooldownName": "Cooldown Enhancer",
     "SkillAxeT1CooldownDesc": "Improves cooldown.",
@@ -765,8 +766,8 @@
     "SkillAxeT1Way2Desc": "On hit, gain +30% critical hit chance for 5 s.",
 
     "SkillAxeT2Name": "Exhausting Attack",
-    "SkillAxeT2Desc": "Attacks all nearby targets with 250% active weapon DPS and inflicts Crippled for 4 s. A critical hit grants +25% critical damage for 5 s.",
-    "SkillAxeT2EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS and inflicts Crippled for {effect1} s. A critical hit grants +{effect3}% critical damage for {effect2} s.",
+    "SkillAxeT2Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 250% active weapon DPS and inflicts Crippled for 4 s. A critical hit grants +25% critical damage for 5 s.",
+    "SkillAxeT2EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS and inflicts Crippled for {effect1} s. A critical hit grants +{effect3}% critical damage for {effect2} s.",
 
     "SkillAxeT2CooldownName": "Cooldown Enhancer",
     "SkillAxeT2CooldownDesc": "Improves cooldown.",
@@ -803,7 +804,7 @@
     "SkillAxeT3Way2Desc": "On hit, removes the target's shield.",
 
     "SkillAxeUltName": "Berserker Spirit",
-    "SkillAxeUltDesc": "One attack distributes 5 hits among all nearby targets. Hits apply Bleeding for 20 s and Suppressed for 6 s.",
+    "SkillAxeUltDesc": "One attack distributes 5 hits among all targets within a wide 180° arc. Hits apply Bleeding for 20 s and Suppressed for 6 s.",
 
     "LabelTreeAxeName": "Axe",
 
@@ -822,8 +823,8 @@
     "SkillHammerP4Desc": "Increases Frenzy gain while a hammer is active.",
 
     "SkillHammerT1Name": "Bonebreaker",
-    "SkillHammerT1Desc": "Attacks all nearby targets with 100% active weapon DPS. Hits inflict Disarmed for 3 s.",
-    "SkillHammerT1EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Hits inflict Disarmed for 3 s.",
+    "SkillHammerT1Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 100% active weapon DPS. Hits inflict Disarmed for 3 s.",
+    "SkillHammerT1EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS. Hits inflict Disarmed for 3 s.",
 
     "SkillHammerT1CooldownName": "Cooldown Enhancer",
     "SkillHammerT1CooldownDesc": "Improves cooldown.",
@@ -860,8 +861,8 @@
     "SkillHammerT2Way2Desc": "Extends the status effect by 3 s.",
 
     "SkillHammerT3Name": "Aggressive Onslaught",
-    "SkillHammerT3Desc": "Attacks all nearby targets with 350% active weapon DPS. Ignores negative movement speed effects from slowing debuffs for 8 s.",
-    "SkillHammerT3EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Ignores negative movement speed effects from slowing debuffs for 8 s.",
+    "SkillHammerT3Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 350% active weapon DPS. Ignores negative movement speed effects from slowing debuffs for 8 s.",
+    "SkillHammerT3EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS. Ignores negative movement speed effects from slowing debuffs for 8 s.",
 
     "SkillHammerT3CooldownName": "Cooldown Enhancer",
     "SkillHammerT3CooldownDesc": "Improves cooldown.",
@@ -879,7 +880,7 @@
     "SkillHammerT3Way2Desc": "Grants Haste for 5 s when the skill starts.",
 
     "SkillHammerUltName": "Bringing the Pain",
-    "SkillHammerUltDesc": "Attacks all nearby targets, dealing rank-dependent damage and applying Stunned and Suppressed.",
+    "SkillHammerUltDesc": "Attacks all targets around you (360°), dealing rank-dependent damage and applying Stunned and Suppressed.",
 
     "LabelTreeHammerName": "Hammer",
 
@@ -917,8 +918,8 @@
     "SkillKnifeT1Way2Desc": "Extends the status effect by 2 s.",
 
     "SkillKnifeT2Name": "Hemorrhagic Wound",
-    "SkillKnifeT2Desc": "Attacks all nearby targets with 150% active weapon DPS. Hits inflict Bleeding for 10 s.",
-    "SkillKnifeT2EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Hits inflict Bleeding for 10 s.",
+    "SkillKnifeT2Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 150% active weapon DPS. Hits inflict Bleeding for 10 s.",
+    "SkillKnifeT2EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS. Hits inflict Bleeding for 10 s.",
 
     "SkillKnifeT2CooldownName": "Cooldown Enhancer",
     "SkillKnifeT2CooldownDesc": "Improves cooldown.",
@@ -936,8 +937,8 @@
     "SkillKnifeT2Way2Desc": "Grants +20% dodge for 6 s.",
 
     "SkillKnifeT3Name": "Moribund",
-    "SkillKnifeT3Desc": "Attacks all nearby targets with 225% active weapon DPS. Hits inflict Poisoned for 10 s.",
-    "SkillKnifeT3EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Hits inflict Poisoned for 10 s.",
+    "SkillKnifeT3Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 225% active weapon DPS. Hits inflict Poisoned for 10 s.",
+    "SkillKnifeT3EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS. Hits inflict Poisoned for 10 s.",
 
     "SkillKnifeT3CooldownName": "Cooldown Enhancer",
     "SkillKnifeT3CooldownDesc": "Improves cooldown.",
@@ -974,8 +975,8 @@
     "SkillSwordP4Desc": "Increases riposte damage while a sword is active.",
 
     "SkillSwordT1Name": "Savage Sweeps",
-    "SkillSwordT1Desc": "Attacks all nearby targets with 120% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
-    "SkillSwordT1EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
+    "SkillSwordT1Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 120% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
+    "SkillSwordT1EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS. Restores 5 stamina and heals 10% of missing HP per target hit and damaged.",
 
     "SkillSwordT1CooldownName": "Cooldown Enhancer",
     "SkillSwordT1CooldownDesc": "Improves cooldown.",
@@ -1012,8 +1013,8 @@
     "SkillSwordT2Way2Desc": "Additionally +10% dodge.",
 
     "SkillSwordT3Name": "Bloody Cleave",
-    "SkillSwordT3Desc": "Attacks all nearby targets with 125% active weapon DPS, inflicts Bleeding for 20 s, and grants +30% damage for 6 s.",
-    "SkillSwordT3EffectiveDesc": "Attacks all nearby targets with {effect0}% active weapon DPS, inflicts Bleeding for 20 s, and grants +{effect1}% damage for 6 s.",
+    "SkillSwordT3Desc": "Attacks all targets within a narrow 90° arc up to 3.5 m with 125% active weapon DPS, inflicts Bleeding for 20 s, and grants +30% damage for 6 s.",
+    "SkillSwordT3EffectiveDesc": "Attacks all targets within a narrow 90° arc up to 3.5 m with {effect0}% active weapon DPS, inflicts Bleeding for 20 s, and grants +{effect1}% damage for 6 s.",
 
     "SkillSwordT3CooldownName": "Cooldown Enhancer",
     "SkillSwordT3CooldownDesc": "Improves cooldown.",
@@ -1031,7 +1032,7 @@
     "SkillSwordT3Way2Desc": "Immunity to physical debuffs during the status effect.",
 
     "SkillSwordUltName": "Hurricane Blade",
-    "SkillSwordUltDesc": "Performs three attacks against all targets within melee range. Each attack can hit up to twice as many targets as the weapon normally allows. Hits apply Paralysis for 4 s. Grants +100% dodge during the attacks and ignores abilities that would normally bypass dodge.",
+    "SkillSwordUltDesc": "Performs three attacks against all targets within a wide 180° arc. Each attack can hit up to twice as many targets as the weapon normally allows. Hits apply Paralysis for 4 s. Grants +100% dodge during the attacks and ignores abilities that would normally bypass dodge.",
 
     "LabelTreeSwordName": "Sword",
 
@@ -1110,7 +1111,7 @@
     "SkillFishingT3WayRAVAGERDesc": "Vulnerable for 8 s.",
 
     "SkillFishingUltName": "Curare Curse",
-    "SkillFishingUltDesc": "The next hit deals no direct damage but applies Confused, Disgusted, Crippled, and Poisoned. Poison lasts 10 s. Application of the three-second rule to this skill has not yet been separately confirmed.",
+    "SkillFishingUltDesc": "The next hit deals no direct damage but applies Confused, Disgusted, Crippled, and Poisoned. Poison lasts 10 s. Application of the three-second rule to this skill has not yet been separately confirmed. With melee weapons, the skill hits around you (360°).",
 
     "TreeConstructionName": "Construction",
 
@@ -1209,8 +1210,8 @@
     "SkillMiningP5Desc": "When dodge is triggered",
 
     "SkillMiningT1Name": "Orebreaker",
-    "SkillMiningT1Desc": "Attack against all nearby targets; initially deals 150% active weapon DPS.",
-    "SkillMiningT1EffectiveDesc": "Attack against all nearby targets; initially deals {effect0}% active weapon DPS.",
+    "SkillMiningT1Desc": "Attack against all targets within a narrow 90° arc up to 3.5 m; initially deals 150% active weapon DPS.",
+    "SkillMiningT1EffectiveDesc": "Attack against all targets within a narrow 90° arc up to 3.5 m; initially deals {effect0}% active weapon DPS.",
 
     "SkillMiningT1CooldownName": "Cooldown Enhancer",
     "SkillMiningT1CooldownDesc": "",
@@ -1525,8 +1526,8 @@
     "SkillWoodworkingP5Desc": "Increases the dodge rating bonus.",
 
     "SkillWoodworkingT1Name": "Bleeding Strike",
-    "SkillWoodworkingT1Desc": "Requires an active melee weapon. Attack against all nearby targets: initially grants 100% bonus damage based on active weapon DPS and applies Bleeding for 10 s. Base cost: 65 stamina; base cooldown: 50 s.",
-    "SkillWoodworkingT1EffectiveDesc": "Requires an active melee weapon. Attack against all nearby targets: initially grants {effect0}% bonus damage based on active weapon DPS and applies Bleeding for 10 s. Base cost: 65 stamina; base cooldown: 50 s.",
+    "SkillWoodworkingT1Desc": "Requires an active melee weapon. Attack against all targets within a narrow 90° arc up to 3.5 m: initially grants 100% bonus damage based on active weapon DPS and applies Bleeding for 10 s. Base cost: 65 stamina; base cooldown: 50 s.",
+    "SkillWoodworkingT1EffectiveDesc": "Requires an active melee weapon. Attack against all targets within a narrow 90° arc up to 3.5 m: initially grants {effect0}% bonus damage based on active weapon DPS and applies Bleeding for 10 s. Base cost: 65 stamina; base cooldown: 50 s.",
 
     "SkillWoodworkingT1CooldownName": "Cooldown Enhancer",
     "SkillWoodworkingT1CooldownDesc": "Improves cooldown.",
@@ -1800,8 +1801,8 @@
     "SkillStreetSmartsT2Way2Desc": "Additionally grants +0.5% critical damage for each percent of HP missing.",
 
     "SkillStreetSmartsT3Name": "Mock and Maim",
-    "SkillStreetSmartsT3Desc": "Requires an active melee weapon. Attack against all nearby targets: deals 400% active weapon DPS; hits apply Vulnerable for 4 s.",
-    "SkillStreetSmartsT3EffectiveDesc": "Requires an active melee weapon. Attack against all nearby targets: deals {effect0}% active weapon DPS; hits apply Vulnerable for 4 s.",
+    "SkillStreetSmartsT3Desc": "Requires an active melee weapon. Attack against all targets within a narrow 90° arc up to 3.5 m: deals 400% active weapon DPS; hits apply Vulnerable for 4 s.",
+    "SkillStreetSmartsT3EffectiveDesc": "Requires an active melee weapon. Attack against all targets within a narrow 90° arc up to 3.5 m: deals {effect0}% active weapon DPS; hits apply Vulnerable for 4 s.",
 
     "SkillStreetSmartsT3CooldownName": "Cooldown Enhancer",
     "SkillStreetSmartsT3CooldownDesc": "Improves cooldown.",
@@ -2133,7 +2134,7 @@
     "SkillFirstAidT3Way2Desc": "Also removes all mental debuffs. Can be used even while affected by debuffs that would normally prevent skill use.",
 
     "SkillFirstAidUltName": "Resurrection",
-    "SkillFirstAidUltDesc": "Revives a dead player within melee range who does not have the Revived status effect. Restores HP and stamina proportionally to their respective maximum values and grants the target the non-removable Revived status for 300 s.",
+    "SkillFirstAidUltDesc": "Revives a dead player within 3.5 m who does not have the Revived status effect. Restores HP and stamina proportionally to their respective maximum values and grants the target the non-removable Revived status for 300 s.",
 
     "SpecialAutoReloadDesc": "Automatically reloads while firing when the magazine becomes empty. −50% reload time for automatic reloads.",
     "SpecialAutoReloadName": "Automatic reload",
@@ -2278,6 +2279,7 @@
     "MetricVulnerableChance": "Chance to inflict Vulnerable",
     "MetricVulnerableDuration": "Vulnerable duration",
 
+    "FactAttackConeDegrees": "Attack arc (°)",
     "FactBarricadeVulnerableTo": "Barricade vulnerable to",
     "FactBaseCooldownSeconds": "Base cooldown (s)",
     "FactBaseDurationSeconds": "Base duration (s)",
@@ -2297,12 +2299,14 @@
     "FactHealingBasis": "Healing basis",
     "FactInferenceStatus": "",
     "FactMaxStacks": "Max Stacks",
+    "FactMeleeAttackConeDegrees": "Attack arc with a melee weapon (°)",
     "FactMeleeDamageBonusPercent": "Melee Damage Bonus (%)",
     "FactMoreValues": "",
     "FactMovementSpeedReductionPercent": "Speed Reduction (%)",
     "FactObjectDurationSeconds": "Object duration (s)",
     "FactObservedDurationSeconds": "Displayed duration (s)",
     "FactRadiusMeters": "Radius (m)",
+    "FactRangeMeters": "Range (m)",
     "FactRequirement": "Requirement",
     "FactTickIntervalSeconds": "Tick Interval (s)",
     "FactWeaponDpsReference": "Weapon DPS reference",
@@ -2671,7 +2675,7 @@
     {
       "id": "shared.facts",
       "title": "Detail labels",
-      "firstKey": "FactBarricadeVulnerableTo",
+      "firstKey": "FactAttackConeDegrees",
       "lastKey": "FactWeaponDpsReference"
     },
     {

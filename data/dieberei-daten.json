@@ -354,7 +354,9 @@
       "debuffKey": "EffectStunned",
       "debuffDurationSeconds": 5,
       "buffDurationSeconds": 2,
-      "unlockDisplayed": 31
+      "unlockDisplayed": 31,
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "THIEVERY-T3-CD",

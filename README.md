@@ -48,3 +48,13 @@ Sechs Best-Weapon-DPS-Skills verwenden jetzt höchste Basis-Waffen-DPS statt ver
 Schadenswerte, Dauer, kritische Treffer und Way-Effekte der elf betroffenen Waffenbäume folgen den bereitgestellten Patchnotes. Bei Änderungen mit reinen Spannweiten sind Zwischenränge anhand der bisherigen Rangkurve geschätzt und mit `≈` markiert.
 
 Der Spielpatch enthält außerdem neue Funktionen in der Knotenübersicht, zusätzliche Fraktionsquests ab Rang 5, Änderungen am Safehouse-Dashboard und dessen Benachrichtigungen sowie einen Fix für einen möglichen Client-Absturz.
+
+## Spielpatches 0.7.0.6 und 0.7.0.7 (Planner 0.14.8)
+
+0.7.0.6 vereinheitlicht den Angriffskegel von Nahkampfwaffen auf 90°. Direkte normale Nahkampf-Skillangriffe verwenden 3,5 m Reichweite und 90°. Hurricane Blade und Berserker Spirit verwenden 180°, Bringing the Pain 360°. Curare Curse verwendet mit Nahkampfwaffen 360°. Resurrection, No One Left Behind und Suppressive Fire haben 3,5 m Reichweite. Daten, Skilltexte und Detailanzeigen sind auf Deutsch und Englisch angepasst. Die Patchnotes nennen für die Ultimate-Winkel keine neue Reichweite. Titan Turret erhält laut Bugfix den Verwundbar-Schadensbonus von 25 %.
+
+Weitere Spieländerungen in 0.7.0.6 sind die zentralere Position von Raine Kurokawa in Deadend sowie Fehlerbehebungen für Verbindungsabbrüche beim Wegwerfen von Scrap Parts in Sektorkämpfen, Client-Abstürze, ablaufende bereits erfüllte Fraktionsquests und Spielpost mit Anhängen.
+
+0.7.0.7 verändert Gelände und ergänzt eine Baustellenruine. NPCs bieten verfügbare Dienste auch ohne Gesprächsthema an. Voice-over-Nachrichten erhalten Untertitel. Die Serverleistung ist verbessert. Im Safehouse ist die Charakterauswahl kompakter und zeigt den gewählten Charakter zuerst, Aufgaben behalten die Gegenstandsfilter, und der Abholton ist lauter. Fehlerbehebungen betreffen die Charakterplatzierung nach Safehouse-Resets, falsche Sitzungszeitüberschreitungen, Inventarlayouts und Hänger beim Öffnen der Einstellungen während des Ladens. Dieser Patch enthält keine neuen Skillwerte.
+
+Quelle sind die vom Nutzer bereitgestellten Patchnotes.

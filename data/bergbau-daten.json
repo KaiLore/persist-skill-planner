@@ -146,7 +146,9 @@
         "impact": 5
       },
       "descriptionKey": "SkillMiningT1Desc",
-      "baseActiveWeaponDpsPercent": 150
+      "baseActiveWeaponDpsPercent": 150,
+      "rangeMeters": 3.5,
+      "attackConeDegrees": 90
     },
     {
       "id": "MINING-T1-CD",

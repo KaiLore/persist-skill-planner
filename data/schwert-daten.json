@@ -153,7 +153,9 @@
         "baseActiveWeaponDpsPercent": 120,
         "staminaPerTarget": 5,
         "missingHpHealingPercentPerTarget": 10,
-        "requiresActiveWeaponKey": "LabelTreeSwordName"
+        "requiresActiveWeaponKey": "LabelTreeSwordName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillSwordT1Desc"
     },
@@ -453,7 +455,9 @@
         "bleedDurationSeconds": 20,
         "buffDurationSeconds": 6,
         "baseDamageBonusPercent": 30,
-        "requiresActiveWeaponKey": "LabelTreeSwordName"
+        "requiresActiveWeaponKey": "LabelTreeSwordName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillSwordT3Desc"
     },
@@ -649,7 +653,8 @@
               300
             ]
           }
-        ]
+        ],
+        "attackConeDegrees": 180
       },
       "descriptionKey": "SkillSwordUltDesc"
     }
@@ -1415,5 +1420,6 @@
     "SWORDS-ULT": {
       "locked": "assets/skills/SwordsULTHurricaneBlade.png"
     }
-  }
+  },
+  "weaponAttackConeDegrees": 90
 }

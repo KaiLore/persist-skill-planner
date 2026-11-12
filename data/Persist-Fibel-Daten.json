@@ -262,7 +262,9 @@
               "base": 1
             }
           ],
-          "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc"
+          "effectiveDescriptionKey": "SkillFishingT1EffectiveDesc",
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "FISH-T2",
@@ -301,7 +303,8 @@
           "tier": "ULT",
           "max": 5,
           "requiredTreePoints": 46,
-          "descriptionKey": "SkillFishingUltDesc"
+          "descriptionKey": "SkillFishingUltDesc",
+          "meleeAttackConeDegrees": 360
         },
         {
           "id": "FISH-T1-CD",
@@ -3286,7 +3289,9 @@
             "impact": 5
           },
           "descriptionKey": "SkillMiningT1Desc",
-          "baseActiveWeaponDpsPercent": 150
+          "baseActiveWeaponDpsPercent": 150,
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "MINING-T1-CD",
@@ -5015,7 +5020,9 @@
               }
             ],
             "minimumTickPercent": 1
-          }
+          },
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "BOTANY-T3-CD",
@@ -6738,7 +6745,9 @@
           "debuffKey": "EffectStunned",
           "debuffDurationSeconds": 5,
           "buffDurationSeconds": 2,
-          "unlockDisplayed": 31
+          "unlockDisplayed": 31,
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "THIEVERY-T3-CD",
@@ -9093,7 +9102,9 @@
           },
           "requirementKey": "ConditionMeleeWeapon",
           "bleedingDurationSeconds": 10,
-          "descriptionKey": "SkillWoodworkingT1Desc"
+          "descriptionKey": "SkillWoodworkingT1Desc",
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "WOODWORKING-T1-CD",
@@ -11946,7 +11957,8 @@
                 300
               ]
             }
-          ]
+          ],
+          "vulnerableDamageBonusPercent": 25
         }
       ],
       "levels": [
@@ -12864,7 +12876,9 @@
             "impact": 4,
             "stamina": 5
           },
-          "descriptionKey": "SkillStreetSmartsT1Desc"
+          "descriptionKey": "SkillStreetSmartsT1Desc",
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "STREETSMARTS-T1-CD",
@@ -13068,7 +13082,9 @@
           "requirementKey": "ConditionMeleeWeapon",
           "debuffKey": "EffectVulnerable",
           "debuffDurationSeconds": 4,
-          "unlockDisplayed": 31
+          "unlockDisplayed": 31,
+          "rangeMeters": 3.5,
+          "attackConeDegrees": 90
         },
         {
           "id": "STREETSMARTS-T3-CD",
@@ -21639,7 +21655,8 @@
             "baseStaminaCost": 85,
             "baseCooldownSeconds": 150,
             "baseHealingPercent": 20,
-            "buffDurationSeconds": 10
+            "buffDurationSeconds": 10,
+            "rangeMeters": 3.5
           },
           "descriptionKey": "SkillFirstAidT3Desc"
         },
@@ -21831,7 +21848,8 @@
                   100
                 ]
               }
-            ]
+            ],
+            "rangeMeters": 3.5
           },
           "descriptionKey": "SkillFirstAidUltDesc"
         }
@@ -25894,7 +25912,8 @@
             "baseCooldownSeconds": 150,
             "buffDurationSeconds": 10,
             "baseDamageBonusPercent": 30,
-            "requiresActiveWeaponKey": "LabelTreeMachineGunName"
+            "requiresActiveWeaponKey": "LabelTreeMachineGunName",
+            "rangeMeters": 3.5
           },
           "descriptionKey": "SkillMachineGunT3Desc"
         },
@@ -32625,7 +32644,9 @@
             "baseStaminaCost": 65,
             "baseCooldownSeconds": 50,
             "baseActiveWeaponDpsPercent": 150,
-            "requiresActiveWeaponKey": "LabelTreeAxeName"
+            "requiresActiveWeaponKey": "LabelTreeAxeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillAxeT1Desc"
         },
@@ -32776,7 +32797,9 @@
             "crippledDurationSeconds": 4,
             "buffDurationSeconds": 5,
             "baseCritDamageBonusPercent": 25,
-            "requiresActiveWeaponKey": "LabelTreeAxeName"
+            "requiresActiveWeaponKey": "LabelTreeAxeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillAxeT2Desc"
         },
@@ -33142,7 +33165,8 @@
                   200
                 ]
               }
-            ]
+            ],
+            "attackConeDegrees": 180
           },
           "descriptionKey": "SkillAxeUltDesc"
         }
@@ -33978,7 +34002,8 @@
         "AXES-ULT": {
           "locked": "assets/skills/AxesULTBerserkerSpirit.png"
         }
-      }
+      },
+      "weaponAttackConeDegrees": 90
     },
     {
       "schemaVersion": 1,
@@ -34134,7 +34159,9 @@
             "baseCooldownSeconds": 50,
             "baseActiveWeaponDpsPercent": 100,
             "disarmedDurationSeconds": 3,
-            "requiresActiveWeaponKey": "LabelTreeHammerName"
+            "requiresActiveWeaponKey": "LabelTreeHammerName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillHammerT1Desc"
         },
@@ -34432,7 +34459,9 @@
             "baseCooldownSeconds": 150,
             "baseActiveWeaponDpsPercent": 350,
             "buffDurationSeconds": 8,
-            "requiresActiveWeaponKey": "LabelTreeHammerName"
+            "requiresActiveWeaponKey": "LabelTreeHammerName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillHammerT3Desc"
         },
@@ -34635,7 +34664,8 @@
                   6
                 ]
               }
-            ]
+            ],
+            "attackConeDegrees": 360
           },
           "descriptionKey": "SkillHammerUltDesc"
         }
@@ -35440,7 +35470,8 @@
         "HAMMERS-ULT": {
           "locked": "assets/skills/HammersULTBringingThePain.png"
         }
-      }
+      },
+      "weaponAttackConeDegrees": 90
     },
     {
       "schemaVersion": 1,
@@ -35745,7 +35776,9 @@
             "baseCooldownSeconds": 100,
             "baseActiveWeaponDpsPercent": 150,
             "bleedDurationSeconds": 10,
-            "requiresActiveWeaponKey": "LabelTreeKnifeName"
+            "requiresActiveWeaponKey": "LabelTreeKnifeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillKnifeT2Desc"
         },
@@ -35894,7 +35927,9 @@
             "baseCooldownSeconds": 150,
             "baseActiveWeaponDpsPercent": 225,
             "poisonDurationSeconds": 10,
-            "requiresActiveWeaponKey": "LabelTreeKnifeName"
+            "requiresActiveWeaponKey": "LabelTreeKnifeName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillKnifeT3Desc"
         },
@@ -36807,7 +36842,8 @@
         "KNIVES-ULT": {
           "locked": "assets/skills/KnivesULTButcherSFury.png"
         }
-      }
+      },
+      "weaponAttackConeDegrees": 90
     },
     {
       "schemaVersion": 1,
@@ -36964,7 +37000,9 @@
             "baseActiveWeaponDpsPercent": 120,
             "staminaPerTarget": 5,
             "missingHpHealingPercentPerTarget": 10,
-            "requiresActiveWeaponKey": "LabelTreeSwordName"
+            "requiresActiveWeaponKey": "LabelTreeSwordName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillSwordT1Desc"
         },
@@ -37264,7 +37302,9 @@
             "bleedDurationSeconds": 20,
             "buffDurationSeconds": 6,
             "baseDamageBonusPercent": 30,
-            "requiresActiveWeaponKey": "LabelTreeSwordName"
+            "requiresActiveWeaponKey": "LabelTreeSwordName",
+            "rangeMeters": 3.5,
+            "attackConeDegrees": 90
           },
           "descriptionKey": "SkillSwordT3Desc"
         },
@@ -37460,7 +37500,8 @@
                   300
                 ]
               }
-            ]
+            ],
+            "attackConeDegrees": 180
           },
           "descriptionKey": "SkillSwordUltDesc"
         }
@@ -38226,7 +38267,8 @@
         "SWORDS-ULT": {
           "locked": "assets/skills/SwordsULTHurricaneBlade.png"
         }
-      }
+      },
+      "weaponAttackConeDegrees": 90
     }
   ]
 }

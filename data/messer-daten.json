@@ -301,7 +301,9 @@
         "baseCooldownSeconds": 100,
         "baseActiveWeaponDpsPercent": 150,
         "bleedDurationSeconds": 10,
-        "requiresActiveWeaponKey": "LabelTreeKnifeName"
+        "requiresActiveWeaponKey": "LabelTreeKnifeName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillKnifeT2Desc"
     },
@@ -450,7 +452,9 @@
         "baseCooldownSeconds": 150,
         "baseActiveWeaponDpsPercent": 225,
         "poisonDurationSeconds": 10,
-        "requiresActiveWeaponKey": "LabelTreeKnifeName"
+        "requiresActiveWeaponKey": "LabelTreeKnifeName",
+        "rangeMeters": 3.5,
+        "attackConeDegrees": 90
       },
       "descriptionKey": "SkillKnifeT3Desc"
     },
@@ -1363,5 +1367,6 @@
     "KNIVES-ULT": {
       "locked": "assets/skills/KnivesULTButcherSFury.png"
     }
-  }
+  },
+  "weaponAttackConeDegrees": 90
 }
